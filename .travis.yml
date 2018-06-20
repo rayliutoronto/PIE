@@ -3,8 +3,8 @@ sudo: enabled
 python:
   - '3.6'
 install:
-  - pip install -r requirements_dev.txt
-  - python -m spacy download en_core_web_lg
-  - python -m spacy link en_core_web_lg en
+  - pip install -r requirements_dev.txt > null 2>&1
+  - python -m spacy download en_core_web_lg > null 2>&1
+  - python -m spacy link en_core_web_lg en > null 2>&1
 script:
   - pytest
