@@ -1,0 +1,10 @@
+language: python
+sudo: enabled
+python:
+  - '3.6'
+install:
+  - pip install -r requirements_dev.txt
+  - python -m spacy download en_core_web_lg
+  - python -m spacy link en_core_web_lg en
+script:
+  - pytest
