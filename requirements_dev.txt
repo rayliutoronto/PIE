@@ -1,0 +1,4 @@
+-r requirements.txt
+
+exrex==0.10.5
+pytest==3.6.2
