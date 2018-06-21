@@ -19,5 +19,5 @@ install:
   - mv /tmp/cached/glove.6B.50d.txt data/word_vectors
 
 script:
-  - cd tests;pytest
+  - cd tests;pytest -s
   

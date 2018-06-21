@@ -42,4 +42,5 @@ def test_train():
 
 
 if __name__ == '__main__':
-    train()
+    config = Config(build=True, load=True)
+    train(config)
