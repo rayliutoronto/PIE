@@ -43,7 +43,7 @@ def interactive_shell(model):
 This is an interactive mode.
 To exit, enter 'exit'.
 You can enter a sentence like
-input> I love Paris""")
+input> 416-234-0973""")
 
     tokenizer = Tokenizer('en')
 
@@ -73,9 +73,9 @@ def main():
     model.restore_session(config.dir_model)
 
     # create dataset
-    test = DataSet(config.filename_test, config.preprocessor)
+    #test = DataSet(config.filename_test, config.preprocessor)
     # evaluate and interact
-    model.evaluate(test)
+    #model.evaluate(test)
 
     interactive_shell(model)
 

@@ -1,10 +1,23 @@
 language: python
 sudo: enabled
+cache:
+  directories:
+  - $HOME/.cache/pip
+  - /tmp/cached/
 python:
   - '3.6'
 install:
+  - sudo apt-get install zip unzip
   - pip install -r requirements_dev.txt > null 2>&1
   - python -m spacy download en_core_web_lg > null 2>&1
   - python -m spacy link en_core_web_lg en > null 2>&1
+  - if [[ ! -f /tmp/cached/glove.6B.zip ]]
+    then
+    wget --quiet -P /tmp/cached/ http://nlp.stanford.edu/data/wordvecs/glove.6B.zip
+    unzip glove.6B.zip
+    fi
+  - mkdir data/word_vectors
+  - mv /tmp/cached/glove.6B.50d.txt data/word_vectors
+
 script:
   - pytest
