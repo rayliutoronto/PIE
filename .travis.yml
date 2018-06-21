@@ -13,7 +13,7 @@ install:
   - if [[ ! -f /tmp/cached/glove.6B.zip ]];
     then
     wget --quiet -P /tmp/cached/ http://nlp.stanford.edu/data/wordvecs/glove.6B.zip;
-    unzip glove.6B.zip;
+    unzip /tmp/cached/glove.6B.zip;
     fi
   - mkdir data/word_vectors
   - mv /tmp/cached/glove.6B.50d.txt data/word_vectors
