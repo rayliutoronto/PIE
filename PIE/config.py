@@ -1,9 +1,11 @@
 import os
 import string
+
 import numpy as np
-from .utils import get_logger
+
 from .data_set import DataSet
 from .preprocessor import Preprocessor, NUM, UNKNOWN
+from .utils import get_logger
 
 
 class Config():
@@ -58,6 +60,7 @@ class Config():
 
     def build(self):
         word_vocab = []
+        print("abs path:::: {}", os.path.abspath(self.filename_glove))
         with open(self.filename_glove, mode='r', encoding='UTF-8') as f:
             for line in f:
                 word = line.strip().split(' ')[0]
@@ -111,30 +114,32 @@ class Config():
         np.savez_compressed(self.filename_embedding, word_embeddings=word_embeddings, char_embeddings=char_embeddings)
 
     # general config
-    dir_output = "output/"
+    dir_output = "../output/"
     dir_model = dir_output + "PIE.weights/"
-    path_log = dir_output + "log.txt"
+    path_log = dir_output + "logs/log.txt"
 
     # embeddings
     dim_word = 50
     dim_char = dim_word
 
+    dir_data = "../data/"
+
     # glove files
-    filename_glove = "data/word_vectors/glove.6B.{}d.txt".format(dim_word)
+    filename_glove = dir_data + "word_vectors/glove.6B.{}d.txt".format(dim_word)
     use_pretrained = True
 
-    filename_dev = "data/conll2003/en/valid.txt"
-    filename_test = "data/conll2003/en/test.txt"
-    filename_train = "data/conll2003/en/train.txt"
+    filename_dev = dir_data + "conll2003/en/valid.txt"
+    filename_test = dir_data + "conll2003/en/test.txt"
+    filename_train = dir_data + "conll2003/en/train.txt"
 
     max_iter = None  # if not None, max number of examples in Dataset
 
     # vocab
-    filename_words = "data/words.txt"
-    filename_tags = "data/tags.txt"
-    filename_chars = "data/chars.txt"
+    filename_words = dir_output + "words.txt"
+    filename_tags = dir_output + "tags.txt"
+    filename_chars = dir_output + "chars.txt"
     # embedding
-    filename_embedding = "data/embedding.npz"
+    filename_embedding = dir_output + "embedding.npz"
 
     # training
     train_embeddings = False

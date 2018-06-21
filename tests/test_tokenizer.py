@@ -3,7 +3,7 @@ from __future__ import absolute_import
 from PIE.tokenizer import Tokenizer
 
 t = Tokenizer()
-
+print("localtion::: {}", __file__)
 
 def test_email():
     tokens = [token.text for doc in t.split('abc@toronto.ca') for token in doc]

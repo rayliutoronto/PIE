@@ -1,22 +1,18 @@
 import os
 
-from PIE.model import Model
 from PIE.config import Config
 from PIE.data_set import DataSet
+from PIE.model import Model
 
 
-def train():
-    config = Config(build=True, load=True)
-
+def train(config):
     model = Model(config)
     model.build()
 
     model.train(DataSet(config.filename_train, config.preprocessor), DataSet(config.filename_dev, config.preprocessor))
 
-def eval():
-    # create instance of config
-    config = Config(build=False, load=True)
 
+def eval(config):
     # build PIE
     model = Model(config)
     model.build()
@@ -27,17 +23,23 @@ def eval():
     # evaluate
     return model.run_evaluate(test)
 
+
 def test_train():
-    train()
+    config = Config(build=True, load=True)
 
-    assert os.path.exists('data/tags.txt')
-    assert os.path.exists('data/chars.txt')
-    assert os.path.exists('data/words.txt')
-    assert os.path.exists('data/embedding.npz')
+    train(config)
 
-    metrics = eval()
+    assert os.path.exists(config.dir_output + 'tags.txt')
+    assert os.path.exists(config.dir_output + 'chars.txt')
+    assert os.path.exists(config.dir_output + 'words.txt')
+    assert os.path.exists(config.dir_output + 'embedding.npz')
+
+    config = Config(build=False, load=True)
+
+    metrics = eval(config)
 
     assert metrics.get["f1"] > 90
+
 
 if __name__ == '__main__':
     train()
