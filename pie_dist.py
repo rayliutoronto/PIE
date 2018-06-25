@@ -230,7 +230,7 @@ def map_fun(args, ctx):
 
             # Test trained model
             viterbi_sequences = []
-            for logit, sequence_length in zip(logits.collect(), sequence_lengths.collect()):
+            for logit, sequence_length in zip(logits.tolist(), sequence_lengths.tolist()):
                 logit = logit[:sequence_length]  # keep only the valid steps
                 viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
                     logit, trans_params)
