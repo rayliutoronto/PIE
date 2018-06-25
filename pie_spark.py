@@ -11,6 +11,31 @@ from tensorflowonspark import TFCluster
 
 import pie_dist
 
+sc = SparkContext(conf=SparkConf().setAppName("pie_tf"))
+executors = sc._conf.get("spark.executor.instances")
+num_executors = int(executors) if executors is not None else 1
+num_ps = 1
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--epochs", help="number of epochs", type=int, default=0)
+parser.add_argument("--format", help="example format: (csv|pickle|tfr)", choices=["csv", "pickle", "tfr"],
+                    default="tfr")
+parser.add_argument("--words", help="HDFS path to MNIST images in parallelized format")
+parser.add_argument("--tags", help="HDFS path to MNIST labels in parallelized format")
+parser.add_argument("--model", help="HDFS path to save/load model during train/test", default="pie_model")
+parser.add_argument("--cluster_size", help="number of nodes in the cluster (for Spark Standalone)", type=int,
+                    default=num_executors)
+parser.add_argument("--output", help="HDFS path to save test/inference output", default="predictions")
+parser.add_argument("--readers", help="number of reader/enqueue threads", type=int, default=1)
+parser.add_argument("--steps", help="maximum number of steps", type=int, default=1000)
+parser.add_argument("--tensorboard", help="launch tensorboard process", action="store_true")
+parser.add_argument("--mode", help="train|inference", default="train")
+parser.add_argument("--rdma", help="use rdma connection", default=False)
+parser.add_argument("--driver_ps_nodes", help="run tensorflow PS node on driver locally", default=False)
+args = parser.parse_args()
+print("args:", args)
+
+
 NUM = '$NUM$'
 UNKNOWN = '$UNKNOWN'
 
@@ -74,32 +99,10 @@ def load_dataset(filename, preprocessor):
                 words += [word]
                 tags += [tag]
 
-    return words_list, tags_list
+    return sc.parallelize(words_list), sc.parallelize(tags_list)
 
 
-sc = SparkContext(conf=SparkConf().setAppName("pie_tf"))
-executors = sc._conf.get("spark.executor.instances")
-num_executors = int(executors) if executors is not None else 1
-num_ps = 1
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--epochs", help="number of epochs", type=int, default=0)
-parser.add_argument("--format", help="example format: (csv|pickle|tfr)", choices=["csv", "pickle", "tfr"],
-                    default="tfr")
-parser.add_argument("--words", help="HDFS path to MNIST images in parallelized format")
-parser.add_argument("--tags", help="HDFS path to MNIST labels in parallelized format")
-parser.add_argument("--model", help="HDFS path to save/load model during train/test", default="pie_model")
-parser.add_argument("--cluster_size", help="number of nodes in the cluster (for Spark Standalone)", type=int,
-                    default=num_executors)
-parser.add_argument("--output", help="HDFS path to save test/inference output", default="predictions")
-parser.add_argument("--readers", help="number of reader/enqueue threads", type=int, default=1)
-parser.add_argument("--steps", help="maximum number of steps", type=int, default=1000)
-parser.add_argument("--tensorboard", help="launch tensorboard process", action="store_true")
-parser.add_argument("--mode", help="train|inference", default="train")
-parser.add_argument("--rdma", help="use rdma connection", default=False)
-parser.add_argument("--driver_ps_nodes", help="run tensorflow PS node on driver locally", default=False)
-args = parser.parse_args()
-print("args:", args)
 
 print("{0} ===== Start".format(datetime.now().isoformat()))
 
@@ -113,11 +116,11 @@ valid_x, valid_y = load_dataset('/vagrant/data/conll2003/en/valid.txt', preproce
 cluster = TFCluster.run(sc, pie_dist.map_fun, args, args.cluster_size, num_ps, args.tensorboard,
                         TFCluster.InputMode.SPARK, log_dir=args.model)
 if args.mode == "train":
-    cluster.train(zip(train_x, train_y), args.epochs)
-    labelRDD = cluster.inference(zip(valid_x, valid_y))
+    cluster.train(train_x.zip(train_y), args.epochs)
+    labelRDD = cluster.inference(valid_x.zip(valid_y))
     labelRDD.saveAsTextFile(args.output)
 else:
-    labelRDD = cluster.inference(zip(valid_x,valid_y))
+    labelRDD = cluster.inference(valid_x.zip(valid_y))
     labelRDD.saveAsTextFile(args.output)
 
 cluster.shutdown()
