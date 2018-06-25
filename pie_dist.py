@@ -11,8 +11,6 @@ def print_log(worker_num, arg):
 def map_fun(args, ctx):
     from datetime import datetime
     import numpy as np
-    import math
-    import os
     import tensorflow as tf
     import time
 
@@ -95,7 +93,7 @@ def map_fun(args, ctx):
         char_ids, word_ids = zip(*words)
         word_ids, sequence_lengths = pad_sequences(word_ids, 0)
         char_ids, word_lengths = pad_sequences(char_ids, pad_tok=0,
-            nlevels=2)
+                                               nlevels=2)
         labels, _ = pad_sequences(tags, 0)
 
         # build feed dictionary
@@ -111,19 +109,6 @@ def map_fun(args, ctx):
 
         return feed, sequence_lengths
 
-
-        images = []
-        labels = []
-        for item in batch:
-            images.append(item[0])
-            labels.append(item[1])
-        xs = numpy.array(images)
-        xs = xs.astype(numpy.float32)
-        xs = xs / 255.0
-        ys = numpy.array(labels)
-        ys = ys.astype(numpy.uint8)
-        return (xs, ys)
-
     if job_name == "ps":
         server.join()
     elif job_name == "worker":
@@ -134,29 +119,29 @@ def map_fun(args, ctx):
 
             # shape = (batch size, max length of sentence in batch)
             word_ids = tf.placeholder(tf.int32, shape=[None, None],
-                                           name="word_ids")
+                                      name="word_ids")
 
             # shape = (batch size)
             sequence_lengths = tf.placeholder(tf.int32, shape=[None],
-                                                   name="sequence_lengths")
+                                              name="sequence_lengths")
 
             # shape = (batch size, max length of sentence, max length of word)
             char_ids = tf.placeholder(tf.int32, shape=[None, None, None],
-                                           name="char_ids")
+                                      name="char_ids")
 
             # shape = (batch_size, max_length of sentence)
             word_lengths = tf.placeholder(tf.int32, shape=[None, None],
-                                               name="word_lengths")
+                                          name="word_lengths")
 
             # shape = (batch size, max length of sentence in batch)
             labels = tf.placeholder(tf.int32, shape=[None, None],
-                                         name="labels")
+                                    name="labels")
 
             # hyper parameters
             dropout = tf.placeholder(dtype=tf.float32, shape=[],
-                                          name="dropout")
+                                     name="dropout")
             lr = tf.placeholder(dtype=tf.float32, shape=[],
-                                     name="lr")
+                                name="lr")
 
             # read word_embeding from file
             with np.load('/vagrant/data/embedding.npz') as f:
@@ -165,7 +150,7 @@ def map_fun(args, ctx):
             dim_char = 100
             hidden_size_char = 100
             hidden_size_lstm = 100
-            ntags =  18 # rneed to read tags.txt
+            ntags = 18  # rneed to read tags.txt
 
             with tf.variable_scope("words"):
                 _word_embeddings = tf.Variable(
@@ -244,8 +229,14 @@ def map_fun(args, ctx):
             train_op = tf.train.AdamOptimizer(lr).minimize(loss, global_step=global_step)
 
             # Test trained model
-            label = tf.argmax(y_, 1, name="label")
-            prediction = tf.argmax(y, 1, name="prediction")
+            viterbi_sequences = []
+            for logit, sequence_length in zip(logits, sequence_lengths):
+                logit = logit[:sequence_length]  # keep only the valid steps
+                viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
+                    logit, trans_params)
+                viterbi_sequences += [viterbi_seq]
+            label = tf.argmax(labels, 1, name="label")
+            prediction = tf.argmax(viterbi_sequences, 1, name="prediction")
             correct_prediction = tf.equal(prediction, label)
             accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32), name="accuracy")
             tf.summary.scalar("acc", accuracy)
@@ -306,7 +297,7 @@ def map_fun(args, ctx):
                     if sv.is_chief:
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
-                    labels, pred, acc = sess.run([label, prediction, accuracy], feed_dict=feed)
+                    labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feed)
                     results = ["{0} Label: {1}, Prediction: {2}".format(datetime.now().isoformat(), l, p) for l, p in
                                zip(labels, preds)]
                     tf_feed.batch_results(results)
