@@ -159,7 +159,7 @@ def map_fun(args, ctx):
                                      name="lr")
 
             # read word_embeding from file
-            with np.load('/root/data/embedding.npz') as f:
+            with np.load('/vagrant/data/embedding.npz') as f:
                 word_embeddings = f['word_embeddings']
                 char_embeddings = f['char_embeddings']
             dim_char = 100
