@@ -149,8 +149,8 @@ def map_fun(args, ctx):
     def feed_dict(batch):
         words, tags = [], []
         for item in batch:
-            words.append(item[0])
-            tags.append(item[1])
+            words.append(item[0].collect())
+            tags.append(item[1].collect())
 
         char_ids, word_ids = zip(*words)
         word_ids, sequence_lengths = pad_sequences(word_ids, 0)

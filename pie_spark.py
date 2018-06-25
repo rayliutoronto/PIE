@@ -94,9 +94,8 @@ def load_dataset(filename, preprocessor):
             else:
                 ls = line.split(' ')
                 word, tag = ls[0], ls[-1]
-                if preprocessor is not None:
-                    word = preprocessor.word(word)
-                    tag = preprocessor.tag(tag)
+                word = preprocessor.word(word)
+                tag = preprocessor.tag(tag)
                 words += [word]
                 tags += [tag]
 
