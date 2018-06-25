@@ -113,11 +113,11 @@ valid_x, valid_y = load_dataset('/vagrant/data/conll2003/en/valid.txt', preproce
 cluster = TFCluster.run(sc, pie_dist.map_fun, args, args.cluster_size, num_ps, args.tensorboard,
                         TFCluster.InputMode.SPARK, log_dir=args.model)
 if args.mode == "train":
-    cluster.train(train_x.zip(train_y), args.epochs)
-    labelRDD = cluster.inference(valid_x.zip(valid_y))
+    cluster.train(zip(train_x, train_y), args.epochs)
+    labelRDD = cluster.inference(zip(valid_x, valid_y))
     labelRDD.saveAsTextFile(args.output)
 else:
-    labelRDD = cluster.inference(valid_x.zip(valid_y))
+    labelRDD = cluster.inference(zip(valid_x,valid_y))
     labelRDD.saveAsTextFile(args.output)
 
 cluster.shutdown()
