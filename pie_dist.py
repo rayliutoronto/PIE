@@ -31,6 +31,68 @@ def map_fun(args, ctx):
     # Get TF cluster and server instances
     cluster, server = ctx.start_cluster_server(1, args.rdma)
 
+    def get_chunk_type(tok, idx_to_tag):
+        """
+        Args:
+            tok: id of token, ex 4
+            idx_to_tag: dictionary {4: "B-PER", ...}
+
+        Returns:
+            tuple: "B", "PER"
+
+        """
+        tag_name = idx_to_tag[tok]
+        tag_class = tag_name.split('-')[0]
+        tag_type = tag_name.split('-')[-1]
+        return tag_class, tag_type
+
+    def get_chunks(seq, tags):
+        """Given a sequence of tags, group entities and their position
+
+        Args:
+            seq: [4, 4, 0, 0, ...] sequence of labels
+            tags: dict["O"] = 4
+
+        Returns:
+            list of (chunk_type, chunk_start, chunk_end)
+
+        Example:
+            seq = [4, 5, 0, 3]
+            tags = {"B-PER": 4, "I-PER": 5, "B-LOC": 3}
+            result = [("PER", 0, 2), ("LOC", 3, 4)]
+
+        """
+        default = tags["O"]
+        idx_to_tag = {idx: tag for tag, idx in tags.items()}
+        chunks = []
+        chunk_type, chunk_start = None, None
+        for i, tok in enumerate(seq):
+            # End of a chunk 1
+            if tok == default and chunk_type is not None:
+                # Add a chunk.
+                chunk = (chunk_type, chunk_start, i)
+                chunks.append(chunk)
+                chunk_type, chunk_start = None, None
+
+            # End of a chunk + start of a chunk!
+            elif tok != default:
+                tok_chunk_class, tok_chunk_type = get_chunk_type(tok, idx_to_tag)
+                if chunk_type is None:
+                    chunk_type, chunk_start = tok_chunk_type, i
+                elif tok_chunk_type != chunk_type or tok_chunk_class == "B":
+                    chunk = (chunk_type, chunk_start, i)
+                    chunks.append(chunk)
+                    chunk_type, chunk_start = tok_chunk_type, i
+            else:
+                pass
+
+        # end condition
+        if chunk_type is not None:
+            chunk = (chunk_type, chunk_start, len(seq))
+            chunks.append(chunk)
+
+        return chunks
+
     def _pad_sequences(sequences, pad_tok, max_length):
         """
         Args:
@@ -228,19 +290,6 @@ def map_fun(args, ctx):
             global_step = tf.Variable(0)
             train_op = tf.train.AdamOptimizer(lr).minimize(loss, global_step=global_step)
 
-            # Test trained model
-            viterbi_sequences = []
-            for logit, sequence_length in zip(logits.tolist(), sequence_lengths.tolist()):
-                logit = logit[:sequence_length]  # keep only the valid steps
-                viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
-                    logit, trans_params)
-                viterbi_sequences += [viterbi_seq]
-            label = tf.argmax(labels, 1, name="label")
-            prediction = tf.argmax(viterbi_sequences, 1, name="prediction")
-            correct_prediction = tf.equal(prediction, label)
-            accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32), name="accuracy")
-            tf.summary.scalar("acc", accuracy)
-
             saver = tf.train.Saver()
             summary_op = tf.summary.merge_all()
             init_op = tf.global_variables_initializer()
@@ -282,18 +331,54 @@ def map_fun(args, ctx):
             step = 0
             count = 0
             tf_feed = ctx.get_data_feed(args.mode == "train")
+
+            accs = []
+            correct_preds, total_correct, total_preds = 0., 0., 0.
+            with open('/vagrant/data/tags.txt', mode='r', encoding='UTF-8') as f:
+                vocab_tags = {tag.strip(): idx for idx, tag in enumerate(f)}
+
             while not sv.should_stop() and step < args.steps:
                 # Run a training step asynchronously.
                 # See `tf.train.SyncReplicasOptimizer` for additional details on how to
                 # perform *synchronous* training.
 
                 feed = feed_dict(tf_feed.next_batch(args.batch_size))
+
+                # Test trained model
+
+
+
+
+
+
                 # using QueueRunners/Readers
                 if args.mode == "train":
                     if (step % 100 == 0):
                         print(
-                            "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step, sess.run(accuracy)))
+                            "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step, acc))
                     _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feed)
+
+                    viterbi_sequences = []
+                    for logit, sequence_length in zip(logits, sequence_lengths):
+                        logit = logit[:sequence_length]  # keep only the valid steps
+                        viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
+                            logit, trans_params)
+                        viterbi_sequences += [viterbi_seq]
+
+                    for lab, lab_pred, length in zip(labels, viterbi_sequences,
+                                                     sequence_lengths):
+                        lab = lab[:length]
+                        lab_pred = lab_pred[:length]
+                        accs += [a == b for (a, b) in zip(lab, lab_pred)]
+
+                        lab_chunks = set(get_chunks(lab, vocab_tags))
+                        lab_pred_chunks = set(get_chunks(lab_pred,
+                                                         vocab_tags))
+
+                        correct_preds += len(lab_chunks & lab_pred_chunks)
+                        total_preds += len(lab_pred_chunks)
+                        total_correct += len(lab_chunks)
+
                     if sv.is_chief:
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
@@ -305,6 +390,13 @@ def map_fun(args, ctx):
 
             if sess.should_stop() or step >= args.steps:
                 tf_feed.terminate()
+
+                p = correct_preds / total_preds if correct_preds > 0 else 0
+                r = correct_preds / total_correct if correct_preds > 0 else 0
+                f1 = 2 * p * r / (p + r) if correct_preds > 0 else 0
+                acc = np.mean(accs)
+
+                tf.summary.scalar("acc", acc)
 
         # Ask for all the services to stop.
         print("{0} stopping supervisor".format(datetime.now().isoformat()))
