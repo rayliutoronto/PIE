@@ -352,7 +352,7 @@ def map_fun(args, ctx):
                 if args.mode == "train":
                     if (step % 100 == 0):
                         print(
-                            "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step, acc))
+                            "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step))
                     _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feeeed)
 
                     viterbi_sequences = []
@@ -393,7 +393,8 @@ def map_fun(args, ctx):
                 r = correct_preds / total_correct if correct_preds > 0 else 0
                 f1 = 2 * p * r / (p + r) if correct_preds > 0 else 0
                 acc = np.mean(accs)
-
+                print(
+                    "accuracy: {}".format(acc))
                 tf.summary.scalar("acc", acc)
 
         # Ask for all the services to stop.
