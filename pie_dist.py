@@ -331,13 +331,15 @@ def map_fun(args, ctx):
                 # See `tf.train.SyncReplicasOptimizer` for additional details on how to
                 # perform *synchronous* training.
 
-                feed, sequence_lengths = feed_dict(tf_feed.next_batch(args.batch_size))
+                feed, _ = feed_dict(tf_feed.next_batch(args.batch_size))
                 feeeed = {
                     word_ids: feed[0],
                     sequence_lengths: feed[1],
                     char_ids: feed[2],
                     word_lengths: feed[3],
-                    labels: feed[4]
+                    labels: feed[4],
+                    lr: 0.005,
+                    dropout: 0.68
                 }
                 # Test trained model
 
@@ -378,11 +380,11 @@ def map_fun(args, ctx):
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
                     feed['dropout'] = 1.0
-                    labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feeeed)
-                    results = ["{0} Label: {1}, Prediction: {2}".format(datetime.now().isoformat(), l, p) for l, p in
-                               zip(labels, preds)]
-                    tf_feed.batch_results(results)
-                    print("results: {0}, acc: {1}".format(results, acc))
+                    #labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feeeed)
+                    # results = ["{0} Label: {1}, Prediction: {2}".format(datetime.now().isoformat(), l, p) for l, p in
+                    #            zip(labels, preds)]
+                    # tf_feed.batch_results(results)
+                    # print("results: {0}, acc: {1}".format(results, acc))
 
             if sess.should_stop() or step >= args.steps:
                 tf_feed.terminate()
