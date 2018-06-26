@@ -276,7 +276,7 @@ def map_fun(args, ctx):
             loss = tf.reduce_mean(-log_likelihood)
             tf.summary.scalar("loss", loss)
 
-            global_step = tf.Variable(0)
+            global_step = tf.train.get_or_create_global_step()
             train_op = tf.train.AdamOptimizer(lr).minimize(loss, global_step=global_step)
 
             saver = tf.train.Saver()
@@ -309,7 +309,7 @@ def map_fun(args, ctx):
             with open('/vagrant/data/tags.txt', mode='r', encoding='UTF-8') as f:
                 vocab_tags = {tag.strip(): idx for idx, tag in enumerate(f)}
 
-            while not sess.should_stop() and step < args.steps:
+            while not sess.should_stop() and not tf_feed.should_stop() and step < args.steps:
                 # Run a training step asynchronously.
                 # See `tf.train.SyncReplicasOptimizer` for additional details on how to
                 # perform *synchronous* training.
