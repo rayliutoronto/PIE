@@ -337,9 +337,7 @@ def map_fun(args, ctx):
                     sequence_lengths: feed[1],
                     char_ids: feed[2],
                     word_lengths: feed[3],
-                    labels: feed[4],
-                    lr: 0.005,
-                    dropout: 0.68
+                    labels: feed[4]
                 }
                 # Test trained model
 
