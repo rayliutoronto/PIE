@@ -202,7 +202,7 @@ def map_fun(args, ctx):
             with np.load('/vagrant/data/embedding.npz') as f:
                 word_embeddings = f['word_embeddings']
                 char_embeddings = f['char_embeddings']
-            dim_char = 100
+            dim_char = 50
             hidden_size_char = 100
             hidden_size_lstm = 100
             ntags = 18  # rneed to read tags.txt
