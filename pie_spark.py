@@ -28,7 +28,7 @@ parser.add_argument("--cluster_size", help="number of nodes in the cluster (for 
                     default=num_executors)
 parser.add_argument("--output", help="HDFS path to save test/inference output", default="predictions")
 parser.add_argument("--readers", help="number of reader/enqueue threads", type=int, default=1)
-parser.add_argument("--steps", help="maximum number of steps", type=int, default=1000)
+parser.add_argument("--steps", help="maximum number of steps", type=int, default=1000000)
 parser.add_argument("--tensorboard", help="launch tensorboard process", action="store_true")
 parser.add_argument("--mode", help="train|inference", default="train")
 parser.add_argument("--rdma", help="use rdma connection", default=False)
