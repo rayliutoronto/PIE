@@ -353,16 +353,16 @@ def map_fun(args, ctx):
                     if (step % 100 == 0):
                         print(
                             "{0} step: {1}".format(datetime.now().isoformat(), step))
-                    _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feeeed)
+                    _, summary, step, _logits, _trans_params= sess.run([train_op, summary_op, global_step, logits, trans_params], feed_dict=feeeed)
 
                     viterbi_sequences = []
-                    for logit, sequence_length in zip(logits, feed[1]):
+                    for logit, sequence_length in zip(_logits, feed[1]):
                         logit = logit[:sequence_length]  # keep only the valid steps
                         viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
-                            logit, trans_params)
+                            logit, _trans_params)
                         viterbi_sequences += [viterbi_seq]
 
-                    for lab, lab_pred, length in zip(labels, viterbi_sequences,
+                    for lab, lab_pred, length in zip(feed[4], viterbi_sequences,
                                                      feed[1]):
                         lab = lab[:length]
                         lab_pred = lab_pred[:length]
