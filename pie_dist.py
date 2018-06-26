@@ -356,14 +356,14 @@ def map_fun(args, ctx):
                     _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feeeed)
 
                     viterbi_sequences = []
-                    for logit, sequence_length in zip(logits, sequence_lengths):
+                    for logit, sequence_length in zip(logits, feed[1]):
                         logit = logit[:sequence_length]  # keep only the valid steps
                         viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
                             logit, trans_params)
                         viterbi_sequences += [viterbi_seq]
 
                     for lab, lab_pred, length in zip(labels, viterbi_sequences,
-                                                     sequence_lengths):
+                                                     feed[1]):
                         lab = lab[:length]
                         lab_pred = lab_pred[:length]
                         accs += [a == b for (a, b) in zip(lab, lab_pred)]
