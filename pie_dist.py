@@ -286,34 +286,17 @@ def map_fun(args, ctx):
         # Create a "supervisor", which oversees the training process and stores model state into HDFS
         logdir = ctx.absolute_path(args.model)
         print("tensorflow model path: {0}".format(logdir))
+        hooks = [tf.train.StopAtStepHook(last_step=100000)]
 
         if job_name == "worker" and task_index == 0:
             summary_writer = tf.summary.FileWriter(logdir, graph=tf.get_default_graph())
 
-        if args.mode == "train":
-            sv = tf.train.Supervisor(is_chief=(task_index == 0),
-                                     logdir=logdir,
-                                     init_op=init_op,
-                                     summary_op=None,
-                                     summary_writer=None,
-                                     saver=saver,
-                                     global_step=global_step,
-                                     stop_grace_secs=300,
-                                     save_model_secs=10)
-        else:
-            sv = tf.train.Supervisor(is_chief=(task_index == 0),
-                                     logdir=logdir,
-                                     summary_op=None,
-                                     saver=saver,
-                                     global_step=global_step,
-                                     stop_grace_secs=300,
-                                     save_model_secs=0)
-            output_dir = ctx.absolute_path(args.output)
-            output_file = tf.gfile.Open("{0}/part-{1:05d}".format(output_dir, worker_num), mode='w')
-
-        # The supervisor takes care of session initialization, restoring from
+                # The supervisor takes care of session initialization, restoring from
         # a checkpoint, and closing when done or an error occurs.
-        with sv.managed_session(server.target) as sess:
+        with tf.train.MonitoredTrainingSession(master=server.target,
+                                               is_chief=(task_index == 0),
+                                               checkpoint_dir=logdir,
+                                               hooks=hooks) as sess:
             print("{0} session ready".format(datetime.now().isoformat()))
 
             # Loop until the supervisor shuts down or 1000000 steps have completed.
@@ -326,7 +309,7 @@ def map_fun(args, ctx):
             with open('/vagrant/data/tags.txt', mode='r', encoding='UTF-8') as f:
                 vocab_tags = {tag.strip(): idx for idx, tag in enumerate(f)}
 
-            while not sv.should_stop() and step < args.steps:
+            while not sess.should_stop() and step < args.steps:
                 # Run a training step asynchronously.
                 # See `tf.train.SyncReplicasOptimizer` for additional details on how to
                 # perform *synchronous* training.
@@ -378,7 +361,7 @@ def map_fun(args, ctx):
                         print(
                             "{0} step: {1}  acc: {2}".format(datetime.now().isoformat(), step, np.mean(accs)))
 
-                    if sv.is_chief:
+                    if task_index == 0:
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
                     _logits, _trans_params = sess.run([logits, trans_params], feed_dict=feeeed)
@@ -403,7 +386,7 @@ def map_fun(args, ctx):
                         total_preds += len(lab_pred_chunks)
                         total_correct += len(lab_chunks)
 
-            if sv.should_stop() or step >= args.steps:
+            if sess.should_stop() or step >= args.steps:
                 tf_feed.terminate()
 
                 p = correct_preds / total_preds if correct_preds > 0 else 0
@@ -416,7 +399,6 @@ def map_fun(args, ctx):
 
         # Ask for all the services to stop.
         print("{0} stopping supervisor".format(datetime.now().isoformat()))
-        sv.stop()
 
     if job_name == "worker" and task_index == 0:
         summary_writer.close()
