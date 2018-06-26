@@ -228,7 +228,7 @@ def map_fun(args, ctx):
                 s = tf.shape(char_embeddings)
                 char_embeddings = tf.reshape(char_embeddings,
                                              shape=[s[0] * s[1], s[-2], dim_char], name="char_embeddubg_reshape")
-                word_lengths = tf.reshape(word_lengths, shape=[s[0] * s[1]])
+                _word_lengths = tf.reshape(word_lengths, shape=[s[0] * s[1]])
 
                 # bi lstm on chars
                 cell_fw = tf.contrib.rnn.LSTMCell(hidden_size_char,
@@ -237,7 +237,7 @@ def map_fun(args, ctx):
                                                   state_is_tuple=True)
                 _output = tf.nn.bidirectional_dynamic_rnn(
                     cell_fw, cell_bw, char_embeddings,
-                    sequence_length=word_lengths, dtype=tf.float32)
+                    sequence_length=_word_lengths, dtype=tf.float32)
 
                 # read and concat output
                 _, ((_, output_fw), (_, output_bw)) = _output
