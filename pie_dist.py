@@ -151,25 +151,14 @@ def map_fun(args, ctx):
         for item in batch:
             words.append(item[0])
             tags.append(item[1])
-        print(">>>>>>>>>>>>>>>> words  {}".format(words))
+
         char_ids, word_ids = zip(*words)
         word_ids, sequence_lengths = pad_sequences(word_ids, 0)
         char_ids, word_lengths = pad_sequences(char_ids, pad_tok=0,
                                                nlevels=2)
         labels, _ = pad_sequences(tags, 0)
 
-        # build feed dictionary
-        feed = {
-            word_ids: word_ids,
-            sequence_lengths: sequence_lengths,
-            char_ids: char_ids,
-            word_lengths: word_lengths,
-            labels: labels,
-            lr: 0.005,
-            dropout: 0.68
-        }
-
-        return feed, sequence_lengths
+        return (word_ids, sequence_lengths, char_ids, word_lengths, labels, 0.005, 0.68), sequence_lengths
 
     if job_name == "ps":
         server.join()
@@ -342,8 +331,16 @@ def map_fun(args, ctx):
                 # See `tf.train.SyncReplicasOptimizer` for additional details on how to
                 # perform *synchronous* training.
 
-                feed = feed_dict(tf_feed.next_batch(args.batch_size))
-
+                feed, sequence_lengths = feed_dict(tf_feed.next_batch(args.batch_size))
+                feeeed = {
+                    word_ids: feed[0],
+                    sequence_lengths: feed[1],
+                    char_ids: feed[2],
+                    word_lengths: feed[3],
+                    labels: feed[4],
+                    lr: 0.005,
+                    dropout: 0.68
+                }
                 # Test trained model
 
 
@@ -356,7 +353,7 @@ def map_fun(args, ctx):
                     if (step % 100 == 0):
                         print(
                             "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step, acc))
-                    _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feed)
+                    _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feeeed)
 
                     viterbi_sequences = []
                     for logit, sequence_length in zip(logits, sequence_lengths):
@@ -382,7 +379,8 @@ def map_fun(args, ctx):
                     if sv.is_chief:
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
-                    labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feed)
+                    feed['dropout'] = 1.0
+                    labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feeeed)
                     results = ["{0} Label: {1}, Prediction: {2}".format(datetime.now().isoformat(), l, p) for l, p in
                                zip(labels, preds)]
                     tf_feed.batch_results(results)
