@@ -339,7 +339,7 @@ def map_fun(args, ctx):
                     word_lengths: feed[3],
                     labels: feed[4],
                     lr: 0.005,
-                    dropout: 0.68
+                    dropout: 0.68 if args.mode == 'train' else 1.0
                 }
                 # Test trained model
 
@@ -381,14 +381,29 @@ def map_fun(args, ctx):
                     if sv.is_chief:
                         summary_writer.add_summary(summary, step)
                 else:  # args.mode == "inference"
-                    feed['dropout'] = 1.0
-                    #labels, preds, acc = sess.run([label, prediction, accuracy], feed_dict=feeeed)
-                    # results = ["{0} Label: {1}, Prediction: {2}".format(datetime.now().isoformat(), l, p) for l, p in
-                    #            zip(labels, preds)]
-                    # tf_feed.batch_results(results)
-                    # print("results: {0}, acc: {1}".format(results, acc))
+                    _logits, _trans_params = sess.run([logits, trans_params], feed_dict=feeeed)
+                    viterbi_sequences = []
+                    for logit, sequence_length in zip(_logits, feed[1]):
+                        logit = logit[:sequence_length]  # keep only the valid steps
+                        viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
+                            logit, _trans_params)
+                        viterbi_sequences += [viterbi_seq]
 
-            if sess.should_stop() or step >= args.steps:
+                    for lab, lab_pred, length in zip(feed[4], viterbi_sequences,
+                                                     feed[1]):
+                        lab = lab[:length]
+                        lab_pred = lab_pred[:length]
+                        accs += [a == b for (a, b) in zip(lab, lab_pred)]
+
+                        lab_chunks = set(get_chunks(lab, vocab_tags))
+                        lab_pred_chunks = set(get_chunks(lab_pred,
+                                                         vocab_tags))
+
+                        correct_preds += len(lab_chunks & lab_pred_chunks)
+                        total_preds += len(lab_pred_chunks)
+                        total_correct += len(lab_chunks)
+
+            if sv.should_stop() or step >= args.steps:
                 tf_feed.terminate()
 
                 p = correct_preds / total_preds if correct_preds > 0 else 0

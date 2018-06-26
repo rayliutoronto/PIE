@@ -117,8 +117,8 @@ cluster = TFCluster.run(sc, pie_dist.map_fun, args, args.cluster_size, num_ps, a
                         TFCluster.InputMode.SPARK, log_dir=args.model)
 if args.mode == "train":
     cluster.train(train_x.zip(train_y), args.epochs)
-    labelRDD = cluster.inference(valid_x.zip(valid_y))
-    labelRDD.saveAsTextFile(args.output)
+    # labelRDD = cluster.inference(valid_x.zip(valid_y))
+    # labelRDD.saveAsTextFile(args.output)
 else:
     labelRDD = cluster.inference(valid_x.zip(valid_y))
     labelRDD.saveAsTextFile(args.output)
