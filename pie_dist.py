@@ -350,9 +350,7 @@ def map_fun(args, ctx):
 
                 # using QueueRunners/Readers
                 if args.mode == "train":
-                    if (step % 100 == 0):
-                        print(
-                            "{0} step: {1}".format(datetime.now().isoformat(), step))
+
                     _, summary, step, _logits, _trans_params= sess.run([train_op, summary_op, global_step, logits, trans_params], feed_dict=feeeed)
 
                     viterbi_sequences = []
@@ -375,6 +373,10 @@ def map_fun(args, ctx):
                         correct_preds += len(lab_chunks & lab_pred_chunks)
                         total_preds += len(lab_pred_chunks)
                         total_correct += len(lab_chunks)
+
+                    if (step % 100 == 0):
+                        print(
+                            "{0} step: {1}  acc: {2}".format(datetime.now().isoformat(), step, np.mean(accs)))
 
                     if sv.is_chief:
                         summary_writer.add_summary(summary, step)
