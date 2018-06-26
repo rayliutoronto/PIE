@@ -88,7 +88,7 @@ def load_dataset(filename, preprocessor):
             line = line.strip()
             if (len(line) == 0 or line.startswith("-DOCSTART-")):
                 if len(words) != 0:
-                    words_list += [words]
+                    words_list += [zip(*words)]
                     tags_list += [tags]
                     words, tags = [], []
             else:
