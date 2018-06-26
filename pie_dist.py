@@ -154,12 +154,8 @@ def map_fun(args, ctx):
 
         char_ids, word_ids = zip(*words)
         word_ids, sequence_lengths = pad_sequences(word_ids, 0)
-        print("word_ids>>>>>>>>>>>>>>>>", word_ids)
-        print("sequ_len>>>>>>>>>>>>>>>>", sequence_lengths)
         char_ids, word_lengths = pad_sequences(char_ids, pad_tok=0,
                                                nlevels=2)
-        print("char_ids>>>>>>>>>>>>>>>>", char_ids)
-        print("word_len>>>>>>>>>>>>>>>>", word_lengths)
         labels, _ = pad_sequences(tags, 0)
 
         return (word_ids, sequence_lengths, char_ids, word_lengths, labels, 0.005, 0.68), sequence_lengths
