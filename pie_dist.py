@@ -237,12 +237,14 @@ def map_fun(args, ctx):
                 # bi lstm on chars
                 cell_fw = tf.contrib.rnn.LSTMCell(hidden_size_char,
                                                   state_is_tuple=True)
+                print('cell_fw>>>>')
                 cell_bw = tf.contrib.rnn.LSTMCell(hidden_size_char,
                                                   state_is_tuple=True)
+                print('cell_bw>>>>')
                 _output = tf.nn.bidirectional_dynamic_rnn(
                     cell_fw, cell_bw, char_embeddings,
                     sequence_length=word_lengths, dtype=tf.float32)
-
+                print('bi rnn>>>>')
                 # read and concat output
                 _, ((_, output_fw), (_, output_bw)) = _output
                 output = tf.concat([output_fw, output_bw], axis=-1)
