@@ -352,7 +352,7 @@ def map_fun(args, ctx):
                 if args.mode == "train":
                     if (step % 100 == 0):
                         print(
-                            "{0} step: {1} accuracy: {2}".format(datetime.now().isoformat(), step))
+                            "{0} step: {1}".format(datetime.now().isoformat(), step))
                     _, summary, step = sess.run([train_op, summary_op, global_step], feed_dict=feeeed)
 
                     viterbi_sequences = []
