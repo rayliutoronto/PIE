@@ -386,6 +386,8 @@ def map_fun(args, ctx):
                         total_preds += len(lab_pred_chunks)
                         total_correct += len(lab_chunks)
 
+                        tf_feed.batch_results(['label {} <==> pred {}'.format(lab, lab_pred)])
+
             if sess.should_stop() or step >= args.steps:
                 tf_feed.terminate()
 

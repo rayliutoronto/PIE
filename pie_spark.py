@@ -19,8 +19,6 @@ num_ps = 1
 parser = argparse.ArgumentParser()
 parser.add_argument("--batch_size", help="number of records per batch", type=int, default=32)
 parser.add_argument("--epochs", help="number of epochs", type=int, default=0)
-parser.add_argument("--format", help="example format: (csv|pickle|tfr)", choices=["csv", "pickle", "tfr"],
-                    default="tfr")
 parser.add_argument("--words", help="HDFS path to MNIST images in parallelized format")
 parser.add_argument("--tags", help="HDFS path to MNIST labels in parallelized format")
 parser.add_argument("--model", help="HDFS path to save/load model during train/test", default="pie_model")
@@ -32,7 +30,6 @@ parser.add_argument("--steps", help="maximum number of steps", type=int, default
 parser.add_argument("--tensorboard", help="launch tensorboard process", action="store_true")
 parser.add_argument("--mode", help="train|inference", default="train")
 parser.add_argument("--rdma", help="use rdma connection", default=False)
-parser.add_argument("--driver_ps_nodes", help="run tensorflow PS node on driver locally", default=False)
 args = parser.parse_args()
 print("args:", args)
 
