@@ -108,7 +108,7 @@ vocab_tags = {tag.strip(): idx for idx, tag in enumerate(sc.textFile('/vagrant/d
 vocab_chars = {char.strip(): idx for idx, char in enumerate(sc.textFile('/vagrant/data/chars.txt').collect())}
 preprocessor = Preprocessor(vocab_words, vocab_tags, vocab_chars)
 train_x, train_y = load_dataset('/vagrant/data/conll2003/en/train.txt', preprocessor)
-valid_x, valid_y = load_dataset('/vagrant/data/conll2003/en/valid.txt', preprocessor)
+valid_x, valid_y = load_dataset('/vagrant/data/conll2003/en/test.txt', preprocessor)
 
 cluster = TFCluster.run(sc, pie_dist.map_fun, args, args.cluster_size, num_ps, args.tensorboard,
                         TFCluster.InputMode.SPARK, log_dir=args.model)
