@@ -366,6 +366,7 @@ def map_fun(args, ctx):
                 else:  # args.mode == "inference"
                     _logits, _trans_params = sess.run([logits, trans_params], feed_dict=feeeed)
                     viterbi_sequences = []
+                    results = []
                     for logit, sequence_length in zip(_logits, feed[1]):
                         logit = logit[:sequence_length]  # keep only the valid steps
                         viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(
@@ -386,7 +387,9 @@ def map_fun(args, ctx):
                         total_preds += len(lab_pred_chunks)
                         total_correct += len(lab_chunks)
 
-                        tf_feed.batch_results(['label {} <==> pred {}'.format(lab, lab_pred)])
+                        results.append('label {} <==> pred {}'.format(lab, lab_pred))
+
+                    tf_feed.batch_results(results)
 
             if sess.should_stop() or step >= args.steps:
                 tf_feed.terminate()
