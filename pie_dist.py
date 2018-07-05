@@ -195,7 +195,7 @@ def map_fun(args, ctx):
                                 name="lr")
 
             # read word_embeding from file
-            with np.load('/vagrant/data/embedding.npz') as f:
+            with np.load('output/embedding.npz') as f:
                 word_embeddings = f['word_embeddings']
                 char_embeddings = f['char_embeddings']
             dim_char = 50
@@ -306,7 +306,7 @@ def map_fun(args, ctx):
 
             accs = []
             correct_preds, total_correct, total_preds = 0., 0., 0.
-            with open('/vagrant/data/tags.txt', mode='r', encoding='UTF-8') as f:
+            with open('output/tags.txt', mode='r', encoding='UTF-8') as f:
                 vocab_tags = {tag.strip(): idx for idx, tag in enumerate(f)}
 
             while not sess.should_stop() and not tf_feed.should_stop() and step < args.steps:
