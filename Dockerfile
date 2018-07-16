@@ -13,4 +13,4 @@ RUN python -m spacy link en_core_web_lg en
 RUN mkdir data/word_vectors
 RUN wget http://nlp.stanford.edu/data/wordvecs/glove.6B.zip
 RUN unzip glove.6B.zip
-RUN cp glove.d*.txt data/word_vectors
+RUN cp glove.*.txt data/word_vectors
