@@ -1,11 +1,11 @@
-FROM python:3.6.6-alpine
+FROM tensorflow/tensorflow:1.8.0
 
 ADD . /src
 WORKDIR /src
 
-RUN apk add --update wget unzip
+RUN apt-get update && apt-get install -y wget unzip
 
-RUN pip install -r requirements.txt --no-cache-dir
+RUN pip install -r requirements.txt
 
 RUN python -m spacy download en_core_web_lg
 RUN python -m spacy link en_core_web_lg en
