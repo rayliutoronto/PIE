@@ -5,7 +5,7 @@ WORKDIR /src
 
 RUN apk add --update wget unzip
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --no-cache-dir
 
 RUN python -m spacy download en_core_web_lg
 RUN python -m spacy link en_core_web_lg en
