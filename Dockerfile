@@ -10,9 +10,7 @@ RUN pip install -r requirements.txt
 RUN python -m spacy download en_core_web_lg
 RUN python -m spacy link en_core_web_lg en
 
-RUN mkdir /tmp/cached
-RUN if [[ ! -f /tmp/cached/glove.6B.zip ]]; \
-    then \
-    wget --quiet -P /tmp/cached/ http://nlp.stanford.edu/data/wordvecs/glove.6B.zip; \
-    unzip /tmp/cached/glove.6B.zip -d /tmp/cached; \
-    fi
+RUN mkdir data/word_vectors
+RUN wget http://nlp.stanford.edu/data/wordvecs/glove.6B.zip
+RUN unzip glove.6B.zip
+RUN cp glove.d*.txt data/word_vectors
