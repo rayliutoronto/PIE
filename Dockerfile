@@ -3,7 +3,8 @@ FROM python:3.6.6-alpine
 WORKDIR .
 
 RUN apk add --update wget unzip
-
+CMD [pwd]
+CMD [ls]
 RUN pip install -r requirements.txt
 
 RUN python -m spacy download en_core_web_lg
