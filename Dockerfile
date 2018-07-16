@@ -2,7 +2,7 @@ FROM python:3.6.6-alpine
 
 WORKDIR .
 
-RUN apt-get install -y wget unzip
+RUN apt-get update && apt-get install -y wget unzip
 
 RUN pip install -r requirements.txt
 
