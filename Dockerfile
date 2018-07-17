@@ -12,3 +12,5 @@ RUN mkdir data/word_vectors && \
     wget --quiet http://nlp.stanford.edu/data/wordvecs/glove.6B.zip && \
     unzip glove.6B.zip && mv glove.6B.50d.txt data/word_vectors && \
     rm glove.*
+
+ENV PYTHONPATH=/src
