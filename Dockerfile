@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.8.0
+FROM tensorflow/tensorflow:1.9.0-gpu-py3
 
 ADD . /src
 WORKDIR /src
