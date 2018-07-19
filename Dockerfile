@@ -1,5 +1,11 @@
 FROM tensorflow/tensorflow:1.9.0-gpu-py3
 
+nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+--no-install-recommends
+
+
 ADD . /src
 WORKDIR /src
 
