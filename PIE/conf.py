@@ -5,6 +5,8 @@ from __future__ import print_function
 import logging
 import os
 
+import tensorflow as tf
+
 
 class Conf(object):
     def __get_logger(log_filename):
@@ -46,7 +48,7 @@ class Conf(object):
     lr = 0.005
     lr_decay = 0.9
     dropout = 0.68
-    batch_size = 32
+    batch_size = 64 if tf.test.is_gpu_available() else 32
     clip = -1  # if negative, no clipping
     num_epoch_no_imprv = 10  # early stop
 
