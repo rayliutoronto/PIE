@@ -293,6 +293,7 @@ class Model(object):
                 'predict':
                     prediction_signature
             },
+            strip_default_attrs=True,
             legacy_init_op=legacy_init_op)
 
         builder.save()

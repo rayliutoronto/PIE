@@ -380,7 +380,7 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     train_tfrecord_files.append(os.path.join(root, file))
 
-        train_dataset = tf.data.TFRecordDataset(train_tfrecord_files).batch(
+        train_dataset = tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).batch(
             self.config.batch_size).map(TFRecordManager.map_fn, multiprocessing.cpu_count()).cache()
 
         valid_tfrecord_files = []
@@ -389,7 +389,7 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     valid_tfrecord_files.append(os.path.join(root, file))
 
-        valid_dataset = tf.data.TFRecordDataset(valid_tfrecord_files).batch(
+        valid_dataset = tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).batch(
             self.config.batch_size).map(TFRecordManager.map_fn, multiprocessing.cpu_count()).cache()
 
         iterator = tf.data.Iterator.from_structure(train_dataset.output_types, train_dataset.output_shapes)
