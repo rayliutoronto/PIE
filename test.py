@@ -32,11 +32,11 @@ with tf.Session() as sess:
 
     # Create a signature definition for tfserving
     signature_definition = signature_def_utils.build_signature_def(
-        inputs={placeholder_name: model_input},
-        outputs={operation_name: model_output},
+        inputs={'anystring': model_input},
+        outputs={'str': model_output},
         method_name=signature_constants.PREDICT_METHOD_NAME)
 
-    builder = saved_model_builder.SavedModelBuilder('./models/simple_model/2')
+    builder = saved_model_builder.SavedModelBuilder('./models/simple_model/3')
 
     builder.add_meta_graph_and_variables(
         sess, [tag_constants.SERVING],
