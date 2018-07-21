@@ -9,7 +9,7 @@ placeholder_name = 'a'
 operation_name = 'add'
 
 a = tf.placeholder(tf.int32, name=placeholder_name)
-b = tf.constant(10)
+b = tf.constant(20)
 
 # This is our model
 add = tf.add(a, b, name=operation_name)
@@ -36,7 +36,7 @@ with tf.Session() as sess:
         outputs={operation_name: model_output},
         method_name=signature_constants.PREDICT_METHOD_NAME)
 
-    builder = saved_model_builder.SavedModelBuilder('./models/simple_model/1')
+    builder = saved_model_builder.SavedModelBuilder('./models/simple_model/2')
 
     builder.add_meta_graph_and_variables(
         sess, [tag_constants.SERVING],
