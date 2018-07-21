@@ -3,3 +3,4 @@ version: '3'
 services:
   tensorflow:
     build: .
+    image: flowanywhere/PIE:latest
