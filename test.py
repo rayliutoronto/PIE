@@ -27,8 +27,8 @@ with tf.Session() as sess:
     a_tensor = sess.graph.get_tensor_by_name(placeholder_name + ':0')
     sum_tensor = sess.graph.get_tensor_by_name(operation_name + ':0')
 
-    model_input = build_tensor_info(a_tensor)
-    model_output = build_tensor_info(sum_tensor)
+    model_input = build_tensor_info(a)
+    model_output = build_tensor_info(add)
 
     # Create a signature definition for tfserving
     signature_definition = signature_def_utils.build_signature_def(
