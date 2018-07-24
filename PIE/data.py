@@ -4,7 +4,6 @@ from __future__ import print_function
 
 import multiprocessing
 import os
-import pickle
 import re
 import string
 
@@ -211,61 +210,6 @@ class Preprocessor(object):
 
         return tag
 
-    @staticmethod
-    def __pad_sequences(sequences, pad_tok, max_length):
-        """
-        Args:
-            sequences: a generator of list or tuple
-            pad_tok: the char to pad with
-
-        Returns:
-            a list of list where each sublist has same length
-        """
-        sequence_padded, sequence_length = [], []
-
-        for seq in sequences:
-            seq = list(seq)
-            seq_ = seq[:max_length] + [pad_tok] * max(max_length - len(seq), 0)
-            sequence_padded += [seq_]
-            sequence_length += [min(len(seq), max_length)]
-
-        return sequence_padded, sequence_length
-
-    @staticmethod
-    def pad_sequences(sequences, pad_tok, nlevels=1):
-        """
-        Args:
-            sequences: a generator of list or tuple
-            pad_tok: the char to pad with
-            nlevels: "depth" of padding, for the case where we have characters ids
-
-        Returns:
-            a list of list where each sublist has same length
-
-        """
-        if nlevels == 1:
-            max_length = max(map(lambda x: len(x), sequences))
-            sequence_padded, sequence_length = Preprocessor.__pad_sequences(sequences,
-                                                                            pad_tok, max_length)
-
-        elif nlevels == 2:
-            max_length_word = max([max(map(lambda x: len(x), seq))
-                                   for seq in sequences])
-            sequence_padded, sequence_length = [], []
-            for seq in sequences:
-                # all words are same length now
-                sp, sl = Preprocessor.__pad_sequences(seq, pad_tok, max_length_word)
-                sequence_padded += [sp]
-                sequence_length += [sl]
-
-            max_length_sentence = max(map(lambda x: len(x), sequences))
-            sequence_padded, _ = Preprocessor.__pad_sequences(sequence_padded,
-                                                              [pad_tok] * max_length_word, max_length_sentence)
-            sequence_length, _ = Preprocessor.__pad_sequences(sequence_length, 0,
-                                                              max_length_sentence)
-
-        return sequence_padded, sequence_length
-
 
 class Postprocessor(object):
     @staticmethod
@@ -339,34 +283,47 @@ class TFRecordManager(object):
         self.train = train
 
     def write(self, filename, words_list, chars_list, tags_list):
-        def _bytes_feature(value):
-            return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
-
-        def _int64_feature(value):
-            return tf.train.Feature(int64_list=tf.train.Int64List(value=value))
-
         file = (
                    self.config.dataset_dir_train if self.train else self.config.dataset_dir_valid) + filename + ".tfrecords"
         os.makedirs(os.path.dirname(file), exist_ok=True)
         writer = tf.python_io.TFRecordWriter(file)
 
-        for _ in zip(words_list, chars_list, tags_list):
-            example = tf.train.Example(features=tf.train.Features(feature={
-                'tag_ids': _int64_feature(_[2]),
-                'char_ids': _bytes_feature(pickle.dumps(_[1])),
-                'word_ids': _int64_feature(_[0])}))
-            writer.write(example.SerializeToString())
+        for words, chars, tags in zip(words_list, chars_list, tags_list):
+            seq_example = tf.train.SequenceExample()
+
+            for word in words:
+                seq_example.context.feature["words"].int64_list.value.append(word)
+
+            for char in chars:
+                seq_example.feature_lists.feature_list["chars"].feature.add().int64_list.value.extend(char)
+
+            for tag in tags:
+                seq_example.context.feature["tags"].int64_list.value.append(tag)
+
+            writer.write(seq_example.SerializeToString())
 
         writer.close()
 
-    def map_fn(record):
-        features = {"tag_ids": tf.VarLenFeature(tf.int64),
-                    "char_ids": tf.VarLenFeature(tf.string),
-                    "word_ids": tf.VarLenFeature(tf.int64)}
-        parsed_features = tf.parse_example(record, features)
-        return {'tag_ids': tf.sparse_tensor_to_dense(parsed_features["tag_ids"]),
-                'char_ids': tf.sparse_tensor_to_dense(parsed_features["char_ids"], default_value=''),
-                'word_ids': tf.sparse_tensor_to_dense(parsed_features["word_ids"])}
+    @staticmethod
+    def map_fn_to_sparse(record):
+        context_feature = {
+            "tags": tf.VarLenFeature(tf.int64),
+            "words": tf.VarLenFeature(tf.int64)
+        }
+        sequence_feature = {
+            "chars": tf.VarLenFeature(tf.int64)
+        }
+
+        context_features, sequence_features = tf.parse_single_sequence_example(record, context_feature,
+                                                                               sequence_feature)
+
+        return context_features['words'], sequence_features['chars'], context_features['tags']
+
+    @staticmethod
+    def map_fn_to_dense(words, chars, tags):
+        return {'tag_ids': tf.sparse_tensor_to_dense(tags),
+                'char_ids': tf.sparse_tensor_to_dense(chars),
+                'word_ids': tf.sparse_tensor_to_dense(words)}
 
 
 class DataSet(object):
@@ -380,8 +337,9 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     train_tfrecord_files.append(os.path.join(root, file))
 
-        train_dataset = tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn, multiprocessing.cpu_count()).cache()
+        train_dataset = tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
+            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
 
         valid_tfrecord_files = []
         for root, dirs, files in os.walk(self.config.dataset_dir_valid):
@@ -389,8 +347,9 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     valid_tfrecord_files.append(os.path.join(root, file))
 
-        valid_dataset = tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn, multiprocessing.cpu_count()).cache()
+        valid_dataset = tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
+            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
 
         iterator = tf.data.Iterator.from_structure(train_dataset.output_types, train_dataset.output_shapes)
         batch = iterator.get_next()

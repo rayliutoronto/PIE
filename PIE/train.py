@@ -3,14 +3,13 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-import pickle
 
 import numpy as np
 import tensorflow as tf
 from conf import Conf
 from progress_bar import ProgressBar
 
-from data import Data, Preprocessor, Postprocessor, DataSet
+from data import Data, Postprocessor, DataSet
 
 
 class Model(object):
@@ -40,7 +39,7 @@ class Model(object):
         self.char_ids = tf.placeholder(dtype=tf.int64, shape=[None, None, None], name="char_ids")
 
         # shape = (batch_size, max_length of sentence)
-        self.word_lengths = tf.placeholder(dtype=tf.int32, shape=[None, None], name="word_lengths")
+        self.word_lengths = tf.count_nonzero(self.char_ids, axis=2, name="word_lengths")
 
         # shape = (batch size, max length of sentence in batch)
         self.labels = tf.placeholder(dtype=tf.int64, shape=[None, None], name='labels')
@@ -160,13 +159,9 @@ class Model(object):
             try:
                 batch = session.run(self.batch)
 
-                char_ids, word_lengths = Preprocessor.pad_sequences(
-                    np.array([pickle.loads(x[0]) for x in batch['char_ids']]), pad_tok=0, nlevels=2)
-
                 _, train_loss, summary = session.run([self.train_op, self.loss, self.merged],
                                                      feed_dict={self.word_ids: batch['word_ids'],
-                                                                self.char_ids: char_ids,
-                                                                self.word_lengths: word_lengths,
+                                                                self.char_ids: batch['char_ids'],
                                                                 self.labels: batch['tag_ids'],
                                                                 self.lr: self.config.lr,
                                                                 self.dropout: self.config.dropout})
@@ -231,15 +226,11 @@ class Model(object):
             try:
                 batch = session.run(self.batch)
 
-                char_ids, word_lengths = Preprocessor.pad_sequences(
-                    np.array([pickle.loads(x[0]) for x in batch['char_ids']]), pad_tok=0, nlevels=2)
-
                 labels_pred = []
                 logits, trans_params, sequence_lengths = session.run(
                     [self.logits, self.trans_params, self.sequence_lengths],
                     feed_dict={self.word_ids: batch['word_ids'],
-                               self.char_ids: char_ids,
-                               self.word_lengths: word_lengths,
+                               self.char_ids: batch['char_ids'],
                                self.dropout: 1.0})
 
                 # iterate over the sentences because no batching in vitervi_decode
