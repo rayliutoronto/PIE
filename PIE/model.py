@@ -2,11 +2,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import numpy as np
 import tensorflow as tf
 from config import Config
 from early_stopping_hook import EarlyStoppingHook
+from tensorflow.python.training import session_run_hook
 
-from data import Data, DataSet
+from data import Data, DataSet, Postprocessor
 
 
 class Model(object):
@@ -37,16 +39,14 @@ class Model(object):
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
-            return tf.estimator.EstimatorSpec(mode, loss=self.loss, eval_metric_ops={
-                'accuracy': self.acc
-            })
+            return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[
+                EvaluationHook(self.data, self.logits, self.trans_params, self.sequence_lengths, self.labels)])
 
     def _create_model(self, features, labels):
         self._add_variables(features, labels)
         self._add_embedding_op()
         self._add_logits_op()
         self._add_loss_op()
-        self._add_accuracy_op()
         self._add_train_op()
 
     def _add_variables(self, features, labels):
@@ -137,11 +137,6 @@ class Model(object):
             pred = tf.matmul(output, W) + b
             self.logits = tf.reshape(pred, [-1, nsteps, len(self.data.tag_vocab)])
 
-    def _add_accuracy_op(self):
-        self.acc = tf.metrics.accuracy(labels=self.labels, predictions=tf.argmax(self.logits, axis=2))
-        tf.summary.scalar('accuracy_curr', self.acc[0])
-        tf.summary.scalar('accuracy', self.acc[1])
-
     def _add_loss_op(self):
         log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(
             self.logits, self.labels, self.sequence_lengths)
@@ -175,6 +170,54 @@ class Model(object):
             predictor.train(input_fn=self._train_input_fn, hooks=[])
             eval_result = predictor.evaluate(input_fn=self._valid_input_fn)
             print('++++++++++++++++result+++++++++++++', eval_result)
+
+
+class EvaluationHook(session_run_hook.SessionRunHook):
+    def __init__(self, data, logits, trans_params, sequence_lengths, labels):
+        self.data = data
+        self.logits = logits
+        self.trans_params = trans_params
+        self.sequence_lengths = sequence_lengths
+        self.labels = labels
+
+        self.accs = []
+        self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
+
+    def before_run(self, run_context):  # pylint: disable=unused-argument
+        return session_run_hook.SessionRunArgs([self.logits, self.trans_params, self.sequence_lengths, self.labels])
+
+    def after_run(self, run_context, run_values):
+        logits, trans_params, sequence_lengths, labels = run_values.results
+
+        labels_pred = []
+        # iterate over the sentences because no batching in vitervi_decode
+        for logit, sequence_length in zip(logits, sequence_lengths):
+            logit = logit[:sequence_length]  # keep only the valid steps
+            viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(logit, trans_params)
+            labels_pred += [viterbi_seq]
+
+        for lab, lab_pred, length in zip(labels, labels_pred, sequence_lengths):
+            lab = lab[:length]
+            lab_pred = lab_pred[:length]
+            self.accs += [a == b for (a, b) in zip(lab, lab_pred)]
+
+            lab_chunks = set(Postprocessor.get_chunks(lab, self.data.tag_vocab))
+            lab_pred_chunks = set(Postprocessor.get_chunks(lab_pred, self.data.tag_vocab))
+
+            self.correct_preds += len(lab_chunks & lab_pred_chunks)
+            self.total_preds += len(lab_pred_chunks)
+            self.total_correct += len(lab_chunks)
+
+    def end(self, session):
+        p = self.correct_preds / self.total_preds if self.correct_preds > 0 else 0
+        r = self.correct_preds / self.total_correct if self.correct_preds > 0 else 0
+        f1 = 2 * p * r / (p + r) if self.correct_preds > 0 else 0
+        acc = np.mean(self.accs)
+
+        eval_result = {"acc": 100 * acc, "f1": 100 * f1}
+        print('======================Evaluation Result====================')
+        print(eval_result)
+        print('======================Evaluation Result====================')
 
 
 if __name__ == '__main__':
