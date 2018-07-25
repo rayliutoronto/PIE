@@ -32,16 +32,18 @@ class Model(object):
             self.config.lr = self.config.lr_decay * self.config.lr
         if mode == tf.estimator.ModeKeys.EVAL:
             self.config.dropout_ph = 1.0
+            if self.eval_hook is None:
+                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
+                                                logits=self.logits,
+                                                trans_params=self.trans_params, sequence_lengths=self.sequence_lengths,
+                                                labels=self.labels)
 
         self._create_model(features, labels)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
-            return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[
-                EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv, logits=self.logits,
-                               trans_params=self.trans_params, sequence_lengths=self.sequence_lengths,
-                               labels=self.labels)])
+            return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
     def _create_model(self, features, labels):
         self._add_variables(features, labels)
@@ -176,7 +178,6 @@ class EvaluationHook(session_run_hook.SessionRunHook):
 
         self.patience = patience
         self.wait = 0
-        self.monitor_op = np.greater
         self.best = -np.Inf
 
         self.logits = logits
@@ -184,6 +185,12 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         self.sequence_lengths = sequence_lengths
         self.labels = labels
 
+        self.accs = []
+        self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
+
+        self.epoch = 0
+
+    def begin(self):
         self.accs = []
         self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
 
@@ -215,6 +222,8 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             self.total_correct += len(lab_chunks)
 
     def end(self, session):
+        self.epoch += 1
+
         p = self.correct_preds / self.total_preds if self.correct_preds > 0 else 0
         r = self.correct_preds / self.total_correct if self.correct_preds > 0 else 0
         f1 = 2 * p * r / (p + r) if self.correct_preds > 0 else 0
@@ -222,14 +231,15 @@ class EvaluationHook(session_run_hook.SessionRunHook):
 
         eval_result = {"acc": 100 * acc, "f1": 100 * f1}
         print('======================Evaluation Result====================')
-        print(eval_result)
+        print(eval_result, 'Epoch: ', self.epoch)
 
-        if self.monitor_op(f1, self.best):
+        if f1 > self.best:
             self.best = f1
             self.wait = 0
             print('New Best F1 Score: ', 100 * f1)
         else:
             self.wait += 1
+            print('# epochs with no improvement: ', self.wait)
             if self.wait >= self.patience:
                 self.run_context.request_stop()
 
