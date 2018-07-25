@@ -39,7 +39,7 @@ class Model(object):
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[
-                EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv, logit=self.logits,
+                EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv, logits=self.logits,
                                trans_params=self.trans_params, sequence_lengths=self.sequence_lengths,
                                labels=self.labels)])
 
