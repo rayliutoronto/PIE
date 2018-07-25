@@ -6,7 +6,7 @@ import os
 
 import numpy as np
 import tensorflow as tf
-from conf import Conf
+from config import Config
 from progress_bar import ProgressBar
 
 from data import Data, Postprocessor, DataSet
@@ -260,42 +260,42 @@ class Model(object):
 
         return {"acc": 100 * acc, "f1": 100 * f1}
 
-    def __export_saved_model(self, session):
-        os.makedirs(self.config.saved_model_dir, exist_ok=True)
-
-        builder = tf.saved_model.builder.SavedModelBuilder(self.config.saved_model_dir)
-
-        tensor_info_word_ids = tf.saved_model.utils.build_tensor_info(self.word_ids)
-        tensor_info_char_ids = tf.saved_model.utils.build_tensor_info(self.char_ids)
-        # tensor_info_word_lengths = tf.saved_model.utils.build_tensor_info(self.word_lengths)
-
-        tensor_info_y = tf.saved_model.utils.build_tensor_info(self.logits)
-
-        prediction_signature = (
-            tf.saved_model.signature_def_utils.build_signature_def(
-                inputs={'word_ids': tensor_info_word_ids, 'char_ids': tensor_info_char_ids},
-                outputs={'tag': tensor_info_y},
-                method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME))
-
-        legacy_init_op = tf.group(tf.tables_initializer(), name='legacy_init_op')
-        builder.add_meta_graph_and_variables(
-            session, [tf.saved_model.tag_constants.SERVING],
-            signature_def_map={
-                'predict':
-                    prediction_signature
-            },
-            strip_default_attrs=True,
-            legacy_init_op=legacy_init_op)
-
-        builder.save()
-
-    def __save_session(self, session):
-        os.makedirs(self.config.saved_session_dir, exist_ok=True)
-
-        tf.train.Saver().save(session, self.config.saved_session_dir)
-
-    def __restore_session(self, session):
-        tf.train.Saver().restore(session, self.config.saved_session_dir)
+    # def __export_saved_model(self, session):
+    #     os.makedirs(self.config.saved_model_dir, exist_ok=True)
+    #
+    #     builder = tf.saved_model.builder.SavedModelBuilder(self.config.saved_model_dir)
+    #
+    #     tensor_info_word_ids = tf.saved_model.utils.build_tensor_info(self.word_ids)
+    #     tensor_info_char_ids = tf.saved_model.utils.build_tensor_info(self.char_ids)
+    #     # tensor_info_word_lengths = tf.saved_model.utils.build_tensor_info(self.word_lengths)
+    #
+    #     tensor_info_y = tf.saved_model.utils.build_tensor_info(self.logits)
+    #
+    #     prediction_signature = (
+    #         tf.saved_model.signature_def_utils.build_signature_def(
+    #             inputs={'word_ids': tensor_info_word_ids, 'char_ids': tensor_info_char_ids},
+    #             outputs={'tag': tensor_info_y},
+    #             method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME))
+    #
+    #     legacy_init_op = tf.group(tf.tables_initializer(), name='legacy_init_op')
+    #     builder.add_meta_graph_and_variables(
+    #         session, [tf.saved_model.tag_constants.SERVING],
+    #         signature_def_map={
+    #             'predict':
+    #                 prediction_signature
+    #         },
+    #         strip_default_attrs=True,
+    #         legacy_init_op=legacy_init_op)
+    #
+    #     builder.save()
+    #
+    # def __save_session(self, session):
+    #     os.makedirs(self.config.saved_session_dir, exist_ok=True)
+    #
+    #     tf.train.Saver().save(session, self.config.saved_session_dir)
+    #
+    # def __restore_session(self, session):
+    #     tf.train.Saver().restore(session, self.config.saved_session_dir)
 
 
 # def predict(self, words_raw):
@@ -318,5 +318,5 @@ class Model(object):
 
 
 if __name__ == '__main__':
-    model = Model(Conf())
+    model = Model(Config())
     model.train()

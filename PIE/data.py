@@ -9,7 +9,7 @@ import string
 
 import numpy as np
 import tensorflow as tf
-from conf import Conf
+from config import Config
 
 
 class Data(object):
@@ -190,7 +190,7 @@ class Preprocessor(object):
 
         word = word.lower()
         if word.isdigit():
-            word = Conf.NUM
+            word = Config.NUM
 
         if word in self.word_vocab:
             word = self.word_vocab[word]
@@ -198,7 +198,7 @@ class Preprocessor(object):
             # if word == 0:
             #     pass
         else:
-            word = self.word_vocab[Conf.UNKNOWN]
+            word = self.word_vocab[Config.UNKNOWN]
 
         return char_ids, word
 
@@ -330,37 +330,32 @@ class DataSet(object):
     def __init__(self, config):
         self.config = config
 
-    def load(self):
+    def train(self):
         train_tfrecord_files = []
         for root, dirs, files in os.walk(self.config.dataset_dir_train):
             for file in files:
                 if file.endswith(".tfrecords"):
                     train_tfrecord_files.append(os.path.join(root, file))
 
-        train_dataset = tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
+        return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
             TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
+                                        multiprocessing.cpu_count()).cache().make_one_shot_iterator().get_next()
 
+    def valid(self):
         valid_tfrecord_files = []
         for root, dirs, files in os.walk(self.config.dataset_dir_valid):
             for file in files:
                 if file.endswith(".tfrecords"):
                     valid_tfrecord_files.append(os.path.join(root, file))
 
-        valid_dataset = tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
+        return tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
             TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
-
-        iterator = tf.data.Iterator.from_structure(train_dataset.output_types, train_dataset.output_shapes)
-        batch = iterator.get_next()
-
-        training_init_op = iterator.make_initializer(train_dataset)
-        validation_init_op = iterator.make_initializer(valid_dataset)
-
-        return training_init_op, validation_init_op, batch
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
+                                        multiprocessing.cpu_count()).cache().make_one_shot_iterator().get_next()
 
 
 if __name__ == '__main__':
-    data = Data(Conf())
+    data = Data(Config())
     data.generate_train_tfrecords()
     data.generate_valid_tfrecords()

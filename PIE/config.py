@@ -8,7 +8,7 @@ import os
 import tensorflow as tf
 
 
-class Conf(object):
+class Config(object):
     def __get_logger(log_filename):
         os.makedirs(os.path.dirname(log_filename), exist_ok=True)
 
