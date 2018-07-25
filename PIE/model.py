@@ -5,7 +5,6 @@ from __future__ import print_function
 import numpy as np
 import tensorflow as tf
 from config import Config
-from early_stopping_hook import EarlyStoppingHook
 from tensorflow.python.training import session_run_hook
 
 from data import Data, DataSet, Postprocessor
@@ -40,7 +39,9 @@ class Model(object):
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[
-                EvaluationHook(self.data, self.logits, self.trans_params, self.sequence_lengths, self.labels)])
+                EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv, logit=self.logits,
+                               trans_params=self.trans_params, sequence_lengths=self.sequence_lengths,
+                               labels=self.labels)])
 
     def _create_model(self, features, labels):
         self._add_variables(features, labels)
@@ -163,18 +164,20 @@ class Model(object):
             model_dir=self.config.output_dir_root
         )
 
-        early_stopping_hook = EarlyStoppingHook(estimator=predictor, input_fn=self._valid_input_fn,
-                                                patience=self.config.num_epoch_no_imprv)
-
         for _ in range(5):
             predictor.train(input_fn=self._train_input_fn, hooks=[])
-            eval_result = predictor.evaluate(input_fn=self._valid_input_fn)
-            print('++++++++++++++++result+++++++++++++', eval_result)
+            predictor.evaluate(input_fn=self._valid_input_fn)
 
 
 class EvaluationHook(session_run_hook.SessionRunHook):
-    def __init__(self, data, logits, trans_params, sequence_lengths, labels):
+    def __init__(self, data, patience, logits, trans_params, sequence_lengths, labels):
         self.data = data
+
+        self.patience = patience
+        self.wait = 0
+        self.monitor_op = np.greater
+        self.best = -np.Inf
+
         self.logits = logits
         self.trans_params = trans_params
         self.sequence_lengths = sequence_lengths
@@ -187,6 +190,8 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         return session_run_hook.SessionRunArgs([self.logits, self.trans_params, self.sequence_lengths, self.labels])
 
     def after_run(self, run_context, run_values):
+        self.run_context = run_context
+
         logits, trans_params, sequence_lengths, labels = run_values.results
 
         labels_pred = []
@@ -218,6 +223,14 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         print('======================Evaluation Result====================')
         print(eval_result)
         print('======================Evaluation Result====================')
+
+        if self.monitor_op(f1, self.best):
+            self.best = f1
+            self.wait = 0
+        else:
+            self.wait += 1
+            if self.wait >= self.patience:
+                self.run_context.request_stop()
 
 
 if __name__ == '__main__':
