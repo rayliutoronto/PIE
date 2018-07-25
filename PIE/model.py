@@ -25,14 +25,14 @@ class Model(object):
     def _valid_input_fn(self):
         return self.dataset.valid()
 
-    def _model_fn(self, features, mode, params):
+    def _model_fn(self, features, labels, mode, params, config):
         if mode == tf.estimator.ModeKeys.TRAIN:
             self.config.dropout_ph = self.config.dropout
             self.config.lr = self.config.lr_decay * self.config.lr
         if mode == tf.estimator.ModeKeys.EVAL:
             self.config.dropout_ph = 1.0
 
-        self._create_model(features)
+        self._create_model(features, labels)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
@@ -41,15 +41,15 @@ class Model(object):
                 'accuracy': self.acc
             })
 
-    def _create_model(self, features):
-        self._add_variables(features)
+    def _create_model(self, features, labels):
+        self._add_variables(features, labels)
         self._add_embedding_op()
         self._add_logits_op()
         self._add_loss_op()
         self._add_accuracy_op()
         self._add_train_op()
 
-    def _add_variables(self, features):
+    def _add_variables(self, features, labels):
         # shape = (batch size, max length of sentence in batch)
         self.word_ids = features['word_ids']
 
@@ -63,7 +63,7 @@ class Model(object):
         self.word_lengths = tf.count_nonzero(self.char_ids, axis=2, name="word_lengths")
 
         # shape = (batch size, max length of sentence in batch)
-        self.labels = features['tag_ids']
+        self.labels = labels
 
         # ??
         self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
@@ -138,7 +138,8 @@ class Model(object):
             self.logits = tf.reshape(pred, [-1, nsteps, len(self.data.tag_vocab)])
 
     def _add_accuracy_op(self):
-        self.acc = tf.metrics.accuracy(labels=tf.cast(self.labels, tf.int32), predictions=tf.argmax(self.logits, axis=2))
+        self.acc = tf.metrics.accuracy(labels=self.labels, predictions=tf.argmax(self.logits, axis=2))
+        tf.summary.scalar('accuracy_curr', self.acc[0])
         tf.summary.scalar('accuracy', self.acc[1])
 
     def _add_loss_op(self):
@@ -158,6 +159,8 @@ class Model(object):
                 self.train_op = optimizer.minimize(loss=self.loss, global_step=tf.train.get_or_create_global_step())
 
     def run(self, _):
+        # tf.gfile.DeleteRecursively(self.config.output_dir_root)
+
         # run_config = tf.estimator.RunConfig()
 
         predictor = tf.estimator.Estimator(
@@ -176,7 +179,7 @@ class Model(object):
 
 if __name__ == '__main__':
     # tf.logging.set_verbosity(tf.logging.INFO)
-    tf.enable_eager_execution()
+    # tf.enable_eager_execution()
 
     model = Model(Config())
 

@@ -321,9 +321,8 @@ class TFRecordManager(object):
 
     @staticmethod
     def map_fn_to_dense(words, chars, tags):
-        return {'tag_ids': tf.sparse_tensor_to_dense(tags),
-                'char_ids': tf.sparse_tensor_to_dense(chars),
-                'word_ids': tf.sparse_tensor_to_dense(words)}
+        return {'char_ids': tf.sparse_tensor_to_dense(chars),
+                'word_ids': tf.sparse_tensor_to_dense(words)}, tf.sparse_tensor_to_dense(tags)
 
 
 class DataSet(object):
@@ -340,7 +339,7 @@ class DataSet(object):
         return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
             TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
             self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
-                                        multiprocessing.cpu_count()).cache().make_one_shot_iterator().get_next()
+                                        multiprocessing.cpu_count()).cache().repeat(2)
 
     def valid(self):
         valid_tfrecord_files = []
@@ -352,7 +351,7 @@ class DataSet(object):
         return tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
             TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
             self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
-                                        multiprocessing.cpu_count()).cache().make_one_shot_iterator().get_next()
+                                        multiprocessing.cpu_count()).cache()
 
 
 if __name__ == '__main__':
