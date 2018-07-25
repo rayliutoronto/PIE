@@ -339,7 +339,7 @@ class DataSet(object):
         return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
             TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
             self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
-                                        multiprocessing.cpu_count()).cache().repeat(2)
+                                        multiprocessing.cpu_count()).cache()
 
     def valid(self):
         valid_tfrecord_files = []
