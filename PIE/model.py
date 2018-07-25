@@ -35,9 +35,7 @@ class Model(object):
         self._create_model(features)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
-            logging_hook = tf.train.LoggingTensorHook({"loss": self.loss}, every_n_iter=10)
-            return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_hooks=[])
+            return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, eval_metric_ops={
                 'accuracy': self.acc
@@ -140,16 +138,14 @@ class Model(object):
             self.logits = tf.reshape(pred, [-1, nsteps, len(self.data.tag_vocab)])
 
     def _add_accuracy_op(self):
-        self.acc = tf.metrics.accuracy(labels=self.labels, predictions=tf.argmax(self.logits, axis=2))
+        self.acc = tf.metrics.accuracy(labels=tf.cast(self.labels, tf.int32), predictions=tf.argmax(self.logits, axis=2))
+        tf.summary.scalar('accuracy', self.acc[1])
 
     def _add_loss_op(self):
         log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(
             self.logits, self.labels, self.sequence_lengths)
         self.trans_params = trans_params  # need to evaluate it for decoding
         self.loss = tf.reduce_mean(-log_likelihood, name='loss')
-
-        # for tensorboard
-        tf.summary.scalar("loss", self.loss)
 
     def _add_train_op(self):
         with tf.variable_scope("train_step"):
@@ -166,19 +162,21 @@ class Model(object):
 
         predictor = tf.estimator.Estimator(
             model_fn=self._model_fn,
-            model_dir=self.config.output_dir_root,
-            # warm_start_from=tf.estimator.WarmStartSettings(ckpt_to_initialize_from=self.config.output_dir_root)
+            model_dir=self.config.output_dir_root
         )
 
         early_stopping_hook = EarlyStoppingHook(estimator=predictor, input_fn=self._valid_input_fn,
                                                 patience=self.config.num_epoch_no_imprv)
 
-        for _ in range(self.config.num_epoch):
-            predictor.train(input_fn=self._train_input_fn, hooks=[early_stopping_hook])
+        for _ in range(5):
+            predictor.train(input_fn=self._train_input_fn, hooks=[])
+            eval_result = predictor.evaluate(input_fn=self._valid_input_fn)
+            print('++++++++++++++++result+++++++++++++', eval_result)
 
 
 if __name__ == '__main__':
-    tf.logging.set_verbosity(tf.logging.INFO)
+    # tf.logging.set_verbosity(tf.logging.INFO)
+    tf.enable_eager_execution()
 
     model = Model(Config())
 
