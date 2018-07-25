@@ -37,7 +37,7 @@ class Model(object):
         if mode == tf.estimator.ModeKeys.TRAIN:
             logging_hook = tf.train.LoggingTensorHook({"loss": self.loss}, every_n_iter=10)
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_hooks=[logging_hook])
+                                              training_hooks=[])
         if mode == tf.estimator.ModeKeys.EVAL:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, eval_metric_ops={
                 'accuracy': self.acc
