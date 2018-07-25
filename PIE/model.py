@@ -20,6 +20,8 @@ class Model(object):
 
         self.dataset = DataSet(self.config)
 
+        self.eval_hook = None
+
     def _train_input_fn(self):
         return self.dataset.train()
 
