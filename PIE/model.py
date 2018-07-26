@@ -32,19 +32,18 @@ class Model(object):
         return self.dataset.valid()
 
     def _create_serving_input_receiver(self):
-        inputs = {'word_ids': self.word_ids, 'char_ids': self.char_ids}
+        inputs = {'word_ids': tf.placeholder(dtype=tf.int64, shape=[None, None], name="word_ids"),
+                  'char_ids': tf.placeholder(dtype=tf.int64, shape=[None, None, None], name="char_ids")}
         return tf.estimator.export.ServingInputReceiver(inputs, inputs)
 
     def _model_fn(self, features, labels, mode, params, config):
         if mode == tf.estimator.ModeKeys.TRAIN:
             self.config.dropout_ph = self.config.dropout
             # self.config.lr = self.config.lr_decay * self.config.lr
-        if mode == tf.estimator.ModeKeys.EVAL:
+        if mode in [tf.estimator.ModeKeys.EVAL, tf.estimator.ModeKeys.PREDICT]:
             self.config.dropout_ph = 1.0
 
-        self._create_model(features, labels)
-
-        self._create_serving_input_receiver()
+        self._create_model(features, labels, mode)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
@@ -64,12 +63,27 @@ class Model(object):
 
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
-    def _create_model(self, features, labels):
+        if mode == tf.estimator.ModeKeys.PREDICT:
+            predictions = {
+                'classes': self.logits,
+                'probabilities': tf.nn.softmax(self.logits)
+            }
+            export_outputs = {
+                'prediction': tf.estimator.export.PredictOutput(predictions)
+            }
+            return tf.estimator.EstimatorSpec(
+                mode,
+                predictions=predictions,
+                export_outputs=export_outputs)
+
+    def _create_model(self, features, labels, mode):
         self._add_variables(features, labels)
         self._add_embedding_op()
         self._add_logits_op()
-        self._add_loss_op()
-        self._add_train_op()
+
+        if mode != tf.estimator.ModeKeys.PREDICT:
+            self._add_loss_op()
+            self._add_train_op()
 
     def _add_variables(self, features, labels):
         # shape = (batch size, max length of sentence in batch)
@@ -187,9 +201,9 @@ class Model(object):
         )
 
         for _ in range(self.config.num_epoch):
-            predictor.train(input_fn=self._train_input_fn)
+            predictor.train(input_fn=self._train_input_fn, max_steps=1)
             predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
-            predictor.evaluate(input_fn=self._valid_input_fn)
+            # predictor.evaluate(input_fn=self._valid_input_fn)
 
 
 class ShouldStop(object):
