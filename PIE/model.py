@@ -25,8 +25,6 @@ class Model(object):
         self.eval_hook = None
         self.should_stop = ShouldStop(False)
 
-        self.serving_input_receiver = None
-
     def _train_input_fn(self):
         return self.dataset.train()
 
@@ -35,7 +33,7 @@ class Model(object):
 
     def _create_serving_input_receiver(self):
         inputs = {'word_ids': self.word_ids, 'char_ids': self.char_ids}
-        self.serving_input_receiver = tf.estimator.export.ServingInputReceiver(inputs, inputs)
+        return tf.estimator.export.ServingInputReceiver(inputs, inputs)
 
     def _model_fn(self, features, labels, mode, params, config):
         if mode == tf.estimator.ModeKeys.TRAIN:
@@ -54,7 +52,7 @@ class Model(object):
                                                                     tf.train.CheckpointSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
                                                                         saver=tf.train.Saver(),
-                                                                        save_steps=sys.maxsize,
+                                                                        save_steps=sys.maxsize - 1,
                                                                         listeners=[CPSaverListener()])])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
