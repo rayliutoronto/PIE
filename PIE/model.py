@@ -2,6 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
 import numpy as np
 import tensorflow as tf
 from config import Config
@@ -47,7 +49,7 @@ class Model(object):
                                               training_chief_hooks=[TrainingHook(self.config),
                                                                     CPSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
-                                                                        save_secs=60 * 60 * 24)])
+                                                                        save_steps=sys.maxsize // 2)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
