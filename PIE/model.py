@@ -52,7 +52,7 @@ class Model(object):
                                                                     tf.train.CheckpointSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
                                                                         saver=tf.train.Saver(),
-                                                                        save_steps=sys.maxsize - 1,
+                                                                        save_steps=sys.maxsize // 2,
                                                                         listeners=[CPSaverListener()])])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
