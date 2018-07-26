@@ -288,6 +288,9 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             self.last_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
             self.config.should_export_savedmodel = True
             print('New Best F1 Score: ', 100 * f1)
+
+            # clear previous checkpoint files
+            #tf.gfile.Glob
         else:
             # clear last checkpoint file
             latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
@@ -295,7 +298,8 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                 for file in tf.gfile.Glob(latest_cp + '*'):
                     tf.gfile.Remove(file)
                 tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
-                                                 model_checkpoint_path=self.last_cp)
+                                                 model_checkpoint_path=self.last_cp,
+                                                 all_model_checkpoint_paths=[self.last_cp])
 
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
