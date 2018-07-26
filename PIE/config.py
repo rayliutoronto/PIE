@@ -45,7 +45,7 @@ class Config(object):
     tag_vocab_filename = dataset_dir_vocab + 'tag.txt'
 
     num_epoch = 100
-    lr = 0.0056
+    lr = 0.005
     lr_decay = 0.9
     dropout = 0.68
     batch_size = 64 if tf.test.is_gpu_available() else 32
