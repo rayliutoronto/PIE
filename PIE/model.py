@@ -23,11 +23,17 @@ class Model(object):
         self.eval_hook = None
         self.should_stop = ShouldStop(False)
 
+        self.serving_input_receiver = None
+
     def _train_input_fn(self):
         return self.dataset.train()
 
     def _valid_input_fn(self):
         return self.dataset.valid()
+
+    def _create_serving_input_receiver(self):
+        inputs = {'word_ids': self.word_ids, 'char_ids': self.char_ids}
+        self.serving_input_receiver = tf.estimator.export.ServingInputReceiver(inputs, inputs)
 
     def _model_fn(self, features, labels, mode, params, config):
         if mode == tf.estimator.ModeKeys.TRAIN:
@@ -38,9 +44,15 @@ class Model(object):
 
         self._create_model(features, labels)
 
+        self._create_serving_input_receiver()
+
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_chief_hooks=[TrainingHook(self.should_stop)])
+                                              training_chief_hooks=[TrainingHook(self.should_stop),
+                                                                    tf.train.CheckpointSaverHook(
+                                                                        checkpoint_dir=self.config.output_dir_root,
+                                                                        save_secs=0, save_steps=0,
+                                                                        listeners=[CPSaverListener()])])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
@@ -177,6 +189,8 @@ class Model(object):
             predictor.train(input_fn=self._train_input_fn)
             predictor.evaluate(input_fn=self._valid_input_fn)
 
+            predictor.export_savedmodel(self.config.output_dir_root, self.serving_input_receiver)
+
 
 class ShouldStop(object):
     def __init__(self, should_stop=False):
@@ -187,6 +201,7 @@ class ShouldStop(object):
 
     def request_stop(self):
         self._should_stop = True
+
 
 class TrainingHook(session_run_hook.SessionRunHook):
     def __init__(self, should_stop):
@@ -272,6 +287,15 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                 self.should_stop.request_stop()
 
         print('======================Evaluation Result===========================')
+
+
+# class CPSaverHook(tf.train.CheckpointSaverHook):
+#     def end(self, session):
+#
+
+class CPSaverListener(tf.train.CheckpointSaverListener):
+    def after_save(self, session, global_step_value):
+        pass
 
 
 if __name__ == '__main__':
