@@ -190,7 +190,7 @@ class Model(object):
             predictor.train(input_fn=self._train_input_fn)
             predictor.evaluate(input_fn=self._valid_input_fn)
 
-            predictor.export_savedmodel(self.config.output_dir_root, self.serving_input_receiver)
+            predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
 
 
 class ShouldStop(object):
