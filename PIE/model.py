@@ -290,7 +290,13 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             print('New Best F1 Score: ', 100 * f1)
 
             # clear previous checkpoint files
-            #tf.gfile.Glob
+            latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
+            for file in set(tf.gfile.Glob(self.config.output_dir_root + 'model.ckpt' + '*')) - set(
+                    tf.gfile.Glob(latest_cp + '*')):
+                tf.gfile.Remove(file)
+            tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
+                                             model_checkpoint_path=latest_cp,
+                                             all_model_checkpoint_paths=[latest_cp])
         else:
             # clear last checkpoint file
             latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
