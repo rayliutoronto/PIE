@@ -50,7 +50,7 @@ class Config(object):
     dropout = 0.68
     batch_size = 64 if tf.test.is_gpu_available() else 32
     clip = -1  # if negative, no clipping
-    num_epoch_no_imprv = 10  # early stop
+    num_epoch_no_imprv = 2  # early stop
 
     hidden_size_char = 100  # lstm on chars
     hidden_size_lstm = 100  # lstm on word embeddings
@@ -63,3 +63,6 @@ class Config(object):
     saved_model_version = 1
     saved_model_dir = output_dir_root + 'SavedModel/' + str(saved_model_version) + '/'
     saved_session_dir = output_dir_root + 'SavedSession/'
+
+    should_stop = False
+    should_export_savedmodel = True

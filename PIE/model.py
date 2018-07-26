@@ -2,8 +2,6 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import sys
-
 import numpy as np
 import tensorflow as tf
 from config import Config
@@ -23,7 +21,6 @@ class Model(object):
         self.dataset = DataSet(self.config)
 
         self.eval_hook = None
-        self.should_stop = ShouldStop(False)
 
     def _train_input_fn(self):
         return self.dataset.train()
@@ -47,19 +44,17 @@ class Model(object):
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_chief_hooks=[TrainingHook(self.should_stop),
-                                                                    tf.train.CheckpointSaverHook(
+                                              training_chief_hooks=[TrainingHook(self.config),
+                                                                    CPSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
-                                                                        saver=tf.train.Saver(),
-                                                                        save_steps=sys.maxsize // 2,
-                                                                        listeners=[CPSaverListener()])])
+                                                                        save_secs=60 * 60 * 24)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
-                                                should_stop=self.should_stop)
+                                                config=self.config)
 
-            self.eval_hook.set_fetchs(logits=self.logits, trans_params=self.trans_params,
-                                      sequence_lengths=self.sequence_lengths, labels=self.labels)
+            self.eval_hook.set_fetches(logits=self.logits, trans_params=self.trans_params,
+                                       sequence_lengths=self.sequence_lengths, labels=self.labels)
 
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
@@ -201,28 +196,20 @@ class Model(object):
         )
 
         for _ in range(self.config.num_epoch):
-            predictor.train(input_fn=self._train_input_fn, max_steps=1)
-            predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
-            # predictor.evaluate(input_fn=self._valid_input_fn)
+            predictor.train(input_fn=self._train_input_fn)
 
+            predictor.evaluate(input_fn=self._valid_input_fn)
 
-class ShouldStop(object):
-    def __init__(self, should_stop=False):
-        self._should_stop = should_stop
-
-    def should_stop(self):
-        return self._should_stop
-
-    def request_stop(self):
-        self._should_stop = True
+            if self.config.should_export_savedmodel:
+                predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
 
 
 class TrainingHook(session_run_hook.SessionRunHook):
-    def __init__(self, should_stop):
-        self.should_stop = should_stop
+    def __init__(self, config):
+        self.config = config
 
     def before_run(self, run_context):
-        if self.should_stop.should_stop():
+        if self.config.should_stop:
             run_context.request_stop()
             print('++++++++++++++++++++++++++++++++++++++++++++++++')
             print('will stop training')
@@ -230,20 +217,23 @@ class TrainingHook(session_run_hook.SessionRunHook):
 
 
 class EvaluationHook(session_run_hook.SessionRunHook):
-    def __init__(self, data, patience, should_stop):
+    def __init__(self, data, patience, config):
         self.data = data
 
         self.patience = patience
-        self.should_stop = should_stop
         self.wait = 0
         self.best = -np.Inf
+
+        self.config = config
 
         self.accs = []
         self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
 
         self.epoch = 0
 
-    def set_fetchs(self, logits, trans_params, sequence_lengths, labels):
+        self.last_cp = None
+
+    def set_fetches(self, logits, trans_params, sequence_lengths, labels):
         self.logits = logits
         self.trans_params = trans_params
         self.sequence_lengths = sequence_lengths
@@ -293,22 +283,30 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         if f1 > self.best:
             self.best = f1
             self.wait = 0
+            self.last_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
+            self.config.should_export_savedmodel = True
             print('New Best F1 Score: ', 100 * f1)
         else:
+            # clear last checkpoint file
+            latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
+            if self.last_cp != latest_cp:
+                for file in tf.gfile.Glob(latest_cp + '*'):
+                    tf.gfile.Remove(file)
+                tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
+                                                 model_checkpoint_path=self.last_cp)
+
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
+            self.config.should_export_savedmodel = False
             if self.wait >= self.patience:
-                self.should_stop.request_stop()
+                self.config.should_stop = True
 
         print('======================Evaluation Result===========================')
 
 
-# class CPSaverHook(tf.train.CheckpointSaverHook):
-#     def end(self, session):
-#
-
-class CPSaverListener(tf.train.CheckpointSaverListener):
-    def after_save(self, session, global_step_value):
+class CPSaverHook(tf.train.CheckpointSaverHook):
+    def after_create_session(self, session, coord):
+        # override parent class to disable checkpoint file writing
         pass
 
 
