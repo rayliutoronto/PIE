@@ -21,7 +21,7 @@ class Model(object):
         self.dataset = DataSet(self.config)
 
         self.eval_hook = None
-        self.should_stop = False
+        self.should_stop = ShouldStop(False)
 
     def _train_input_fn(self):
         return self.dataset.train()
@@ -43,7 +43,8 @@ class Model(object):
                                               training_chief_hooks=[TrainingHook(self.should_stop)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
-                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv)
+                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
+                                                should_stop=self.should_stop)
 
             self.eval_hook.set_fetchs(logits=self.logits, trans_params=self.trans_params,
                                       sequence_lengths=self.sequence_lengths, labels=self.labels)
@@ -177,12 +178,22 @@ class Model(object):
             predictor.evaluate(input_fn=self._valid_input_fn)
 
 
+class ShouldStop(object):
+    def __init__(self, should_stop=False):
+        self._should_stop = should_stop
+
+    def should_stop(self):
+        return self._should_stop
+
+    def request_stop(self):
+        self._should_stop = True
+
 class TrainingHook(session_run_hook.SessionRunHook):
     def __init__(self, should_stop):
         self.should_stop = should_stop
 
     def before_run(self, run_context):
-        if self.should_stop:
+        if self.should_stop.should_stop():
             run_context.request_stop()
             print('++++++++++++++++++++++++++++++++++++++++++++++++')
             print('will stop training')
@@ -258,7 +269,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
             if self.wait >= self.patience:
-                self.should_stop = True
+                self.should_stop.request_stop()
 
         print('======================Evaluation Result===========================')
 
