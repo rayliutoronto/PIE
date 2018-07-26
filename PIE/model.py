@@ -31,7 +31,7 @@ class Model(object):
     def _model_fn(self, features, labels, mode, params, config):
         if mode == tf.estimator.ModeKeys.TRAIN:
             self.config.dropout_ph = self.config.dropout
-            self.config.lr = self.config.lr_decay * self.config.lr
+            # self.config.lr = self.config.lr_decay * self.config.lr
         if mode == tf.estimator.ModeKeys.EVAL:
             self.config.dropout_ph = 1.0
 
