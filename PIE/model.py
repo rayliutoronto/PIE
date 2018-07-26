@@ -34,17 +34,18 @@ class Model(object):
             self.config.lr = self.config.lr_decay * self.config.lr
         if mode == tf.estimator.ModeKeys.EVAL:
             self.config.dropout_ph = 1.0
-            if self.eval_hook is None:
-                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
-                                                logits=self.logits,
-                                                trans_params=self.trans_params, sequence_lengths=self.sequence_lengths,
-                                                labels=self.labels)
 
         self._create_model(features, labels)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
         if mode == tf.estimator.ModeKeys.EVAL:
+            if self.eval_hook is None:
+                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv)
+
+            self.eval_hook.set_fetchs(logits=self.logits, trans_params=self.trans_params,
+                                      sequence_lengths=self.sequence_lengths, labels=self.labels)
+
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
     def _create_model(self, features, labels):
@@ -175,22 +176,23 @@ class Model(object):
 
 
 class EvaluationHook(session_run_hook.SessionRunHook):
-    def __init__(self, data, patience, logits, trans_params, sequence_lengths, labels):
+    def __init__(self, data, patience):
         self.data = data
 
         self.patience = patience
         self.wait = 0
         self.best = -np.Inf
 
-        self.logits = logits
-        self.trans_params = trans_params
-        self.sequence_lengths = sequence_lengths
-        self.labels = labels
-
         self.accs = []
         self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
 
         self.epoch = 0
+
+    def set_fetchs(self, logits, trans_params, sequence_lengths, labels):
+        self.logits = logits
+        self.trans_params = trans_params
+        self.sequence_lengths = sequence_lengths
+        self.labels = labels
 
     def begin(self):
         self.accs = []
@@ -232,7 +234,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         acc = np.mean(self.accs)
 
         eval_result = {"acc": 100 * acc, "f1": 100 * f1}
-        print('======================Evaluation Result====================')
+        print('======================Evaluation Result===========================')
         print(eval_result, 'Epoch: ', self.epoch)
 
         if f1 > self.best:
@@ -245,7 +247,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             if self.wait >= self.patience:
                 self.run_context.request_stop()
 
-        print('======================Evaluation Result====================')
+        print('======================Evaluation Result===========================')
 
 
 if __name__ == '__main__':
