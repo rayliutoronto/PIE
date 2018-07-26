@@ -188,9 +188,8 @@ class Model(object):
 
         for _ in range(self.config.num_epoch):
             predictor.train(input_fn=self._train_input_fn)
-            predictor.evaluate(input_fn=self._valid_input_fn)
-
             predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
+            predictor.evaluate(input_fn=self._valid_input_fn)
 
 
 class ShouldStop(object):
