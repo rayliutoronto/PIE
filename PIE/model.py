@@ -2,6 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
 import numpy as np
 import tensorflow as tf
 from config import Config
@@ -51,7 +53,8 @@ class Model(object):
                                               training_chief_hooks=[TrainingHook(self.should_stop),
                                                                     tf.train.CheckpointSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
-                                                                        save_secs=0, save_steps=0,
+                                                                        saver=tf.train.Saver(),
+                                                                        save_steps=sys.maxsize,
                                                                         listeners=[CPSaverListener()])])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
