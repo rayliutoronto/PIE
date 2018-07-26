@@ -21,6 +21,7 @@ class Model(object):
         self.dataset = DataSet(self.config)
 
         self.eval_hook = None
+        self.should_stop = False
 
     def _train_input_fn(self):
         return self.dataset.train()
@@ -38,7 +39,8 @@ class Model(object):
         self._create_model(features, labels)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
-            return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op)
+            return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
+                                              training_chief_hooks=[TrainingHook(self.should_stop)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv)
@@ -175,11 +177,24 @@ class Model(object):
             predictor.evaluate(input_fn=self._valid_input_fn)
 
 
+class TrainingHook(session_run_hook.SessionRunHook):
+    def __init__(self, should_stop):
+        self.should_stop = should_stop
+
+    def before_run(self, run_context):
+        if self.should_stop:
+            run_context.request_stop()
+            print('++++++++++++++++++++++++++++++++++++++++++++++++')
+            print('will stop training')
+            print('++++++++++++++++++++++++++++++++++++++++++++++++')
+
+
 class EvaluationHook(session_run_hook.SessionRunHook):
-    def __init__(self, data, patience):
+    def __init__(self, data, patience, should_stop):
         self.data = data
 
         self.patience = patience
+        self.should_stop = should_stop
         self.wait = 0
         self.best = -np.Inf
 
@@ -202,8 +217,6 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         return session_run_hook.SessionRunArgs([self.logits, self.trans_params, self.sequence_lengths, self.labels])
 
     def after_run(self, run_context, run_values):
-        self.run_context = run_context
-
         logits, trans_params, sequence_lengths, labels = run_values.results
 
         labels_pred = []
@@ -245,7 +258,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
             if self.wait >= self.patience:
-                self.run_context.request_stop()
+                self.should_stop = True
 
         print('======================Evaluation Result===========================')
 
