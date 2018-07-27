@@ -210,7 +210,7 @@ class Model(object):
             tf.estimator.train_and_evaluate(estimator=predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
                                             eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn))
-        except tf.errors.AbortedError:
+        except RuntimeError:
             # workaround to exit training loop when no evaluation performance improvement after long epochs.
             pass
         # estimator.train does not work in distributed training
@@ -317,7 +317,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
             if self.wait >= self.patience:
-                raise tf.errors.AbortedError
+                raise RuntimeError('Can not make progress!')
 
         print('======================Evaluation Result===========================')
 
