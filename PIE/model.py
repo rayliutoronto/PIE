@@ -209,7 +209,8 @@ class Model(object):
         try:
             tf.estimator.train_and_evaluate(estimator=predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
-                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn))
+                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
+                                                                            throttle_secs=5))
         except RuntimeError:
             # workaround to exit training loop when no evaluation performance improvement after long epochs.
             pass
@@ -314,6 +315,10 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                                                  model_checkpoint_path=self.last_cp,
                                                  all_model_checkpoint_paths=[self.last_cp])
 
+            # increase global step by 1 to override evaluation checking: no new checkpoint, no evaluation
+            with tf.Session() as sess:
+                sess.run(tf.add(tf.train.get_global_step, 1))
+
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
             if self.wait >= self.patience:
@@ -324,6 +329,10 @@ class EvaluationHook(session_run_hook.SessionRunHook):
 
 class CPSaverHook(tf.train.CheckpointSaverHook):
     def after_create_session(self, session, coord):
+        # override parent class to disable checkpoint file writing
+        pass
+
+    def after_run(self, run_context, run_values):
         # override parent class to disable checkpoint file writing
         pass
 
