@@ -46,7 +46,7 @@ class Model(object):
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_chief_hooks=[TrainingHook(self.config),
+                                              training_hooks=[TrainingHook(self.config),
                                                                     CPSaverHook(
                                                                         checkpoint_dir=self.config.output_dir_root,
                                                                         save_steps=sys.maxsize // 2)])
