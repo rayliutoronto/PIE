@@ -8,7 +8,7 @@ from grpc.beta import implementations
 from tensorflow_serving.apis import prediction_service_pb2, predict_pb2
 from tokenizer import Tokenizer
 
-from data import Data, Preprocessor
+from data import Data, Preprocessor, TFRecordManager
 
 
 class Prediction(object):
@@ -31,17 +31,20 @@ class Prediction(object):
             word_ids += [wc[1]]
             char_ids += [wc[0]]
 
-        exmaples = []
+        seq_example = tf.train.SequenceExample()
         for word, char in zip(word_ids, char_ids):
-            seq_example = tf.train.SequenceExample()
-            seq_example.context.feature["word_ids"].int64_list.value.append(word)
-            seq_example.feature_lists.feature_list["char_ids"].feature.add().int64_list.value.extend(char)
-            exmaples.append(seq_example)
+            seq_example.context.feature["words"].int64_list.value.append(word)
+            seq_example.feature_lists.feature_list["chars"].feature.add().int64_list.value.extend(char)
+
+        word_ids, char_ids, _ = TFRecordManager.map_fn_to_sparse(seq_example.SerializeToString())
+        word_ids, char_ids = tf.expand_dims(tf.sparse_tensor_to_dense(word_ids), 0), tf.expand_dims(
+            tf.sparse_tensor_to_dense(char_ids), 0)
+        word_ids, char_ids = tf.Session().run([word_ids, char_ids])
 
         request = predict_pb2.PredictRequest()
         request.model_spec.name = 'pie'
-        request.inputs['word_ids'].CopyFrom(tf.contrib.util.make_tensor_proto([word_ids], dtype=tf.int64))
-        request.inputs['char_ids'].CopyFrom(tf.contrib.util.make_tensor_proto([char_ids], dtype=tf.int64))
+        request.inputs['word_ids'].CopyFrom(tf.make_tensor_proto(word_ids, dtype=tf.int64))
+        request.inputs['char_ids'].CopyFrom(tf.make_tensor_proto(char_ids, dtype=tf.int64))
 
         response = self.stub.Predict(request, 10.0)  # 10 seconds timeout
 
@@ -55,13 +58,11 @@ class Prediction(object):
             viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(logit, trans_params)
             labels_pred += [viterbi_seq]
 
-        # convert id to tag
-
-        return labels_pred
+        return [self.data.idx_tag_vocab[x] for x in labels_pred[0]]
 
 
 if __name__ == '__main__':
-    prediction = Prediction(Config(), 'localhost', 9000)
+    prediction = Prediction(Config(), '192.168.99.100', 8501)
 
     while True:
         sentence = input("input> ")

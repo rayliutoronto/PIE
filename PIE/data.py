@@ -107,6 +107,9 @@ class Data(object):
         with open(self.config.tag_vocab_filename, mode='r', encoding='UTF-8') as f:
             self.tag_vocab = {tag.strip('\n'): idx for idx, tag in enumerate(f)}
 
+        with open(self.config.tag_vocab_filename, mode='r', encoding='UTF-8') as f:
+            self.idx_tag_vocab = {idx: tag.strip('\n') for idx, tag in enumerate(f)}
+
         with open(self.config.char_vocab_filename, mode='r', encoding='UTF-8') as f:
             self.char_vocab = {char.strip('\n'): idx for idx, char in enumerate(f)}
 

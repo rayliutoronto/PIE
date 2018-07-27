@@ -61,8 +61,6 @@ class Model(object):
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
         if mode == tf.estimator.ModeKeys.PREDICT:
-            self.labels = tf.zeros_like(self.word_ids)
-
             predictions = {
                 'logits': self.logits,
                 'trans_params': self.trans_params_tensor,
