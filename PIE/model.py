@@ -46,9 +46,9 @@ class Model(object):
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_hooks=[TrainingHook(self.config), CPSaverHook(
-                                                  checkpoint_dir=self.config.output_dir_root,
-                                                  save_steps=sys.maxsize // 2)])
+                                              training_chief_hooks=[
+                                                  CPSaverHook(checkpoint_dir=self.config.output_dir_root,
+                                                              save_steps=sys.maxsize // 2)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
@@ -194,50 +194,35 @@ class Model(object):
     def run(self, _):
         # tf.gfile.DeleteRecursively(self.config.output_dir_root)
 
-        # run_config = tf.estimator.RunConfig()
+        run_config = tf.estimator.RunConfig()
 
         predictor = tf.estimator.Estimator(
             model_fn=self._model_fn,
-            model_dir=self.config.output_dir_root
+            model_dir=self.config.output_dir_root,
+            config=run_config
         )
 
-        train_steps = 0
-        with tf.Session() as sess:
-            batch = self._train_input_fn().make_one_shot_iterator().get_next()
-            while True:
-                try:
-                    sess.run(batch)
-                    train_steps += 1
-                except tf.errors.OutOfRangeError:
-                    break
+        # train_steps = 0
+        # with tf.Session() as sess:
+        #     batch = self._train_input_fn().make_one_shot_iterator()
 
-        for _ in range(self.config.num_epoch):
+        try:
             tf.estimator.train_and_evaluate(estimator=predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
-                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
-                                                                            start_delay_secs=0))
-            # train() not work in distributed training, since grpc is not started up.
-            # predictor.train(input_fn=self._train_input_fn)
-            # predictor.evaluate(input_fn=self._valid_input_fn)
-        if self.config.should_export_savedmodel:
+                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn))
+        except tf.errors.AbortedError:
+            # workaround to exit training loop when no evaluation performance improvement after long epochs.
+            pass
+        # estimator.train does not work in distributed training
+        # predictor.train(input_fn=self._train_input_fn)
+        # predictor.evaluate(input_fn=self._valid_input_fn)
+
+        if run_config.is_chief and self.config.should_export_savedmodel:
             predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
 
         # predictions = list(predictor.predict(input_fn=self._valid_input_fn, yield_single_examples=False))
         # predicted_classes = [p["classes"] for p in predictions]
         # print("New Samples, Class Predictions:    {}\n".format(predicted_classes))
-
-
-class TrainingHook(session_run_hook.SessionRunHook):
-    def __init__(self, config):
-        self.config = config
-
-    def before_run(self, run_context):
-        # if self.config.should_stop:
-        #     run_context.request_stop()
-        #     print('++++++++++++++++++++++++++++++++++++++++++++++++')
-        #     print('will stop training')
-        #     print('++++++++++++++++++++++++++++++++++++++++++++++++')
-        pass
 
 
 class EvaluationHook(session_run_hook.SessionRunHook):
@@ -331,9 +316,8 @@ class EvaluationHook(session_run_hook.SessionRunHook):
 
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
-            self.config.should_export_savedmodel = False
             if self.wait >= self.patience:
-                self.config.should_stop = True
+                raise tf.errors.AbortedError
 
         print('======================Evaluation Result===========================')
 
