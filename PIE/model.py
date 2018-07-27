@@ -61,9 +61,12 @@ class Model(object):
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
         if mode == tf.estimator.ModeKeys.PREDICT:
+            self.labels = tf.zeros_like(self.word_ids)
+
             predictions = {
-                'classes': self.logits,
-                'probabilities': tf.nn.softmax(self.logits)
+                'logits': self.logits,
+                'trans_params': self.trans_params_tensor,
+                'sequence_lengths': self.sequence_lengths
             }
             export_outputs = {
                 'prediction': tf.estimator.export.PredictOutput(predictions)
@@ -74,12 +77,15 @@ class Model(object):
                 export_outputs=export_outputs)
 
     def _create_model(self, features, labels, mode):
+        if mode == tf.estimator.ModeKeys.PREDICT:
+            labels = tf.zeros_like(features['word_ids'])
+
         self._add_variables(features, labels)
         self._add_embedding_op()
         self._add_logits_op()
+        self._add_loss_op()
 
         if mode != tf.estimator.ModeKeys.PREDICT:
-            self._add_loss_op()
             self._add_train_op()
 
     def _add_variables(self, features, labels):
@@ -175,6 +181,7 @@ class Model(object):
         log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(
             self.logits, self.labels, self.sequence_lengths)
         self.trans_params = trans_params  # need to evaluate it for decoding
+        self.trans_params_tensor = tf.convert_to_tensor(self.trans_params)
         self.loss = tf.reduce_mean(-log_likelihood, name='loss')
 
     def _add_train_op(self):
@@ -199,11 +206,13 @@ class Model(object):
 
         for _ in range(self.config.num_epoch):
             predictor.train(input_fn=self._train_input_fn)
-
             predictor.evaluate(input_fn=self._valid_input_fn)
-
             if self.config.should_export_savedmodel:
                 predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
+
+        # predictions = list(predictor.predict(input_fn=self._valid_input_fn, yield_single_examples=False))
+        # predicted_classes = [p["classes"] for p in predictions]
+        # print("New Samples, Class Predictions:    {}\n".format(predicted_classes))
 
 
 class TrainingHook(session_run_hook.SessionRunHook):
