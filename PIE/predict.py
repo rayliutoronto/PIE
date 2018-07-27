@@ -39,7 +39,8 @@ class Prediction(object):
         word_ids, char_ids, _ = TFRecordManager.map_fn_to_sparse(seq_example.SerializeToString())
         word_ids, char_ids = tf.expand_dims(tf.sparse_tensor_to_dense(word_ids), 0), tf.expand_dims(
             tf.sparse_tensor_to_dense(char_ids), 0)
-        word_ids, char_ids = tf.Session().run([word_ids, char_ids])
+        with tf.Session() as sess:
+            word_ids, char_ids = sess.run([word_ids, char_ids])
 
         request = predict_pb2.PredictRequest()
         request.model_spec.name = 'pie'
