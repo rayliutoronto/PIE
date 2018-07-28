@@ -315,13 +315,16 @@ class EvaluationHook(session_run_hook.SessionRunHook):
 
                 # workaround to override evaluation checking: no new checkpoint, no evaluation
                 # increase number by 1
-                old_global_step = self.last_cp.split('-')[-1]
-                new_global_step = int(old_global_step) + 1
-                for file in tf.gfile.Glob(self.last_cp + '*'):
-                    tf.gfile.Rename(file,
-                                    file.replace('-' + str(old_global_step) + '.', '-' + str(new_global_step) + '.'))
+                with tf.Session() as sess:
+                    sess.run(tf.assign_add(tf.train.get_global_step(), 1))
 
-                self.last_cp = self.last_cp.replace('-' + str(old_global_step), '-' + str(new_global_step))
+                # old_global_step = self.last_cp.split('-')[-1]
+                # new_global_step = int(old_global_step) + 1
+                # for file in tf.gfile.Glob(self.last_cp + '*'):
+                #     tf.gfile.Rename(file,
+                #                     file.replace('-' + str(old_global_step) + '.', '-' + str(new_global_step) + '.'))
+                #
+                # self.last_cp = self.last_cp.replace('-' + str(old_global_step), '-' + str(new_global_step))
 
                 tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
                                                  model_checkpoint_path=self.last_cp,
