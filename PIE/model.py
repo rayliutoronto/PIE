@@ -312,7 +312,9 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             if self.last_cp != latest_cp:
                 for file in tf.gfile.Glob(latest_cp + '*'):
                     tf.gfile.Remove(file)
-
+                tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
+                                                 model_checkpoint_path=self.last_cp,
+                                                 all_model_checkpoint_paths=[self.last_cp])
                 # workaround to override evaluation checking: no new checkpoint, no evaluation
                 # increase number by 1
                 with tf.Session() as sess:
@@ -326,9 +328,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                 #
                 # self.last_cp = self.last_cp.replace('-' + str(old_global_step), '-' + str(new_global_step))
 
-                tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
-                                                 model_checkpoint_path=self.last_cp,
-                                                 all_model_checkpoint_paths=[self.last_cp])
+
 
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
