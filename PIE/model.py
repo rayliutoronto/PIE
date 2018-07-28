@@ -318,9 +318,9 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                 old_global_step = self.last_cp.split('-')[-1]
                 new_global_step = int(old_global_step) + 1
                 for file in tf.gfile.Glob(self.last_cp + '*'):
-                    tf.gfile.Rename(file, file.replace('-' + old_global_step + '.', '-' + new_global_step + '.'))
+                    tf.gfile.Rename(file, file.replace('-' + str(old_global_step) + '.', '-' + str(new_global_step) + '.'))
 
-                self.last_cp = self.last_cp.replace('-' + old_global_step, '-' + new_global_step)
+                self.last_cp = self.last_cp.replace('-' + str(old_global_step), '-' + str(new_global_step))
 
                 tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
                                                  model_checkpoint_path=self.last_cp,
