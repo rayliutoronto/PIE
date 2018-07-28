@@ -46,16 +46,12 @@ class Model(object):
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_chief_hooks=[
-                                                  CPSaverHook(checkpoint_dir=self.config.output_dir_root,
-                                                              save_steps=sys.maxsize // 2)])
+                                              training_chief_hooks=[CPSaverHook(
+                                                  checkpoint_dir=self.config.output_dir_root,
+                                                  save_steps=sys.maxsize // 2)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
-                self.eval_hook = EvaluationHook(data=self.data, patience=self.config.num_epoch_no_imprv,
-                                                config=self.config)
-
-            self.eval_hook.set_fetches(logits=self.logits, trans_params=self.trans_params,
-                                       sequence_lengths=self.sequence_lengths, labels=self.labels)
+                self.eval_hook = EvaluationHook(model=self)
 
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
 
@@ -194,21 +190,21 @@ class Model(object):
     def run(self, _):
         # tf.gfile.DeleteRecursively(self.config.output_dir_root)
 
-        run_config = tf.estimator.RunConfig()
+        self.run_config = tf.estimator.RunConfig(keep_checkpoint_max=3)
 
-        predictor = tf.estimator.Estimator(
+        self.predictor = tf.estimator.Estimator(
             model_fn=self._model_fn,
             model_dir=self.config.output_dir_root,
-            config=run_config
+            config=self.run_config
         )
 
         # if there is checkpoint already, need to evaluate first then train
         # update self.best in EvalHook
-        if predictor.latest_checkpoint() is not None:
-            predictor.evaluate(input_fn=self._valid_input_fn)
+        if self.predictor.latest_checkpoint() is not None:
+            self.predictor.evaluate(input_fn=self._valid_input_fn)
 
         try:
-            tf.estimator.train_and_evaluate(estimator=predictor,
+            tf.estimator.train_and_evaluate(estimator=self.predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
                                             eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
                                                                             start_delay_secs=0))
@@ -219,43 +215,26 @@ class Model(object):
         # predictor.train(input_fn=self._train_input_fn)
         # predictor.evaluate(input_fn=self._valid_input_fn)
 
-        if run_config.is_chief and self.config.should_export_savedmodel:
-            predictor.export_savedmodel(self.config.output_dir_root, self._create_serving_input_receiver)
-
-        # predictions = list(predictor.predict(input_fn=self._valid_input_fn, yield_single_examples=False))
-        # predicted_classes = [p["classes"] for p in predictions]
-        # print("New Samples, Class Predictions:    {}\n".format(predicted_classes))
-
 
 class EvaluationHook(session_run_hook.SessionRunHook):
-    def __init__(self, data, patience, config):
-        self.data = data
-
-        self.patience = patience
+    def __init__(self, model):
         self.wait = 0
         self.best = -np.Inf
 
-        self.config = config
+        self.model = model
 
         self.accs = []
         self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
 
         self.epoch = 0
 
-        self.last_cp = None
-
-    def set_fetches(self, logits, trans_params, sequence_lengths, labels):
-        self.logits = logits
-        self.trans_params = trans_params
-        self.sequence_lengths = sequence_lengths
-        self.labels = labels
-
     def begin(self):
         self.accs = []
         self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
-        return session_run_hook.SessionRunArgs([self.logits, self.trans_params, self.sequence_lengths, self.labels])
+        return session_run_hook.SessionRunArgs(
+            [self.model.logits, self.model.trans_params, self.model.sequence_lengths, self.model.labels])
 
     def after_run(self, run_context, run_values):
         logits, trans_params, sequence_lengths, labels = run_values.results
@@ -272,8 +251,8 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             lab_pred = lab_pred[:length]
             self.accs += [a == b for (a, b) in zip(lab, lab_pred)]
 
-            lab_chunks = set(Postprocessor.get_chunks(lab, self.data.tag_vocab))
-            lab_pred_chunks = set(Postprocessor.get_chunks(lab_pred, self.data.tag_vocab))
+            lab_chunks = set(Postprocessor.get_chunks(lab, self.model.data.tag_vocab))
+            lab_pred_chunks = set(Postprocessor.get_chunks(lab_pred, self.model.data.tag_vocab))
 
             self.correct_preds += len(lab_chunks & lab_pred_chunks)
             self.total_preds += len(lab_pred_chunks)
@@ -294,48 +273,25 @@ class EvaluationHook(session_run_hook.SessionRunHook):
         if f1 > self.best:
             self.best = f1
             self.wait = 0
-            self.last_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
-            self.config.should_export_savedmodel = True
             print('New Best F1 Score: ', 100 * f1)
+            print('======================Evaluation Result===========================')
 
-            # clear previous checkpoint files
-            latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
-            for file in set(tf.gfile.Glob(self.config.output_dir_root + 'model.ckpt' + '*')) - set(
-                    tf.gfile.Glob(latest_cp + '*')):
-                tf.gfile.Remove(file)
-            tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
-                                             model_checkpoint_path=latest_cp,
-                                             all_model_checkpoint_paths=[latest_cp])
+            # export savedmodel
+            if self.model.run_config.is_chief:
+                tf.gfile.MakeDirs(self.model.config.output_dir_savedmodel)
+                dir = self.model.predictor.export_savedmodel(self.model.config.output_dir_savedmodel,
+                                                             self.model._create_serving_input_receiver)
+
+                # clear old savedmodels
+                for dir in set(tf.gfile.ListDirectory(self.model.config.output_dir_savedmodel)) - set(
+                        [dir.decode("utf-8")[-10:]]):
+                    tf.gfile.DeleteRecursively(self.model.config.output_dir_savedmodel + dir)
         else:
-            # clear last checkpoint file
-            latest_cp = tf.train.latest_checkpoint(self.config.output_dir_root)
-            if self.last_cp != latest_cp:
-                for file in tf.gfile.Glob(latest_cp + '*'):
-                    tf.gfile.Remove(file)
-                tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
-                                                 model_checkpoint_path=self.last_cp,
-                                                 all_model_checkpoint_paths=[self.last_cp])
-                # workaround to override evaluation checking: no new checkpoint, no evaluation
-                # increase number by 1
-                with tf.Session() as sess:
-                    sess.run(tf.assign_add(tf.train.get_global_step(), 1))
-
-                # old_global_step = self.last_cp.split('-')[-1]
-                # new_global_step = int(old_global_step) + 1
-                # for file in tf.gfile.Glob(self.last_cp + '*'):
-                #     tf.gfile.Rename(file,
-                #                     file.replace('-' + str(old_global_step) + '.', '-' + str(new_global_step) + '.'))
-                #
-                # self.last_cp = self.last_cp.replace('-' + str(old_global_step), '-' + str(new_global_step))
-
-
-
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
-            if self.wait >= self.patience:
+            print('======================Evaluation Result===========================')
+            if self.wait >= self.model.config.patience:
                 raise RuntimeError('Can not make progress!')
-
-        print('======================Evaluation Result===========================')
 
 
 class CPSaverHook(tf.train.CheckpointSaverHook):

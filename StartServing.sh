@@ -1,1 +1,1 @@
-tensorflow_model_server --port=9000 --model_name=pie --model_base_path=/PIE/output &
+tensorflow_model_server --port=9000 --model_name=pie --model_base_path=/PIE/output/SavedModels &
