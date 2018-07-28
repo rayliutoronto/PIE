@@ -204,8 +204,8 @@ class Model(object):
 
         # if there is checkpoint already, need to evaluate first then train
         # update self.best in EvalHook
-        if predictor.latest_checkpoint() is not None:
-            predictor.evaluate(input_fn=self._valid_input_fn)
+        # if predictor.latest_checkpoint() is not None:
+        #     predictor.evaluate(input_fn=self._valid_input_fn)
 
         try:
             tf.estimator.train_and_evaluate(estimator=predictor,
