@@ -202,15 +202,16 @@ class Model(object):
             config=run_config
         )
 
-        # train_steps = 0
-        # with tf.Session() as sess:
-        #     batch = self._train_input_fn().make_one_shot_iterator()
+        # if there is checkpoint already, need to evaluate first then train
+        # update self.best in EvalHook
+        if predictor.latest_checkpoint() is not None:
+            predictor.evaluate(input_fn=self._valid_input_fn)
 
         try:
             tf.estimator.train_and_evaluate(estimator=predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
                                             eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
-                                                                            throttle_secs=5))
+                                                                            start_delay_secs=0))
         except RuntimeError:
             # workaround to exit training loop when no evaluation performance improvement after long epochs.
             pass
@@ -311,13 +312,23 @@ class EvaluationHook(session_run_hook.SessionRunHook):
             if self.last_cp != latest_cp:
                 for file in tf.gfile.Glob(latest_cp + '*'):
                     tf.gfile.Remove(file)
+
+                # workaround to override evaluation checking: no new checkpoint, no evaluation
+                # increase number by 1
+                old_global_step = self.last_cp.split('-')[-1]
+                new_global_step = int(old_global_step) + 1
+                for file in tf.gfile.Glob(self.last_cp + '*'):
+                    tf.gfile.Rename(file, file.replace('-' + old_global_step + '.', '-' + new_global_step + '.'))
+
+                self.last_cp = self.last_cp.replace('-' + old_global_step, '-' + new_global_step)
+
                 tf.train.update_checkpoint_state(save_dir=self.config.output_dir_root,
                                                  model_checkpoint_path=self.last_cp,
                                                  all_model_checkpoint_paths=[self.last_cp])
 
             # increase global step by 1 to override evaluation checking: no new checkpoint, no evaluation
             with tf.Session() as sess:
-                sess.run(tf.add(tf.train.get_global_step, 1))
+                sess.run(tf.add(tf.train.get_global_step, tf.constant(1)))
 
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
