@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y python3-pip && \
     pip3 install -r requirements.txt && \
     rm -rf /var/lib/apt/lists/*
 
-
 RUN python -m spacy download en_core_web_lg && python -m spacy link en_core_web_lg en
 
 RUN mkdir data/word_vectors && \
