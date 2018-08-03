@@ -64,15 +64,18 @@ def convert_xlsx_and_split(file, split=0.7):
                     continue
 
                 f = train_f if idx < split_idx else valid_f
+                row_string = []
                 for i, cell in enumerate(row):
                     if i < len(header) and header_mask[i]:
-                        word_raw = [token.text for doc in tokenizer.split(str(cell).strip()) for token in doc if
-                                    not token.is_space]
-                        for j, word in enumerate(word_raw):
-                            f.write('{}\n'.format(
-                                word + ' ' + header[i] + ' ' + (
-                                    'O' if cell is None or str(cell).lower() in ['na', 'not applicable'] else get_tag(
-                                        header[i], len(word_raw), j))))
+                        row_string.append(str(cell).strip())
+
+                for i, doc in enumerate(tokenizer.split(row_string)):
+                    word_raw = [token.text for token in doc if not token.is_space]
+                    for j, word in enumerate(word_raw):
+                        f.write('{}\n'.format(
+                            word + ' ' + header[i] + ' ' + (
+                                'O' if cell is None or str(cell).lower() in ['na', 'not applicable'] else get_tag(
+                                    header[i], len(word_raw), j))))
 
                 f.write('\n')
 
@@ -82,16 +85,18 @@ def get_tag(field_name, word_list_length, word_index):
                               'contact-firstname', 'contactname', 'principalname', 'principalfirstname',
                               'principallastname', 'fundcontact']:
         return get_tag1(word_list_length, word_index) + '-' + 'PERSON'
-    elif field_name.lower() in ['businessname', 'organization', 'localname', 'company', 'schoolname']:
-        return get_tag1(word_list_length, word_index) + '-' + 'ORG'
+    # elif field_name.lower() in ['businessname', 'organization', 'localname', 'company', 'schoolname']:
+    #     return get_tag1(word_list_length, word_index) + '-' + 'ORG'
     elif field_name.lower() in ['telephonenumber', 'telephone', 'phone', 'phonenumber', 'faxnumber', 'fax', 'phone1',
                                 'phone2', 'phonefax', 'phonetollfree']:
         return get_tag1(word_list_length, word_index) + '-' + 'PHONE'
     elif field_name.lower() in ['emailaddress', 'email', 'e-mail']:
         return get_tag1(word_list_length, word_index) + '-' + 'EMAIL'
-    elif field_name.lower() in ['streetaddress', 'unit', 'postalcode', 'address', 'street', 'physicaladdress',
+    elif field_name.lower() in ['streetaddress', 'postalcode', 'address', 'street', 'physicaladdress',
                                 'buildingaddress']:
         return get_tag1(word_list_length, word_index) + '-' + 'ADDRESS'
+    elif field_name.lower() in ['postalcode']:
+        return get_tag1(word_list_length, word_index) + '-' + 'POSTALCODE'
     else:
         return 'O'
 
@@ -179,19 +184,19 @@ if __name__ == '__main__':
     # convert_bio_to_bioes('../data/raw/conll2003/en/test_bio.txt', '../data/raw/conll2003/en/test_bioes.txt')
     # convert_bio_to_bioes('../data/raw/conll2003/en/valid.txt', '../data/raw/conll2003/en/valid_bioes.txt')
 
-    # convert_xlsx_and_split('../data/raw/City_biz_incubator/BusinessEcosystem.xlsx')
-    # convert_xlsx_and_split('../data/raw/City_door_open/Doors_Open_2018.xlsx')
-    # convert_xlsx_and_split('../data/raw/cymh/cymh_mcys_open_data_dataset_may_2016_cyrb_approved.xlsx')
-    # convert_xlsx_and_split('../data/raw/Farm_marketing_board/marketingdirectory1.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_farm_advisor/growing_forward_2_farm_advisors.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_labor_sponsored_inv_fund/labour-sponsored-investment-funds_1.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_livestock/lma-listc.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_private_school/private_schools_contact_information_july_2018_en_.xlsx')
-    # convert_xlsx_and_split(
-    #     '../data/raw/ON_public_library/2015_ontario_public_library_statistics_open_data_dec_2017rev.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_public_school/publicly_funded_schools_xlsx_july_2018_en.xlsx')
-    # convert_xlsx_and_split('../data/raw/ON_school_board/boards_schoolauthorities_july_2018_en.xlsx')
-    # convert_xlsx_and_split('../data/raw/Toxics_planner/toxics_planners.xlsx')
-    # convert_xlsx_and_split('../data/raw/WoodSupplier/may2018.xlsx')
+    convert_xlsx_and_split('../data/raw/City_biz_incubator/BusinessEcosystem.xlsx')
+    convert_xlsx_and_split('../data/raw/City_door_open/Doors_Open_2018.xlsx')
+    convert_xlsx_and_split('../data/raw/cymh/cymh_mcys_open_data_dataset_may_2016_cyrb_approved.xlsx')
+    convert_xlsx_and_split('../data/raw/Farm_marketing_board/marketingdirectory1.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_farm_advisor/growing_forward_2_farm_advisors.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_labor_sponsored_inv_fund/labour-sponsored-investment-funds_1.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_livestock/lma-listc.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_private_school/private_schools_contact_information_july_2018_en_.xlsx')
+    convert_xlsx_and_split(
+        '../data/raw/ON_public_library/2015_ontario_public_library_statistics_open_data_dec_2017rev.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_public_school/publicly_funded_schools_xlsx_july_2018_en.xlsx')
+    convert_xlsx_and_split('../data/raw/ON_school_board/boards_schoolauthorities_july_2018_en.xlsx')
+    convert_xlsx_and_split('../data/raw/Toxics_planner/toxics_planners.xlsx')
+    convert_xlsx_and_split('../data/raw/WoodSupplier/may2018.xlsx')
 
     generate_fake_email_phone_sin()

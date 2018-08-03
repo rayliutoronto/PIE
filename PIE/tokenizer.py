@@ -4,36 +4,36 @@ import spacy
 class Tokenizer(object):
     class __Tokenizer:
         def __init__(self, language='en'):
-            self.__nlp = spacy.load(language)
-            self.__nlp.tokenizer = self.__create_custom_tokenizer()
+            self._nlp = spacy.load(language, disable=['tagger', 'parser', 'ner'])
+            self._nlp.tokenizer = self._create_custom_tokenizer()
 
         def split(self, text):
             if type(text) == str:
                 text = [text]
 
-            return [self.__nlp(x) for x in text]
+            return self._nlp.pipe(text)
 
-        def __create_custom_tokenizer(self):
+        def _create_custom_tokenizer(self):
             my_prefix = []
 
-            all_prefixes_re = spacy.util.compile_prefix_regex(tuple(list(self.__nlp.Defaults.prefixes) + my_prefix))
+            all_prefixes_re = spacy.util.compile_prefix_regex(tuple(list(self._nlp.Defaults.prefixes) + my_prefix))
 
             custom_infixes = ['@', '</', '<', '>']
-            infix_re = spacy.util.compile_infix_regex(tuple(list(self.__nlp.Defaults.infixes) + custom_infixes))
+            infix_re = spacy.util.compile_infix_regex(tuple(list(self._nlp.Defaults.infixes) + custom_infixes))
 
-            suffix_re = spacy.util.compile_suffix_regex(self.__nlp.Defaults.suffixes)
+            suffix_re = spacy.util.compile_suffix_regex(self._nlp.Defaults.suffixes)
 
-            return spacy.tokenizer.Tokenizer(self.__nlp.vocab, self.__nlp.Defaults.tokenizer_exceptions,
+            return spacy.tokenizer.Tokenizer(self._nlp.vocab, self._nlp.Defaults.tokenizer_exceptions,
                                              prefix_search=all_prefixes_re.search,
                                              infix_finditer=infix_re.finditer, suffix_search=suffix_re.search)
 
-    __instance = {}
+    _instance = {}
 
     def __new__(cls, language='en'):
-        if Tokenizer.__instance.get(language) is None:
-            Tokenizer.__instance.update({language: Tokenizer.__Tokenizer(language)})
+        if Tokenizer._instance.get(language) is None:
+            Tokenizer._instance.update({language: Tokenizer.__Tokenizer(language)})
 
-        return Tokenizer.__instance.get(language)
+        return Tokenizer._instance.get(language)
 
 
 if __name__ == '__main__':

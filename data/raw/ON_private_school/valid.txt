@@ -1,6 +1,6 @@
-Peoples SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Peoples SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 245 StreetAddress B-ADDRESS
@@ -48,8 +48,8 @@ based ProgramType O
 curriculum ProgramType O
 ACSI AssociationMembership O
 
-Petre SchoolName B-ORG
-College SchoolName E-ORG
+Petre SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 3359 StreetAddress B-ADDRESS
@@ -99,9 +99,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Philopateer SchoolName B-ORG
-Christian SchoolName I-ORG
-College SchoolName E-ORG
+Philopateer SchoolName O
+Christian SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 6341 StreetAddress B-ADDRESS
@@ -151,10 +151,10 @@ based ProgramType O
 curriculum ProgramType O
 ASCI AssociationMembership O
 
-Phoenix SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName I-ORG
-Inc SchoolName E-ORG
+Phoenix SchoolName O
+Montessori SchoolName O
+School SchoolName O
+Inc SchoolName O
 None Suite O
 None POBox O
 2 StreetAddress B-ADDRESS
@@ -192,10 +192,10 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-PICC SchoolName B-ORG
-Ummati SchoolName I-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+PICC SchoolName O
+Ummati SchoolName O
+Elementary SchoolName O
+School SchoolName O
 28 Suite O
 None POBox O
 499 StreetAddress B-ADDRESS
@@ -210,7 +210,7 @@ L6Y4E6 PostalCode S-ADDRESS
 909 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6490 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -235,9 +235,9 @@ curriculum ProgramType O
 Ummati AssociationMembership O
 Board AssociationMembership O
 
-Pickering SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Pickering SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 162 StreetAddress B-ADDRESS
@@ -278,8 +278,8 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Pickering SchoolName B-ORG
-College SchoolName E-ORG
+Pickering SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 16945 StreetAddress B-ADDRESS
@@ -336,8 +336,8 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Pine SchoolName B-ORG
-Mountain SchoolName E-ORG
+Pine SchoolName O
+Mountain SchoolName O
 None Suite O
 None POBox O
 880 StreetAddress B-ADDRESS
@@ -348,8 +348,8 @@ Avenue StreetAddress I-ADDRESS
 Lucknow City O
 Ontario Province O
 N0G2H0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -373,10 +373,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Pine SchoolName B-ORG
-Ridge SchoolName I-ORG
-Amish SchoolName I-ORG
-School SchoolName E-ORG
+Pine SchoolName O
+Ridge SchoolName O
+Amish SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 53500 StreetAddress B-ADDRESS
@@ -385,8 +385,8 @@ Line StreetAddress E-ADDRESS
 Aylmer City O
 Ontario Province O
 N5H2R3 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -405,9 +405,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Pinehaven SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Pinehaven SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 41 StreetAddress B-ADDRESS
@@ -421,7 +421,7 @@ P0H2N0 PostalCode S-ADDRESS
 498 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7330 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Sudbury Region O
 - Region O
 North Region O
@@ -443,9 +443,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Pineview SchoolName B-ORG
-Mennonite SchoolName I-ORG
-School SchoolName E-ORG
+Pineview SchoolName O
+Mennonite SchoolName O
+School SchoolName O
 None Suite O
 34 POBox O
 58 StreetAddress B-ADDRESS
@@ -488,10 +488,10 @@ Centre ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Plattsville SchoolName B-ORG
-Christian SchoolName I-ORG
-Private SchoolName I-ORG
-Elementary SchoolName E-ORG
+Plattsville SchoolName O
+Christian SchoolName O
+Private SchoolName O
+Elementary SchoolName O
 None Suite O
 Box POBox O
 69 POBox O
@@ -532,10 +532,10 @@ Christian AssociationMembership O
 School AssociationMembership O
 International AssociationMembership O
 
-Pleasant SchoolName B-ORG
-View SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Pleasant SchoolName O
+View SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 4969 StreetAddress B-ADDRESS
@@ -545,8 +545,8 @@ Line StreetAddress I-ADDRESS
 Listowel City O
 Ontario Province O
 N4W3G9 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -570,9 +570,9 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Polaris SchoolName B-ORG
-Learning SchoolName I-ORG
-Centre SchoolName E-ORG
+Polaris SchoolName O
+Learning SchoolName O
+Centre SchoolName O
 202 Suite O
 None POBox O
 1560 StreetAddress B-ADDRESS
@@ -586,7 +586,7 @@ M4G3B8 PostalCode S-ADDRESS
 350 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7827 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -620,10 +620,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Poplar SchoolName B-ORG
-Grove SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Poplar SchoolName O
+Grove SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 90065 StreetAddress B-ADDRESS
@@ -633,8 +633,8 @@ Line StreetAddress I-ADDRESS
 Wroxeter City O
 Ontario Province O
 N0G2X0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -654,9 +654,9 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Portlock SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Portlock SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 250 StreetAddress B-ADDRESS
@@ -667,8 +667,8 @@ Road StreetAddress I-ADDRESS
 DESBARATS City O
 Ontario Province O
 P0R1E0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Sudbury Region O
 - Region O
 North Region O
@@ -691,9 +691,9 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Prairie SchoolName B-ORG
-View SchoolName I-ORG
-School SchoolName E-ORG
+Prairie SchoolName O
+View SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 36642 StreetAddress B-ADDRESS
@@ -703,8 +703,8 @@ Road StreetAddress I-ADDRESS
 Lucknow City O
 Ontario Province O
 N0G2H0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -723,10 +723,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Premium SchoolName B-ORG
-Institute SchoolName I-ORG
-of SchoolName I-ORG
-Excellence SchoolName E-ORG
+Premium SchoolName O
+Institute SchoolName O
+of SchoolName O
+Excellence SchoolName O
 213 Suite O
 None POBox O
 4515 StreetAddress B-ADDRESS
@@ -740,7 +740,7 @@ L6P2K7 PostalCode S-ADDRESS
 460 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5046 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -772,12 +772,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Prestige SchoolName B-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName I-ORG
--Richmond SchoolName I-ORG
-Hill SchoolName E-ORG
+Prestige SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
+-Richmond SchoolName O
+Hill SchoolName O
 8 Suite O
 None POBox O
 11 StreetAddress B-ADDRESS
@@ -792,7 +792,7 @@ L4C9W9 PostalCode S-ADDRESS
 780 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6565 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -827,11 +827,11 @@ Of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Prestige SchoolName B-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName I-ORG
--Toronto SchoolName E-ORG
+Prestige SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
+-Toronto SchoolName O
 None Suite O
 None POBox O
 21 StreetAddress B-ADDRESS
@@ -886,9 +886,9 @@ Of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Pretty SchoolName B-ORG
-River SchoolName I-ORG
-Academy SchoolName E-ORG
+Pretty SchoolName O
+River SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 11521 StreetAddress B-ADDRESS
@@ -903,7 +903,7 @@ L9Y5E7 PostalCode S-ADDRESS
 444 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5376 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -935,9 +935,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Primary SchoolName B-ORG
-Prep SchoolName I-ORG
-Academy SchoolName E-ORG
+Primary SchoolName O
+Prep SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 6920 StreetAddress B-ADDRESS
@@ -946,8 +946,8 @@ Drive StreetAddress E-ADDRESS
 Mississauga City O
 Ontario Province O
 L5N4J9 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -968,10 +968,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Princeton SchoolName B-ORG
-Academy SchoolName I-ORG
-of SchoolName I-ORG
-Canada SchoolName E-ORG
+Princeton SchoolName O
+Academy SchoolName O
+of SchoolName O
+Canada SchoolName O
 None Suite O
 None POBox O
 156 StreetAddress B-ADDRESS
@@ -1020,9 +1020,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Prosperity SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Prosperity SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 84556 StreetAddress B-ADDRESS
@@ -1031,8 +1031,8 @@ Line StreetAddress E-ADDRESS
 Auburn City O
 Ontario Province O
 N0M1E0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -1051,11 +1051,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Protestant SchoolName B-ORG
-Reformed SchoolName I-ORG
-School SchoolName I-ORG
-in SchoolName I-ORG
-Wingham SchoolName E-ORG
+Protestant SchoolName O
+Reformed SchoolName O
+School SchoolName O
+in SchoolName O
+Wingham SchoolName O
 None Suite O
 570 POBox O
 292 StreetAddress B-ADDRESS
@@ -1069,7 +1069,7 @@ N0G2W0 PostalCode S-ADDRESS
 357 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3235 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -1090,9 +1090,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Providence SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Providence SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 542 StreetAddress B-ADDRESS
@@ -1133,9 +1133,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Providence SchoolName B-ORG
-Reformed SchoolName I-ORG
-Collegiate SchoolName E-ORG
+Providence SchoolName O
+Reformed SchoolName O
+Collegiate SchoolName O
 None Suite O
 None POBox O
 93 StreetAddress B-ADDRESS
@@ -1187,8 +1187,8 @@ Reformed AssociationMembership O
 School AssociationMembership O
 Societies AssociationMembership O
 
-Quantum SchoolName B-ORG
-Academy SchoolName E-ORG
+Quantum SchoolName O
+Academy SchoolName O
 305 Suite O
 None POBox O
 9555 StreetAddress B-ADDRESS
@@ -1239,9 +1239,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Queen SchoolName B-ORG
-Elizabeth SchoolName I-ORG
-Academy SchoolName E-ORG
+Queen SchoolName O
+Elizabeth SchoolName O
+Academy SchoolName O
 5 Suite O
 None POBox O
 1020 StreetAddress B-ADDRESS
@@ -1256,7 +1256,7 @@ L5J2P7 PostalCode S-ADDRESS
 276 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5556 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1288,10 +1288,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Queen SchoolName B-ORG
-'s SchoolName I-ORG
-Academic SchoolName I-ORG
-School SchoolName E-ORG
+Queen SchoolName O
+'s SchoolName O
+Academic SchoolName O
+School SchoolName O
 307 Suite O
 None POBox O
 201 StreetAddress B-ADDRESS
@@ -1306,7 +1306,7 @@ M2J4G8 PostalCode S-ADDRESS
 560 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6469 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1340,9 +1340,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Queen SchoolName B-ORG
-'s SchoolName I-ORG
-Collegiate SchoolName E-ORG
+Queen SchoolName O
+'s SchoolName O
+Collegiate SchoolName O
 214 Suite O
 None POBox O
 5535 StreetAddress B-ADDRESS
@@ -1401,12 +1401,12 @@ Schools AssociationMembership O
 - AssociationMembership O
 082310B AssociationMembership O
 
-Queen SchoolName B-ORG
-'s SchoolName I-ORG
-Elite SchoolName I-ORG
-Academy SchoolName I-ORG
-of SchoolName I-ORG
-Canada SchoolName E-ORG
+Queen SchoolName O
+'s SchoolName O
+Elite SchoolName O
+Academy SchoolName O
+of SchoolName O
+Canada SchoolName O
 102 Suite O
 - Suite O
 3 Suite O
@@ -1423,7 +1423,7 @@ M2H3B2 PostalCode S-ADDRESS
 886 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7617 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1455,10 +1455,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Quinte SchoolName B-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Quinte SchoolName O
+Christian SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 138 StreetAddress B-ADDRESS
@@ -1511,11 +1511,11 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Quintilian SchoolName B-ORG
-Private SchoolName I-ORG
-School SchoolName I-ORG
-of SchoolName I-ORG
-Kingston SchoolName E-ORG
+Quintilian SchoolName O
+Private SchoolName O
+School SchoolName O
+of SchoolName O
+Kingston SchoolName O
 None Suite O
 None POBox O
 41 StreetAddress B-ADDRESS
@@ -1529,7 +1529,7 @@ K7M2J9 PostalCode S-ADDRESS
 542 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0400 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -1548,8 +1548,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rahmah SchoolName B-ORG
-Academy SchoolName E-ORG
+Rahmah SchoolName O
+Academy SchoolName O
 106 Suite O
 None POBox O
 235 StreetAddress B-ADDRESS
@@ -1588,10 +1588,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Red SchoolName B-ORG
-Hill SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Red SchoolName O
+Hill SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 4107 StreetAddress B-ADDRESS
@@ -1603,8 +1603,8 @@ Road StreetAddress I-ADDRESS
 Wallenstein City O
 Ontario Province O
 N0B2S0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -1628,10 +1628,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Redeemer SchoolName B-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Redeemer SchoolName O
+Christian SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 82 StreetAddress B-ADDRESS
@@ -1682,9 +1682,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Rehoboth SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Rehoboth SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 Box POBox O
 220 POBox O
@@ -1733,9 +1733,9 @@ Chr AssociationMembership O
 S AssociationMembership O
 Society AssociationMembership O
 
-Rehoboth SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Rehoboth SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 P.O. POBox O
 Box POBox O
@@ -1788,9 +1788,9 @@ Christian AssociationMembership O
 School AssociationMembership O
 Society AssociationMembership O
 
-Resurrection SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Resurrection SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 400 StreetAddress B-ADDRESS
@@ -1805,7 +1805,7 @@ N1E1N9 PostalCode S-ADDRESS
 836 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5395 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1829,8 +1829,8 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Revel SchoolName B-ORG
-Academy SchoolName E-ORG
+Revel SchoolName O
+Academy SchoolName O
 200 Suite O
 None POBox O
 1550 StreetAddress B-ADDRESS
@@ -1844,7 +1844,7 @@ K1Z7T2 PostalCode S-ADDRESS
 700 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2132 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -1865,9 +1865,9 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rhema SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Rhema SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 29 StreetAddress B-ADDRESS
@@ -1908,8 +1908,8 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Richland SchoolName B-ORG
-Academy SchoolName E-ORG
+Richland SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 11570 StreetAddress B-ADDRESS
@@ -1924,7 +1924,7 @@ L4E3N7 PostalCode S-ADDRESS
 224 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5600 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1948,8 +1948,8 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Richmond SchoolName B-ORG
-Academy SchoolName E-ORG
+Richmond SchoolName O
+Academy SchoolName O
 207 Suite O
 None POBox O
 4 StreetAddress B-ADDRESS
@@ -1963,7 +1963,7 @@ M2J4P8 PostalCode S-ADDRESS
 335 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1250 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -1995,10 +1995,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Richmond SchoolName B-ORG
-Hill SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Richmond SchoolName O
+Hill SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 9711 StreetAddress B-ADDRESS
@@ -2038,10 +2038,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Richmond SchoolName B-ORG
-Hill SchoolName I-ORG
-Learning SchoolName I-ORG
-Centre SchoolName E-ORG
+Richmond SchoolName O
+Hill SchoolName O
+Learning SchoolName O
+Centre SchoolName O
 307 Suite O
 None POBox O
 9555 StreetAddress B-ADDRESS
@@ -2090,11 +2090,11 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Richmond SchoolName B-ORG
-Hill SchoolName I-ORG
-Montessori SchoolName I-ORG
-Elementary SchoolName I-ORG
-Scho SchoolName E-ORG
+Richmond SchoolName O
+Hill SchoolName O
+Montessori SchoolName O
+Elementary SchoolName O
+Scho SchoolName O
 None Suite O
 None POBox O
 189 StreetAddress B-ADDRESS
@@ -2132,8 +2132,8 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Ridley SchoolName B-ORG
-College SchoolName E-ORG
+Ridley SchoolName O
+College SchoolName O
 None Suite O
 Box POBox O
 3013 POBox O
@@ -2190,8 +2190,8 @@ Accredited AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Riverbend SchoolName B-ORG
-Academy SchoolName E-ORG
+Riverbend SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 2436 StreetAddress B-ADDRESS
@@ -2228,9 +2228,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Riverforest SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Riverforest SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1595 StreetAddress B-ADDRESS
@@ -2268,10 +2268,10 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-Riverside SchoolName B-ORG
-Christian SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Riverside SchoolName O
+Christian SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3 StreetAddress B-ADDRESS
@@ -2285,7 +2285,7 @@ N0A1R0 PostalCode S-ADDRESS
 523 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0999 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -2303,9 +2303,9 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-Riverside SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Riverside SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 401 StreetAddress B-ADDRESS
@@ -2315,8 +2315,8 @@ Rd StreetAddress I-ADDRESS
 Beachburg City O
 Ontario Province O
 K0J1C0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -2340,9 +2340,9 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Riyadh SchoolName B-ORG
-Alsalehin SchoolName I-ORG
-School SchoolName E-ORG
+Riyadh SchoolName O
+Alsalehin SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1324 StreetAddress B-ADDRESS
@@ -2391,9 +2391,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Robbins SchoolName B-ORG
-Hebrew SchoolName I-ORG
-Academy SchoolName E-ORG
+Robbins SchoolName O
+Hebrew SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 1700 StreetAddress B-ADDRESS
@@ -2434,9 +2434,9 @@ Accredited AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Robert SchoolName B-ORG
-Land SchoolName I-ORG
-Academy SchoolName E-ORG
+Robert SchoolName O
+Land SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 6727 StreetAddress B-ADDRESS
@@ -2494,9 +2494,9 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rock SchoolName B-ORG
-Community SchoolName I-ORG
-Christian SchoolName E-ORG
+Rock SchoolName O
+Community SchoolName O
+Christian SchoolName O
 None Suite O
 None POBox O
 249 StreetAddress B-ADDRESS
@@ -2539,11 +2539,11 @@ Schools AssociationMembership O
 International AssociationMembership O
 East AssociationMembership O
 
-Rock SchoolName B-ORG
-of SchoolName I-ORG
-Help SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Rock SchoolName O
+of SchoolName O
+Help SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 43 StreetAddress B-ADDRESS
@@ -2581,10 +2581,10 @@ Christian AssociationMembership O
 Education AssociationMembership O
 Association AssociationMembership O
 
-Rockway SchoolName B-ORG
-Mennonite SchoolName I-ORG
-Collegiate SchoolName I-ORG
-Inc SchoolName E-ORG
+Rockway SchoolName O
+Mennonite SchoolName O
+Collegiate SchoolName O
+Inc SchoolName O
 None Suite O
 None POBox O
 110 StreetAddress B-ADDRESS
@@ -2636,9 +2636,9 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Rocky SchoolName B-ORG
-Ridge SchoolName I-ORG
-Parochial SchoolName E-ORG
+Rocky SchoolName O
+Ridge SchoolName O
+Parochial SchoolName O
 None Suite O
 None POBox O
 580 StreetAddress B-ADDRESS
@@ -2649,8 +2649,8 @@ Bruce City O
 Mines City O
 Ontario Province O
 P0R1C0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Sudbury Region O
 - Region O
 North Region O
@@ -2672,9 +2672,9 @@ curriculum ProgramType O
 Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 
-Roger SchoolName B-ORG
-White SchoolName I-ORG
-Academy SchoolName E-ORG
+Roger SchoolName O
+White SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 415 StreetAddress B-ADDRESS
@@ -2689,7 +2689,7 @@ L3Y3Z5 PostalCode S-ADDRESS
 231 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8564 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -2704,11 +2704,11 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Ronald SchoolName B-ORG
-McDonald SchoolName I-ORG
-House SchoolName I-ORG
-Charities SchoolName I-ORG
-Toronto SchoolName E-ORG
+Ronald SchoolName O
+McDonald SchoolName O
+House SchoolName O
+Charities SchoolName O
+Toronto SchoolName O
 None Suite O
 None POBox O
 240 StreetAddress B-ADDRESS
@@ -2750,8 +2750,8 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rosedale SchoolName B-ORG
-Academy SchoolName E-ORG
+Rosedale SchoolName O
+Academy SchoolName O
 800 Suite O
 None POBox O
 7030 StreetAddress B-ADDRESS
@@ -2765,7 +2765,7 @@ L3R6G2 PostalCode S-ADDRESS
 604 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7533 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -2793,11 +2793,11 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rosedale SchoolName B-ORG
-Day SchoolName I-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+Rosedale SchoolName O
+Day SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
 Suite Suite O
 426 Suite O
 None POBox O
@@ -2841,11 +2841,11 @@ Accredited AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Rosseau SchoolName B-ORG
-Lake SchoolName I-ORG
-College SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Rosseau SchoolName O
+Lake SchoolName O
+College SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 Hwy StreetAddress B-ADDRESS
@@ -2899,8 +2899,8 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Rotherglen SchoolName B-ORG
-School SchoolName E-ORG
+Rotherglen SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3553 StreetAddress B-ADDRESS
@@ -2936,11 +2936,11 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rotherglen SchoolName B-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Oakville SchoolName I-ORG
-Elementary SchoolName E-ORG
+Rotherglen SchoolName O
+School SchoolName O
+- SchoolName O
+Oakville SchoolName O
+Elementary SchoolName O
 None Suite O
 None POBox O
 2050 StreetAddress B-ADDRESS
@@ -2993,10 +2993,10 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rouge SchoolName B-ORG
-Valley SchoolName I-ORG
-Education SchoolName I-ORG
-Center SchoolName E-ORG
+Rouge SchoolName O
+Valley SchoolName O
+Education SchoolName O
+Center SchoolName O
 None Suite O
 None POBox O
 3351 StreetAddress B-ADDRESS
@@ -3046,9 +3046,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Rowntree SchoolName B-ORG
-Montessori SchoolName I-ORG
-Schools SchoolName E-ORG
+Rowntree SchoolName O
+Montessori SchoolName O
+Schools SchoolName O
 None Suite O
 None POBox O
 3 StreetAddress B-ADDRESS
@@ -3092,10 +3092,10 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Royal SchoolName B-ORG
-City SchoolName I-ORG
-Baptist SchoolName I-ORG
-Academy SchoolName E-ORG
+Royal SchoolName O
+City SchoolName O
+Baptist SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 100 StreetAddress B-ADDRESS
@@ -3109,7 +3109,7 @@ N1H6C5 PostalCode S-ADDRESS
 823 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5099 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -3132,10 +3132,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Royal SchoolName B-ORG
-Crown SchoolName I-ORG
-Academic SchoolName I-ORG
-School SchoolName E-ORG
+Royal SchoolName O
+Crown SchoolName O
+Academic SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3080 StreetAddress B-ADDRESS
@@ -3186,10 +3186,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Royal SchoolName B-ORG
-Elite SchoolName I-ORG
-International SchoolName I-ORG
-Academy SchoolName E-ORG
+Royal SchoolName O
+Elite SchoolName O
+International SchoolName O
+Academy SchoolName O
 100 Suite O
 None POBox O
 1875 StreetAddress B-ADDRESS
@@ -3244,11 +3244,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Royal SchoolName B-ORG
-Imperial SchoolName I-ORG
-Collegiate SchoolName I-ORG
-of SchoolName I-ORG
-Canada SchoolName E-ORG
+Royal SchoolName O
+Imperial SchoolName O
+Collegiate SchoolName O
+of SchoolName O
+Canada SchoolName O
 None Suite O
 None POBox O
 10 StreetAddress B-ADDRESS
@@ -3297,10 +3297,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Royal SchoolName B-ORG
-Oak SchoolName I-ORG
-Community SchoolName I-ORG
-School SchoolName E-ORG
+Royal SchoolName O
+Oak SchoolName O
+Community SchoolName O
+School SchoolName O
 None Suite O
 419 POBox O
 176 StreetAddress B-ADDRESS
@@ -3320,7 +3320,7 @@ L0S1J0 PostalCode S-ADDRESS
 328 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9592 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -3339,11 +3339,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Royal SchoolName B-ORG
-St SchoolName I-ORG
-George SchoolName I-ORG
-'s SchoolName I-ORG
-College SchoolName E-ORG
+Royal SchoolName O
+St SchoolName O
+George SchoolName O
+'s SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 120 StreetAddress B-ADDRESS
@@ -3406,8 +3406,8 @@ Ontario AssociationMembership O
 / AssociationMembership O
 CAIS AssociationMembership O
 
-RoyalCrest SchoolName B-ORG
-Academy SchoolName E-ORG
+RoyalCrest SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 9500 StreetAddress B-ADDRESS
@@ -3455,11 +3455,11 @@ based ProgramType O
 curriculum ProgramType O
 IPSF AssociationMembership O
 
-Rutherford SchoolName B-ORG
-Private SchoolName I-ORG
-School SchoolName I-ORG
-and SchoolName I-ORG
-Daycare SchoolName E-ORG
+Rutherford SchoolName O
+Private SchoolName O
+School SchoolName O
+and SchoolName O
+Daycare SchoolName O
 None Suite O
 None POBox O
 37 StreetAddress B-ADDRESS
@@ -3510,12 +3510,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-RWS SchoolName B-ORG
-, SchoolName I-ORG
-Richmond SchoolName I-ORG
-Hill SchoolName I-ORG
-World SchoolName I-ORG
-School SchoolName E-ORG
+RWS SchoolName O
+, SchoolName O
+Richmond SchoolName O
+Hill SchoolName O
+World SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 10087 StreetAddress B-ADDRESS
@@ -3564,9 +3564,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Saba SchoolName B-ORG
-'s SchoolName I-ORG
-Academy SchoolName E-ORG
+Saba SchoolName O
+'s SchoolName O
+Academy SchoolName O
 27 Suite O
 None POBox O
 1675 StreetAddress B-ADDRESS
@@ -3581,7 +3581,7 @@ L5M5Y7 PostalCode S-ADDRESS
 272 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1745 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -3610,11 +3610,11 @@ Centre ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Safa SchoolName B-ORG
-& SchoolName I-ORG
-Marwa SchoolName I-ORG
-Islamic SchoolName I-ORG
-School SchoolName E-ORG
+Safa SchoolName O
+& SchoolName O
+Marwa SchoolName O
+Islamic SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 5550 StreetAddress B-ADDRESS
@@ -3655,11 +3655,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Safa SchoolName B-ORG
-& SchoolName I-ORG
-Marwa SchoolName I-ORG
-Islamic SchoolName I-ORG
-School SchoolName E-ORG
+Safa SchoolName O
+& SchoolName O
+Marwa SchoolName O
+Islamic SchoolName O
+School SchoolName O
 A Suite O
 - Suite O
 B Suite O
@@ -3711,8 +3711,8 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sakatcheway SchoolName B-ORG
-Anishinabe SchoolName E-ORG
+Sakatcheway SchoolName O
+Anishinabe SchoolName O
 None Suite O
 None POBox O
 1 StreetAddress B-ADDRESS
@@ -3763,9 +3763,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Salaheddin SchoolName B-ORG
-Islamic SchoolName I-ORG
-School SchoolName E-ORG
+Salaheddin SchoolName O
+Islamic SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 741 StreetAddress B-ADDRESS
@@ -3816,10 +3816,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Salem SchoolName B-ORG
-Valley SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Salem SchoolName O
+Valley SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 42609 StreetAddress B-ADDRESS
@@ -3829,7 +3829,7 @@ Road StreetAddress I-ADDRESS
 Wingham City O
 Ontario Province O
 N0G2W0 PostalCode S-ADDRESS
-None TelephoneNumber O
+None TelephoneNumber S-PHONE
 519 Fax B-PHONE
 - Fax I-PHONE
 335 Fax I-PHONE
@@ -3854,8 +3854,8 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Salvador SchoolName B-ORG
-Academy SchoolName E-ORG
+Salvador SchoolName O
+Academy SchoolName O
 3 Suite O
 None POBox O
 3181 StreetAddress B-ADDRESS
@@ -3868,7 +3868,7 @@ N8X4G1 PostalCode S-ADDRESS
 972 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1233 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -3897,10 +3897,10 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sandy SchoolName B-ORG
-Lake SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Sandy SchoolName O
+Lake SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 RR1 StreetAddress B-ADDRESS
@@ -3915,7 +3915,7 @@ P0X1C0 PostalCode S-ADDRESS
 407 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8070 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Thunder Region O
 Bay Region O
 Regional Region O
@@ -3941,9 +3941,9 @@ in AssociationMembership O
 Christ AssociationMembership O
 Mennonite AssociationMembership O
 
-Sarnia SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Sarnia SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1273 StreetAddress B-ADDRESS
@@ -3983,9 +3983,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Sarnia SchoolName B-ORG
-Islamic SchoolName I-ORG
-Academy SchoolName E-ORG
+Sarnia SchoolName O
+Islamic SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 1609 StreetAddress B-ADDRESS
@@ -4023,13 +4023,13 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sathya SchoolName B-ORG
-Sai SchoolName I-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-Toronto SchoolName I-ORG
-, SchoolName I-ORG
-Canada SchoolName E-ORG
+Sathya SchoolName O
+Sai SchoolName O
+School SchoolName O
+, SchoolName O
+Toronto SchoolName O
+, SchoolName O
+Canada SchoolName O
 None Suite O
 None POBox O
 451 StreetAddress B-ADDRESS
@@ -4068,10 +4068,10 @@ in AssociationMembership O
 Human AssociationMembership O
 Values AssociationMembership O
 
-Saugeen SchoolName B-ORG
-Pines SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Saugeen SchoolName O
+Pines SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 042100 StreetAddress B-ADDRESS
@@ -4082,8 +4082,8 @@ Mount City O
 Forest City O
 Ontario Province O
 N0G2L0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -4107,10 +4107,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Saugeen SchoolName B-ORG
-Riverside SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Saugeen SchoolName O
+Riverside SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 044432 StreetAddress B-ADDRESS
@@ -4127,7 +4127,7 @@ N0G2L0 PostalCode S-ADDRESS
 323 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 4261 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -4151,11 +4151,11 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Scholars SchoolName B-ORG
-' SchoolName I-ORG
-Hall SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Scholars SchoolName O
+' SchoolName O
+Hall SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 888 StreetAddress B-ADDRESS
@@ -4211,9 +4211,9 @@ University AssociationMembership O
 Preparatory AssociationMembership O
 Schools AssociationMembership O
 
-Scriven SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Scriven SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 184 StreetAddress B-ADDRESS
@@ -4258,9 +4258,9 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Seerah SchoolName B-ORG
-Mission SchoolName I-ORG
-School SchoolName E-ORG
+Seerah SchoolName O
+Mission SchoolName O
+School SchoolName O
 3 Suite O
 None POBox O
 43 StreetAddress B-ADDRESS
@@ -4274,7 +4274,7 @@ M3A1B2 PostalCode S-ADDRESS
 285 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5999 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -4295,10 +4295,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Seneca SchoolName B-ORG
-Hill SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Seneca SchoolName O
+Hill SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 33 StreetAddress B-ADDRESS
@@ -4313,7 +4313,7 @@ M3C2C3 PostalCode S-ADDRESS
 499 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8790 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -4353,10 +4353,10 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-Seven SchoolName B-ORG
-Generations SchoolName I-ORG
-Secondary SchoolName I-ORG
-School SchoolName E-ORG
+Seven SchoolName O
+Generations SchoolName O
+Secondary SchoolName O
+School SchoolName O
 None Suite O
 Box POBox O
 297 POBox O
@@ -4403,8 +4403,8 @@ Nation ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sevenoaks SchoolName B-ORG
-Academy SchoolName E-ORG
+Sevenoaks SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 190 StreetAddress B-ADDRESS
@@ -4418,7 +4418,7 @@ L4M4H5 PostalCode S-ADDRESS
 722 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0397 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -4437,9 +4437,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sharp SchoolName B-ORG
-Minds SchoolName I-ORG
-Academy SchoolName E-ORG
+Sharp SchoolName O
+Minds SchoolName O
+Academy SchoolName O
 Unit Suite O
 C6 Suite O
 None POBox O
@@ -4454,7 +4454,7 @@ L1X2R2 PostalCode S-ADDRESS
 239 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3400 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -4484,9 +4484,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sharpminds SchoolName B-ORG
-Tutoring SchoolName I-ORG
-Inc. SchoolName E-ORG
+Sharpminds SchoolName O
+Tutoring SchoolName O
+Inc. SchoolName O
 308 Suite O
 None POBox O
 137 StreetAddress B-ADDRESS
@@ -4501,7 +4501,7 @@ L3P1Y2 PostalCode S-ADDRESS
 471 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7333 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -4536,9 +4536,9 @@ Based ProgramType O
 Learning AssociationMembership O
 Centres AssociationMembership O
 
-Shekinah SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Shekinah SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 410 StreetAddress B-ADDRESS
@@ -4553,7 +4553,7 @@ N0G2J0 PostalCode S-ADDRESS
 291 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0441 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -4574,9 +4574,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sherwood SchoolName B-ORG
-Heights SchoolName I-ORG
-School SchoolName E-ORG
+Sherwood SchoolName O
+Heights SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3650 StreetAddress B-ADDRESS
@@ -4630,11 +4630,11 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-Sherwood SchoolName B-ORG
-Heights SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Mississauga SchoolName E-ORG
+Sherwood SchoolName O
+Heights SchoolName O
+School SchoolName O
+- SchoolName O
+Mississauga SchoolName O
 None Suite O
 None POBox O
 5870 StreetAddress B-ADDRESS
@@ -4688,9 +4688,9 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-Shiloh SchoolName B-ORG
-Christian SchoolName I-ORG
-Institute SchoolName E-ORG
+Shiloh SchoolName O
+Christian SchoolName O
+Institute SchoolName O
 None Suite O
 None POBox O
 4316 StreetAddress B-ADDRESS
@@ -4741,9 +4741,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Shiloh SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Shiloh SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 47334 StreetAddress B-ADDRESS
@@ -4759,7 +4759,7 @@ N5P3S7 PostalCode S-ADDRESS
 980 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6672 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -4780,11 +4780,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Shmuel SchoolName B-ORG
-Zahavy SchoolName I-ORG
-Cheder SchoolName I-ORG
-Chabad SchoolName I-ORG
-School SchoolName E-ORG
+Shmuel SchoolName O
+Zahavy SchoolName O
+Cheder SchoolName O
+Chabad SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 148 StreetAddress B-ADDRESS
@@ -4827,8 +4827,8 @@ of AssociationMembership O
 Jewish AssociationMembership O
 Education AssociationMembership O
 
-Shoore SchoolName B-ORG
-Academics SchoolName E-ORG
+Shoore SchoolName O
+Academics SchoolName O
 Suite Suite O
 201 Suite O
 None POBox O
@@ -4878,12 +4878,12 @@ Special ProgramType O
 Needs ProgramType O
 LDAO AssociationMembership O
 
-Sidney SchoolName B-ORG
-Ledson SchoolName I-ORG
-Institute SchoolName I-ORG
-- SchoolName I-ORG
-North SchoolName I-ORG
-York SchoolName E-ORG
+Sidney SchoolName O
+Ledson SchoolName O
+Institute SchoolName O
+- SchoolName O
+North SchoolName O
+York SchoolName O
 107 Suite O
 None POBox O
 220 StreetAddress B-ADDRESS
@@ -4924,10 +4924,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Signet SchoolName B-ORG
-Christian SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Signet SchoolName O
+Christian SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 675 StreetAddress B-ADDRESS
@@ -4979,10 +4979,10 @@ based ProgramType O
 curriculum ProgramType O
 ACSI AssociationMembership O
 
-Silver SchoolName B-ORG
-Lake SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Silver SchoolName O
+Lake SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 708 StreetAddress B-ADDRESS
@@ -4993,8 +4993,8 @@ Avenue StreetAddress I-ADDRESS
 Holyrood City O
 Ontario Province O
 N0G2B0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -5014,8 +5014,8 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Simcoe SchoolName B-ORG
-Academy SchoolName E-ORG
+Simcoe SchoolName O
+Academy SchoolName O
 200 Suite O
 K Suite O
 None POBox O
@@ -5030,7 +5030,7 @@ L5B3Z6 PostalCode S-ADDRESS
 467 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6353 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -5065,11 +5065,11 @@ Site ProgramType O
 Based ProgramType O
 OFIS AssociationMembership O
 
-Simon SchoolName B-ORG
-Jacob SchoolName I-ORG
-Memorial SchoolName I-ORG
-Education SchoolName I-ORG
-Centre SchoolName E-ORG
+Simon SchoolName O
+Jacob SchoolName O
+Memorial SchoolName O
+Education SchoolName O
+Centre SchoolName O
 None Suite O
 240 POBox O
 240 StreetAddress B-ADDRESS
@@ -5116,10 +5116,10 @@ Nation ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-SIMRA SchoolName B-ORG
-Academy SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+SIMRA SchoolName O
+Academy SchoolName O
+Private SchoolName O
+School SchoolName O
 209 Suite O
 None POBox O
 2929 StreetAddress B-ADDRESS
@@ -5134,7 +5134,7 @@ M1P2S8 PostalCode S-ADDRESS
 889 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 4356 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -5166,11 +5166,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sir SchoolName B-ORG
-Frederick SchoolName I-ORG
-Banting SchoolName I-ORG
-International SchoolName I-ORG
-Scho SchoolName E-ORG
+Sir SchoolName O
+Frederick SchoolName O
+Banting SchoolName O
+International SchoolName O
+Scho SchoolName O
 None Suite O
 None POBox O
 21 StreetAddress B-ADDRESS
@@ -5184,7 +5184,7 @@ L6T4V7 PostalCode S-ADDRESS
 407 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6600 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -5219,9 +5219,9 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-Smithside SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Smithside SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3621 StreetAddress B-ADDRESS
@@ -5232,8 +5232,8 @@ St. City O
 Clements City O
 Ontario Province O
 N0B2M0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5257,11 +5257,11 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Smithville SchoolName B-ORG
-District SchoolName I-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-Schoo SchoolName E-ORG
+Smithville SchoolName O
+District SchoolName O
+Christian SchoolName O
+High SchoolName O
+Schoo SchoolName O
 None Suite O
 None POBox O
 6488 StreetAddress B-ADDRESS
@@ -5311,9 +5311,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-SNP SchoolName B-ORG
-STEAM SchoolName I-ORG
-Academy SchoolName E-ORG
+SNP SchoolName O
+STEAM SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 411 StreetAddress B-ADDRESS
@@ -5357,7 +5357,7 @@ Aboriginal AssociationMembership O
 Institutes AssociationMembership O
 Consortium AssociationMembership O
 
-Socrates SchoolName S-ORG
+Socrates SchoolName O
 None Suite O
 None POBox O
 1 StreetAddress B-ADDRESS
@@ -5371,7 +5371,7 @@ M4K1M8 PostalCode S-ADDRESS
 425 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2485 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -5398,8 +5398,8 @@ None ProgramType O
 Greek AssociationMembership O
 Community AssociationMembership O
 
-Somerset SchoolName B-ORG
-Academy SchoolName E-ORG
+Somerset SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 7700 StreetAddress B-ADDRESS
@@ -5436,9 +5436,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Songbirds SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Songbirds SchoolName O
+Montessori SchoolName O
+School SchoolName O
 11 Suite O
 None POBox O
 2 StreetAddress B-ADDRESS
@@ -5473,9 +5473,9 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sonrise SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Sonrise SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 58 StreetAddress B-ADDRESS
@@ -5489,7 +5489,7 @@ K0K2T0 PostalCode S-ADDRESS
 476 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7883 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -5511,9 +5511,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Soul SchoolName B-ORG
-Studio SchoolName I-ORG
-Annex SchoolName E-ORG
+Soul SchoolName O
+Studio SchoolName O
+Annex SchoolName O
 None Suite O
 None POBox O
 19 StreetAddress B-ADDRESS
@@ -5555,10 +5555,10 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-South SchoolName B-ORG
-Belmore SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+South SchoolName O
+Belmore SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 42634 StreetAddress B-ADDRESS
@@ -5568,8 +5568,8 @@ Road StreetAddress I-ADDRESS
 Wingham City O
 Ontario Province O
 N0G2W0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5589,10 +5589,10 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-South SchoolName B-ORG
-Bend SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+South SchoolName O
+Bend SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 391486 StreetAddress B-ADDRESS
@@ -5604,8 +5604,8 @@ Mount City O
 Forest City O
 Ontario Province O
 N0G2L0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -5629,10 +5629,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-South SchoolName B-ORG
-Heidelberg SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+South SchoolName O
+Heidelberg SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 2568 StreetAddress B-ADDRESS
@@ -5643,8 +5643,8 @@ St. City O
 Clements City O
 Ontario Province O
 N0B2M0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5668,10 +5668,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-South SchoolName B-ORG
-Point SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+South SchoolName O
+Point SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1947 StreetAddress B-ADDRESS
@@ -5712,10 +5712,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-South SchoolName B-ORG
-Shore SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+South SchoolName O
+Shore SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 475 StreetAddress B-ADDRESS
@@ -5730,7 +5730,7 @@ N8H3V4 PostalCode S-ADDRESS
 819 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2202 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5752,9 +5752,9 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Southern SchoolName B-ORG
-Ontario SchoolName I-ORG
-Collegiate SchoolName E-ORG
+Southern SchoolName O
+Ontario SchoolName O
+Collegiate SchoolName O
 None Suite O
 None POBox O
 28 StreetAddress B-ADDRESS
@@ -5800,10 +5800,10 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Spruce SchoolName B-ORG
-Ridge SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Spruce SchoolName O
+Ridge SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1408 StreetAddress B-ADDRESS
@@ -5814,8 +5814,8 @@ West City O
 Montrose City O
 Ontario Province O
 N0B2V0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5839,10 +5839,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Spruce SchoolName B-ORG
-Vale SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Spruce SchoolName O
+Vale SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 8276 StreetAddress B-ADDRESS
@@ -5857,7 +5857,7 @@ N0G2K0 PostalCode S-ADDRESS
 638 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3224 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -5881,10 +5881,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-St SchoolName B-ORG
-Andrew SchoolName I-ORG
-'s SchoolName I-ORG
-College SchoolName E-ORG
+St SchoolName O
+Andrew SchoolName O
+'s SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 15800 StreetAddress B-ADDRESS
@@ -5937,10 +5937,10 @@ Independent AssociationMembership O
 Schools AssociationMembership O
 Ontario AssociationMembership O
 
-St SchoolName B-ORG
-Clement SchoolName I-ORG
-'s SchoolName I-ORG
-School SchoolName E-ORG
+St SchoolName O
+Clement SchoolName O
+'s SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 21 StreetAddress B-ADDRESS
@@ -5995,9 +5995,9 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-St SchoolName B-ORG
-George SchoolName I-ORG
-Academy SchoolName E-ORG
+St SchoolName O
+George SchoolName O
+Academy SchoolName O
 3rd Suite O
 Floor Suite O
 , Suite O
@@ -6052,11 +6052,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St SchoolName B-ORG
-John's SchoolName I-ORG
-- SchoolName I-ORG
-Kilmarnock SchoolName I-ORG
-School SchoolName E-ORG
+St SchoolName O
+John's SchoolName O
+- SchoolName O
+Kilmarnock SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 2201 StreetAddress B-ADDRESS
@@ -6108,11 +6108,11 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-St SchoolName B-ORG
-Michael SchoolName I-ORG
-'s SchoolName I-ORG
-College SchoolName I-ORG
-School SchoolName E-ORG
+St SchoolName O
+Michael SchoolName O
+'s SchoolName O
+College SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1515 StreetAddress B-ADDRESS
@@ -6172,11 +6172,11 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-St SchoolName B-ORG
-Mildred's SchoolName I-ORG
-- SchoolName I-ORG
-Lightbourn SchoolName I-ORG
-School SchoolName E-ORG
+St SchoolName O
+Mildred's SchoolName O
+- SchoolName O
+Lightbourn SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1080 StreetAddress B-ADDRESS
@@ -6230,11 +6230,11 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-St. SchoolName B-ORG
-Clement SchoolName I-ORG
-'s SchoolName I-ORG
-Early SchoolName I-ORG
-Learning SchoolName E-ORG
+St. SchoolName O
+Clement SchoolName O
+'s SchoolName O
+Early SchoolName O
+Learning SchoolName O
 None Suite O
 None POBox O
 70 StreetAddress B-ADDRESS
@@ -6276,11 +6276,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Helen SchoolName I-ORG
-'s SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+St. SchoolName O
+Helen SchoolName O
+'s SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 37337 StreetAddress B-ADDRESS
@@ -6290,8 +6290,8 @@ Road StreetAddress I-ADDRESS
 Lucknow City O
 Ontario Province O
 N0G2H0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -6310,10 +6310,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Jude SchoolName I-ORG
-'s SchoolName I-ORG
-Academy SchoolName E-ORG
+St. SchoolName O
+Jude SchoolName O
+'s SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 2150 StreetAddress B-ADDRESS
@@ -6364,11 +6364,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Jude SchoolName I-ORG
-'s SchoolName I-ORG
-School SchoolName I-ORG
-Inc SchoolName E-ORG
+St. SchoolName O
+Jude SchoolName O
+'s SchoolName O
+School SchoolName O
+Inc SchoolName O
 None Suite O
 None POBox O
 888 StreetAddress B-ADDRESS
@@ -6405,10 +6405,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Laurent SchoolName I-ORG
-Academy SchoolName I-ORG
-Inc SchoolName E-ORG
+St. SchoolName O
+Laurent SchoolName O
+Academy SchoolName O
+Inc SchoolName O
 None Suite O
 None POBox O
 641 StreetAddress B-ADDRESS
@@ -6457,11 +6457,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Lawrence SchoolName I-ORG
-Academy SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+St. SchoolName O
+Lawrence SchoolName O
+Academy SchoolName O
+, SchoolName O
+The SchoolName O
 None Suite O
 1673 POBox O
 560 StreetAddress B-ADDRESS
@@ -6499,12 +6499,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Peter SchoolName I-ORG
-'s SchoolName I-ORG
-A.C.H.S. SchoolName I-ORG
-College SchoolName I-ORG
-School SchoolName E-ORG
+St. SchoolName O
+Peter SchoolName O
+'s SchoolName O
+A.C.H.S. SchoolName O
+College SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 6101 StreetAddress B-ADDRESS
@@ -6543,11 +6543,11 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-St. SchoolName B-ORG
-Thomas SchoolName I-ORG
-Community SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+St. SchoolName O
+Thomas SchoolName O
+Community SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 77 StreetAddress B-ADDRESS
@@ -6588,12 +6588,12 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-St. SchoolName B-ORG
-Thomas SchoolName I-ORG
-of SchoolName I-ORG
-Villanova SchoolName I-ORG
-College SchoolName I-ORG
-School SchoolName E-ORG
+St. SchoolName O
+Thomas SchoolName O
+of SchoolName O
+Villanova SchoolName O
+College SchoolName O
+School SchoolName O
 None Suite O
 Box POBox O
 133 POBox O
@@ -6648,11 +6648,11 @@ Independent AssociationMembership O
 Schools AssociationMembership O
 Ontario AssociationMembership O
 
-St. SchoolName B-ORG
-Timothy SchoolName I-ORG
-'s SchoolName I-ORG
-Classical SchoolName I-ORG
-Academy SchoolName E-ORG
+St. SchoolName O
+Timothy SchoolName O
+'s SchoolName O
+Classical SchoolName O
+Academy SchoolName O
 Annex Suite O
 None POBox O
 1601 StreetAddress B-ADDRESS
@@ -6667,7 +6667,7 @@ K2B6B7 PostalCode S-ADDRESS
 794 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1750 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -6685,8 +6685,8 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Stanford SchoolName B-ORG
-Academy SchoolName E-ORG
+Stanford SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 146 StreetAddress B-ADDRESS
@@ -6734,8 +6734,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Star SchoolName B-ORG
-Academy SchoolName E-ORG
+Star SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 1587 StreetAddress B-ADDRESS
@@ -6749,7 +6749,7 @@ L5E2P8 PostalCode S-ADDRESS
 891 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1555 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -6776,11 +6776,11 @@ Schools AssociationMembership O
 OFIS AssociationMembership O
 ) AssociationMembership O
 
-Sterling SchoolName B-ORG
-Education SchoolName I-ORG
-- SchoolName I-ORG
-Rideau SchoolName I-ORG
-Lakes SchoolName E-ORG
+Sterling SchoolName O
+Education SchoolName O
+- SchoolName O
+Rideau SchoolName O
+Lakes SchoolName O
 None Suite O
 None POBox O
 64 StreetAddress B-ADDRESS
@@ -6821,12 +6821,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sterling SchoolName B-ORG
-Great SchoolName I-ORG
-Lakes SchoolName I-ORG
-- SchoolName I-ORG
-Mossley SchoolName I-ORG
-Campus SchoolName E-ORG
+Sterling SchoolName O
+Great SchoolName O
+Lakes SchoolName O
+- SchoolName O
+Mossley SchoolName O
+Campus SchoolName O
 None Suite O
 None POBox O
 4189 StreetAddress B-ADDRESS
@@ -6865,11 +6865,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sterling SchoolName B-ORG
-Hall SchoolName I-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+Sterling SchoolName O
+Hall SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
 None Suite O
 None POBox O
 99 StreetAddress B-ADDRESS
@@ -6914,12 +6914,12 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sterling SchoolName B-ORG
-North SchoolName I-ORG
-Campus SchoolName I-ORG
-- SchoolName I-ORG
-Hamilton SchoolName I-ORG
-Site SchoolName E-ORG
+Sterling SchoolName O
+North SchoolName O
+Campus SchoolName O
+- SchoolName O
+Hamilton SchoolName O
+Site SchoolName O
 5 Suite O
 None POBox O
 860 StreetAddress B-ADDRESS
@@ -6960,10 +6960,10 @@ curriculum ProgramType O
 Sterling AssociationMembership O
 Education AssociationMembership O
 
-Stirling SchoolName B-ORG
-Montessori SchoolName I-ORG
-Academy SchoolName I-ORG
-Inc SchoolName E-ORG
+Stirling SchoolName O
+Montessori SchoolName O
+Academy SchoolName O
+Inc SchoolName O
 None Suite O
 None POBox O
 123 StreetAddress B-ADDRESS
@@ -6978,7 +6978,7 @@ L9T1N4 PostalCode S-ADDRESS
 864 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6000 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7001,10 +7001,10 @@ Administrators AssociationMembership O
 CCMA AssociationMembership O
 ) AssociationMembership O
 
-Stone SchoolName B-ORG
-Haven SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Stone SchoolName O
+Haven SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 643 StreetAddress B-ADDRESS
@@ -7014,8 +7014,8 @@ Road StreetAddress I-ADDRESS
 Renfrew City O
 Ontario Province O
 K7V3Z5 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7037,9 +7037,9 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Stouffville SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Stouffville SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3885 StreetAddress B-ADDRESS
@@ -7082,10 +7082,10 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Strata SchoolName B-ORG
-Montessori SchoolName I-ORG
-Adolescent SchoolName I-ORG
-School SchoolName E-ORG
+Strata SchoolName O
+Montessori SchoolName O
+Adolescent SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 575 StreetAddress B-ADDRESS
@@ -7131,10 +7131,10 @@ OSSD OSSDCreditsOffered O
 Montessori ProgramType O
 Montessori AssociationMembership O
 
-Stratford SchoolName B-ORG
-District SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Stratford SchoolName O
+District SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 190 StreetAddress B-ADDRESS
@@ -7174,10 +7174,10 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Stratford SchoolName B-ORG
-Middle SchoolName I-ORG
-Years SchoolName I-ORG
-School SchoolName E-ORG
+Stratford SchoolName O
+Middle SchoolName O
+Years SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 35 StreetAddress B-ADDRESS
@@ -7191,7 +7191,7 @@ N5A5H6 PostalCode S-ADDRESS
 272 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7986 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -7212,9 +7212,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Strathroy SchoolName B-ORG
-Community SchoolName I-ORG
-Christian SchoolName E-ORG
+Strathroy SchoolName O
+Community SchoolName O
+Christian SchoolName O
 None Suite O
 None POBox O
 7880 StreetAddress B-ADDRESS
@@ -7250,10 +7250,10 @@ based ProgramType O
 curriculum ProgramType O
 OACS AssociationMembership O
 
-Streetsville SchoolName B-ORG
-Academy SchoolName I-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Streetsville SchoolName O
+Academy SchoolName O
+Elementary SchoolName O
+School SchoolName O
 52 Suite O
 None POBox O
 6535 StreetAddress B-ADDRESS
@@ -7292,9 +7292,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sudbury SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Sudbury SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 1101 StreetAddress B-ADDRESS
@@ -7341,10 +7341,10 @@ International AssociationMembership O
 ACSI AssociationMembership O
 ) AssociationMembership O
 
-Suffah SchoolName B-ORG
-Academy SchoolName I-ORG
-of SchoolName I-ORG
-Learning SchoolName E-ORG
+Suffah SchoolName O
+Academy SchoolName O
+of SchoolName O
+Learning SchoolName O
 201 Suite O
 None POBox O
 6610 StreetAddress B-ADDRESS
@@ -7359,7 +7359,7 @@ L5N2P1 PostalCode S-ADDRESS
 705 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5592 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7380,10 +7380,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Brantford SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Brantford SchoolName O
 214 Suite O
 None POBox O
 505 StreetAddress B-ADDRESS
@@ -7398,7 +7398,7 @@ N3R7K8 PostalCode S-ADDRESS
 756 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1489 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -7423,10 +7423,10 @@ Technical ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Cambridge SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Cambridge SchoolName O
 3 Suite O
 None POBox O
 1425 StreetAddress B-ADDRESS
@@ -7462,10 +7462,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Guelph SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Guelph SchoolName O
 b Suite O
 None POBox O
 400 StreetAddress B-ADDRESS
@@ -7519,10 +7519,10 @@ Technical ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Hamilton SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Hamilton SchoolName O
 222 Suite O
 None POBox O
 1119 StreetAddress B-ADDRESS
@@ -7537,7 +7537,7 @@ L8T1S2 PostalCode S-ADDRESS
 318 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7878 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7564,10 +7564,10 @@ Technical ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Kitchener SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Kitchener SchoolName O
 None Suite O
 None POBox O
 1500 StreetAddress B-ADDRESS
@@ -7607,10 +7607,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Milton SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Milton SchoolName O
 None Suite O
 None POBox O
 711 StreetAddress B-ADDRESS
@@ -7625,7 +7625,7 @@ L9T3Z3 PostalCode S-ADDRESS
 693 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1217 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7652,11 +7652,11 @@ Technical ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-St. SchoolName I-ORG
-Catharines SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+St. SchoolName O
+Catharines SchoolName O
 1 Suite O
 None POBox O
 20 StreetAddress B-ADDRESS
@@ -7671,7 +7671,7 @@ L2P1M3 PostalCode S-ADDRESS
 937 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9713 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -7692,10 +7692,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Summit SchoolName B-ORG
-College SchoolName I-ORG
-- SchoolName I-ORG
-Stratford SchoolName E-ORG
+Summit SchoolName O
+College SchoolName O
+- SchoolName O
+Stratford SchoolName O
 6 Suite O
 None POBox O
 1060 StreetAddress B-ADDRESS
@@ -7744,7 +7744,7 @@ Technical ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sunnybrook SchoolName S-ORG
+Sunnybrook SchoolName O
 None Suite O
 None POBox O
 469 StreetAddress B-ADDRESS
@@ -7779,9 +7779,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sunrise SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Sunrise SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 180 StreetAddress B-ADDRESS
@@ -7818,9 +7818,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Sunshine SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Sunshine SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 10 StreetAddress B-ADDRESS
@@ -7853,9 +7853,9 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-SuOn SchoolName B-ORG
-International SchoolName I-ORG
-Academy SchoolName E-ORG
+SuOn SchoolName O
+International SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 35 StreetAddress B-ADDRESS
@@ -7905,8 +7905,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-T.E.A.M. SchoolName B-ORG
-School SchoolName E-ORG
+T.E.A.M. SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 275 StreetAddress B-ADDRESS
@@ -7957,10 +7957,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Taddle SchoolName B-ORG
-Creek SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Taddle SchoolName O
+Creek SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 39 StreetAddress B-ADDRESS
@@ -7974,7 +7974,7 @@ M5R2S9 PostalCode S-ADDRESS
 413 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9493 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -7994,9 +7994,9 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-TAIE SchoolName B-ORG
-International SchoolName I-ORG
-Institute SchoolName E-ORG
+TAIE SchoolName O
+International SchoolName O
+Institute SchoolName O
 2nd Suite O
 Floor Suite O
 None POBox O
@@ -8046,8 +8046,8 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Talenta SchoolName B-ORG
-Academy SchoolName E-ORG
+Talenta SchoolName O
+Academy SchoolName O
 2 Suite O
 None POBox O
 2020 StreetAddress B-ADDRESS
@@ -8099,9 +8099,9 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Tall SchoolName B-ORG
-Pines SchoolName I-ORG
-School SchoolName E-ORG
+Tall SchoolName O
+Pines SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 8525 StreetAddress B-ADDRESS
@@ -8139,10 +8139,10 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-Tamarack SchoolName B-ORG
-West SchoolName I-ORG
-Outdoor SchoolName I-ORG
-School SchoolName E-ORG
+Tamarack SchoolName O
+West SchoolName O
+Outdoor SchoolName O
+School SchoolName O
 2 Suite O
 None POBox O
 2264 StreetAddress B-ADDRESS
@@ -8157,7 +8157,7 @@ M6S1N9 PostalCode S-ADDRESS
 606 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 4584 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -8178,9 +8178,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-TanenbaumCHAT SchoolName B-ORG
-Wallenberg SchoolName I-ORG
-Campus SchoolName E-ORG
+TanenbaumCHAT SchoolName O
+Wallenberg SchoolName O
+Campus SchoolName O
 None Suite O
 None POBox O
 200 StreetAddress B-ADDRESS
@@ -8229,9 +8229,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Tapply SchoolName B-ORG
-Binet SchoolName I-ORG
-College SchoolName E-ORG
+Tapply SchoolName O
+Binet SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 245 StreetAddress B-ADDRESS
@@ -8274,9 +8274,9 @@ OSSD OSSDCreditsOffered O
 None ProgramType O
 OFIS AssociationMembership O
 
-Tarbiyah SchoolName B-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Tarbiyah SchoolName O
+Elementary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 89 StreetAddress B-ADDRESS
@@ -8291,7 +8291,7 @@ L9T2T1 PostalCode S-ADDRESS
 473 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2072 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -8312,8 +8312,8 @@ curriculum ProgramType O
 Ummati AssociationMembership O
 Board AssociationMembership O
 
-Tarbiyah SchoolName B-ORG
-Learning SchoolName E-ORG
+Tarbiyah SchoolName O
+Learning SchoolName O
 None Suite O
 None POBox O
 572 StreetAddress B-ADDRESS
@@ -8327,7 +8327,7 @@ K2H6P6 PostalCode S-ADDRESS
 421 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1700 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -8349,8 +8349,8 @@ of AssociationMembership O
 Islamic AssociationMembership O
 Schools AssociationMembership O
 
-Tawingo SchoolName B-ORG
-College SchoolName E-ORG
+Tawingo SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 1844 StreetAddress B-ADDRESS
@@ -8387,10 +8387,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Tayyibah SchoolName B-ORG
-Islamic SchoolName I-ORG
-Academy SchoolName I-ORG
-Inc. SchoolName E-ORG
+Tayyibah SchoolName O
+Islamic SchoolName O
+Academy SchoolName O
+Inc. SchoolName O
 205 Suite O
 None POBox O
 100 StreetAddress B-ADDRESS
@@ -8440,12 +8440,12 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-TBMS SchoolName B-ORG
-- SchoolName I-ORG
-Canada SchoolName I-ORG
-'s SchoolName I-ORG
-International SchoolName I-ORG
-School SchoolName E-ORG
+TBMS SchoolName O
+- SchoolName O
+Canada SchoolName O
+'s SchoolName O
+International SchoolName O
+School SchoolName O
 410 Suite O
 None POBox O
 Goldhawk StreetAddress B-ADDRESS
@@ -8458,7 +8458,7 @@ M1V4E7 PostalCode S-ADDRESS
 551 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9188 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -8481,7 +8481,7 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-TFS SchoolName S-ORG
+TFS SchoolName O
 206 Suite O
 None POBox O
 5635 StreetAddress B-ADDRESS
@@ -8531,11 +8531,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Thaler SchoolName B-ORG
-'s SchoolName I-ORG
-Amish SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Thaler SchoolName O
+'s SchoolName O
+Amish SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 217 StreetAddress B-ADDRESS
@@ -8547,8 +8547,8 @@ East StreetAddress I-ADDRESS
 Chesley City O
 Ontario Province O
 N0G1L0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -8572,11 +8572,11 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-The SchoolName B-ORG
-Ambassadors SchoolName I-ORG
-of SchoolName I-ORG
-God SchoolName I-ORG
-Academy SchoolName E-ORG
+The SchoolName O
+Ambassadors SchoolName O
+of SchoolName O
+God SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 807 StreetAddress B-ADDRESS
@@ -8591,7 +8591,7 @@ M9M2L4 PostalCode S-ADDRESS
 827 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7570 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -8613,9 +8613,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Boundless SchoolName I-ORG
-School SchoolName E-ORG
+The SchoolName O
+Boundless SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 7513 StreetAddress B-ADDRESS
@@ -8666,10 +8666,10 @@ girls ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Country SchoolName I-ORG
-Day SchoolName I-ORG
-School SchoolName E-ORG
+The SchoolName O
+Country SchoolName O
+Day SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 13415 StreetAddress B-ADDRESS
@@ -8719,9 +8719,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Educators SchoolName I-ORG
-Academy SchoolName E-ORG
+The SchoolName O
+Educators SchoolName O
+Academy SchoolName O
 201 Suite O
 & Suite O
 202 Suite O
@@ -8777,8 +8777,8 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Element SchoolName E-ORG
+The SchoolName O
+Element SchoolName O
 201 Suite O
 None POBox O
 425 StreetAddress B-ADDRESS
@@ -8826,9 +8826,9 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-The SchoolName B-ORG
-Erindale SchoolName I-ORG
-Academy SchoolName E-ORG
+The SchoolName O
+Erindale SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 1576 StreetAddress B-ADDRESS
@@ -8843,7 +8843,7 @@ L5C1E5 PostalCode S-ADDRESS
 232 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1576 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -8875,9 +8875,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Laurel SchoolName I-ORG
-School SchoolName E-ORG
+The SchoolName O
+Laurel SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 44 StreetAddress B-ADDRESS
@@ -8916,11 +8916,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Lighthouse SchoolName I-ORG
-Learning SchoolName I-ORG
-and SchoolName I-ORG
-Development SchoolName E-ORG
+The SchoolName O
+Lighthouse SchoolName O
+Learning SchoolName O
+and SchoolName O
+Development SchoolName O
 None Suite O
 None POBox O
 219 StreetAddress B-ADDRESS
@@ -8969,9 +8969,9 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-London SchoolName I-ORG
-School SchoolName E-ORG
+The SchoolName O
+London SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 615 StreetAddress B-ADDRESS
@@ -8985,7 +8985,7 @@ N6A3R6 PostalCode S-ADDRESS
 601 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3838 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -9017,10 +9017,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Maples SchoolName I-ORG
-Independent SchoolName I-ORG
-Country SchoolName E-ORG
+The SchoolName O
+Maples SchoolName O
+Independent SchoolName O
+Country SchoolName O
 None Suite O
 None POBox O
 513047 StreetAddress B-ADDRESS
@@ -9058,13 +9058,13 @@ based ProgramType O
 curriculum ProgramType O
 IB AssociationMembership O
 
-The SchoolName B-ORG
-Orchard SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName I-ORG
-Ltd. SchoolName I-ORG
-( SchoolName I-ORG
-Elem SchoolName E-ORG
+The SchoolName O
+Orchard SchoolName O
+Montessori SchoolName O
+School SchoolName O
+Ltd. SchoolName O
+( SchoolName O
+Elem SchoolName O
 2nd Suite O
 Fl Suite O
 None POBox O
@@ -9104,9 +9104,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Study SchoolName I-ORG
-Academy SchoolName E-ORG
+The SchoolName O
+Study SchoolName O
+Academy SchoolName O
 300 Suite O
 None POBox O
 2040 StreetAddress B-ADDRESS
@@ -9120,7 +9120,7 @@ M4S1Z9 PostalCode S-ADDRESS
 929 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1630 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -9157,9 +9157,9 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-The SchoolName B-ORG
-Talent SchoolName I-ORG
-Academy SchoolName E-ORG
+The SchoolName O
+Talent SchoolName O
+Academy SchoolName O
 202 Suite O
 None POBox O
 8130 StreetAddress B-ADDRESS
@@ -9174,7 +9174,7 @@ M1B3W3 PostalCode S-ADDRESS
 748 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5154 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -9206,12 +9206,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-Toronto SchoolName I-ORG
-French SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Mississauga SchoolName E-ORG
+The SchoolName O
+Toronto SchoolName O
+French SchoolName O
+School SchoolName O
+- SchoolName O
+Mississauga SchoolName O
 None Suite O
 None POBox O
 1293 StreetAddress B-ADDRESS
@@ -9254,11 +9254,11 @@ Schools AssociationMembership O
 of AssociationMembership O
 Ontario AssociationMembership O
 
-The SchoolName B-ORG
-Wisdom SchoolName I-ORG
-House SchoolName I-ORG
-of SchoolName I-ORG
-Education SchoolName E-ORG
+The SchoolName O
+Wisdom SchoolName O
+House SchoolName O
+of SchoolName O
+Education SchoolName O
 07 Suite O
 None POBox O
 525 StreetAddress B-ADDRESS
@@ -9293,9 +9293,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-The SchoolName B-ORG
-York SchoolName I-ORG
-School SchoolName E-ORG
+The SchoolName O
+York SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1639 StreetAddress B-ADDRESS
@@ -9336,10 +9336,10 @@ Accredited AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Thinnox SchoolName B-ORG
-Academy SchoolName I-ORG
-- SchoolName I-ORG
-Lakeshore SchoolName E-ORG
+Thinnox SchoolName O
+Academy SchoolName O
+- SchoolName O
+Lakeshore SchoolName O
 None Suite O
 None POBox O
 755 StreetAddress B-ADDRESS
@@ -9354,7 +9354,7 @@ L5E1C6 PostalCode S-ADDRESS
 608 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8446 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -9386,10 +9386,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Thinnox SchoolName B-ORG
-Academy SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+Thinnox SchoolName O
+Academy SchoolName O
+, SchoolName O
+The SchoolName O
 4/5 Suite O
 None POBox O
 3120 StreetAddress B-ADDRESS
@@ -9436,15 +9436,15 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Thomas SchoolName B-ORG
-Fiddler SchoolName I-ORG
-Memorial SchoolName I-ORG
-Private SchoolName I-ORG
-High SchoolName I-ORG
-Sch SchoolName E-ORG
+Thomas SchoolName O
+Fiddler SchoolName O
+Memorial SchoolName O
+Private SchoolName O
+High SchoolName O
+Sch SchoolName O
 None Suite O
 8 POBox O
-None StreetAddress O
+None StreetAddress S-ADDRESS
 Sandy City O
 Lake City O
 Ontario Province O
@@ -9484,10 +9484,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Thornhill SchoolName B-ORG
-Amish SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Thornhill SchoolName O
+Amish SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 Side StreetAddress B-ADDRESS
@@ -9496,8 +9496,8 @@ Road StreetAddress I-ADDRESS
 Chesley City O
 Ontario Province O
 N0G1K0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -9518,8 +9518,8 @@ Centres AssociationMembership O
 No AssociationMembership O
 Association AssociationMembership O
 
-Thornton SchoolName B-ORG
-Academy SchoolName E-ORG
+Thornton SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 4073 StreetAddress B-ADDRESS
@@ -9569,12 +9569,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Three SchoolName B-ORG
-Bridges SchoolName I-ORG
-Old SchoolName I-ORG
-Colony SchoolName I-ORG
-Christian SchoolName I-ORG
-Schoo SchoolName E-ORG
+Three SchoolName O
+Bridges SchoolName O
+Old SchoolName O
+Colony SchoolName O
+Christian SchoolName O
+Schoo SchoolName O
 None Suite O
 None POBox O
 2043 StreetAddress B-ADDRESS
@@ -9586,7 +9586,7 @@ St. City O
 Jacobs City O
 Ontario Province O
 N0B2N0 PostalCode S-ADDRESS
-None TelephoneNumber O
+None TelephoneNumber S-PHONE
 519 Fax B-PHONE
 - Fax I-PHONE
 664 Fax I-PHONE
@@ -9610,11 +9610,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Three SchoolName B-ORG
-Fishes SchoolName I-ORG
-Christian SchoolName I-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Three SchoolName O
+Fishes SchoolName O
+Christian SchoolName O
+Elementary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 801 StreetAddress B-ADDRESS
@@ -9652,10 +9652,10 @@ based ProgramType O
 curriculum ProgramType O
 Christian AssociationMembership O
 
-Thunder SchoolName B-ORG
-Bay SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Thunder SchoolName O
+Bay SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 37 StreetAddress B-ADDRESS
@@ -9704,11 +9704,11 @@ based ProgramType O
 curriculum ProgramType O
 Edifide AssociationMembership O
 
-Tiferes SchoolName B-ORG
-Bais SchoolName I-ORG
-Yaakov SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Tiferes SchoolName O
+Bais SchoolName O
+Yaakov SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 85 StreetAddress B-ADDRESS
@@ -9773,9 +9773,9 @@ for AssociationMembership O
 Jewish AssociationMembership O
 Education AssociationMembership O
 
-Tillsonburg SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Tillsonburg SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 165 StreetAddress B-ADDRESS
@@ -9790,7 +9790,7 @@ N4G4G7 PostalCode S-ADDRESS
 688 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9521 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -9809,10 +9809,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Timothy SchoolName B-ORG
-Canadian SchoolName I-ORG
-Reformed SchoolName I-ORG
-School SchoolName E-ORG
+Timothy SchoolName O
+Canadian SchoolName O
+Reformed SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 430 StreetAddress B-ADDRESS
@@ -9854,9 +9854,9 @@ Reformed AssociationMembership O
 School AssociationMembership O
 Societies AssociationMembership O
 
-Timothy SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Timothy SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1735 StreetAddress B-ADDRESS
@@ -9898,9 +9898,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Timothy SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Timothy SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 28 StreetAddress B-ADDRESS
@@ -9942,9 +9942,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 School AssociationMembership O
 
-Timothy SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Timothy SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 750 StreetAddress B-ADDRESS
@@ -9982,9 +9982,9 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Timothy SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Timothy SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 179 POBox O
 12600 StreetAddress B-ADDRESS
@@ -10000,7 +10000,7 @@ K0C2H0 PostalCode S-ADDRESS
 535 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2687 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -10022,10 +10022,10 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-TMS SchoolName B-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Bayview SchoolName E-ORG
+TMS SchoolName O
+School SchoolName O
+- SchoolName O
+Bayview SchoolName O
 None Suite O
 None POBox O
 8569 StreetAddress B-ADDRESS
@@ -10061,11 +10061,11 @@ and AssociationMembership O
 CAIS AssociationMembership O
 . AssociationMembership O
 
-TMS SchoolName B-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Elgin SchoolName I-ORG
-Mills SchoolName E-ORG
+TMS SchoolName O
+School SchoolName O
+- SchoolName O
+Elgin SchoolName O
+Mills SchoolName O
 None Suite O
 None POBox O
 500 StreetAddress B-ADDRESS
@@ -10118,8 +10118,8 @@ CAIS AssociationMembership O
 , AssociationMembership O
 IBO AssociationMembership O
 
-Todd SchoolName B-ORG
-Parochial SchoolName E-ORG
+Todd SchoolName O
+Parochial SchoolName O
 None Suite O
 None POBox O
 85782 StreetAddress B-ADDRESS
@@ -10131,8 +10131,8 @@ Line StreetAddress I-ADDRESS
 Lucknow City O
 Ontario Province O
 N0G2H0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -10151,8 +10151,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Tollgate SchoolName B-ORG
-Parochial SchoolName E-ORG
+Tollgate SchoolName O
+Parochial SchoolName O
 None Suite O
 None POBox O
 7173 StreetAddress B-ADDRESS
@@ -10168,7 +10168,7 @@ N0G2L0 PostalCode S-ADDRESS
 323 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0335 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10194,12 +10194,12 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Torah SchoolName B-ORG
-Academy SchoolName I-ORG
-of SchoolName I-ORG
-Ottawa SchoolName I-ORG
-Elementary SchoolName I-ORG
-Schoo SchoolName E-ORG
+Torah SchoolName O
+Academy SchoolName O
+of SchoolName O
+Ottawa SchoolName O
+Elementary SchoolName O
+Schoo SchoolName O
 None Suite O
 None POBox O
 1119 StreetAddress B-ADDRESS
@@ -10236,8 +10236,8 @@ curriculum ProgramType O
 Torah AssociationMembership O
 Umesorah AssociationMembership O
 
-Torah SchoolName B-ORG
-High SchoolName E-ORG
+Torah SchoolName O
+High SchoolName O
 None Suite O
 None POBox O
 1072 StreetAddress B-ADDRESS
@@ -10288,10 +10288,10 @@ Forum AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Torah SchoolName B-ORG
-High SchoolName I-ORG
-- SchoolName I-ORG
-Maple SchoolName E-ORG
+Torah SchoolName O
+High SchoolName O
+- SchoolName O
+Maple SchoolName O
 None Suite O
 None POBox O
 9600 StreetAddress B-ADDRESS
@@ -10305,7 +10305,7 @@ L6A3Z8 PostalCode S-ADDRESS
 761 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6279 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -10335,10 +10335,10 @@ Forum AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Torah SchoolName B-ORG
-High SchoolName I-ORG
-- SchoolName I-ORG
-Thornhill SchoolName E-ORG
+Torah SchoolName O
+High SchoolName O
+- SchoolName O
+Thornhill SchoolName O
 305A Suite O
 None POBox O
 1 StreetAddress B-ADDRESS
@@ -10352,7 +10352,7 @@ L4J4P8 PostalCode S-ADDRESS
 761 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6279 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -10383,10 +10383,10 @@ Board AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Torah SchoolName B-ORG
-High SchoolName I-ORG
-- SchoolName I-ORG
-Toronto SchoolName E-ORG
+Torah SchoolName O
+High SchoolName O
+- SchoolName O
+Toronto SchoolName O
 None Suite O
 None POBox O
 4588 StreetAddress B-ADDRESS
@@ -10400,7 +10400,7 @@ M2R3V2 PostalCode S-ADDRESS
 761 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6279 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10432,9 +10432,9 @@ Forum AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Torah SchoolName B-ORG
-High SchoolName I-ORG
-Ottawa SchoolName E-ORG
+Torah SchoolName O
+High SchoolName O
+Ottawa SchoolName O
 2 Suite O
 - Suite O
 5 Suite O
@@ -10483,9 +10483,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Berkshire SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+Berkshire SchoolName O
+Academy SchoolName O
 400 Suite O
 None POBox O
 3550 StreetAddress B-ADDRESS
@@ -10500,7 +10500,7 @@ M2H2N5 PostalCode S-ADDRESS
 597 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6651 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10528,9 +10528,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Central SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+Central SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 200 StreetAddress B-ADDRESS
@@ -10545,7 +10545,7 @@ M2N3A9 PostalCode S-ADDRESS
 850 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8889 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10577,10 +10577,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Cheder SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+Toronto SchoolName O
+Cheder SchoolName O
+, SchoolName O
+The SchoolName O
 None Suite O
 None POBox O
 3995 StreetAddress B-ADDRESS
@@ -10619,11 +10619,11 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-District SchoolName I-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+District SchoolName O
+Christian SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 377 StreetAddress B-ADDRESS
@@ -10673,8 +10673,8 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Toronto SchoolName B-ORG
-Eschool SchoolName E-ORG
+Toronto SchoolName O
+Eschool SchoolName O
 201 Suite O
 None POBox O
 41 StreetAddress B-ADDRESS
@@ -10688,7 +10688,7 @@ M1R2T5 PostalCode S-ADDRESS
 637 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2632 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10716,10 +10716,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-French SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+French SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 53 StreetAddress B-ADDRESS
@@ -10759,9 +10759,9 @@ Schools AssociationMembership O
 Internationa AssociationMembership O
 , AssociationMembership O
 
-Toronto SchoolName B-ORG
-French SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+French SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 306 StreetAddress B-ADDRESS
@@ -10822,10 +10822,10 @@ Schools AssociationMembership O
 of AssociationMembership O
 Ontario AssociationMembership O
 
-Toronto SchoolName B-ORG
-Harvard SchoolName I-ORG
-International SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+Harvard SchoolName O
+International SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 513 StreetAddress B-ADDRESS
@@ -10839,7 +10839,7 @@ M2H2C9 PostalCode S-ADDRESS
 336 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3886 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10871,11 +10871,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Heschel SchoolName I-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+Toronto SchoolName O
+Heschel SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
 None Suite O
 None POBox O
 819 StreetAddress B-ADDRESS
@@ -10913,9 +10913,9 @@ of AssociationMembership O
 Jewish AssociationMembership O
 Education AssociationMembership O
 
-Toronto SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+High SchoolName O
+School SchoolName O
 204 Suite O
 None POBox O
 5635 StreetAddress B-ADDRESS
@@ -10929,7 +10929,7 @@ M2M3S9 PostalCode S-ADDRESS
 227 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1177 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -10968,9 +10968,9 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-International SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+International SchoolName O
+Academy SchoolName O
 223 Suite O
 None POBox O
 1140 StreetAddress B-ADDRESS
@@ -11021,10 +11021,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-International SchoolName I-ORG
-Academy SchoolName I-ORG
-Oakville SchoolName E-ORG
+Toronto SchoolName O
+International SchoolName O
+Academy SchoolName O
+Oakville SchoolName O
 2 Suite O
 None POBox O
 177 StreetAddress B-ADDRESS
@@ -11074,9 +11074,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-International SchoolName I-ORG
-College SchoolName E-ORG
+Toronto SchoolName O
+International SchoolName O
+College SchoolName O
 500 Suite O
 None POBox O
 3550 StreetAddress B-ADDRESS
@@ -11126,9 +11126,9 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Toronto SchoolName B-ORG
-International SchoolName I-ORG
-Collegiate SchoolName E-ORG
+Toronto SchoolName O
+International SchoolName O
+Collegiate SchoolName O
 105 Suite O
 None POBox O
 80 StreetAddress B-ADDRESS
@@ -11142,7 +11142,7 @@ L3R9V1 PostalCode S-ADDRESS
 470 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2728 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -11174,9 +11174,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Nobel SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+Nobel SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 6305 StreetAddress B-ADDRESS
@@ -11227,9 +11227,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Prep SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+Prep SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 250 StreetAddress B-ADDRESS
@@ -11283,11 +11283,11 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Toronto SchoolName B-ORG
-Private SchoolName I-ORG
-School SchoolName I-ORG
-of SchoolName I-ORG
-Giftedness SchoolName E-ORG
+Toronto SchoolName O
+Private SchoolName O
+School SchoolName O
+of SchoolName O
+Giftedness SchoolName O
 500B Suite O
 None POBox O
 4002 StreetAddress B-ADDRESS
@@ -11303,7 +11303,7 @@ M1S4R5 PostalCode S-ADDRESS
 351 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1608 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -11337,9 +11337,9 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-Waldorf SchoolName I-ORG
-School SchoolName E-ORG
+Toronto SchoolName O
+Waldorf SchoolName O
+School SchoolName O
 Unit Suite O
 1 Suite O
 None POBox O
@@ -11390,9 +11390,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Toronto SchoolName B-ORG
-West SchoolName I-ORG
-Academy SchoolName E-ORG
+Toronto SchoolName O
+West SchoolName O
+Academy SchoolName O
 600 Suite O
 None POBox O
 77 StreetAddress B-ADDRESS
@@ -11407,7 +11407,7 @@ M5S1M2 PostalCode S-ADDRESS
 818 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6479 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -11442,8 +11442,8 @@ Forum AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Toronto SchoolName B-ORG
-Zoo SchoolName E-ORG
+Toronto SchoolName O
+Zoo SchoolName O
 A Suite O
 None POBox O
 361 StreetAddress B-ADDRESS
@@ -11488,14 +11488,14 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Town SchoolName B-ORG
-Centre SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Pre SchoolName I-ORG
-- SchoolName I-ORG
-School SchoolName E-ORG
+Town SchoolName O
+Centre SchoolName O
+Private SchoolName O
+School SchoolName O
+- SchoolName O
+Pre SchoolName O
+- SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 155 StreetAddress B-ADDRESS
@@ -11531,13 +11531,13 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Town SchoolName B-ORG
-Centre SchoolName I-ORG
-Private SchoolName I-ORG
-Schools SchoolName I-ORG
-- SchoolName I-ORG
-High SchoolName I-ORG
-Schoo SchoolName E-ORG
+Town SchoolName O
+Centre SchoolName O
+Private SchoolName O
+Schools SchoolName O
+- SchoolName O
+High SchoolName O
+Schoo SchoolName O
 None Suite O
 None POBox O
 155 StreetAddress B-ADDRESS
@@ -11584,9 +11584,9 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Trafalgar SchoolName B-ORG
-Castle SchoolName I-ORG
-School SchoolName E-ORG
+Trafalgar SchoolName O
+Castle SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 401 StreetAddress B-ADDRESS
@@ -11637,10 +11637,10 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Trafalgar SchoolName B-ORG
-Ridge SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Trafalgar SchoolName O
+Ridge SchoolName O
+Montessori SchoolName O
+School SchoolName O
 Unit Suite O
 6 Suite O
 None POBox O
@@ -11655,7 +11655,7 @@ L6H6K7 PostalCode S-ADDRESS
 257 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5955 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -11672,10 +11672,10 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Trail SchoolName B-ORG
-Ridge SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Trail SchoolName O
+Ridge SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 18 StreetAddress B-ADDRESS
@@ -11689,7 +11689,7 @@ L3M3K3 PostalCode S-ADDRESS
 945 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1490 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -11703,9 +11703,9 @@ None OSSDCreditsOffered O
 Montessori ProgramType O
 adco AssociationMembership O
 
-Trails SchoolName B-ORG
-Youth SchoolName I-ORG
-Initiatives SchoolName E-ORG
+Trails SchoolName O
+Youth SchoolName O
+Initiatives SchoolName O
 None Suite O
 None POBox O
 15599 StreetAddress B-ADDRESS
@@ -11753,8 +11753,8 @@ girls ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Trenton SchoolName B-ORG
-Christian SchoolName E-ORG
+Trenton SchoolName O
+Christian SchoolName O
 None Suite O
 None POBox O
 340 StreetAddress B-ADDRESS
@@ -11797,8 +11797,8 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Trillium SchoolName B-ORG
-School SchoolName E-ORG
+Trillium SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 4277 StreetAddress B-ADDRESS
@@ -11849,9 +11849,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Trillium SchoolName B-ORG
-Waldorf SchoolName I-ORG
-School SchoolName E-ORG
+Trillium SchoolName O
+Waldorf SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 540 StreetAddress B-ADDRESS
@@ -11890,9 +11890,9 @@ based ProgramType O
 curriculum ProgramType O
 AWSNA AssociationMembership O
 
-Trinity SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Trinity SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 2170 StreetAddress B-ADDRESS
@@ -11934,9 +11934,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Trinity SchoolName B-ORG
-College SchoolName I-ORG
-School SchoolName E-ORG
+Trinity SchoolName O
+College SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 55 StreetAddress B-ADDRESS
@@ -11993,9 +11993,9 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Trinity SchoolName B-ORG
-Grace SchoolName I-ORG
-Academy SchoolName E-ORG
+Trinity SchoolName O
+Grace SchoolName O
+Academy SchoolName O
 None Suite O
 3308 POBox O
 14480 StreetAddress B-ADDRESS
@@ -12037,9 +12037,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Trinity SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Trinity SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 9211 StreetAddress B-ADDRESS
@@ -12077,8 +12077,8 @@ CCMA AssociationMembership O
 , AssociationMembership O
 OFIS AssociationMembership O
 
-Triple SchoolName B-ORG
-Hills SchoolName E-ORG
+Triple SchoolName O
+Hills SchoolName O
 None Suite O
 None POBox O
 90848 StreetAddress B-ADDRESS
@@ -12088,8 +12088,8 @@ Line StreetAddress I-ADDRESS
 Wingham City O
 Ontario Province O
 N0G2W0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -12109,9 +12109,9 @@ Orrthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-True SchoolName B-ORG
-North SchoolName I-ORG
-Academy SchoolName E-ORG
+True SchoolName O
+North SchoolName O
+Academy SchoolName O
 None Suite O
 1270 POBox O
 200 StreetAddress B-ADDRESS
@@ -12125,7 +12125,7 @@ L0M1S0 PostalCode S-ADDRESS
 428 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5144 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -12143,10 +12143,10 @@ based ProgramType O
 curriculum ProgramType O
 ACSI AssociationMembership O
 
-True SchoolName B-ORG
-North SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+True SchoolName O
+North SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 599 StreetAddress B-ADDRESS
@@ -12160,7 +12160,7 @@ P8N0A2 PostalCode S-ADDRESS
 223 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5504 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Thunder Region O
 Bay Region O
 Regional Region O
@@ -12176,10 +12176,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-True SchoolName B-ORG
-North SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+True SchoolName O
+North SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 707 StreetAddress B-ADDRESS
@@ -12197,7 +12197,7 @@ P6A0B5 PostalCode S-ADDRESS
 987 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5873 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Sudbury Region O
 - Region O
 North Region O
@@ -12219,9 +12219,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Turnberry SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Turnberry SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 89913 StreetAddress B-ADDRESS
@@ -12231,8 +12231,8 @@ Line StreetAddress I-ADDRESS
 Wingham City O
 Ontario Province O
 N0G2W0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -12252,8 +12252,8 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Turnbull SchoolName B-ORG
-School SchoolName E-ORG
+Turnbull SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1132 StreetAddress B-ADDRESS
@@ -12293,8 +12293,8 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Uchenna SchoolName B-ORG
-Academy SchoolName E-ORG
+Uchenna SchoolName O
+Academy SchoolName O
 106 Suite O
 None POBox O
 1205 StreetAddress B-ADDRESS
@@ -12310,7 +12310,7 @@ M6E1B5 PostalCode S-ADDRESS
 855 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5572 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12342,12 +12342,12 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Um SchoolName B-ORG
-Al SchoolName I-ORG
-- SchoolName I-ORG
-Qura SchoolName I-ORG
-Islamic SchoolName I-ORG
-School SchoolName E-ORG
+Um SchoolName O
+Al SchoolName O
+- SchoolName O
+Qura SchoolName O
+Islamic SchoolName O
+School SchoolName O
 201 Suite O
 None POBox O
 1510 StreetAddress B-ADDRESS
@@ -12388,9 +12388,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-UMC SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+UMC SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 288 StreetAddress B-ADDRESS
@@ -12439,10 +12439,10 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-UMC SchoolName B-ORG
-North SchoolName I-ORG
-York SchoolName I-ORG
-Centre SchoolName E-ORG
+UMC SchoolName O
+North SchoolName O
+York SchoolName O
+Centre SchoolName O
 500 Suite O
 None POBox O
 5075 StreetAddress B-ADDRESS
@@ -12456,7 +12456,7 @@ M2N7H3 PostalCode S-ADDRESS
 512 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1026 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12484,10 +12484,10 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-UMCA SchoolName B-ORG
-Rich SchoolName I-ORG
-Tree SchoolName I-ORG
-Academy SchoolName E-ORG
+UMCA SchoolName O
+Rich SchoolName O
+Tree SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 130 StreetAddress B-ADDRESS
@@ -12542,8 +12542,8 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Ummati SchoolName B-ORG
-School SchoolName E-ORG
+Ummati SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 139 StreetAddress B-ADDRESS
@@ -12558,7 +12558,7 @@ L1C1N6 PostalCode S-ADDRESS
 600 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0914 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -12581,10 +12581,10 @@ curriculum ProgramType O
 Ummati AssociationMembership O
 Board AssociationMembership O
 
-Umu SchoolName B-ORG
-Khalid SchoolName I-ORG
-Islamic SchoolName I-ORG
-School SchoolName E-ORG
+Umu SchoolName O
+Khalid SchoolName O
+Islamic SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 2628 StreetAddress B-ADDRESS
@@ -12598,7 +12598,7 @@ M9W2X3 PostalCode S-ADDRESS
 551 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9304 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12625,9 +12625,9 @@ girls ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Unionville SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Unionville SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 9302 StreetAddress B-ADDRESS
@@ -12664,11 +12664,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Unique SchoolName B-ORG
-Chinese SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-1 SchoolName E-ORG
+Unique SchoolName O
+Chinese SchoolName O
+School SchoolName O
+- SchoolName O
+1 SchoolName O
 21 Suite O
 None POBox O
 4271 StreetAddress B-ADDRESS
@@ -12683,7 +12683,7 @@ M1S4G4 PostalCode S-ADDRESS
 998 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0928 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12700,11 +12700,11 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Unique SchoolName B-ORG
-Chinese SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-2 SchoolName E-ORG
+Unique SchoolName O
+Chinese SchoolName O
+School SchoolName O
+- SchoolName O
+2 SchoolName O
 None Suite O
 None POBox O
 3143 StreetAddress B-ADDRESS
@@ -12719,7 +12719,7 @@ M1T3J7 PostalCode S-ADDRESS
 998 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0928 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12736,10 +12736,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-United SchoolName B-ORG
-Mennonite SchoolName I-ORG
-Educational SchoolName I-ORG
-Institute SchoolName E-ORG
+United SchoolName O
+Mennonite SchoolName O
+Educational SchoolName O
+Institute SchoolName O
 None Suite O
 None POBox O
 614 StreetAddress B-ADDRESS
@@ -12790,10 +12790,10 @@ based ProgramType O
 curriculum ProgramType O
 CAMS AssociationMembership O
 
-Unity SchoolName B-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Unity SchoolName O
+Christian SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 25 StreetAddress B-ADDRESS
@@ -12843,9 +12843,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-University SchoolName B-ORG
-Learning SchoolName I-ORG
-Academy SchoolName E-ORG
+University SchoolName O
+Learning SchoolName O
+Academy SchoolName O
 200 Suite O
 None POBox O
 24 StreetAddress B-ADDRESS
@@ -12859,7 +12859,7 @@ M2M1C8 PostalCode S-ADDRESS
 889 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1771 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -12893,10 +12893,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-University SchoolName B-ORG
-of SchoolName I-ORG
-Toronto SchoolName I-ORG
-Schools SchoolName E-ORG
+University SchoolName O
+of SchoolName O
+Toronto SchoolName O
+Schools SchoolName O
 None Suite O
 None POBox O
 371 StreetAddress B-ADDRESS
@@ -12949,9 +12949,9 @@ curriculum ProgramType O
 CIS AssociationMembership O
 Ontario AssociationMembership O
 
-Upper SchoolName B-ORG
-Canada SchoolName I-ORG
-College SchoolName E-ORG
+Upper SchoolName O
+Canada SchoolName O
+College SchoolName O
 None Suite O
 None POBox O
 200 StreetAddress B-ADDRESS
@@ -12965,7 +12965,7 @@ M4V1W6 PostalCode S-ADDRESS
 488 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1125 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13013,9 +13013,9 @@ Independent AssociationMembership O
 Schools AssociationMembership O
 www.cais.ca AssociationMembership O
 
-Upper SchoolName B-ORG
-York SchoolName I-ORG
-School SchoolName E-ORG
+Upper SchoolName O
+York SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 2832 StreetAddress B-ADDRESS
@@ -13029,7 +13029,7 @@ L3R0K8 PostalCode S-ADDRESS
 604 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 4622 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13060,10 +13060,10 @@ based ProgramType O
 curriculum ProgramType O
 OFIS AssociationMembership O
 
-Upper SchoolName B-ORG
-York SchoolName I-ORG
-Secondary SchoolName I-ORG
-School SchoolName E-ORG
+Upper SchoolName O
+York SchoolName O
+Secondary SchoolName O
+School SchoolName O
 D6 Suite O
 None POBox O
 2 StreetAddress B-ADDRESS
@@ -13077,7 +13077,7 @@ M3J0K2 PostalCode S-ADDRESS
 955 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5165 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13109,9 +13109,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Upsala SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Upsala SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 11 StreetAddress B-ADDRESS
@@ -13148,10 +13148,10 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Urban SchoolName B-ORG
-International SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Urban SchoolName O
+International SchoolName O
+High SchoolName O
+School SchoolName O
 201 Suite O
 None POBox O
 150 StreetAddress B-ADDRESS
@@ -13201,9 +13201,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Urban SchoolName B-ORG
-International SchoolName I-ORG
-School SchoolName E-ORG
+Urban SchoolName O
+International SchoolName O
+School SchoolName O
 201 Suite O
 None POBox O
 150 StreetAddress B-ADDRESS
@@ -13254,8 +13254,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-USCA SchoolName B-ORG
-Academy SchoolName E-ORG
+USCA SchoolName O
+Academy SchoolName O
 203 Suite O
 None POBox O
 170 StreetAddress B-ADDRESS
@@ -13270,7 +13270,7 @@ L4Z3G1 PostalCode S-ADDRESS
 232 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 0411 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13307,9 +13307,9 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-uStudy SchoolName B-ORG
-Learning SchoolName I-ORG
-Center SchoolName E-ORG
+uStudy SchoolName O
+Learning SchoolName O
+Center SchoolName O
 48 Suite O
 None POBox O
 45 StreetAddress B-ADDRESS
@@ -13323,7 +13323,7 @@ L3S0B5 PostalCode S-ADDRESS
 554 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6667 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -13349,9 +13349,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-UT SchoolName B-ORG
-Preparatory SchoolName I-ORG
-Academy SchoolName E-ORG
+UT SchoolName O
+Preparatory SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 205 StreetAddress B-ADDRESS
@@ -13401,9 +13401,9 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Uxbridge SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Uxbridge SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 167 StreetAddress B-ADDRESS
@@ -13418,7 +13418,7 @@ L9P1C3 PostalCode S-ADDRESS
 852 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6377 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -13433,9 +13433,9 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Vanguard SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Vanguard SchoolName O
+High SchoolName O
+School SchoolName O
 35 Suite O
 None POBox O
 119 StreetAddress B-ADDRESS
@@ -13450,7 +13450,7 @@ N2J2W1 PostalCode S-ADDRESS
 872 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3627 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -13478,9 +13478,9 @@ Private AssociationMembership O
 School AssociationMembership O
 Association AssociationMembership O
 
-Vanguard SchoolName B-ORG
-Online SchoolName I-ORG
-Academy SchoolName E-ORG
+Vanguard SchoolName O
+Online SchoolName O
+Academy SchoolName O
 37 Suite O
 None POBox O
 119 StreetAddress B-ADDRESS
@@ -13495,7 +13495,7 @@ N2J3W1 PostalCode S-ADDRESS
 872 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3627 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -13525,10 +13525,10 @@ Private AssociationMembership O
 School AssociationMembership O
 Association AssociationMembership O
 
-Vaughan SchoolName B-ORG
-Baptist SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Vaughan SchoolName O
+Baptist SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 8286 StreetAddress B-ADDRESS
@@ -13542,7 +13542,7 @@ L4L1W8 PostalCode S-ADDRESS
 851 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7170 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -13563,8 +13563,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Vaughan SchoolName B-ORG
-College SchoolName E-ORG
+Vaughan SchoolName O
+College SchoolName O
 # Suite O
 3 Suite O
 None POBox O
@@ -13579,7 +13579,7 @@ L4H0L4 PostalCode S-ADDRESS
 265 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9229 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -13609,10 +13609,10 @@ curriculum ProgramType O
 Learning AssociationMembership O
 Centres AssociationMembership O
 
-Vert SchoolName B-ORG
-Casa SchoolName I-ORG
-Montessori SchoolName I-ORG
-Academy SchoolName E-ORG
+Vert SchoolName O
+Casa SchoolName O
+Montessori SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 2723 StreetAddress B-ADDRESS
@@ -13628,7 +13628,7 @@ M4B1M8 PostalCode S-ADDRESS
 752 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8300 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13645,7 +13645,7 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Vezina SchoolName S-ORG
+Vezina SchoolName O
 None Suite O
 None POBox O
 15 StreetAddress B-ADDRESS
@@ -13698,10 +13698,10 @@ Nation ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Vianney SchoolName B-ORG
-Academy SchoolName I-ORG
-of SchoolName I-ORG
-Learning SchoolName E-ORG
+Vianney SchoolName O
+Academy SchoolName O
+of SchoolName O
+Learning SchoolName O
 None Suite O
 None POBox O
 7755 StreetAddress B-ADDRESS
@@ -13716,7 +13716,7 @@ L5N0C4 PostalCode S-ADDRESS
 824 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7474 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -13740,8 +13740,8 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Victoria SchoolName B-ORG
-Academy SchoolName E-ORG
+Victoria SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 40 StreetAddress B-ADDRESS
@@ -13795,8 +13795,8 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Victus SchoolName B-ORG
-Academy SchoolName E-ORG
+Victus SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 35 StreetAddress B-ADDRESS
@@ -13846,9 +13846,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Vinci SchoolName B-ORG
-School SchoolName I-ORG
-Ottawa SchoolName E-ORG
+Vinci SchoolName O
+School SchoolName O
+Ottawa SchoolName O
 None Suite O
 None POBox O
 149 StreetAddress B-ADDRESS
@@ -13863,7 +13863,7 @@ K1K1V2 PostalCode S-ADDRESS
 842 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7557 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Ottawa Region O
 Regional Region O
 Office Region O
@@ -13878,8 +13878,8 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-VIP SchoolName B-ORG
-Academy SchoolName E-ORG
+VIP SchoolName O
+Academy SchoolName O
 105 Suite O
 None POBox O
 3700 StreetAddress B-ADDRESS
@@ -13928,11 +13928,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Virgil SchoolName B-ORG
-Old SchoolName I-ORG
-Colony SchoolName I-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Virgil SchoolName O
+Old SchoolName O
+Colony SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 565 StreetAddress B-ADDRESS
@@ -13977,9 +13977,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Virtual SchoolName B-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Virtual SchoolName O
+Elementary SchoolName O
+School SchoolName O
 None Suite O
 402 POBox O
 27 StreetAddress B-ADDRESS
@@ -14015,9 +14015,9 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Virtual SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Virtual SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 402 POBox O
 27 StreetAddress B-ADDRESS
@@ -14064,10 +14064,10 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Voice SchoolName B-ORG
-Integrative SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Voice SchoolName O
+Integrative SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 50 StreetAddress B-ADDRESS
@@ -14106,10 +14106,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wahsa SchoolName B-ORG
-Distance SchoolName I-ORG
-Education SchoolName I-ORG
-Centre SchoolName E-ORG
+Wahsa SchoolName O
+Distance SchoolName O
+Education SchoolName O
+Centre SchoolName O
 None Suite O
 Box POBox O
 1118 POBox O
@@ -14156,9 +14156,9 @@ Nation ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Walden SchoolName B-ORG
-International SchoolName I-ORG
-School SchoolName E-ORG
+Walden SchoolName O
+International SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1030 StreetAddress B-ADDRESS
@@ -14173,7 +14173,7 @@ L6X0B2 PostalCode S-ADDRESS
 497 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8890 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -14196,8 +14196,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Waldorf SchoolName B-ORG
-Academy SchoolName E-ORG
+Waldorf SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 250 StreetAddress B-ADDRESS
@@ -14237,10 +14237,10 @@ of AssociationMembership O
 North AssociationMembership O
 America AssociationMembership O
 
-Wales SchoolName B-ORG
-College SchoolName I-ORG
-Secondary SchoolName I-ORG
-School SchoolName E-ORG
+Wales SchoolName O
+College SchoolName O
+Secondary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 56 StreetAddress B-ADDRESS
@@ -14290,10 +14290,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wali SchoolName B-ORG
-ul SchoolName I-ORG
-Asr SchoolName I-ORG
-School SchoolName E-ORG
+Wali SchoolName O
+ul SchoolName O
+Asr SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 84 StreetAddress B-ADDRESS
@@ -14308,7 +14308,7 @@ L7E4G2 PostalCode S-ADDRESS
 951 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6146 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -14345,13 +14345,13 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wali SchoolName B-ORG
-ul SchoolName I-ORG
-Asr SchoolName I-ORG
-School SchoolName I-ORG
-- SchoolName I-ORG
-Niagara SchoolName I-ORG
-Campus SchoolName E-ORG
+Wali SchoolName O
+ul SchoolName O
+Asr SchoolName O
+School SchoolName O
+- SchoolName O
+Niagara SchoolName O
+Campus SchoolName O
 None Suite O
 None POBox O
 8333 StreetAddress B-ADDRESS
@@ -14389,13 +14389,13 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wali SchoolName B-ORG
-ul SchoolName I-ORG
-Asr SchoolName I-ORG
-School SchoolName I-ORG
--GTA SchoolName I-ORG
-East SchoolName I-ORG
-Campus SchoolName E-ORG
+Wali SchoolName O
+ul SchoolName O
+Asr SchoolName O
+School SchoolName O
+-GTA SchoolName O
+East SchoolName O
+Campus SchoolName O
 None Suite O
 None POBox O
 425 StreetAddress B-ADDRESS
@@ -14447,13 +14447,13 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wali SchoolName B-ORG
-ul SchoolName I-ORG
-Asr SchoolName I-ORG
-School SchoolName I-ORG
--GTA SchoolName I-ORG
-West SchoolName I-ORG
-Campus SchoolName E-ORG
+Wali SchoolName O
+ul SchoolName O
+Asr SchoolName O
+School SchoolName O
+-GTA SchoolName O
+West SchoolName O
+Campus SchoolName O
 None Suite O
 None POBox O
 7580 StreetAddress B-ADDRESS
@@ -14467,7 +14467,7 @@ L6W0A1 PostalCode S-ADDRESS
 457 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9254 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -14488,10 +14488,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wallaceburg SchoolName B-ORG
-Christian SchoolName I-ORG
-Private SchoolName I-ORG
-School SchoolName E-ORG
+Wallaceburg SchoolName O
+Christian SchoolName O
+Private SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 693 StreetAddress B-ADDRESS
@@ -14531,9 +14531,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Walsingham SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Walsingham SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 3 POBox O
 1 StreetAddress B-ADDRESS
@@ -14574,10 +14574,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Waterloo SchoolName B-ORG
-Independent SchoolName I-ORG
-Secondary SchoolName I-ORG
-School SchoolName E-ORG
+Waterloo SchoolName O
+Independent SchoolName O
+Secondary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 55 StreetAddress B-ADDRESS
@@ -14625,11 +14625,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Webtree SchoolName B-ORG
-Internatinal SchoolName I-ORG
-School SchoolName I-ORG
-of SchoolName I-ORG
-Excellenc SchoolName E-ORG
+Webtree SchoolName O
+Internatinal SchoolName O
+School SchoolName O
+of SchoolName O
+Excellenc SchoolName O
 505 Suite O
 None POBox O
 220 StreetAddress B-ADDRESS
@@ -14681,9 +14681,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Welland SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Welland SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 109 StreetAddress B-ADDRESS
@@ -14697,7 +14697,7 @@ L3B2Y6 PostalCode S-ADDRESS
 733 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8635 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -14718,9 +14718,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wellington SchoolName B-ORG
-Hall SchoolName I-ORG
-Academy SchoolName E-ORG
+Wellington SchoolName O
+Hall SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 J9 StreetAddress B-ADDRESS
@@ -14736,7 +14736,7 @@ N1H6J2 PostalCode S-ADDRESS
 823 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2278 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -14755,8 +14755,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wells SchoolName B-ORG
-Academy SchoolName E-ORG
+Wells SchoolName O
+Academy SchoolName O
 24 Suite O
 None POBox O
 505 StreetAddress B-ADDRESS
@@ -14770,7 +14770,7 @@ L3R5V6 PostalCode S-ADDRESS
 560 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6398 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -14806,9 +14806,9 @@ International ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wesley SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Wesley SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 22 StreetAddress B-ADDRESS
@@ -14848,9 +14848,9 @@ OFIS AssociationMembership O
 , AssociationMembership O
 CSI AssociationMembership O
 
-West SchoolName B-ORG
-Amish SchoolName I-ORG
-School SchoolName E-ORG
+West SchoolName O
+Amish SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 52141 StreetAddress B-ADDRESS
@@ -14859,8 +14859,8 @@ Line StreetAddress E-ADDRESS
 Aylmer City O
 Ontario Province O
 N5H2R3 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -14879,11 +14879,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-West SchoolName B-ORG
-Bentinck SchoolName I-ORG
-Amish SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+West SchoolName O
+Bentinck SchoolName O
+Amish SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 521144 StreetAddress B-ADDRESS
@@ -14893,8 +14893,8 @@ Con StreetAddress I-ADDRESS
 Elmwood City O
 Ontario Province O
 N0G1S0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -14918,10 +14918,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-West SchoolName B-ORG
-Hesson SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+West SchoolName O
+Hesson SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 4303 StreetAddress B-ADDRESS
@@ -14936,7 +14936,7 @@ N4W3G9 PostalCode S-ADDRESS
 595 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 8644 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -14960,10 +14960,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-West SchoolName B-ORG
-Montrose SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+West SchoolName O
+Montrose SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 543 StreetAddress B-ADDRESS
@@ -14974,8 +14974,8 @@ West City O
 Montrose City O
 Ontario Province O
 N0B2V0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -14999,8 +14999,8 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Westboro SchoolName B-ORG
-Academy SchoolName E-ORG
+Westboro SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 200 StreetAddress B-ADDRESS
@@ -15037,9 +15037,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Westfield SchoolName B-ORG
-Secondary SchoolName I-ORG
-School SchoolName E-ORG
+Westfield SchoolName O
+Secondary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 160 StreetAddress B-ADDRESS
@@ -15055,7 +15055,7 @@ L3T0A9 PostalCode S-ADDRESS
 707 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9119 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -15087,10 +15087,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Westminster SchoolName B-ORG
-Classical SchoolName I-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Westminster SchoolName O
+Classical SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 9 StreetAddress B-ADDRESS
@@ -15132,10 +15132,10 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Weston SchoolName B-ORG
-Learning SchoolName I-ORG
-Centre SchoolName I-ORG
-Inc SchoolName E-ORG
+Weston SchoolName O
+Learning SchoolName O
+Centre SchoolName O
+Inc SchoolName O
 6 Suite O
 - Suite O
 7 Suite O
@@ -15151,7 +15151,7 @@ L4L6B1 PostalCode S-ADDRESS
 264 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 9772 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -15181,9 +15181,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Westside SchoolName B-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+Westside SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 95 StreetAddress B-ADDRESS
@@ -15217,11 +15217,11 @@ None OSSDCreditsOffered O
 Montessori ProgramType O
 CCMA AssociationMembership O
 
-Wheatley SchoolName B-ORG
-School SchoolName I-ORG
-of SchoolName I-ORG
-Montessori SchoolName I-ORG
-Education SchoolName E-ORG
+Wheatley SchoolName O
+School SchoolName O
+of SchoolName O
+Montessori SchoolName O
+Education SchoolName O
 None Suite O
 None POBox O
 497 StreetAddress B-ADDRESS
@@ -15274,8 +15274,8 @@ of AssociationMembership O
 Montessori AssociationMembership O
 Administrators AssociationMembership O
 
-Whispering SchoolName B-ORG
-Spruce SchoolName E-ORG
+Whispering SchoolName O
+Spruce SchoolName O
 None Suite O
 None POBox O
 88005 StreetAddress B-ADDRESS
@@ -15285,8 +15285,8 @@ Line StreetAddress I-ADDRESS
 Wroxeter City O
 Ontario Province O
 N0G2X0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -15306,11 +15306,11 @@ Orthodox AssociationMembership O
 Mennonite AssociationMembership O
 Schools AssociationMembership O
 
-Whitby SchoolName B-ORG
-Montessori SchoolName I-ORG
-& SchoolName I-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Whitby SchoolName O
+Montessori SchoolName O
+& SchoolName O
+Elementary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 95 StreetAddress B-ADDRESS
@@ -15352,10 +15352,10 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-White SchoolName B-ORG
-Oaks SchoolName I-ORG
-Montessori SchoolName I-ORG
-School SchoolName E-ORG
+White SchoolName O
+Oaks SchoolName O
+Montessori SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1200 StreetAddress B-ADDRESS
@@ -15390,10 +15390,10 @@ Montessori ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Whitechurch SchoolName B-ORG
-Christian SchoolName I-ORG
-Day SchoolName I-ORG
-School SchoolName E-ORG
+Whitechurch SchoolName O
+Christian SchoolName O
+Day SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 201 StreetAddress B-ADDRESS
@@ -15408,7 +15408,7 @@ N0G2H0 PostalCode S-ADDRESS
 357 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 3866 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -15423,9 +15423,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Whitefield SchoolName B-ORG
-Christian SchoolName I-ORG
-Schools SchoolName E-ORG
+Whitefield SchoolName O
+Christian SchoolName O
+Schools SchoolName O
 None Suite O
 None POBox O
 5808 StreetAddress B-ADDRESS
@@ -15480,9 +15480,9 @@ Christian AssociationMembership O
 Schools AssociationMembership O
 International AssociationMembership O
 
-Wikwemikong SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Wikwemikong SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 34 StreetAddress B-ADDRESS
@@ -15508,7 +15508,7 @@ Bay Region O
 Regional Region O
 Office Region O
 663662 SchoolNumber O
-None PrincipalName O
+None PrincipalName S-PERSON
 Secondary SchoolLevel O
 First SchoolSpecialConditionsCode O
 Nations SchoolSpecialConditionsCode O
@@ -15528,8 +15528,8 @@ Nation ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wildwood SchoolName B-ORG
-Academy SchoolName E-ORG
+Wildwood SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 2250 StreetAddress B-ADDRESS
@@ -15569,9 +15569,9 @@ curriculum ProgramType O
 Ontario AssociationMembership O
 Independant AssociationMembership O
 
-Wildwood SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Wildwood SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 512 StreetAddress B-ADDRESS
@@ -15581,8 +15581,8 @@ Sideroad StreetAddress I-ADDRESS
 Paisley City O
 Ontario Province O
 N0G2N0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -15606,8 +15606,8 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-William SchoolName B-ORG
-Academy SchoolName E-ORG
+William SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 135 StreetAddress B-ADDRESS
@@ -15622,7 +15622,7 @@ K9A2M7 PostalCode S-ADDRESS
 372 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1000 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -15658,9 +15658,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-William SchoolName B-ORG
-Academy SchoolName I-ORG
-Scarborough SchoolName E-ORG
+William SchoolName O
+Academy SchoolName O
+Scarborough SchoolName O
 Unit Suite O
 200 Suite O
 None POBox O
@@ -15714,9 +15714,9 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Willowdale SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Willowdale SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 60 StreetAddress B-ADDRESS
@@ -15759,9 +15759,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Willowdale SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Willowdale SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 172 StreetAddress B-ADDRESS
@@ -15776,7 +15776,7 @@ M3M1E4 PostalCode S-ADDRESS
 642 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 7092 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -15811,8 +15811,8 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-WillowWood SchoolName B-ORG
-School SchoolName E-ORG
+WillowWood SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 55 StreetAddress B-ADDRESS
@@ -15870,10 +15870,10 @@ of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Windsor SchoolName B-ORG
-Adventist SchoolName I-ORG
-Elementary SchoolName I-ORG
-School SchoolName E-ORG
+Windsor SchoolName O
+Adventist SchoolName O
+Elementary SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 5350 StreetAddress B-ADDRESS
@@ -15913,10 +15913,10 @@ Of AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Windsor SchoolName B-ORG
-Islamic SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Windsor SchoolName O
+Islamic SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 5420 StreetAddress B-ADDRESS
@@ -15930,7 +15930,7 @@ N8T2E7 PostalCode S-ADDRESS
 890 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 4100 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -15956,9 +15956,9 @@ Windsor AssociationMembership O
 islamic AssociationMembership O
 Association AssociationMembership O
 
-Winfield SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Winfield SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 7479 StreetAddress B-ADDRESS
@@ -15968,8 +15968,8 @@ Line StreetAddress I-ADDRESS
 Drayton City O
 Ontario Province O
 N0G1P0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -15993,10 +15993,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Wingham SchoolName B-ORG
-Baptist SchoolName I-ORG
-Church SchoolName I-ORG
-School SchoolName E-ORG
+Wingham SchoolName O
+Baptist SchoolName O
+Church SchoolName O
+School SchoolName O
 None Suite O
 Box POBox O
 820 POBox O
@@ -16011,7 +16011,7 @@ N0G2W0 PostalCode S-ADDRESS
 357 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 1830 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -16028,9 +16028,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Winterbourne SchoolName B-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Winterbourne SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1210 StreetAddress B-ADDRESS
@@ -16042,8 +16042,8 @@ West City O
 Montrose City O
 Ontario Province O
 N0B2V0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -16067,8 +16067,8 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Wisdom SchoolName B-ORG
-Academy SchoolName E-ORG
+Wisdom SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 480 StreetAddress B-ADDRESS
@@ -16120,10 +16120,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wishing SchoolName B-ORG
-Well SchoolName I-ORG
-Montessori SchoolName I-ORG
-Schools SchoolName E-ORG
+Wishing SchoolName O
+Well SchoolName O
+Montessori SchoolName O
+Schools SchoolName O
 30 Suite O
 None POBox O
 455 StreetAddress B-ADDRESS
@@ -16156,11 +16156,11 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wiz SchoolName B-ORG
-Kidz SchoolName I-ORG
-Learning SchoolName I-ORG
-Centre SchoolName I-ORG
-Inc. SchoolName E-ORG
+Wiz SchoolName O
+Kidz SchoolName O
+Learning SchoolName O
+Centre SchoolName O
+Inc. SchoolName O
 204 Suite O
 None POBox O
 545 StreetAddress B-ADDRESS
@@ -16215,8 +16215,8 @@ Forum AssociationMembership O
 IPSF AssociationMembership O
 ) AssociationMembership O
 
-Woodbridge SchoolName B-ORG
-Montessori SchoolName E-ORG
+Woodbridge SchoolName O
+Montessori SchoolName O
 12 Suite O
 - Suite O
 15 Suite O
@@ -16257,10 +16257,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Woodland SchoolName B-ORG
-Christian SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Woodland SchoolName O
+Christian SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 1058 StreetAddress B-ADDRESS
@@ -16314,10 +16314,10 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Woodland SchoolName B-ORG
-Corners SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Woodland SchoolName O
+Corners SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 5334 StreetAddress B-ADDRESS
@@ -16327,8 +16327,8 @@ Line StreetAddress I-ADDRESS
 Harriston City O
 Ontario Province O
 N0G1Z0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -16354,10 +16354,10 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Woodland SchoolName B-ORG
-Springs SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Woodland SchoolName O
+Springs SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 044037 StreetAddress B-ADDRESS
@@ -16369,8 +16369,8 @@ Mount City O
 Forest City O
 Ontario Province O
 N0G2L0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -16396,9 +16396,9 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Woodside SchoolName B-ORG
-Melody SchoolName I-ORG
-Parochial SchoolName E-ORG
+Woodside SchoolName O
+Melody SchoolName O
+Parochial SchoolName O
 None Suite O
 None POBox O
 144460 StreetAddress B-ADDRESS
@@ -16409,8 +16409,8 @@ Road StreetAddress I-ADDRESS
 Holstein City O
 Ontario Province O
 N0G2A0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -16440,9 +16440,9 @@ Levi AssociationMembership O
 M. AssociationMembership O
 Frey AssociationMembership O
 
-Woodstock SchoolName B-ORG
-Christian SchoolName I-ORG
-School SchoolName E-ORG
+Woodstock SchoolName O
+Christian SchoolName O
+School SchoolName O
 None Suite O
 1597 POBox O
 800 StreetAddress B-ADDRESS
@@ -16478,9 +16478,9 @@ of AssociationMembership O
 Christian AssociationMembership O
 Schools AssociationMembership O
 
-Woodstock SchoolName B-ORG
-Trinity SchoolName I-ORG
-School SchoolName E-ORG
+Woodstock SchoolName O
+Trinity SchoolName O
+School SchoolName O
 None Suite O
 249 POBox O
 95 StreetAddress B-ADDRESS
@@ -16513,9 +16513,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Woodview SchoolName B-ORG
-Learning SchoolName I-ORG
-Centre SchoolName E-ORG
+Woodview SchoolName O
+Learning SchoolName O
+Centre SchoolName O
 None Suite O
 None POBox O
 69 StreetAddress B-ADDRESS
@@ -16551,10 +16551,10 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-World SchoolName B-ORG
-Life SchoolName I-ORG
-Education SchoolName I-ORG
-Inc SchoolName E-ORG
+World SchoolName O
+Life SchoolName O
+Education SchoolName O
+Inc SchoolName O
 3 Suite O
 None POBox O
 351 StreetAddress B-ADDRESS
@@ -16568,7 +16568,7 @@ L3R5Z2 PostalCode S-ADDRESS
 604 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 5500 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Barrie Region O
 Regional Region O
 Office Region O
@@ -16598,8 +16598,8 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Wychwood SchoolName B-ORG
-School SchoolName E-ORG
+Wychwood SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 611 StreetAddress B-ADDRESS
@@ -16615,7 +16615,7 @@ M6C1A3 PostalCode S-ADDRESS
 836 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 6751 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -16638,10 +16638,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Xyna SchoolName B-ORG
-International SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Xyna SchoolName O
+International SchoolName O
+High SchoolName O
+School SchoolName O
 300 Suite O
 None POBox O
 60 StreetAddress B-ADDRESS
@@ -16696,11 +16696,11 @@ Based ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Xyna SchoolName B-ORG
-International SchoolName I-ORG
-High SchoolName I-ORG
-School SchoolName I-ORG
-Toronto SchoolName E-ORG
+Xyna SchoolName O
+International SchoolName O
+High SchoolName O
+School SchoolName O
+Toronto SchoolName O
 15 Suite O
 None POBox O
 2687 StreetAddress B-ADDRESS
@@ -16750,10 +16750,10 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Yatton SchoolName B-ORG
-Mennonite SchoolName I-ORG
-Parochial SchoolName I-ORG
-School SchoolName E-ORG
+Yatton SchoolName O
+Mennonite SchoolName O
+Parochial SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 7279 StreetAddress B-ADDRESS
@@ -16763,8 +16763,8 @@ Line StreetAddress I-ADDRESS
 Wallenstein City O
 Ontario Province O
 N0B2S0 PostalCode S-ADDRESS
-None TelephoneNumber O
-None Fax O
+None TelephoneNumber S-PHONE
+None Fax S-PHONE
 London Region O
 Regional Region O
 Office Region O
@@ -16788,11 +16788,11 @@ Perth AssociationMembership O
 Parochial AssociationMembership O
 Schools AssociationMembership O
 
-Yeshiva SchoolName B-ORG
-Bnei SchoolName I-ORG
-Zion SchoolName I-ORG
-of SchoolName I-ORG
-Toronto SchoolName E-ORG
+Yeshiva SchoolName O
+Bnei SchoolName O
+Zion SchoolName O
+of SchoolName O
+Toronto SchoolName O
 None Suite O
 None POBox O
 44 StreetAddress B-ADDRESS
@@ -16836,12 +16836,12 @@ Board AssociationMembership O
 of AssociationMembership O
 Education AssociationMembership O
 
-Yeshiva SchoolName B-ORG
-Darchei SchoolName I-ORG
-Torah SchoolName I-ORG
-Private SchoolName I-ORG
-High SchoolName I-ORG
-Schoo SchoolName E-ORG
+Yeshiva SchoolName O
+Darchei SchoolName O
+Torah SchoolName O
+Private SchoolName O
+High SchoolName O
+Schoo SchoolName O
 None Suite O
 None POBox O
 18 StreetAddress B-ADDRESS
@@ -16890,10 +16890,10 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Yeshiva SchoolName B-ORG
-Gedolah SchoolName I-ORG
-of SchoolName I-ORG
-Toronto SchoolName E-ORG
+Yeshiva SchoolName O
+Gedolah SchoolName O
+of SchoolName O
+Toronto SchoolName O
 None Suite O
 None POBox O
 567 StreetAddress B-ADDRESS
@@ -16942,9 +16942,9 @@ boys ProgramType O
 only ProgramType O
 PRIVATE AssociationMembership O
 
-Yeshiva SchoolName B-ORG
-Yesodei SchoolName I-ORG
-Hatorah SchoolName E-ORG
+Yeshiva SchoolName O
+Yesodei SchoolName O
+Hatorah SchoolName O
 None Suite O
 None POBox O
 77 StreetAddress B-ADDRESS
@@ -16984,9 +16984,9 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Yeshivas SchoolName B-ORG
-Nachalas SchoolName I-ORG
-ZVI SchoolName E-ORG
+Yeshivas SchoolName O
+Nachalas SchoolName O
+ZVI SchoolName O
 None Suite O
 None POBox O
 475 StreetAddress B-ADDRESS
@@ -17026,9 +17026,9 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Yeshivas SchoolName B-ORG
-Nefesh SchoolName I-ORG
-Dovid SchoolName E-ORG
+Yeshivas SchoolName O
+Nefesh SchoolName O
+Dovid SchoolName O
 Portable Suite O
 None POBox O
 70 StreetAddress B-ADDRESS
@@ -17077,10 +17077,10 @@ only ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-YIP SchoolName B-ORG
-'s SchoolName I-ORG
-Collegiate SchoolName I-ORG
-School SchoolName E-ORG
+YIP SchoolName O
+'s SchoolName O
+Collegiate SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 100 StreetAddress B-ADDRESS
@@ -17126,10 +17126,10 @@ Site ProgramType O
 Based ProgramType O
 IPSF AssociationMembership O
 
-YMCA SchoolName B-ORG
-Academy SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+YMCA SchoolName O
+Academy SchoolName O
+, SchoolName O
+The SchoolName O
 3rd Suite O
 Floor Suite O
 None POBox O
@@ -17176,10 +17176,10 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-York SchoolName B-ORG
-School SchoolName I-ORG
-, SchoolName I-ORG
-The SchoolName E-ORG
+York SchoolName O
+School SchoolName O
+, SchoolName O
+The SchoolName O
 None Suite O
 None POBox O
 1320 StreetAddress B-ADDRESS
@@ -17234,9 +17234,9 @@ Accredited AssociationMembership O
 Independent AssociationMembership O
 Schools AssociationMembership O
 
-Yorkland SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Yorkland SchoolName O
+High SchoolName O
+School SchoolName O
 None Suite O
 None POBox O
 3840 StreetAddress B-ADDRESS
@@ -17283,8 +17283,8 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Yorkville SchoolName B-ORG
-Academy SchoolName E-ORG
+Yorkville SchoolName O
+Academy SchoolName O
 506 Suite O
 None POBox O
 3621 StreetAddress B-ADDRESS
@@ -17340,9 +17340,9 @@ of AssociationMembership O
 Independent AssociationMembership O
 School AssociationMembership O
 
-Yorkville SchoolName B-ORG
-High SchoolName I-ORG
-School SchoolName E-ORG
+Yorkville SchoolName O
+High SchoolName O
+School SchoolName O
 506B Suite O
 None POBox O
 3621 StreetAddress B-ADDRESS
@@ -17398,8 +17398,8 @@ Private AssociationMembership O
 School AssociationMembership O
 Forum AssociationMembership O
 
-Youthdale SchoolName B-ORG
-Schools SchoolName E-ORG
+Youthdale SchoolName O
+Schools SchoolName O
 None Suite O
 227 POBox O
 2000 StreetAddress B-ADDRESS
@@ -17459,9 +17459,9 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Z3 SchoolName B-ORG
-Education SchoolName I-ORG
-Centre SchoolName E-ORG
+Z3 SchoolName O
+Education SchoolName O
+Centre SchoolName O
 509 Suite O
 None POBox O
 1200 StreetAddress B-ADDRESS
@@ -17475,7 +17475,7 @@ M1H2Y9 PostalCode S-ADDRESS
 553 TelephoneNumber I-PHONE
 - TelephoneNumber I-PHONE
 2999 TelephoneNumber E-PHONE
-None Fax O
+None Fax S-PHONE
 Toronto Region O
 and Region O
 Area Region O
@@ -17512,11 +17512,11 @@ curriculum ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Zareinu SchoolName B-ORG
-Educational SchoolName I-ORG
-Centre SchoolName I-ORG
-of SchoolName I-ORG
-Metropolit SchoolName E-ORG
+Zareinu SchoolName O
+Educational SchoolName O
+Centre SchoolName O
+of SchoolName O
+Metropolit SchoolName O
 None Suite O
 None POBox O
 36 StreetAddress B-ADDRESS
@@ -17552,9 +17552,9 @@ Needs ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Zhingwaako SchoolName B-ORG
-Za'iganing SchoolName I-ORG
-School SchoolName E-ORG
+Zhingwaako SchoolName O
+Za'iganing SchoolName O
+School SchoolName O
 Suite Suite O
 24D Suite O
 PO POBox O
@@ -17607,9 +17607,9 @@ None ProgramType O
 No AssociationMembership O
 Association AssociationMembership O
 
-Zoe SchoolName B-ORG
-Christian SchoolName I-ORG
-Academy SchoolName E-ORG
+Zoe SchoolName O
+Christian SchoolName O
+Academy SchoolName O
 None Suite O
 None POBox O
 299 StreetAddress B-ADDRESS

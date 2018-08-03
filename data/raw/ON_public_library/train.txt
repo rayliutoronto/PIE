@@ -13,13 +13,13 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 72 A1.5MailingAddress O
-3641 StreetAddress B-ADDRESS
-Flinton StreetAddress I-ADDRESS
-Rd StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+3641 StreetAddress O
+Flinton StreetAddress O
+Rd StreetAddress O
+. StreetAddress O
 Flinton A1.10City/Town O
 Ontario A1.11Province O
-K0H1P0 PostalCode S-ADDRESS
+K0H1P0 PostalCode O
 www.addingtonhighlandspubliclibrary.ca A1.13WebSiteAddress O
 
 Adjala LibraryFullName O
@@ -39,15 +39,15 @@ Sideroad A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-7855 StreetAddress B-ADDRESS
-Sideroad StreetAddress I-ADDRESS
-30 StreetAddress I-ADDRESS
-R.R. StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-1 StreetAddress E-ADDRESS
+7855 StreetAddress O
+Sideroad StreetAddress O
+30 StreetAddress O
+R.R. StreetAddress O
+# StreetAddress O
+1 StreetAddress O
 Alliston A1.10City/Town O
 Ontario A1.11Province O
-L9R1V1 PostalCode S-ADDRESS
+L9R1V1 PostalCode O
 www.adjtos.ca A1.13WebSiteAddress O
 
 Admaston LibraryFullName O
@@ -70,12 +70,12 @@ P A1.5MailingAddress O
 O A1.5MailingAddress O
 Box A1.5MailingAddress O
 130 A1.5MailingAddress O
-5346 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-60 StreetAddress E-ADDRESS
+5346 StreetAddress O
+Highway StreetAddress O
+60 StreetAddress O
 Douglas A1.10City/Town O
 Ontario A1.11Province O
-K0J1S0 PostalCode S-ADDRESS
+K0J1S0 PostalCode O
 http://www.admastonbromleylibrary.com A1.13WebSiteAddress O
 
 Ajax LibraryFullName O
@@ -93,13 +93,13 @@ Library A1.4TypeofLibraryService(English) O
 Harwood A1.5MailingAddress O
 Avenue A1.5MailingAddress O
 South A1.5MailingAddress O
-55 StreetAddress B-ADDRESS
-Harwood StreetAddress I-ADDRESS
-Avenue StreetAddress I-ADDRESS
-South StreetAddress E-ADDRESS
+55 StreetAddress O
+Harwood StreetAddress O
+Avenue StreetAddress O
+South StreetAddress O
 Ajax A1.10City/Town O
 Ontario A1.11Province O
-L1S2H8 PostalCode S-ADDRESS
+L1S2H8 PostalCode O
 ajaxlibrary.ca A1.13WebSiteAddress O
 
 Alberton LibraryFullName O
@@ -118,16 +118,16 @@ Highway A1.5MailingAddress O
 611 A1.5MailingAddress O
 South A1.5MailingAddress O
 RR1B2 A1.5MailingAddress O
-3 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-611 StreetAddress I-ADDRESS
-South StreetAddress I-ADDRESS
-RR1B2 StreetAddress E-ADDRESS
+3 StreetAddress O
+Highway StreetAddress O
+611 StreetAddress O
+South StreetAddress O
+RR1B2 StreetAddress O
 Township A1.10City/Town O
 of A1.10City/Town O
 Alberton A1.10City/Town O
 Ontario A1.11Province O
-P9A3M2 PostalCode S-ADDRESS
+P9A3M2 PostalCode O
 http://www.alberton.ca/ A1.13WebSiteAddress O
 
 Alderville LibraryFullName O
@@ -144,13 +144,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 46 A1.5MailingAddress O
-11696 StreetAddress B-ADDRESS
-Second StreetAddress I-ADDRESS
-Line StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+11696 StreetAddress O
+Second StreetAddress O
+Line StreetAddress O
+Road StreetAddress O
 Alderville A1.10City/Town O
 Ontario A1.11Province O
-K0K2X0 PostalCode S-ADDRESS
+K0K2X0 PostalCode O
 http://aldervillelearningcentre.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 index.php A1.13WebSiteAddress O
@@ -173,17 +173,17 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 C.P. A1.5MailingAddress O
 10 A1.5MailingAddress O
-1963 StreetAddress B-ADDRESS
-rue StreetAddress I-ADDRESS
-de StreetAddress I-ADDRESS
-l'H¿tel StreetAddress I-ADDRESS
-de StreetAddress I-ADDRESS
-Ville StreetAddress I-ADDRESS
-C.P. StreetAddress I-ADDRESS
-10 StreetAddress E-ADDRESS
+1963 StreetAddress O
+rue StreetAddress O
+de StreetAddress O
+l'H¿tel StreetAddress O
+de StreetAddress O
+Ville StreetAddress O
+C.P. StreetAddress O
+10 StreetAddress O
 Lefaivre A1.10City/Town O
 Ontario A1.11Province O
-K0B1J0 PostalCode S-ADDRESS
+K0B1J0 PostalCode O
 www.alfred A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 plantagenet.ca A1.13WebSiteAddress O
@@ -205,14 +205,14 @@ Library A1.4TypeofLibraryService(English) O
 A A1.5MailingAddress O
 Mishomis A1.5MailingAddress O
 Inamo A1.5MailingAddress O
-1657 StreetAddress B-ADDRESS
-A StreetAddress I-ADDRESS
-Mishomis StreetAddress I-ADDRESS
-Inamo StreetAddress E-ADDRESS
+1657 StreetAddress O
+A StreetAddress O
+Mishomis StreetAddress O
+Inamo StreetAddress O
 Golden A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-K0J1X0 PostalCode S-ADDRESS
+K0J1X0 PostalCode O
 http://algonquinsofpikwakanagan.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library.php A1.13WebSiteAddress O
@@ -238,7 +238,7 @@ Road A1.5MailingAddress O
 None StreetAddress O
 Grafton A1.10City/Town O
 Ontario A1.11Province O
-K0K2G0 PostalCode S-ADDRESS
+K0K2G0 PostalCode O
 www.alnwickhaldimand.ca A1.13WebSiteAddress O
 
 Amaranth LibraryFullName O
@@ -254,12 +254,12 @@ Municipality A1.4TypeofLibraryService(English) O
 374028 A1.5MailingAddress O
 6th A1.5MailingAddress O
 Line A1.5MailingAddress O
-374028 StreetAddress B-ADDRESS
-6th StreetAddress I-ADDRESS
-Line StreetAddress E-ADDRESS
+374028 StreetAddress O
+6th StreetAddress O
+Line StreetAddress O
 Amaranth A1.10City/Town O
 Ontario A1.11Province O
-L9W0M6 PostalCode S-ADDRESS
+L9W0M6 PostalCode O
 www.amaranth A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 eastgary.ca A1.13WebSiteAddress O
@@ -282,7 +282,7 @@ None StreetAddress O
 Parry A1.10City/Town O
 Sound A1.10City/Town O
 Ontario A1.11Province O
-P2A1T4 PostalCode S-ADDRESS
+P2A1T4 PostalCode O
 www.thearchipelago.on.ca A1.13WebSiteAddress O
 
 Armstrong LibraryFullName O
@@ -300,12 +300,12 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 C.P. A1.5MailingAddress O
 39 A1.5MailingAddress O
-35 StreetAddress B-ADDRESS
-10th StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+35 StreetAddress O
+10th StreetAddress O
+Street StreetAddress O
 Earlton A1.10City/Town O
 Ontario A1.11Province O
-P0J1E0 PostalCode S-ADDRESS
+P0J1E0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 armstrong A1.13WebSiteAddress O
@@ -327,7 +327,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Arnprior A1.10City/Town O
 Ontario A1.11Province O
-K7S1R6 PostalCode S-ADDRESS
+K7S1R6 PostalCode O
 http://www.arnprior.library.on.ca/ A1.13WebSiteAddress O
 
 Asphodel LibraryFullName O
@@ -346,13 +346,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 100 A1.5MailingAddress O
-2363 StreetAddress B-ADDRESS
-County StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-45 StreetAddress E-ADDRESS
+2363 StreetAddress O
+County StreetAddress O
+Road StreetAddress O
+45 StreetAddress O
 Norwood A1.10City/Town O
 Ontario A1.11Province O
-K0L2V0 PostalCode S-ADDRESS
+K0L2V0 PostalCode O
 www.anpl.org A1.13WebSiteAddress O
 
 Assiginack LibraryFullName O
@@ -371,13 +371,13 @@ Library A1.4TypeofLibraryService(English) O
 Manitowaning A1.5MailingAddress O
 Box A1.5MailingAddress O
 280 A1.5MailingAddress O
-25A StreetAddress B-ADDRESS
-Spragge StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+25A StreetAddress O
+Spragge StreetAddress O
+St. StreetAddress O
 Manitoulin A1.10City/Town O
 Island A1.10City/Town O
 Ontario A1.11Province O
-P0P1N0 PostalCode S-ADDRESS
+P0P1N0 PostalCode O
 www.assiginacklibrary.org A1.13WebSiteAddress O
 
 Athens LibraryFullName O
@@ -395,12 +395,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 309 A1.5MailingAddress O
-5 StreetAddress B-ADDRESS
-Central StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+5 StreetAddress O
+Central StreetAddress O
+Street StreetAddress O
 Athens A1.10City/Town O
 Ontario A1.11Province O
-K0E1B0 PostalCode S-ADDRESS
+K0E1B0 PostalCode O
 www.athenslibrary.ca A1.13WebSiteAddress O
 
 Atikameksheng LibraryFullName O
@@ -423,14 +423,14 @@ Library A1.4TypeofLibraryService(English) O
 25 A1.5MailingAddress O
 reserve A1.5MailingAddress O
 road A1.5MailingAddress O
-212 StreetAddress B-ADDRESS
-Maaini StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+212 StreetAddress O
+Maaini StreetAddress O
+Street StreetAddress O
 Whitefish A1.10City/Town O
 First A1.10City/Town O
 Nation A1.10City/Town O
 Ontario A1.11Province O
-P0M2M0 PostalCode S-ADDRESS
+P0M2M0 PostalCode O
 http://www.wlfn.com A1.13WebSiteAddress O
 
 Atikokan LibraryFullName O
@@ -448,12 +448,12 @@ Library A1.4TypeofLibraryService(English) O
 214 A1.5MailingAddress O
 Skyes A1.5MailingAddress O
 St. A1.5MailingAddress O
-214 StreetAddress B-ADDRESS
-Sykes StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+214 StreetAddress O
+Sykes StreetAddress O
+St. StreetAddress O
 Atikokan A1.10City/Town O
 Ontario A1.11Province O
-P0T1C0 PostalCode S-ADDRESS
+P0T1C0 PostalCode O
 www.aplibrary.org A1.13WebSiteAddress O
 
 Augusta LibraryFullName O
@@ -471,13 +471,13 @@ Library A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-4500 StreetAddress B-ADDRESS
-County StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-15 StreetAddress E-ADDRESS
+4500 StreetAddress O
+County StreetAddress O
+Road StreetAddress O
+15 StreetAddress O
 Brockville A1.10City/Town O
 Ontario A1.11Province O
-K6V5T2 PostalCode S-ADDRESS
+K6V5T2 PostalCode O
 augustalibrary.com A1.13WebSiteAddress O
 
 Aundeck LibraryFullName O
@@ -502,13 +502,13 @@ Box A1.5MailingAddress O
 RR A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-13 StreetAddress B-ADDRESS
-Hill StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+13 StreetAddress O
+Hill StreetAddress O
+Street StreetAddress O
 Little A1.10City/Town O
 Current A1.10City/Town O
 Ontario A1.11Province O
-P0P1K0 PostalCode S-ADDRESS
+P0P1K0 PostalCode O
 None A1.13WebSiteAddress O
 
 Aurora LibraryFullName O
@@ -525,11 +525,11 @@ Library A1.4TypeofLibraryService(English) O
 15145 A1.5MailingAddress O
 Yonge A1.5MailingAddress O
 Street A1.5MailingAddress O
-Yonge StreetAddress B-ADDRESS
-Street StreetAddress E-ADDRESS
+Yonge StreetAddress O
+Street StreetAddress O
 Aurora A1.10City/Town O
 Ontario A1.11Province O
-L4G1M1 PostalCode S-ADDRESS
+L4G1M1 PostalCode O
 www.aurorapl.ca A1.13WebSiteAddress O
 
 Aweres LibraryFullName O
@@ -548,16 +548,16 @@ A A1.5MailingAddress O
 Hwy A1.5MailingAddress O
 17 A1.5MailingAddress O
 N A1.5MailingAddress O
-399 StreetAddress B-ADDRESS
-A StreetAddress I-ADDRESS
-Hwy StreetAddress I-ADDRESS
-17 StreetAddress I-ADDRESS
-N StreetAddress E-ADDRESS
+399 StreetAddress O
+A StreetAddress O
+Hwy StreetAddress O
+17 StreetAddress O
+N StreetAddress O
 Aweres A1.10City/Town O
 Twp A1.10City/Town O
 . A1.10City/Town O
 Ontario A1.11Province O
-P6A5K7 PostalCode S-ADDRESS
+P6A5K7 PostalCode O
 localservicesboardofaweres A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 shaw.ca A1.13WebSiteAddress O
@@ -576,12 +576,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 7095 A1.5MailingAddress O
-11 StreetAddress B-ADDRESS
-Spooner StreetAddress I-ADDRESS
-St StreetAddress E-ADDRESS
+11 StreetAddress O
+Spooner StreetAddress O
+St StreetAddress O
 McKerrow A1.10City/Town O
 Ontario A1.11Province O
-P0P1M0 PostalCode S-ADDRESS
+P0P1M0 PostalCode O
 www.townshipofbaldwin.ca A1.13WebSiteAddress O
 
 Bancroft LibraryFullName O
@@ -599,12 +599,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 127 A1.5MailingAddress O
-14 StreetAddress B-ADDRESS
-Flint StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+14 StreetAddress O
+Flint StreetAddress O
+Street StreetAddress O
 Bancroft A1.10City/Town O
 Ontario A1.11Province O
-K0L1C0 PostalCode S-ADDRESS
+K0L1C0 PostalCode O
 bancroftlibrary A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 bellnet.ca A1.13WebSiteAddress O
@@ -623,12 +623,12 @@ Library A1.4TypeofLibraryService(English) O
 60 A1.5MailingAddress O
 Worsley A1.5MailingAddress O
 St A1.5MailingAddress O
-48 StreetAddress B-ADDRESS
-Dean StreetAddress I-ADDRESS
-Ave StreetAddress E-ADDRESS
+48 StreetAddress O
+Dean StreetAddress O
+Ave StreetAddress O
 Barrie A1.10City/Town O
 Ontario A1.11Province O
-L4N0C2 PostalCode S-ADDRESS
+L4N0C2 PostalCode O
 library.barrie.ca A1.13WebSiteAddress O
 
 Beausoleil LibraryFullName O
@@ -649,14 +649,14 @@ Library A1.4TypeofLibraryService(English) O
 Mkade A1.5MailingAddress O
 Kegwin A1.5MailingAddress O
 MIIkan A1.5MailingAddress O
-150 StreetAddress B-ADDRESS
-Mkade StreetAddress I-ADDRESS
-Kegwin StreetAddress I-ADDRESS
-MIIkan StreetAddress E-ADDRESS
+150 StreetAddress O
+Mkade StreetAddress O
+Kegwin StreetAddress O
+MIIkan StreetAddress O
 Christian A1.10City/Town O
 Island A1.10City/Town O
 Ontario A1.11Province O
-L9M0A9 PostalCode S-ADDRESS
+L9M0A9 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 bfnlibrary A1.13WebSiteAddress O
@@ -676,15 +676,15 @@ Municipality A1.4TypeofLibraryService(English) O
 Line A1.5MailingAddress O
 Beckwith A1.5MailingAddress O
 R.R.#2 A1.5MailingAddress O
-1702 StreetAddress B-ADDRESS
-9th StreetAddress I-ADDRESS
-Line StreetAddress I-ADDRESS
-Beckwith StreetAddress I-ADDRESS
-R.R.#2 StreetAddress E-ADDRESS
+1702 StreetAddress O
+9th StreetAddress O
+Line StreetAddress O
+Beckwith StreetAddress O
+R.R.#2 StreetAddress O
 Carleton A1.10City/Town O
 Place A1.10City/Town O
 Ontario A1.11Province O
-K7C3P2 PostalCode S-ADDRESS
+K7C3P2 PostalCode O
 www.twp.beckwith.on.ca A1.13WebSiteAddress O
 
 Belleville LibraryFullName O
@@ -704,7 +704,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Belleville A1.10City/Town O
 Ontario A1.11Province O
-K8N3B1 PostalCode S-ADDRESS
+K8N3B1 PostalCode O
 www.bellevillelibrary.com A1.13WebSiteAddress O
 
 Big LibraryFullName O
@@ -723,13 +723,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 453 A1.5MailingAddress O
-513 StreetAddress B-ADDRESS
-Beach StreetAddress I-ADDRESS
-Rd StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+513 StreetAddress O
+Beach StreetAddress O
+Rd StreetAddress O
+. StreetAddress O
 Morson A1.10City/Town O
 Ontario A1.11Province O
-P0W1J0 PostalCode S-ADDRESS
+P0W1J0 PostalCode O
 www.biggrassy.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -753,15 +753,15 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 37 A1.5MailingAddress O
-18 StreetAddress B-ADDRESS
-Upper StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-37 StreetAddress E-ADDRESS
+18 StreetAddress O
+Upper StreetAddress O
+Street StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+37 StreetAddress O
 Kagawong A1.10City/Town O
 Ontario A1.11Province O
-P0P1J0 PostalCode S-ADDRESS
+P0P1J0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 billingslibrary A1.13WebSiteAddress O
@@ -784,12 +784,12 @@ Nation A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 3 A1.5MailingAddress O
-136 StreetAddress B-ADDRESS
-Tecumseh StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+136 StreetAddress O
+Tecumseh StreetAddress O
+Road StreetAddress O
 Wallaceburg A1.10City/Town O
 Ontario A1.11Province O
-N8A4K9 PostalCode S-ADDRESS
+N8A4K9 PostalCode O
 www.bkejwanonglibrary.ca A1.13WebSiteAddress O
 
 Black LibraryFullName O
@@ -811,12 +811,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 450 A1.5MailingAddress O
-352 StreetAddress B-ADDRESS
-Second StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+352 StreetAddress O
+Second StreetAddress O
+Street StreetAddress O
 Matheson A1.10City/Town O
 Ontario A1.11Province O
-P0K1N0 PostalCode S-ADDRESS
+P0K1N0 PostalCode O
 None A1.13WebSiteAddress O
 
 Blind LibraryFullName O
@@ -835,13 +835,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 880 A1.5MailingAddress O
-8 StreetAddress B-ADDRESS
-Woodward StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+8 StreetAddress O
+Woodward StreetAddress O
+Avenue StreetAddress O
 Blind A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0R1B0 PostalCode S-ADDRESS
+P0R1B0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 blindriverlibrary/ A1.13WebSiteAddress O
@@ -861,12 +861,12 @@ Library A1.4TypeofLibraryService(English) O
 365 A1.5MailingAddress O
 Highway A1.5MailingAddress O
 531 A1.5MailingAddress O
-365 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-531 StreetAddress E-ADDRESS
+365 StreetAddress O
+Highway StreetAddress O
+531 StreetAddress O
 Bonfield A1.10City/Town O
 Ontario A1.11Province O
-P0H1E0 PostalCode S-ADDRESS
+P0H1E0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 bonfield A1.13WebSiteAddress O
@@ -886,13 +886,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 39 A1.5MailingAddress O
-74 StreetAddress B-ADDRESS
-A StreetAddress I-ADDRESS
-Maple StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+74 StreetAddress O
+A StreetAddress O
+Maple StreetAddress O
+Street StreetAddress O
 Eganville A1.10City/Town O
 Ontario A1.11Province O
-K0J1T0 PostalCode S-ADDRESS
+K0J1T0 PostalCode O
 www.bonnechereupl.com A1.13WebSiteAddress O
 
 Bracebridge LibraryFullName O
@@ -909,12 +909,12 @@ Library A1.4TypeofLibraryService(English) O
 94 A1.5MailingAddress O
 Manitoba A1.5MailingAddress O
 Street A1.5MailingAddress O
-94 StreetAddress B-ADDRESS
-Manitoba StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+94 StreetAddress O
+Manitoba StreetAddress O
+Street StreetAddress O
 Bracebridge A1.10City/Town O
 Ontario A1.11Province O
-P1L2B5 PostalCode S-ADDRESS
+P1L2B5 PostalCode O
 www.bracebridge.library.on.ca A1.13WebSiteAddress O
 
 Bradford LibraryFullName O
@@ -935,13 +935,13 @@ Library A1.4TypeofLibraryService(English) O
 Holland A1.5MailingAddress O
 Street A1.5MailingAddress O
 West A1.5MailingAddress O
-425 StreetAddress B-ADDRESS
-Holland StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+425 StreetAddress O
+Holland StreetAddress O
+Street StreetAddress O
+West StreetAddress O
 Bradford A1.10City/Town O
 Ontario A1.11Province O
-L3Z0J2 PostalCode S-ADDRESS
+L3Z0J2 PostalCode O
 www.bradford.library.on.ca A1.13WebSiteAddress O
 
 Brampton LibraryFullName O
@@ -962,7 +962,7 @@ East A1.5MailingAddress O
 None StreetAddress O
 Brampton A1.10City/Town O
 Ontario A1.11Province O
-L6W3L6 PostalCode S-ADDRESS
+L6W3L6 PostalCode O
 www.bramptonlibrary.ca A1.13WebSiteAddress O
 
 Brant LibraryFullName O
@@ -980,12 +980,12 @@ Library A1.4TypeofLibraryService(English) O
 12 A1.5MailingAddress O
 William A1.5MailingAddress O
 Street A1.5MailingAddress O
-12 StreetAddress B-ADDRESS
-William StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+12 StreetAddress O
+William StreetAddress O
+Street StreetAddress O
 Paris A1.10City/Town O
 Ontario A1.11Province O
-N3L1K7 PostalCode S-ADDRESS
+N3L1K7 PostalCode O
 www.brantlibrary.ca A1.13WebSiteAddress O
 
 Brantford LibraryFullName O
@@ -1005,7 +1005,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Brantford A1.10City/Town O
 Ontario A1.11Province O
-N3T2G8 PostalCode S-ADDRESS
+N3T2G8 PostalCode O
 brantford.library.on.ca A1.13WebSiteAddress O
 
 Brighton LibraryFullName O
@@ -1028,12 +1028,12 @@ St A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 129 A1.5MailingAddress O
-35 StreetAddress B-ADDRESS
-Alice StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+35 StreetAddress O
+Alice StreetAddress O
+Street StreetAddress O
 Brighton A1.10City/Town O
 Ontario A1.11Province O
-K0K1H0 PostalCode S-ADDRESS
+K0K1H0 PostalCode O
 www.brighton.library.on.ca A1.13WebSiteAddress O
 
 Britt LibraryFullName O
@@ -1050,12 +1050,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 2 A1.5MailingAddress O
-841 StreetAddress B-ADDRESS
-Riverside StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+841 StreetAddress O
+Riverside StreetAddress O
+Drive StreetAddress O
 Britt A1.10City/Town O
 Ontario A1.11Province O
-P0G1A0 PostalCode S-ADDRESS
+P0G1A0 PostalCode O
 britt.lib A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 hotmail.com A1.13WebSiteAddress O
@@ -1075,13 +1075,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 310 A1.5MailingAddress O
-401 StreetAddress B-ADDRESS
-Simcoe StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-North StreetAddress E-ADDRESS
+401 StreetAddress O
+Simcoe StreetAddress O
+Street StreetAddress O
+North StreetAddress O
 Beaverton A1.10City/Town O
 Ontario A1.11Province O
-L0K1A0 PostalCode S-ADDRESS
+L0K1A0 PostalCode O
 www.brocklibraries.ca A1.13WebSiteAddress O
 
 Brockville LibraryFullName O
@@ -1098,12 +1098,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 100 A1.5MailingAddress O
-23 StreetAddress B-ADDRESS
-Buell StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+23 StreetAddress O
+Buell StreetAddress O
+Street StreetAddress O
 Brockville A1.10City/Town O
 Ontario A1.11Province O
-K6V5T7 PostalCode S-ADDRESS
+K6V5T7 PostalCode O
 www.brockvillelibrary.ca A1.13WebSiteAddress O
 
 Bruce LibraryFullName O
@@ -1133,7 +1133,7 @@ of A1.10City/Town O
 Saugeen A1.10City/Town O
 Shores A1.10City/Town O
 Ontario A1.11Province O
-N0H2C6 PostalCode S-ADDRESS
+N0H2C6 PostalCode O
 library.brucecounty.on.ca A1.13WebSiteAddress O
 
 Bruce LibraryFullName O
@@ -1156,13 +1156,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 249 A1.5MailingAddress O
-33 StreetAddress B-ADDRESS
-Desbarats StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+33 StreetAddress O
+Desbarats StreetAddress O
+Street StreetAddress O
 Bruce A1.10City/Town O
 Mines A1.10City/Town O
 Ontario A1.11Province O
-P0R1C0 PostalCode S-ADDRESS
+P0R1C0 PostalCode O
 www.bruceminesandplummerlibrary.ca A1.13WebSiteAddress O
 
 Brudenell LibraryFullName O
@@ -1189,7 +1189,7 @@ None StreetAddress O
 Palmer A1.10City/Town O
 Rapids A1.10City/Town O
 Ontario A1.11Province O
-K0J2E0 PostalCode S-ADDRESS
+K0J2E0 PostalCode O
 None A1.13WebSiteAddress O
 
 Burk LibraryFullName O
@@ -1216,14 +1216,14 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 620 A1.5MailingAddress O
-39 StreetAddress B-ADDRESS
-Copeland StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+39 StreetAddress O
+Copeland StreetAddress O
+Street StreetAddress O
 Burk A1.10City/Town O
 's A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0A1C0 PostalCode S-ADDRESS
+P0A1C0 PostalCode O
 www.burksfallslibrary.com A1.13WebSiteAddress O
 
 Burlington LibraryFullName O
@@ -1243,7 +1243,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Burlington A1.10City/Town O
 Ontario A1.11Province O
-L7R1J4 PostalCode S-ADDRESS
+L7R1J4 PostalCode O
 www.bpl.on.ca A1.13WebSiteAddress O
 
 Caledon LibraryFullName O
@@ -1265,7 +1265,7 @@ None StreetAddress O
 Caledon A1.10City/Town O
 East A1.10City/Town O
 Ontario A1.11Province O
-L7C0H3 PostalCode S-ADDRESS
+L7C0H3 PostalCode O
 www.caledon.library.on.ca A1.13WebSiteAddress O
 
 Callander LibraryFullName O
@@ -1290,7 +1290,7 @@ Box A1.5MailingAddress O
 None StreetAddress O
 Callander A1.10City/Town O
 Ontario A1.11Province O
-P0H1H0 PostalCode S-ADDRESS
+P0H1H0 PostalCode O
 mycallander.ca A1.13WebSiteAddress O
 
 Calvin LibraryFullName O
@@ -1315,7 +1315,7 @@ R.R. A1.5MailingAddress O
 None StreetAddress O
 Mattawa A1.10City/Town O
 Ontario A1.11Province O
-P0H1V0 PostalCode S-ADDRESS
+P0H1V0 PostalCode O
 www.calvintownship.ca A1.13WebSiteAddress O
 
 Cambridge LibraryFullName O
@@ -1332,12 +1332,12 @@ Library A1.4TypeofLibraryService(English) O
 1 A1.5MailingAddress O
 North A1.5MailingAddress O
 Square A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-North StreetAddress I-ADDRESS
-Square StreetAddress E-ADDRESS
+1 StreetAddress O
+North StreetAddress O
+Square StreetAddress O
 Cambridge A1.10City/Town O
 Ontario A1.11Province O
-N1S2K6 PostalCode S-ADDRESS
+N1S2K6 PostalCode O
 www.ideaexchange.org A1.13WebSiteAddress O
 
 Carleton LibraryFullName O
@@ -1355,13 +1355,13 @@ Library A1.4TypeofLibraryService(English) O
 101 A1.5MailingAddress O
 Beckwith A1.5MailingAddress O
 Street A1.5MailingAddress O
-101 StreetAddress B-ADDRESS
-Beckwith StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+101 StreetAddress O
+Beckwith StreetAddress O
+Street StreetAddress O
 Carleton A1.10City/Town O
 Place A1.10City/Town O
 Ontario A1.11Province O
-K7C2T3 PostalCode S-ADDRESS
+K7C2T3 PostalCode O
 www.carletonplacelibrary.ca A1.13WebSiteAddress O
 
 Carling LibraryFullName O
@@ -1381,13 +1381,13 @@ Carling A1.5MailingAddress O
 Bay A1.5MailingAddress O
 Rd A1.5MailingAddress O
 RR1 A1.5MailingAddress O
-29 StreetAddress B-ADDRESS
-Mary StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+29 StreetAddress O
+Mary StreetAddress O
+Street StreetAddress O
 Parry A1.10City/Town O
 Sound A1.10City/Town O
 Ontario A1.11Province O
-P2A1E3 PostalCode S-ADDRESS
+P2A1E3 PostalCode O
 www.carlingtownship.ca A1.13WebSiteAddress O
 
 Carlow LibraryFullName O
@@ -1408,13 +1408,13 @@ Library A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 4 A1.5MailingAddress O
-124 StreetAddress B-ADDRESS
-Fort StreetAddress I-ADDRESS
-Stewart StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+124 StreetAddress O
+Fort StreetAddress O
+Stewart StreetAddress O
+Road StreetAddress O
 Bancroft A1.10City/Town O
 Ontario A1.11Province O
-K0L1C0 PostalCode S-ADDRESS
+K0L1C0 PostalCode O
 None A1.13WebSiteAddress O
 
 Cartier LibraryFullName O
@@ -1429,11 +1429,11 @@ LSB A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 117 A1.5MailingAddress O
-Lansdowne StreetAddress B-ADDRESS
-Street StreetAddress E-ADDRESS
+Lansdowne StreetAddress O
+Street StreetAddress O
 Cartier A1.10City/Town O
 Ontario A1.11Province O
-P0M1J0 PostalCode S-ADDRESS
+P0M1J0 PostalCode O
 None A1.13WebSiteAddress O
 
 Casey LibraryFullName O
@@ -1450,13 +1450,13 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 460 A1.5MailingAddress O
-6 StreetAddress B-ADDRESS
-Lachapelle StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+6 StreetAddress O
+Lachapelle StreetAddress O
+Street StreetAddress O
 Belle A1.10City/Town O
 Vallee A1.10City/Town O
 Ontario A1.11Province O
-P0J1A0 PostalCode S-ADDRESS
+P0J1A0 PostalCode O
 harlytwp A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 parolink.net A1.13WebSiteAddress O
@@ -1482,7 +1482,7 @@ C.P. A1.5MailingAddress O
 None StreetAddress O
 Casselman A1.10City/Town O
 Ontario A1.11Province O
-K0A1M0 PostalCode S-ADDRESS
+K0A1M0 PostalCode O
 www.bibliocasselman.ca A1.13WebSiteAddress O
 
 Cavan LibraryFullName O
@@ -1509,7 +1509,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Millbrook A1.10City/Town O
 Ontario A1.11Province O
-L0A1G0 PostalCode S-ADDRESS
+L0A1G0 PostalCode O
 cavanmonaghanlibraries.ca A1.13WebSiteAddress O
 
 Central LibraryFullName O
@@ -1529,12 +1529,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 210 A1.5MailingAddress O
-6020 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-542 StreetAddress E-ADDRESS
+6020 StreetAddress O
+Hwy StreetAddress O
+542 StreetAddress O
 Mindemoya A1.10City/Town O
 Ontario A1.11Province O
-P0P1S0 PostalCode S-ADDRESS
+P0P1S0 PostalCode O
 www.centralmanitoulin.ca A1.13WebSiteAddress O
 
 Centre LibraryFullName O
@@ -1552,12 +1552,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 6 A1.5MailingAddress O
-20 StreetAddress B-ADDRESS
-Davidson StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+20 StreetAddress O
+Davidson StreetAddress O
+Street StreetAddress O
 Madoc A1.10City/Town O
 Ontario A1.11Province O
-K0K2K0 PostalCode S-ADDRESS
+K0K2K0 PostalCode O
 madocpubliclibrary.ca A1.13WebSiteAddress O
 
 Chamberlain LibraryFullName O
@@ -1578,13 +1578,13 @@ Road A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 3 A1.5MailingAddress O
-467501 StreetAddress B-ADDRESS
-Chamberlain StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-5 StreetAddress E-ADDRESS
+467501 StreetAddress O
+Chamberlain StreetAddress O
+Road StreetAddress O
+5 StreetAddress O
 Englehart A1.10City/Town O
 Ontario A1.11Province O
-P0J1H0 PostalCode S-ADDRESS
+P0J1H0 PostalCode O
 chamberlaintownship.com A1.13WebSiteAddress O
 
 Champlain LibraryFullName O
@@ -1606,14 +1606,14 @@ East A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 520 A1.5MailingAddress O
-94 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+94 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Vankleek A1.10City/Town O
 Hill A1.10City/Town O
 Ontario A1.11Province O
-K0B1R0 PostalCode S-ADDRESS
+K0B1R0 PostalCode O
 www.bc A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 cl.ca A1.13WebSiteAddress O
@@ -1635,13 +1635,13 @@ Library A1.4TypeofLibraryService(English) O
 Pine A1.5MailingAddress O
 West A1.5MailingAddress O
 910 A1.5MailingAddress O
-20 StreetAddress B-ADDRESS
-Pine StreetAddress I-ADDRESS
-West StreetAddress I-ADDRESS
-910 StreetAddress E-ADDRESS
+20 StreetAddress O
+Pine StreetAddress O
+West StreetAddress O
+910 StreetAddress O
 Chapleau A1.10City/Town O
 Ontario A1.11Province O
-P0M1K0 PostalCode S-ADDRESS
+P0M1K0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 chapleau A1.13WebSiteAddress O
@@ -1663,12 +1663,12 @@ Road A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 4 A1.5MailingAddress O
-54 StreetAddress B-ADDRESS
-Barwick StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+54 StreetAddress O
+Barwick StreetAddress O
+Road StreetAddress O
 Barwick A1.10City/Town O
 Ontario A1.11Province O
-P0W1A0 PostalCode S-ADDRESS
+P0W1A0 PostalCode O
 www.chapple.on.ca A1.13WebSiteAddress O
 
 Charlton LibraryFullName O
@@ -1691,14 +1691,14 @@ Municipality A1.4TypeofLibraryService(English) O
 Ave A1.5MailingAddress O
 , A1.5MailingAddress O
 809 A1.5MailingAddress O
-71 StreetAddress B-ADDRESS
-4th StreetAddress I-ADDRESS
-Ave StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-809 StreetAddress E-ADDRESS
+71 StreetAddress O
+4th StreetAddress O
+Ave StreetAddress O
+, StreetAddress O
+809 StreetAddress O
 Englehart A1.10City/Town O
 Ontario A1.11Province O
-P0J1H0 PostalCode S-ADDRESS
+P0J1H0 PostalCode O
 charltonanddack.com A1.13WebSiteAddress O
 
 Chatham LibraryFullName O
@@ -1717,12 +1717,12 @@ Library A1.4TypeofLibraryService(English) O
 120 A1.5MailingAddress O
 Queen A1.5MailingAddress O
 Street A1.5MailingAddress O
-120 StreetAddress B-ADDRESS
-Queen StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+120 StreetAddress O
+Queen StreetAddress O
+Street StreetAddress O
 Chatham A1.10City/Town O
 Ontario A1.11Province O
-N7M2G6 PostalCode S-ADDRESS
+N7M2G6 PostalCode O
 www.ckpl.ca A1.13WebSiteAddress O
 
 Chippewas LibraryFullName O
@@ -1744,15 +1744,15 @@ N-13 A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-830 StreetAddress B-ADDRESS
-Chief StreetAddress I-ADDRESS
-Joseph StreetAddress I-ADDRESS
-Snake StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+830 StreetAddress O
+Chief StreetAddress O
+Joseph StreetAddress O
+Snake StreetAddress O
+Road StreetAddress O
 Sutton A1.10City/Town O
 West A1.10City/Town O
 Ontario A1.11Province O
-L0E1R0 PostalCode S-ADDRESS
+L0E1R0 PostalCode O
 None A1.13WebSiteAddress O
 
 Chippewas LibraryFullName O
@@ -1777,12 +1777,12 @@ Ipperwash A1.5MailingAddress O
 Road A1.5MailingAddress O
 # A1.5MailingAddress O
 5 A1.5MailingAddress O
-9111 StreetAddress B-ADDRESS
-West StreetAddress I-ADDRESS
-Ipperwash StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-5 StreetAddress E-ADDRESS
+9111 StreetAddress O
+West StreetAddress O
+Ipperwash StreetAddress O
+Road StreetAddress O
+# StreetAddress O
+5 StreetAddress O
 Kettle A1.10City/Town O
 and A1.10City/Town O
 Stony A1.10City/Town O
@@ -1790,7 +1790,7 @@ Point A1.10City/Town O
 First A1.10City/Town O
 Nation A1.10City/Town O
 Ontario A1.11Province O
-N0N1J1 PostalCode S-ADDRESS
+N0N1J1 PostalCode O
 http://ksplibrary.com A1.13WebSiteAddress O
 
 Chippewas LibraryFullName O
@@ -1812,7 +1812,7 @@ R.R. A1.5MailingAddress O
 None StreetAddress O
 Wiarton A1.10City/Town O
 Ontario A1.11Province O
-N0H2T0 PostalCode S-ADDRESS
+N0H2T0 PostalCode O
 None A1.13WebSiteAddress O
 
 Chippewas LibraryFullName O
@@ -1833,12 +1833,12 @@ Rama A1.5MailingAddress O
 Road A1.5MailingAddress O
 Suite A1.5MailingAddress O
 200 A1.5MailingAddress O
-6147 StreetAddress B-ADDRESS
-Rama StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+6147 StreetAddress O
+Rama StreetAddress O
+Road StreetAddress O
 Rama A1.10City/Town O
 Ontario A1.11Province O
-L3V6H6 PostalCode S-ADDRESS
+L3V6H6 PostalCode O
 None A1.13WebSiteAddress O
 
 Chippewas LibraryFullName O
@@ -1858,12 +1858,12 @@ Library A1.4TypeofLibraryService(English) O
 320 A1.5MailingAddress O
 Chippewa A1.5MailingAddress O
 Road A1.5MailingAddress O
-328 StreetAddress B-ADDRESS
-Chippewa StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+328 StreetAddress O
+Chippewa StreetAddress O
+Road StreetAddress O
 Muncey A1.10City/Town O
 Ontario A1.11Province O
-N0L1Y0 PostalCode S-ADDRESS
+N0L1Y0 PostalCode O
 www.cottfn.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 page.php?subcategory1=library&id=13 A1.13WebSiteAddress O
@@ -1890,7 +1890,7 @@ Parc A1.5MailingAddress O
 None StreetAddress O
 Rockland A1.10City/Town O
 Ontario A1.11Province O
-K4K1C3 PostalCode S-ADDRESS
+K4K1C3 PostalCode O
 www.clarence A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 rockland.ca A1.13WebSiteAddress O
@@ -1915,7 +1915,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Bowmanville A1.10City/Town O
 Ontario A1.11Province O
-L1C1T7 PostalCode S-ADDRESS
+L1C1T7 PostalCode O
 http://www.clarington A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 library.on.ca A1.13WebSiteAddress O
@@ -1936,13 +1936,13 @@ Library A1.4TypeofLibraryService(English) O
 Huron A1.5MailingAddress O
 Street A1.5MailingAddress O
 160 A1.5MailingAddress O
-201 StreetAddress B-ADDRESS
-Huron StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-160 StreetAddress E-ADDRESS
+201 StreetAddress O
+Huron StreetAddress O
+Street StreetAddress O
+160 StreetAddress O
 Stayner A1.10City/Town O
 Ontario A1.11Province O
-L0M1S0 PostalCode S-ADDRESS
+L0M1S0 PostalCode O
 www.clearview.library.on.ca A1.13WebSiteAddress O
 
 Cobalt LibraryFullName O
@@ -1961,12 +1961,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 170 A1.5MailingAddress O
-30 StreetAddress B-ADDRESS
-Lang StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+30 StreetAddress O
+Lang StreetAddress O
+Street StreetAddress O
 Cobalt A1.10City/Town O
 Ontario A1.11Province O
-P0J1C0 PostalCode S-ADDRESS
+P0J1C0 PostalCode O
 cobaltlibrary.com A1.13WebSiteAddress O
 
 Cobourg LibraryFullName O
@@ -1986,7 +1986,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Cobourg A1.10City/Town O
 Ontario A1.11Province O
-K9A5P4 PostalCode S-ADDRESS
+K9A5P4 PostalCode O
 www.cobourg.library.on.ca A1.13WebSiteAddress O
 
 Cochrane LibraryFullName O
@@ -2007,12 +2007,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 700 A1.5MailingAddress O
-178 StreetAddress B-ADDRESS
-4th StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+178 StreetAddress O
+4th StreetAddress O
+Avenue StreetAddress O
 Cochrane A1.10City/Town O
 Ontario A1.11Province O
-P0L1C0 PostalCode S-ADDRESS
+P0L1C0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 cochrane/ A1.13WebSiteAddress O
@@ -2032,14 +2032,14 @@ R A1.5MailingAddress O
 R A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-937907 StreetAddress B-ADDRESS
-Marsh StreetAddress I-ADDRESS
-Bay StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+937907 StreetAddress O
+Marsh StreetAddress O
+Bay StreetAddress O
+Road StreetAddress O
 Coleman A1.10City/Town O
 Township A1.10City/Town O
 Ontario A1.11Province O
-P0J1C0 PostalCode S-ADDRESS
+P0J1C0 PostalCode O
 colemantownship.com A1.13WebSiteAddress O
 
 Collingwood LibraryFullName O
@@ -2057,13 +2057,13 @@ Library A1.4TypeofLibraryService(English) O
 St. A1.5MailingAddress O
 Marie A1.5MailingAddress O
 Street A1.5MailingAddress O
-55 StreetAddress B-ADDRESS
-St. StreetAddress I-ADDRESS
-Marie StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+55 StreetAddress O
+St. StreetAddress O
+Marie StreetAddress O
+Street StreetAddress O
 Collingwood A1.10City/Town O
 Ontario A1.11Province O
-L9Y0W6 PostalCode S-ADDRESS
+L9Y0W6 PostalCode O
 http://www.collingwoodpubliclibrary.ca A1.13WebSiteAddress O
 
 Conmee LibraryFullName O
@@ -2088,7 +2088,7 @@ None StreetAddress O
 Kakabeka A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0T1W0 PostalCode S-ADDRESS
+P0T1W0 PostalCode O
 None A1.13WebSiteAddress O
 
 Cornwall LibraryFullName O
@@ -2108,13 +2108,13 @@ East A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 939 A1.5MailingAddress O
-45 StreetAddress B-ADDRESS
-Second StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+45 StreetAddress O
+Second StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Cornwall A1.10City/Town O
 Ontario A1.11Province O
-K6H1Y2 PostalCode S-ADDRESS
+K6H1Y2 PostalCode O
 www.library.cornwall.on.ca A1.13WebSiteAddress O
 
 Cramahe LibraryFullName O
@@ -2134,12 +2134,12 @@ King A1.5MailingAddress O
 Street A1.5MailingAddress O
 Box A1.5MailingAddress O
 190 A1.5MailingAddress O
-6 StreetAddress B-ADDRESS
-King StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+6 StreetAddress O
+King StreetAddress O
+St. StreetAddress O
 Colborne A1.10City/Town O
 Ontario A1.11Province O
-K0K1S0 PostalCode S-ADDRESS
+K0K1S0 PostalCode O
 www.cramahelibrary.ca A1.13WebSiteAddress O
 
 Curve LibraryFullName O
@@ -2163,7 +2163,7 @@ Lake A1.10City/Town O
 , A1.10City/Town O
 ON A1.10City/Town O
 Ontario A1.11Province O
-K0L1R0 PostalCode S-ADDRESS
+K0L1R0 PostalCode O
 http://clfnpubliclibrary.webs.com A1.13WebSiteAddress O
 
 Dawson LibraryFullName O
@@ -2180,13 +2180,13 @@ LSB A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 275 A1.5MailingAddress O
-45 StreetAddress B-ADDRESS
-Front StreetAddress I-ADDRESS
-street StreetAddress E-ADDRESS
+45 StreetAddress O
+Front StreetAddress O
+street StreetAddress O
 Meldrum A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P0P1R0 PostalCode S-ADDRESS
+P0P1R0 PostalCode O
 None A1.13WebSiteAddress O
 
 Dawson LibraryFullName O
@@ -2206,13 +2206,13 @@ St A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 427 A1.5MailingAddress O
-211 StreetAddress B-ADDRESS
-Fourth StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+211 StreetAddress O
+Fourth StreetAddress O
+Street StreetAddress O
 Rainy A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0W1L0 PostalCode S-ADDRESS
+P0W1L0 PostalCode O
 dawsontownship.weebly.com A1.13WebSiteAddress O
 
 Deep LibraryFullName O
@@ -2231,13 +2231,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 278 A1.5MailingAddress O
-55 StreetAddress B-ADDRESS
-Ridge StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+55 StreetAddress O
+Ridge StreetAddress O
+Road StreetAddress O
 Deep A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-K0J1P0 PostalCode S-ADDRESS
+K0J1P0 PostalCode O
 www.deepriverlibrary.ca A1.13WebSiteAddress O
 
 Delaware LibraryFullName O
@@ -2254,12 +2254,12 @@ Library A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 3 A1.5MailingAddress O
-Center StreetAddress B-ADDRESS
-Rd StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+Center StreetAddress O
+Rd StreetAddress O
+. StreetAddress O
 Thamesville A1.10City/Town O
 Ontario A1.11Province O
-N0P2K0 PostalCode S-ADDRESS
+N0P2K0 PostalCode O
 None A1.13WebSiteAddress O
 
 Deseronto LibraryFullName O
@@ -2276,15 +2276,15 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 302 A1.5MailingAddress O
-358 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-302 StreetAddress E-ADDRESS
+358 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+302 StreetAddress O
 Deseronto A1.10City/Town O
 Ontario A1.11Province O
-K0K1X0 PostalCode S-ADDRESS
+K0K1X0 PostalCode O
 www.deserontopubliclibrary.ca A1.13WebSiteAddress O
 
 Dokis LibraryFullName O
@@ -2304,13 +2304,13 @@ Main A1.5MailingAddress O
 Street A1.5MailingAddress O
 Box A1.5MailingAddress O
 3 A1.5MailingAddress O
-930 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+930 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
 Via A1.10City/Town O
 Monetville A1.10City/Town O
 Ontario A1.11Province O
-P0M2N1 PostalCode S-ADDRESS
+P0M2N1 PostalCode O
 www.dokisfirstnation.com A1.13WebSiteAddress O
 
 Dorion LibraryFullName O
@@ -2333,7 +2333,7 @@ Road A1.5MailingAddress O
 None StreetAddress O
 Dorion A1.10City/Town O
 Ontario A1.11Province O
-P0T1K0 PostalCode S-ADDRESS
+P0T1K0 PostalCode O
 www.dorionpubliclibrary.ca A1.13WebSiteAddress O
 
 Douro LibraryFullName O
@@ -2357,13 +2357,13 @@ Line A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 23 A1.5MailingAddress O
-435 StreetAddress B-ADDRESS
-4th StreetAddress I-ADDRESS
-Line StreetAddress I-ADDRESS
-Douro StreetAddress E-ADDRESS
+435 StreetAddress O
+4th StreetAddress O
+Line StreetAddress O
+Douro StreetAddress O
 Douro A1.10City/Town O
 Ontario A1.11Province O
-K0L1S0 PostalCode S-ADDRESS
+K0L1S0 PostalCode O
 http://www.dourodummer.on.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library/ A1.13WebSiteAddress O
@@ -2387,7 +2387,7 @@ Avenue A1.5MailingAddress O
 None StreetAddress O
 Dryden A1.10City/Town O
 Ontario A1.11Province O
-P8N2A7 PostalCode S-ADDRESS
+P8N2A7 PostalCode O
 www.dryden.ca A1.13WebSiteAddress O
 
 Dubreuilville LibraryFullName O
@@ -2405,12 +2405,12 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 C.P. A1.5MailingAddress O
 39 A1.5MailingAddress O
-120 StreetAddress B-ADDRESS
-rue StreetAddress I-ADDRESS
-Magpie StreetAddress E-ADDRESS
+120 StreetAddress O
+rue StreetAddress O
+Magpie StreetAddress O
 Dubreuilville A1.10City/Town O
 Ontario A1.11Province O
-P0S1B0 PostalCode S-ADDRESS
+P0S1B0 PostalCode O
 www.dubreuilville.ca A1.13WebSiteAddress O
 
 Ear LibraryFullName O
@@ -2431,13 +2431,13 @@ Willow A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 369 A1.5MailingAddress O
-2 StreetAddress B-ADDRESS
-Willow StreetAddress I-ADDRESS
-Crescent StreetAddress E-ADDRESS
+2 StreetAddress O
+Willow StreetAddress O
+Crescent StreetAddress O
 Ear A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0V1T0 PostalCode S-ADDRESS
+P0V1T0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 earfallspl A1.13WebSiteAddress O
@@ -2461,12 +2461,12 @@ Road A1.5MailingAddress O
 PO A1.5MailingAddress O
 Box A1.5MailingAddress O
 160 A1.5MailingAddress O
-1257 StreetAddress B-ADDRESS
-Village StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+1257 StreetAddress O
+Village StreetAddress O
+Road StreetAddress O
 Astorville A1.10City/Town O
 Ontario A1.11Province O
-P0H1B0 PostalCode S-ADDRESS
+P0H1B0 PostalCode O
 www.efpl.ca A1.13WebSiteAddress O
 
 East LibraryFullName O
@@ -2483,13 +2483,13 @@ Municipality A1.4TypeofLibraryService(English) O
 191282 A1.5MailingAddress O
 13th A1.5MailingAddress O
 Line A1.5MailingAddress O
-4 StreetAddress B-ADDRESS
-Amaranth StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+4 StreetAddress O
+Amaranth StreetAddress O
+Street StreetAddress O
 Grand A1.10City/Town O
 Valley A1.10City/Town O
 Ontario A1.11Province O
-L0N1G0 PostalCode S-ADDRESS
+L0N1G0 PostalCode O
 www.eastgary.ca A1.13WebSiteAddress O
 
 East LibraryFullName O
@@ -2514,7 +2514,7 @@ None StreetAddress O
 Holland A1.10City/Town O
 Landing A1.10City/Town O
 Ontario A1.11Province O
-L9N1P2 PostalCode S-ADDRESS
+L9N1P2 PostalCode O
 www.egpl.ca A1.13WebSiteAddress O
 
 East LibraryFullName O
@@ -2530,16 +2530,16 @@ Contracting A1.4TypeofLibraryService(English) O
 Municipality A1.4TypeofLibraryService(English) O
 C.P. A1.5MailingAddress O
 340 A1.5MailingAddress O
-5151 StreetAddress B-ADDRESS
-County StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-No StreetAddress I-ADDRESS
-. StreetAddress I-ADDRESS
-14 StreetAddress E-ADDRESS
+5151 StreetAddress O
+County StreetAddress O
+Road StreetAddress O
+No StreetAddress O
+. StreetAddress O
+14 StreetAddress O
 St. A1.10City/Town O
 Eugene A1.10City/Town O
 Ontario A1.11Province O
-K0B1P0 PostalCode S-ADDRESS
+K0B1P0 PostalCode O
 easthawkesbury.ca A1.13WebSiteAddress O
 
 Edwardsburgh LibraryFullName O
@@ -2561,12 +2561,12 @@ Henderson A1.5MailingAddress O
 St. A1.5MailingAddress O
 Box A1.5MailingAddress O
 130 A1.5MailingAddress O
-5 StreetAddress B-ADDRESS
-Henderson StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+5 StreetAddress O
+Henderson StreetAddress O
+Street StreetAddress O
 Spencerville A1.10City/Town O
 Ontario A1.11Province O
-K0E1X0 PostalCode S-ADDRESS
+K0E1X0 PostalCode O
 www.edcarlibrary.ca A1.13WebSiteAddress O
 
 Elgin LibraryFullName O
@@ -2590,13 +2590,13 @@ Library A1.4TypeofLibraryService(English) O
 450 A1.5MailingAddress O
 Sunset A1.5MailingAddress O
 Drive A1.5MailingAddress O
-450 StreetAddress B-ADDRESS
-Sunset StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+450 StreetAddress O
+Sunset StreetAddress O
+Drive StreetAddress O
 St. A1.10City/Town O
 Thomas A1.10City/Town O
 Ontario A1.11Province O
-N5R5V1 PostalCode S-ADDRESS
+N5R5V1 PostalCode O
 www.elgincounty.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -2617,13 +2617,13 @@ Library A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-6544 StreetAddress B-ADDRESS
-New StreetAddress I-ADDRESS
-Dublin StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+6544 StreetAddress O
+New StreetAddress O
+Dublin StreetAddress O
+Road StreetAddress O
 Addison A1.10City/Town O
 Ontario A1.11Province O
-K0E1A0 PostalCode S-ADDRESS
+K0E1A0 PostalCode O
 None A1.13WebSiteAddress O
 
 Elliot LibraryFullName O
@@ -2642,13 +2642,13 @@ Library A1.4TypeofLibraryService(English) O
 99 A1.5MailingAddress O
 Spine A1.5MailingAddress O
 Road A1.5MailingAddress O
-99 StreetAddress B-ADDRESS
-Spine StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+99 StreetAddress O
+Spine StreetAddress O
+Road StreetAddress O
 Elliot A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-P5A3S9 PostalCode S-ADDRESS
+P5A3S9 PostalCode O
 http://www.elliotlakelibrary.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 en/ A1.13WebSiteAddress O
@@ -2669,11 +2669,11 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 490 A1.5MailingAddress O
-JESSIE StreetAddress B-ADDRESS
-STREET StreetAddress E-ADDRESS
+JESSIE StreetAddress O
+STREET StreetAddress O
 Emo A1.10City/Town O
 Ontario A1.11Province O
-P0W1E0 PostalCode S-ADDRESS
+P0W1E0 PostalCode O
 www.emo.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -2693,12 +2693,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 809 A1.5MailingAddress O
-71 StreetAddress B-ADDRESS
-Fourth StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+71 StreetAddress O
+Fourth StreetAddress O
+Avenue StreetAddress O
 Englehart A1.10City/Town O
 Ontario A1.11Province O
-P0J1H0 PostalCode S-ADDRESS
+P0J1H0 PostalCode O
 http://www.englehartpubliclibrary.ca A1.13WebSiteAddress O
 
 Espanola LibraryFullName O
@@ -2719,7 +2719,7 @@ Drive A1.5MailingAddress O
 None StreetAddress O
 Espanola A1.10City/Town O
 Ontario A1.11Province O
-P5E1S4 PostalCode S-ADDRESS
+P5E1S4 PostalCode O
 www.espanola.library.on.ca A1.13WebSiteAddress O
 
 Essa LibraryFullName O
@@ -2743,7 +2743,7 @@ Unit A1.5MailingAddress O
 None StreetAddress O
 Angus A1.10City/Town O
 Ontario A1.11Province O
-L0M1B1 PostalCode S-ADDRESS
+L0M1B1 PostalCode O
 http://www.essa.library.on.ca A1.13WebSiteAddress O
 
 Essex LibraryFullName O
@@ -2773,7 +2773,7 @@ Suite A1.5MailingAddress O
 None StreetAddress O
 Essex A1.10City/Town O
 Ontario A1.11Province O
-N8M1Y3 PostalCode S-ADDRESS
+N8M1Y3 PostalCode O
 www.essexcountylibrary.ca A1.13WebSiteAddress O
 
 Evanturel LibraryFullName O
@@ -2790,12 +2790,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 209 A1.5MailingAddress O
-245453 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-569 StreetAddress E-ADDRESS
+245453 StreetAddress O
+Highway StreetAddress O
+569 StreetAddress O
 Englehart A1.10City/Town O
 Ontario A1.11Province O
-P0J1H0 PostalCode S-ADDRESS
+P0J1H0 PostalCode O
 www.evanturel.com A1.13WebSiteAddress O
 
 Faraday LibraryFullName O
@@ -2819,7 +2819,7 @@ R. A1.5MailingAddress O
 None StreetAddress O
 Bancroft A1.10City/Town O
 Ontario A1.11Province O
-K0L1C0 PostalCode S-ADDRESS
+K0L1C0 PostalCode O
 www.faraday.ca A1.13WebSiteAddress O
 
 Fauquier LibraryFullName O
@@ -2841,12 +2841,12 @@ Centre A1.5MailingAddress O
 Communautaire A1.5MailingAddress O
 C.P. A1.5MailingAddress O
 100 A1.5MailingAddress O
-25 StreetAddress B-ADDRESS
-chemin StreetAddress I-ADDRESS
-Grzela StreetAddress E-ADDRESS
+25 StreetAddress O
+chemin StreetAddress O
+Grzela StreetAddress O
 Fauquier A1.10City/Town O
 Ontario A1.11Province O
-P0L1G0 PostalCode S-ADDRESS
+P0L1G0 PostalCode O
 bibliofauquier.weebly.com A1.13WebSiteAddress O
 
 Fort LibraryFullName O
@@ -2868,7 +2868,7 @@ None StreetAddress O
 Fort A1.10City/Town O
 Erie A1.10City/Town O
 Ontario A1.11Province O
-L2A2M1 PostalCode S-ADDRESS
+L2A2M1 PostalCode O
 www.forterie.library.on.ca A1.13WebSiteAddress O
 
 Fort LibraryFullName O
@@ -2887,13 +2887,13 @@ Library A1.4TypeofLibraryService(English) O
 601 A1.5MailingAddress O
 Reid A1.5MailingAddress O
 Avenue A1.5MailingAddress O
-601 StreetAddress B-ADDRESS
-Reid StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+601 StreetAddress O
+Reid StreetAddress O
+Avenue StreetAddress O
 Fort A1.10City/Town O
 Frances A1.10City/Town O
 Ontario A1.11Province O
-P9A0A2 PostalCode S-ADDRESS
+P9A0A2 PostalCode O
 library.fort A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 frances.com A1.13WebSiteAddress O
@@ -2914,12 +2914,12 @@ Library A1.4TypeofLibraryService(English) O
 PO A1.5MailingAddress O
 Box A1.5MailingAddress O
 130 A1.5MailingAddress O
-15 StreetAddress B-ADDRESS
-Dollard StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+15 StreetAddress O
+Dollard StreetAddress O
+Street StreetAddress O
 Noelville A1.10City/Town O
 Ontario A1.11Province O
-P0M2N0 PostalCode S-ADDRESS
+P0M2N0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 frenchriverpl A1.13WebSiteAddress O
@@ -2943,14 +2943,14 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 250 A1.5MailingAddress O
-76 StreetAddress B-ADDRESS
-County StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-5 StreetAddress I-ADDRESS
-S. StreetAddress E-ADDRESS
+76 StreetAddress O
+County StreetAddress O
+Road StreetAddress O
+5 StreetAddress O
+S. StreetAddress O
 Mallorytown A1.10City/Town O
 Ontario A1.11Province O
-K0E1R0 PostalCode S-ADDRESS
+K0E1R0 PostalCode O
 www.frontofyonge.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -2969,12 +2969,12 @@ Library A1.4TypeofLibraryService(English) O
 100 A1.5MailingAddress O
 Park A1.5MailingAddress O
 Street A1.5MailingAddress O
-100 StreetAddress B-ADDRESS
-Park StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+100 StreetAddress O
+Park StreetAddress O
+Street StreetAddress O
 Gananoque A1.10City/Town O
 Ontario A1.11Province O
-K7G2Y5 PostalCode S-ADDRESS
+K7G2Y5 PostalCode O
 http://www.gananoquelibrary.ca/ A1.13WebSiteAddress O
 
 Garden LibraryFullName O
@@ -2998,7 +2998,7 @@ None StreetAddress O
 Garden A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P6A5K9 PostalCode S-ADDRESS
+P6A5K9 PostalCode O
 www.gardenriver.ca A1.13WebSiteAddress O
 
 Georgian LibraryFullName O
@@ -3021,17 +3021,17 @@ Road A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 220 A1.5MailingAddress O
-2587 StreetAddress B-ADDRESS
-Honey StreetAddress I-ADDRESS
-Harbour StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-220 StreetAddress E-ADDRESS
+2587 StreetAddress O
+Honey StreetAddress O
+Harbour StreetAddress O
+Road StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+220 StreetAddress O
 Honey A1.10City/Town O
 Harbour A1.10City/Town O
 Ontario A1.11Province O
-P0E1E0 PostalCode S-ADDRESS
+P0E1E0 PostalCode O
 http://www.gbpl.ca A1.13WebSiteAddress O
 
 Georgina LibraryFullName O
@@ -3051,7 +3051,7 @@ Drive A1.5MailingAddress O
 None StreetAddress O
 Keswick A1.10City/Town O
 Ontario A1.11Province O
-L4P3P7 PostalCode S-ADDRESS
+L4P3P7 PostalCode O
 www.georginalibrary.ca A1.13WebSiteAddress O
 
 Gillies LibraryFullName O
@@ -3079,7 +3079,7 @@ Falls A1.10City/Town O
 , A1.10City/Town O
 ON A1.10City/Town O
 Ontario A1.11Province O
-P0T1W0 PostalCode S-ADDRESS
+P0T1W0 PostalCode O
 www.gilliestownship.ca A1.13WebSiteAddress O
 
 Gogama LibraryFullName O
@@ -3096,12 +3096,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 190 A1.5MailingAddress O
-15 StreetAddress B-ADDRESS
-Low StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+15 StreetAddress O
+Low StreetAddress O
+Avenue StreetAddress O
 Gogama A1.10City/Town O
 Ontario A1.11Province O
-P0M1W0 PostalCode S-ADDRESS
+P0M1W0 PostalCode O
 glsb10 A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 ontera.net A1.13WebSiteAddress O
@@ -3123,13 +3123,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 225 A1.5MailingAddress O
-15 StreetAddress B-ADDRESS
-Water StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+15 StreetAddress O
+Water StreetAddress O
+Street StreetAddress O
 Gore A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P0P1H0 PostalCode S-ADDRESS
+P0P1H0 PostalCode O
 olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 gorebay A1.13WebSiteAddress O
@@ -3153,14 +3153,14 @@ LSB A1.4TypeofLibraryService(English) O
 Goulais A1.5MailingAddress O
 Bay A1.5MailingAddress O
 Road A1.5MailingAddress O
-50 StreetAddress B-ADDRESS
-Goulais StreetAddress I-ADDRESS
-Bay StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+50 StreetAddress O
+Goulais StreetAddress O
+Bay StreetAddress O
+Road StreetAddress O
 Goulais A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0S1E0 PostalCode S-ADDRESS
+P0S1E0 PostalCode O
 GoulaisLSB A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 hotmail.ca A1.13WebSiteAddress O
@@ -3183,14 +3183,14 @@ Library A1.4TypeofLibraryService(English) O
 Amaranth A1.5MailingAddress O
 St. A1.5MailingAddress O
 E. A1.5MailingAddress O
-4 StreetAddress B-ADDRESS
-Amaranth StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+4 StreetAddress O
+Amaranth StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Grand A1.10City/Town O
 Valley A1.10City/Town O
 Ontario A1.11Province O
-L9W5L2 PostalCode S-ADDRESS
+L9W5L2 PostalCode O
 www.grandvalley.org A1.13WebSiteAddress O
 
 Gravenhurst LibraryFullName O
@@ -3210,13 +3210,13 @@ Library A1.4TypeofLibraryService(English) O
 Sharpe A1.5MailingAddress O
 Street A1.5MailingAddress O
 West A1.5MailingAddress O
-180 StreetAddress B-ADDRESS
-Sharpe StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+180 StreetAddress O
+Sharpe StreetAddress O
+Street StreetAddress O
+West StreetAddress O
 Gravenhurst A1.10City/Town O
 Ontario A1.11Province O
-P1P1J1 PostalCode S-ADDRESS
+P1P1J1 PostalCode O
 www.gravenhurstlibrary.ca A1.13WebSiteAddress O
 
 Greater LibraryFullName O
@@ -3241,7 +3241,7 @@ Box A1.5MailingAddress O
 None StreetAddress O
 Calabogie A1.10City/Town O
 Ontario A1.11Province O
-K0J1H0 PostalCode S-ADDRESS
+K0J1H0 PostalCode O
 http://www.townshipofgreatermadawaska.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library.htm A1.13WebSiteAddress O
@@ -3266,7 +3266,7 @@ None StreetAddress O
 Greater A1.10City/Town O
 Sudbury A1.10City/Town O
 Ontario A1.11Province O
-P3C4X8 PostalCode S-ADDRESS
+P3C4X8 PostalCode O
 www.sudbury.library.on.ca A1.13WebSiteAddress O
 
 Greenstone LibraryFullName O
@@ -3284,13 +3284,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 40 A1.5MailingAddress O
-40 StreetAddress B-ADDRESS
-2nd StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+40 StreetAddress O
+2nd StreetAddress O
+Street StreetAddress O
+West StreetAddress O
 Geraldton A1.10City/Town O
 Ontario A1.11Province O
-P0T1M0 PostalCode S-ADDRESS
+P0T1M0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 greenstone A1.13WebSiteAddress O
@@ -3310,12 +3310,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 280 A1.5MailingAddress O
-101 StreetAddress B-ADDRESS
-Highland StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+101 StreetAddress O
+Highland StreetAddress O
+Drive StreetAddress O
 Flesherton A1.10City/Town O
 Ontario A1.11Province O
-N0C1E0 PostalCode S-ADDRESS
+N0C1E0 PostalCode O
 www.greyhighlandspubliclibrary.com A1.13WebSiteAddress O
 
 Grimsby LibraryFullName O
@@ -3332,12 +3332,12 @@ Library A1.4TypeofLibraryService(English) O
 18 A1.5MailingAddress O
 Carnegie A1.5MailingAddress O
 Lane A1.5MailingAddress O
-18 StreetAddress B-ADDRESS
-Carnegie StreetAddress I-ADDRESS
-Lane StreetAddress E-ADDRESS
+18 StreetAddress O
+Carnegie StreetAddress O
+Lane StreetAddress O
 Grimsby A1.10City/Town O
 Ontario A1.11Province O
-L3M1Y1 PostalCode S-ADDRESS
+L3M1Y1 PostalCode O
 http://grimsby.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -3359,7 +3359,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Guelph A1.10City/Town O
 Ontario A1.11Province O
-N1H4J6 PostalCode S-ADDRESS
+N1H4J6 PostalCode O
 http://www.library.guelph.on.ca A1.13WebSiteAddress O
 
 Haldimand LibraryFullName O
@@ -3376,13 +3376,13 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 187 A1.5MailingAddress O
-111 StreetAddress B-ADDRESS
-Broad StreetAddress I-ADDRESS
-St. StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+111 StreetAddress O
+Broad StreetAddress O
+St. StreetAddress O
+East StreetAddress O
 Dunnville A1.10City/Town O
 Ontario A1.11Province O
-N1A2X5 PostalCode S-ADDRESS
+N1A2X5 PostalCode O
 http://library.haldimandcounty.on.ca A1.13WebSiteAddress O
 
 Haliburton LibraryFullName O
@@ -3406,13 +3406,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 119 A1.5MailingAddress O
-78 StreetAddress B-ADDRESS
-Maple StreetAddress I-ADDRESS
-Ave StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+78 StreetAddress O
+Maple StreetAddress O
+Ave StreetAddress O
+. StreetAddress O
 Haliburton A1.10City/Town O
 Ontario A1.11Province O
-K0M1S0 PostalCode S-ADDRESS
+K0M1S0 PostalCode O
 www.haliburtonlibrary.ca A1.13WebSiteAddress O
 
 Hallebourg LibraryFullName O
@@ -3428,11 +3428,11 @@ Contracting A1.4TypeofLibraryService(English) O
 LSB A1.4TypeofLibraryService(English) O
 General A1.5MailingAddress O
 Delivery A1.5MailingAddress O
-General StreetAddress B-ADDRESS
-Delivery StreetAddress E-ADDRESS
+General StreetAddress O
+Delivery StreetAddress O
 Hallebourg A1.10City/Town O
 Ontario A1.11Province O
-P0L1L0 PostalCode S-ADDRESS
+P0L1L0 PostalCode O
 lsbhallebourg A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 hotmail.com A1.13WebSiteAddress O
@@ -3452,12 +3452,12 @@ Library A1.4TypeofLibraryService(English) O
 9 A1.5MailingAddress O
 Church A1.5MailingAddress O
 Street A1.5MailingAddress O
-9 StreetAddress B-ADDRESS
-Church StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+9 StreetAddress O
+Church StreetAddress O
+Street StreetAddress O
 Georgetown A1.10City/Town O
 Ontario A1.11Province O
-L7G2A3 PostalCode S-ADDRESS
+L7G2A3 PostalCode O
 http://www.hhpl.on.ca/ A1.13WebSiteAddress O
 
 Hamilton LibraryFullName O
@@ -3476,13 +3476,13 @@ LCD A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 2700 A1.5MailingAddress O
-55 StreetAddress B-ADDRESS
-York StreetAddress I-ADDRESS
-Blvd StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+55 StreetAddress O
+York StreetAddress O
+Blvd StreetAddress O
+. StreetAddress O
 Hamilton A1.10City/Town O
 Ontario A1.11Province O
-L8N4E4 PostalCode S-ADDRESS
+L8N4E4 PostalCode O
 www.hpl.ca A1.13WebSiteAddress O
 
 Hamilton LibraryFullName O
@@ -3498,16 +3498,16 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 1060 A1.5MailingAddress O
-8285 StreetAddress B-ADDRESS
-Majestic StreetAddress I-ADDRESS
-Hills StreetAddress I-ADDRESS
-Drive StreetAddress I-ADDRESS
-RR StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-4 StreetAddress E-ADDRESS
+8285 StreetAddress O
+Majestic StreetAddress O
+Hills StreetAddress O
+Drive StreetAddress O
+RR StreetAddress O
+# StreetAddress O
+4 StreetAddress O
 Cobourg A1.10City/Town O
 Ontario A1.11Province O
-K9A4W5 PostalCode S-ADDRESS
+K9A4W5 PostalCode O
 www.hamiltontownship.ca A1.13WebSiteAddress O
 
 Hanover LibraryFullName O
@@ -3524,12 +3524,12 @@ Library A1.4TypeofLibraryService(English) O
 451 A1.5MailingAddress O
 10th A1.5MailingAddress O
 Avenue A1.5MailingAddress O
-451 StreetAddress B-ADDRESS
-10th StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+451 StreetAddress O
+10th StreetAddress O
+Avenue StreetAddress O
 Hanover A1.10City/Town O
 Ontario A1.11Province O
-N4N2P1 PostalCode S-ADDRESS
+N4N2P1 PostalCode O
 www.hanoverlibrary.ca A1.13WebSiteAddress O
 
 Harley LibraryFullName O
@@ -3549,13 +3549,13 @@ Road A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-903303 StreetAddress B-ADDRESS
-Hanbury StreetAddress I-ADDRESS
-Rd StreetAddress E-ADDRESS
+903303 StreetAddress O
+Hanbury StreetAddress O
+Rd StreetAddress O
 New A1.10City/Town O
 Liskeard A1.10City/Town O
 Ontario A1.11Province O
-P0J1P0 PostalCode S-ADDRESS
+P0J1P0 PostalCode O
 harlytwp A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 parolink.net A1.13WebSiteAddress O
@@ -3579,13 +3579,13 @@ Site A1.5MailingAddress O
 4 A1.5MailingAddress O
 - A1.5MailingAddress O
 96 A1.5MailingAddress O
-782156 StreetAddress B-ADDRESS
-Balls StreetAddress I-ADDRESS
-Rd StreetAddress E-ADDRESS
+782156 StreetAddress O
+Balls StreetAddress O
+Rd StreetAddress O
 New A1.10City/Town O
 Liskeard A1.10City/Town O
 Ontario A1.11Province O
-P0J1P0 PostalCode S-ADDRESS
+P0J1P0 PostalCode O
 harris A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 ntl.sympatico.ca A1.13WebSiteAddress O
@@ -3606,15 +3606,15 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 70 A1.5MailingAddress O
-33011 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-. StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-62 StreetAddress I-ADDRESS
-North StreetAddress E-ADDRESS
+33011 StreetAddress O
+Hwy StreetAddress O
+. StreetAddress O
+# StreetAddress O
+62 StreetAddress O
+North StreetAddress O
 Maynooth A1.10City/Town O
 Ontario A1.11Province O
-K0L2S0 PostalCode S-ADDRESS
+K0L2S0 PostalCode O
 www.hastingshighlandspubliclibrary.ca A1.13WebSiteAddress O
 
 Havelock LibraryFullName O
@@ -3636,12 +3636,12 @@ Library A1.4TypeofLibraryService(English) O
 PO A1.5MailingAddress O
 Box A1.5MailingAddress O
 10 A1.5MailingAddress O
-13 StreetAddress B-ADDRESS
-Quebec StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+13 StreetAddress O
+Quebec StreetAddress O
+Street StreetAddress O
 Havelock A1.10City/Town O
 Ontario A1.11Province O
-K0L1Z0 PostalCode S-ADDRESS
+K0L1Z0 PostalCode O
 www.hbmlibrary.on.ca A1.13WebSiteAddress O
 
 Hawk LibraryFullName O
@@ -3659,13 +3659,13 @@ LSB A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 62 A1.5MailingAddress O
-96 StreetAddress B-ADDRESS
-Cedar StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+96 StreetAddress O
+Cedar StreetAddress O
+Street StreetAddress O
 Hawk A1.10City/Town O
 Junction A1.10City/Town O
 Ontario A1.11Province O
-P0S1G0 PostalCode S-ADDRESS
+P0S1G0 PostalCode O
 None A1.13WebSiteAddress O
 
 Hawkesbury LibraryFullName O
@@ -3685,7 +3685,7 @@ Higginson A1.5MailingAddress O
 None StreetAddress O
 Hawkesbury A1.10City/Town O
 Ontario A1.11Province O
-K6A1H1 PostalCode S-ADDRESS
+K6A1H1 PostalCode O
 www.bibliotheque.hawkesbury.on.ca A1.13WebSiteAddress O
 
 Head LibraryFullName O
@@ -3707,13 +3707,13 @@ Library A1.4TypeofLibraryService(English) O
 Township A1.5MailingAddress O
 Hall A1.5MailingAddress O
 Road A1.5MailingAddress O
-15 StreetAddress B-ADDRESS
-Township StreetAddress I-ADDRESS
-Hall StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+15 StreetAddress O
+Township StreetAddress O
+Hall StreetAddress O
+Road StreetAddress O
 Stonecliffe A1.10City/Town O
 Ontario A1.11Province O
-K0J2K0 PostalCode S-ADDRESS
+K0J2K0 PostalCode O
 http://hcmpubliclibrary.ca/ A1.13WebSiteAddress O
 
 Hearst LibraryFullName O
@@ -3732,12 +3732,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Bag A1.5MailingAddress O
 15000 A1.5MailingAddress O
-801 StreetAddress B-ADDRESS
-George StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+801 StreetAddress O
+George StreetAddress O
+Street StreetAddress O
 Hearst A1.10City/Town O
 Ontario A1.11Province O
-P0L1N0 PostalCode S-ADDRESS
+P0L1N0 PostalCode O
 www.bibliohearst.on.ca A1.13WebSiteAddress O
 
 Henvey LibraryFullName O
@@ -3760,7 +3760,7 @@ Road A1.5MailingAddress O
 None StreetAddress O
 Pickerel A1.10City/Town O
 Ontario A1.11Province O
-P0G1J0 PostalCode S-ADDRESS
+P0G1J0 PostalCode O
 maheengun12 A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 hotmail.com A1.13WebSiteAddress O
@@ -3780,20 +3780,20 @@ Box A1.5MailingAddress O
 8 A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 3 A1.5MailingAddress O
-Lot StreetAddress B-ADDRESS
-6 StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-Con StreetAddress I-ADDRESS
-5 StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-952034 StreetAddress I-ADDRESS
-Hwy StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-569 StreetAddress E-ADDRESS
+Lot StreetAddress O
+6 StreetAddress O
+, StreetAddress O
+Con StreetAddress O
+5 StreetAddress O
+, StreetAddress O
+952034 StreetAddress O
+Hwy StreetAddress O
+# StreetAddress O
+569 StreetAddress O
 Hilliard A1.10City/Town O
 Township A1.10City/Town O
 Ontario A1.11Province O
-P0J1S0 PostalCode S-ADDRESS
+P0J1S0 PostalCode O
 None A1.13WebSiteAddress O
 
 Hilton LibraryFullName O
@@ -3814,13 +3814,13 @@ Marks A1.5MailingAddress O
 Street A1.5MailingAddress O
 Box A1.5MailingAddress O
 85 A1.5MailingAddress O
-3085 StreetAddress B-ADDRESS
-Marks StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+3085 StreetAddress O
+Marks StreetAddress O
+Street StreetAddress O
 Hilton A1.10City/Town O
 Beach A1.10City/Town O
 Ontario A1.11Province O
-P0R1G0 PostalCode S-ADDRESS
+P0R1G0 PostalCode O
 http://hiltonunion.library.on.ca A1.13WebSiteAddress O
 
 Hornepayne LibraryFullName O
@@ -3841,12 +3841,12 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 539 A1.5MailingAddress O
-68 StreetAddress B-ADDRESS
-Front StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+68 StreetAddress O
+Front StreetAddress O
+Street StreetAddress O
 Hornepayne A1.10City/Town O
 Ontario A1.11Province O
-P0M1Z0 PostalCode S-ADDRESS
+P0M1Z0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 hornepayne/ A1.13WebSiteAddress O
@@ -3868,13 +3868,13 @@ Road A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-903303 StreetAddress B-ADDRESS
-Hanbury StreetAddress I-ADDRESS
-Rd StreetAddress E-ADDRESS
+903303 StreetAddress O
+Hanbury StreetAddress O
+Rd StreetAddress O
 New A1.10City/Town O
 Liskeard A1.10City/Town O
 Ontario A1.11Province O
-P0J1P0 PostalCode S-ADDRESS
+P0J1P0 PostalCode O
 harlytwp A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 parolink.net A1.13WebSiteAddress O
@@ -3894,13 +3894,13 @@ Library A1.4TypeofLibraryService(English) O
 Minerva A1.5MailingAddress O
 Street A1.5MailingAddress O
 East A1.5MailingAddress O
-7 StreetAddress B-ADDRESS
-Minerva StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+7 StreetAddress O
+Minerva StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Huntsville A1.10City/Town O
 Ontario A1.11Province O
-P1H1W4 PostalCode S-ADDRESS
+P1H1W4 PostalCode O
 www.huntsvillelibrary.ca A1.13WebSiteAddress O
 
 Hurkett LibraryFullName O
@@ -3920,7 +3920,7 @@ R.R. A1.5MailingAddress O
 None StreetAddress O
 Hurkett A1.10City/Town O
 Ontario A1.11Province O
-P0T1K0 PostalCode S-ADDRESS
+P0T1K0 PostalCode O
 None A1.13WebSiteAddress O
 
 Huron LibraryFullName O
@@ -3950,7 +3950,7 @@ R.R. A1.5MailingAddress O
 None StreetAddress O
 Clinton A1.10City/Town O
 Ontario A1.11Province O
-N0M1L0 PostalCode S-ADDRESS
+N0M1L0 PostalCode O
 www.huroncounty.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -3974,13 +3974,13 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 339 A1.5MailingAddress O
-10 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+10 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
 Iron A1.10City/Town O
 Bridge A1.10City/Town O
 Ontario A1.11Province O
-P0R1H0 PostalCode S-ADDRESS
+P0R1H0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 huronshores A1.13WebSiteAddress O
@@ -4000,12 +4000,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 480 A1.5MailingAddress O
-36 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+36 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
 Ignace A1.10City/Town O
 Ontario A1.11Province O
-P0T1T0 PostalCode S-ADDRESS
+P0T1T0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 ignace/ A1.13WebSiteAddress O
@@ -4025,13 +4025,13 @@ Library A1.4TypeofLibraryService(English) O
 Innisfil A1.5MailingAddress O
 Beach A1.5MailingAddress O
 Road A1.5MailingAddress O
-967 StreetAddress B-ADDRESS
-Innisfil StreetAddress I-ADDRESS
-Beach StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+967 StreetAddress O
+Innisfil StreetAddress O
+Beach StreetAddress O
+Road StreetAddress O
 Innisfil A1.10City/Town O
 Ontario A1.11Province O
-L9S1V3 PostalCode S-ADDRESS
+L9S1V3 PostalCode O
 www.innisfilidealab.ca A1.13WebSiteAddress O
 
 Iroquois LibraryFullName O
@@ -4050,13 +4050,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 860 A1.5MailingAddress O
-725 StreetAddress B-ADDRESS
-Synagogue StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+725 StreetAddress O
+Synagogue StreetAddress O
+Avenue StreetAddress O
 Iroquois A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0K1G0 PostalCode S-ADDRESS
+P0K1G0 PostalCode O
 www.olsn.on.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 iroquoisfallsp/ A1.13WebSiteAddress O
@@ -4082,16 +4082,16 @@ road A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 5 A1.5MailingAddress O
-Indian StreetAddress B-ADDRESS
-Bay StreetAddress I-ADDRESS
-road StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-5 StreetAddress E-ADDRESS
+Indian StreetAddress O
+Bay StreetAddress O
+road StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+5 StreetAddress O
 Shoal A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-P0X1E0 PostalCode S-ADDRESS
+P0X1E0 PostalCode O
 www.shoallake39.com A1.13WebSiteAddress O
 
 James LibraryFullName O
@@ -4113,16 +4113,16 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 218 A1.5MailingAddress O
-19 StreetAddress B-ADDRESS
-First StreetAddress I-ADDRESS
-street StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-Elk StreetAddress I-ADDRESS
-Lake StreetAddress E-ADDRESS
+19 StreetAddress O
+First StreetAddress O
+street StreetAddress O
+, StreetAddress O
+Elk StreetAddress O
+Lake StreetAddress O
 Elk A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-P0J1G0 PostalCode S-ADDRESS
+P0J1G0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 jamestwp A1.13WebSiteAddress O
@@ -4146,18 +4146,18 @@ R A1.5MailingAddress O
 .R. A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-3670 StreetAddress B-ADDRESS
-5th StreetAddress I-ADDRESS
-Side StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-R StreetAddress I-ADDRESS
-.R. StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-1 StreetAddress E-ADDRESS
+3670 StreetAddress O
+5th StreetAddress O
+Side StreetAddress O
+Road StreetAddress O
+R StreetAddress O
+.R. StreetAddress O
+# StreetAddress O
+1 StreetAddress O
 Hilton A1.10City/Town O
 Beach A1.10City/Town O
 Ontario A1.11Province O
-P0R1G0 PostalCode S-ADDRESS
+P0R1G0 PostalCode O
 NA A1.13WebSiteAddress O
 
 Jogues LibraryFullName O
@@ -4176,7 +4176,7 @@ C.P. A1.5MailingAddress O
 None StreetAddress O
 Jogues A1.10City/Town O
 Ontario A1.11Province O
-P0L1R0 PostalCode S-ADDRESS
+P0L1R0 PostalCode O
 None A1.13WebSiteAddress O
 
 Johnson LibraryFullName O
@@ -4193,12 +4193,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 160 A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-Johnson StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+1 StreetAddress O
+Johnson StreetAddress O
+Drive StreetAddress O
 Desbarats A1.10City/Town O
 Ontario A1.11Province O
-P0R1E0 PostalCode S-ADDRESS
+P0R1E0 PostalCode O
 www.johnsontwp.ca A1.13WebSiteAddress O
 
 Joly LibraryFullName O
@@ -4215,13 +4215,13 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 519 A1.5MailingAddress O
-871 StreetAddress B-ADDRESS
-Forest StreetAddress I-ADDRESS
-Lake StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+871 StreetAddress O
+Forest StreetAddress O
+Lake StreetAddress O
+Road StreetAddress O
 Sundridge A1.10City/Town O
 Ontario A1.11Province O
-P0A1Z0 PostalCode S-ADDRESS
+P0A1Z0 PostalCode O
 None A1.13WebSiteAddress O
 
 Kapuskasing LibraryFullName O
@@ -4239,11 +4239,11 @@ Library A1.4TypeofLibraryService(English) O
 24 A1.5MailingAddress O
 Mundy A1.5MailingAddress O
 Avenue A1.5MailingAddress O
-Mundy StreetAddress B-ADDRESS
-Avenue StreetAddress E-ADDRESS
+Mundy StreetAddress O
+Avenue StreetAddress O
 Kapuskasing A1.10City/Town O
 Ontario A1.11Province O
-P5N1P9 PostalCode S-ADDRESS
+P5N1P9 PostalCode O
 www.kapuskasinglibrary.ca A1.13WebSiteAddress O
 
 Kawartha LibraryFullName O
@@ -4266,13 +4266,13 @@ Kent A1.5MailingAddress O
 Street A1.5MailingAddress O
 West A1.5MailingAddress O
 9000 A1.5MailingAddress O
-190 StreetAddress B-ADDRESS
-Kent StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+190 StreetAddress O
+Kent StreetAddress O
+Street StreetAddress O
+West StreetAddress O
 Lindsay A1.10City/Town O
 Ontario A1.11Province O
-K9V2Y6 PostalCode S-ADDRESS
+K9V2Y6 PostalCode O
 www.kawarthalakeslibrary.ca A1.13WebSiteAddress O
 
 Kearney LibraryFullName O
@@ -4292,12 +4292,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 220 A1.5MailingAddress O
-8 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+8 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
 Kearney A1.10City/Town O
 Ontario A1.11Province O
-P0A1M0 PostalCode S-ADDRESS
+P0A1M0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 kearney A1.13WebSiteAddress O
@@ -4322,7 +4322,7 @@ South A1.5MailingAddress O
 None StreetAddress O
 Kenora A1.10City/Town O
 Ontario A1.11Province O
-P9N1S7 PostalCode S-ADDRESS
+P9N1S7 PostalCode O
 www.kenorapubliclibrary.org A1.13WebSiteAddress O
 
 Kerns LibraryFullName O
@@ -4342,13 +4342,13 @@ Road A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 2 A1.5MailingAddress O
-903303 StreetAddress B-ADDRESS
-Hanbury StreetAddress I-ADDRESS
-Rd StreetAddress E-ADDRESS
+903303 StreetAddress O
+Hanbury StreetAddress O
+Rd StreetAddress O
 New A1.10City/Town O
 Liskeard A1.10City/Town O
 Ontario A1.11Province O
-P0J1P0 PostalCode S-ADDRESS
+P0J1P0 PostalCode O
 harlytwp A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 parolink.net A1.13WebSiteAddress O
@@ -4374,14 +4374,14 @@ John A1.5MailingAddress O
 Street A1.5MailingAddress O
 Box A1.5MailingAddress O
 100 A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-John StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-100 StreetAddress E-ADDRESS
+1 StreetAddress O
+John StreetAddress O
+Street StreetAddress O
+Box StreetAddress O
+100 StreetAddress O
 Killaloe A1.10City/Town O
 Ontario A1.11Province O
-K0J2A0 PostalCode S-ADDRESS
+K0J2A0 PostalCode O
 www.killaloelibrary.ca A1.13WebSiteAddress O
 
 Killarney LibraryFullName O
@@ -4397,12 +4397,12 @@ Municipality A1.4TypeofLibraryService(English) O
 32 A1.5MailingAddress O
 Commissioner A1.5MailingAddress O
 Street A1.5MailingAddress O
-32 StreetAddress B-ADDRESS
-Commissioner StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+32 StreetAddress O
+Commissioner StreetAddress O
+Street StreetAddress O
 Killarney A1.10City/Town O
 Ontario A1.11Province O
-P0M2A0 PostalCode S-ADDRESS
+P0M2A0 PostalCode O
 http://www.municipality.killarney.on.ca A1.13WebSiteAddress O
 
 King LibraryFullName O
@@ -4423,13 +4423,13 @@ Road A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 399 A1.5MailingAddress O
-1970 StreetAddress B-ADDRESS
-King StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+1970 StreetAddress O
+King StreetAddress O
+Road StreetAddress O
 King A1.10City/Town O
 City A1.10City/Town O
 Ontario A1.11Province O
-L7B1A6 PostalCode S-ADDRESS
+L7B1A6 PostalCode O
 www.kinglibrary.ca A1.13WebSiteAddress O
 
 Kingston LibraryFullName O
@@ -4452,7 +4452,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Kingston A1.10City/Town O
 Ontario A1.11Province O
-K7L1X8 PostalCode S-ADDRESS
+K7L1X8 PostalCode O
 www.kfpl.ca A1.13WebSiteAddress O
 
 Kirkland LibraryFullName O
@@ -4476,7 +4476,7 @@ None StreetAddress O
 Kirkland A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-P2N1P1 PostalCode S-ADDRESS
+P2N1P1 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 kirklandlakepl A1.13WebSiteAddress O
@@ -4499,7 +4499,7 @@ North A1.5MailingAddress O
 None StreetAddress O
 Kitchener A1.10City/Town O
 Ontario A1.11Province O
-N2H2H1 PostalCode S-ADDRESS
+N2H2H1 PostalCode O
 www.kpl.org A1.13WebSiteAddress O
 
 La LibraryFullName O
@@ -4520,7 +4520,7 @@ St A1.10City/Town O
 - A1.10City/Town O
 Isidore A1.10City/Town O
 Ontario A1.11Province O
-K0C2B0 PostalCode S-ADDRESS
+K0C2B0 PostalCode O
 www.nationmunbiblio.ca A1.13WebSiteAddress O
 
 La LibraryFullName O
@@ -4538,12 +4538,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 99 A1.5MailingAddress O
-56 StreetAddress B-ADDRESS
-Church StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+56 StreetAddress O
+Church StreetAddress O
+Road StreetAddress O
 Devlin A1.10City/Town O
 Ontario A1.11Province O
-P0W1C0 PostalCode S-ADDRESS
+P0W1C0 PostalCode O
 lavalley A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 nwonet.net A1.13WebSiteAddress O
@@ -4567,7 +4567,7 @@ C.P. A1.5MailingAddress O
 None StreetAddress O
 Hearst A1.10City/Town O
 Ontario A1.11Province O
-P0L1N0 PostalCode S-ADDRESS
+P0L1N0 PostalCode O
 None A1.13WebSiteAddress O
 
 Laird LibraryFullName O
@@ -4584,16 +4584,16 @@ Municipality A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 4 A1.5MailingAddress O
-3 StreetAddress B-ADDRESS
-Pumpkin StreetAddress I-ADDRESS
-Point StreetAddress I-ADDRESS
-Rd StreetAddress I-ADDRESS
-. StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+3 StreetAddress O
+Pumpkin StreetAddress O
+Point StreetAddress O
+Rd StreetAddress O
+. StreetAddress O
+West StreetAddress O
 Echo A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P0S1C0 PostalCode S-ADDRESS
+P0S1C0 PostalCode O
 lairdtownship.ca A1.13WebSiteAddress O
 
 Lake LibraryFullName O
@@ -4612,12 +4612,12 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 General A1.5MailingAddress O
 Delivery A1.5MailingAddress O
-10 StreetAddress B-ADDRESS
-University StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+10 StreetAddress O
+University StreetAddress O
+Avenue StreetAddress O
 Baysville A1.10City/Town O
 Ontario A1.11Province O
-P0B1A0 PostalCode S-ADDRESS
+P0B1A0 PostalCode O
 www.lakeofbayslibrary.ca A1.13WebSiteAddress O
 
 Lake LibraryFullName O
@@ -4637,13 +4637,13 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 427 A1.5MailingAddress O
-211 StreetAddress B-ADDRESS
-4th StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+211 StreetAddress O
+4th StreetAddress O
+Street StreetAddress O
 Rainy A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0W1L0 PostalCode S-ADDRESS
+P0W1L0 PostalCode O
 www.lakeofthewoods.ca A1.13WebSiteAddress O
 
 Lambton LibraryFullName O
@@ -4670,15 +4670,15 @@ Street A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 3100 A1.5MailingAddress O
-787 StreetAddress B-ADDRESS
-Broadway StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-3100 StreetAddress E-ADDRESS
+787 StreetAddress O
+Broadway StreetAddress O
+Street StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+3100 StreetAddress O
 Wyoming A1.10City/Town O
 Ontario A1.11Province O
-N0N1T0 PostalCode S-ADDRESS
+N0N1T0 PostalCode O
 www.lclibrary.ca A1.13WebSiteAddress O
 
 Lanark LibraryFullName O
@@ -4696,12 +4696,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 249 A1.5MailingAddress O
-75 StreetAddress B-ADDRESS
-George StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+75 StreetAddress O
+George StreetAddress O
+Street StreetAddress O
 Lanark A1.10City/Town O
 Ontario A1.11Province O
-K0G1K0 PostalCode S-ADDRESS
+K0G1K0 PostalCode O
 www.lanarklibrary.ca A1.13WebSiteAddress O
 
 Larder LibraryFullName O
@@ -4722,13 +4722,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 189 A1.5MailingAddress O
-69 StreetAddress B-ADDRESS
-Fourth StreetAddress I-ADDRESS
-Avenue StreetAddress E-ADDRESS
+69 StreetAddress O
+Fourth StreetAddress O
+Avenue StreetAddress O
 Larder A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-P0K1L0 PostalCode S-ADDRESS
+P0K1L0 PostalCode O
 www.larderlakepubliclibrary.ca A1.13WebSiteAddress O
 
 Laurentian LibraryFullName O
@@ -4752,7 +4752,7 @@ None StreetAddress O
 Deep A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-K0J1P0 PostalCode S-ADDRESS
+K0J1P0 PostalCode O
 library.laurentianhills.ca A1.13WebSiteAddress O
 
 Laurentian LibraryFullName O
@@ -4769,11 +4769,11 @@ Municipality A1.4TypeofLibraryService(English) O
 460 A1.5MailingAddress O
 Witt A1.5MailingAddress O
 Road A1.5MailingAddress O
-237 StreetAddress B-ADDRESS
-Victoria StreetAddress E-ADDRESS
+237 StreetAddress O
+Victoria StreetAddress O
 Pembroke A1.10City/Town O
 Ontario A1.11Province O
-K8A4K5 PostalCode S-ADDRESS
+K8A4K5 PostalCode O
 www.laurentianvalleytwsp.on.ca A1.13WebSiteAddress O
 
 Laurier LibraryFullName O
@@ -4794,17 +4794,17 @@ P. A1.5MailingAddress O
 O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 453 A1.5MailingAddress O
-12650 StreetAddress B-ADDRESS
-HWY StreetAddress I-ADDRESS
-124 StreetAddress I-ADDRESS
-P. StreetAddress I-ADDRESS
-O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-453 StreetAddress E-ADDRESS
+12650 StreetAddress O
+HWY StreetAddress O
+124 StreetAddress O
+P. StreetAddress O
+O. StreetAddress O
+Box StreetAddress O
+453 StreetAddress O
 South A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0A1X0 PostalCode S-ADDRESS
+P0A1X0 PostalCode O
 laurier.local.services.board A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 gmail.com A1.13WebSiteAddress O
@@ -4827,14 +4827,14 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 219 A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-- StreetAddress I-ADDRESS
-B StreetAddress I-ADDRESS
-Jessie StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+1 StreetAddress O
+- StreetAddress O
+B StreetAddress O
+Jessie StreetAddress O
+St. StreetAddress O
 Lansdowne A1.10City/Town O
 Ontario A1.11Province O
-K0E1L0 PostalCode S-ADDRESS
+K0E1L0 PostalCode O
 www.ltipl.net A1.13WebSiteAddress O
 
 Lennox LibraryFullName O
@@ -4861,13 +4861,13 @@ Library A1.4TypeofLibraryService(English) O
 Thomas A1.5MailingAddress O
 Street A1.5MailingAddress O
 East A1.5MailingAddress O
-97 StreetAddress B-ADDRESS
-Thomas StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+97 StreetAddress O
+Thomas StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Napanee A1.10City/Town O
 Ontario A1.11Province O
-K7R4B9 PostalCode S-ADDRESS
+K7R4B9 PostalCode O
 www.countylibrary.ca A1.13WebSiteAddress O
 
 Lincoln LibraryFullName O
@@ -4887,12 +4887,12 @@ Drive A1.5MailingAddress O
 PO A1.5MailingAddress O
 Box A1.5MailingAddress O
 460 A1.5MailingAddress O
-5020 StreetAddress B-ADDRESS
-Serena StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+5020 StreetAddress O
+Serena StreetAddress O
+Drive StreetAddress O
 Beamsville A1.10City/Town O
 Ontario A1.11Province O
-L0R1B0 PostalCode S-ADDRESS
+L0R1B0 PostalCode O
 www.lincoln.library.on.ca A1.13WebSiteAddress O
 
 Local LibraryFullName O
@@ -4912,11 +4912,11 @@ Contracting A1.4TypeofLibraryService(English) O
 LSB A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 144 A1.5MailingAddress O
-245 StreetAddress B-ADDRESS
-Avery StreetAddress E-ADDRESS
+245 StreetAddress O
+Avery StreetAddress O
 Espanola A1.10City/Town O
 Ontario A1.11Province O
-P3E1S5 PostalCode S-ADDRESS
+P3E1S5 PostalCode O
 rainbowctry A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 hotmail.com A1.13WebSiteAddress O
@@ -4938,7 +4938,7 @@ St. A1.5MailingAddress O
 None StreetAddress O
 London A1.10City/Town O
 Ontario A1.11Province O
-N6A6H9 PostalCode S-ADDRESS
+N6A6H9 PostalCode O
 http://www.londonpubliclibrary.ca A1.13WebSiteAddress O
 
 Loring LibraryFullName O
@@ -4965,16 +4965,16 @@ Hwy A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 82 A1.5MailingAddress O
-11767 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-522 StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-82 StreetAddress E-ADDRESS
+11767 StreetAddress O
+Hwy StreetAddress O
+522 StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+82 StreetAddress O
 Port A1.10City/Town O
 Loring A1.10City/Town O
 Ontario A1.11Province O
-P0H1Y0 PostalCode S-ADDRESS
+P0H1Y0 PostalCode O
 http://www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 argylecommunitylibrary A1.13WebSiteAddress O
@@ -4996,14 +4996,14 @@ Drive A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 296 A1.5MailingAddress O
-18 StreetAddress B-ADDRESS
-Lakeview StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+18 StreetAddress O
+Lakeview StreetAddress O
+Drive StreetAddress O
 M'Chigeeng A1.10City/Town O
 First A1.10City/Town O
 Nation A1.10City/Town O
 Ontario A1.11Province O
-P0P1G0 PostalCode S-ADDRESS
+P0P1G0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 proofs A1.13WebSiteAddress O
@@ -5036,7 +5036,7 @@ None StreetAddress O
 Echo A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P0S1C0 PostalCode S-ADDRESS
+P0S1C0 PostalCode O
 www.echobay.ca A1.13WebSiteAddress O
 
 Madawaska LibraryFullName O
@@ -5058,14 +5058,14 @@ Line A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 970 A1.5MailingAddress O
-19474 StreetAddress B-ADDRESS
-Opeongo StreetAddress I-ADDRESS
-Line StreetAddress E-ADDRESS
+19474 StreetAddress O
+Opeongo StreetAddress O
+Line StreetAddress O
 Barry A1.10City/Town O
 's A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-K0J1B0 PostalCode S-ADDRESS
+K0J1B0 PostalCode O
 www.madawaskavalleylibrary.ca A1.13WebSiteAddress O
 
 Madoc LibraryFullName O
@@ -5081,12 +5081,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 503 A1.5MailingAddress O
-15651 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-62 StreetAddress E-ADDRESS
+15651 StreetAddress O
+Highway StreetAddress O
+62 StreetAddress O
 Madoc A1.10City/Town O
 Ontario A1.11Province O
-K0K2K0 PostalCode S-ADDRESS
+K0K2K0 PostalCode O
 www.madoc.ca A1.13WebSiteAddress O
 
 Magnetawan LibraryFullName O
@@ -5109,17 +5109,17 @@ Comp A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-10 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-529 StreetAddress I-ADDRESS
-Comp StreetAddress I-ADDRESS
-15 StreetAddress I-ADDRESS
-R.R. StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-1 StreetAddress E-ADDRESS
+10 StreetAddress O
+Hwy StreetAddress O
+529 StreetAddress O
+Comp StreetAddress O
+15 StreetAddress O
+R.R. StreetAddress O
+# StreetAddress O
+1 StreetAddress O
 Britt A1.10City/Town O
 Ontario A1.11Province O
-P0G1A0 PostalCode S-ADDRESS
+P0G1A0 PostalCode O
 library A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 magnetawanfirstnation.com A1.13WebSiteAddress O
@@ -5140,13 +5140,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 130 A1.5MailingAddress O
-4304 StreetAddress B-ADDRESS
-N. StreetAddress I-ADDRESS
-Sparks StreetAddress I-ADDRESS
-St StreetAddress E-ADDRESS
+4304 StreetAddress O
+N. StreetAddress O
+Sparks StreetAddress O
+St StreetAddress O
 Magnetawan A1.10City/Town O
 Ontario A1.11Province O
-P0A1P0 PostalCode S-ADDRESS
+P0A1P0 PostalCode O
 www.magnetawanlibrary.ca A1.13WebSiteAddress O
 
 Manitouwadge LibraryFullName O
@@ -5166,12 +5166,12 @@ Manitou A1.5MailingAddress O
 Rd A1.5MailingAddress O
 Community A1.5MailingAddress O
 Centre A1.5MailingAddress O
-2 StreetAddress B-ADDRESS
-Manitou StreetAddress I-ADDRESS
-Rd StreetAddress E-ADDRESS
+2 StreetAddress O
+Manitou StreetAddress O
+Rd StreetAddress O
 Manitouwadge A1.10City/Town O
 Ontario A1.11Province O
-P0T2C0 PostalCode S-ADDRESS
+P0T2C0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 manitouwadge A1.13WebSiteAddress O
@@ -5191,12 +5191,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 400 A1.5MailingAddress O
-22 StreetAddress B-ADDRESS
-Peninsula StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+22 StreetAddress O
+Peninsula StreetAddress O
+Road StreetAddress O
 Marathon A1.10City/Town O
 Ontario A1.11Province O
-P0T2E0 PostalCode S-ADDRESS
+P0T2E0 PostalCode O
 http://my.tbaytel.net A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 marlibrary/ A1.13WebSiteAddress O
@@ -5218,7 +5218,7 @@ Highway A1.5MailingAddress O
 None StreetAddress O
 Markham A1.10City/Town O
 Ontario A1.11Province O
-L3P3A7 PostalCode S-ADDRESS
+L3P3A7 PostalCode O
 http://www.markhampubliclibrary.ca A1.13WebSiteAddress O
 
 Markstay LibraryFullName O
@@ -5236,13 +5236,13 @@ or A1.4TypeofLibraryService(English) O
 Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 None A1.5MailingAddress O
-7 StreetAddress B-ADDRESS
-Pioneer StreetAddress I-ADDRESS
-St. StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+7 StreetAddress O
+Pioneer StreetAddress O
+St. StreetAddress O
+East StreetAddress O
 Markstay A1.10City/Town O
 Ontario A1.11Province O
-P0M2G0 PostalCode S-ADDRESS
+P0M2G0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 markstay A1.13WebSiteAddress O
@@ -5266,12 +5266,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 340 A1.5MailingAddress O
-37 StreetAddress B-ADDRESS
-Forsyth StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+37 StreetAddress O
+Forsyth StreetAddress O
+Street StreetAddress O
 Marmora A1.10City/Town O
 Ontario A1.11Province O
-K0K2M0 PostalCode S-ADDRESS
+K0K2M0 PostalCode O
 www.marmoralibrary.ca/ A1.13WebSiteAddress O
 
 Mattagami LibraryFullName O
@@ -5292,7 +5292,7 @@ Box A1.5MailingAddress O
 None StreetAddress O
 Gogama A1.10City/Town O
 Ontario A1.11Province O
-P0M1W0 PostalCode S-ADDRESS
+P0M1W0 PostalCode O
 None A1.13WebSiteAddress O
 
 Mattawa LibraryFullName O
@@ -5310,12 +5310,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 920 A1.5MailingAddress O
-370 StreetAddress B-ADDRESS
-pine StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+370 StreetAddress O
+pine StreetAddress O
+St. StreetAddress O
 Mattawa A1.10City/Town O
 Ontario A1.11Province O
-P0H1V0 PostalCode S-ADDRESS
+P0H1V0 PostalCode O
 http://users.efni.com/~mplibrary/ A1.13WebSiteAddress O
 
 Mattawan LibraryFullName O
@@ -5332,12 +5332,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 610 A1.5MailingAddress O
-947 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-533 StreetAddress E-ADDRESS
+947 StreetAddress O
+Highway StreetAddress O
+533 StreetAddress O
 Mattawa A1.10City/Town O
 Ontario A1.11Province O
-P0H1V0 PostalCode S-ADDRESS
+P0H1V0 PostalCode O
 n A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 a A1.13WebSiteAddress O
@@ -5362,12 +5362,12 @@ Route A1.5MailingAddress O
 11 A1.5MailingAddress O
 S.P. A1.5MailingAddress O
 129 A1.5MailingAddress O
-500 StreetAddress B-ADDRESS
-Route StreetAddress I-ADDRESS
-11 StreetAddress E-ADDRESS
+500 StreetAddress O
+Route StreetAddress O
+11 StreetAddress O
 Mattice A1.10City/Town O
 Ontario A1.11Province O
-P0L1T0 PostalCode S-ADDRESS
+P0L1T0 PostalCode O
 www.matticevalcote.ca A1.13WebSiteAddress O
 
 McDougall LibraryFullName O
@@ -5390,17 +5390,17 @@ Blvd A1.5MailingAddress O
 RR A1.5MailingAddress O
 # A1.5MailingAddress O
 3 A1.5MailingAddress O
-5 StreetAddress B-ADDRESS
-Barager StreetAddress I-ADDRESS
-Blvd StreetAddress I-ADDRESS
-. StreetAddress I-ADDRESS
-RR StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-3 StreetAddress E-ADDRESS
+5 StreetAddress O
+Barager StreetAddress O
+Blvd StreetAddress O
+. StreetAddress O
+RR StreetAddress O
+# StreetAddress O
+3 StreetAddress O
 Parry A1.10City/Town O
 Sound A1.10City/Town O
 Ontario A1.11Province O
-P2A2W9 PostalCode S-ADDRESS
+P2A2W9 PostalCode O
 www.municipalityofmcdougall.com A1.13WebSiteAddress O
 
 McGarry LibraryFullName O
@@ -5422,13 +5422,13 @@ Rd A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 250 A1.5MailingAddress O
-70 StreetAddress B-ADDRESS
-Government StreetAddress I-ADDRESS
-Rd StreetAddress I-ADDRESS
-250 StreetAddress E-ADDRESS
+70 StreetAddress O
+Government StreetAddress O
+Rd StreetAddress O
+250 StreetAddress O
 Virginiatown A1.10City/Town O
 Ontario A1.11Province O
-P0K1X0 PostalCode S-ADDRESS
+P0K1X0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 mcgarry A1.13WebSiteAddress O
@@ -5449,12 +5449,12 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 10 A1.5MailingAddress O
-701 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-124 StreetAddress E-ADDRESS
+701 StreetAddress O
+Highway StreetAddress O
+124 StreetAddress O
 McKellar A1.10City/Town O
 Ontario A1.11Province O
-P0G1C0 PostalCode S-ADDRESS
+P0G1C0 PostalCode O
 www.mckellarpubliclibrary.on.ca A1.13WebSiteAddress O
 
 McMurrich LibraryFullName O
@@ -5479,12 +5479,12 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 70 A1.5MailingAddress O
-31 StreetAddress B-ADDRESS
-William StreetAddress I-ADDRESS
-St StreetAddress E-ADDRESS
+31 StreetAddress O
+William StreetAddress O
+St StreetAddress O
 Sprucedale A1.10City/Town O
 Ontario A1.11Province O
-P0A1Y0 PostalCode S-ADDRESS
+P0A1Y0 PostalCode O
 www.mcmurrichmonteith.com A1.13WebSiteAddress O
 
 McNab LibraryFullName O
@@ -5504,14 +5504,14 @@ Russett A1.5MailingAddress O
 Drive A1.5MailingAddress O
 R.R. A1.5MailingAddress O
 2 A1.5MailingAddress O
-2508 StreetAddress B-ADDRESS
-Russett StreetAddress I-ADDRESS
-Drive StreetAddress I-ADDRESS
-R.R. StreetAddress I-ADDRESS
-2 StreetAddress E-ADDRESS
+2508 StreetAddress O
+Russett StreetAddress O
+Drive StreetAddress O
+R.R. StreetAddress O
+2 StreetAddress O
 Arnprior A1.10City/Town O
 Ontario A1.11Province O
-K7S3G8 PostalCode S-ADDRESS
+K7S3G8 PostalCode O
 www.mcnabbraeside.com A1.13WebSiteAddress O
 
 Meaford LibraryFullName O
@@ -5532,7 +5532,7 @@ West A1.5MailingAddress O
 None StreetAddress O
 Meaford A1.10City/Town O
 Ontario A1.11Province O
-N4L1V4 PostalCode S-ADDRESS
+N4L1V4 PostalCode O
 www.meafordlibrary.on.ca A1.13WebSiteAddress O
 
 Melancthon LibraryFullName O
@@ -5548,13 +5548,13 @@ Municipality A1.4TypeofLibraryService(English) O
 157101 A1.5MailingAddress O
 Highway A1.5MailingAddress O
 10 A1.5MailingAddress O
-157101 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-No StreetAddress I-ADDRESS
-10 StreetAddress E-ADDRESS
+157101 StreetAddress O
+Highway StreetAddress O
+No StreetAddress O
+10 StreetAddress O
 Melancthon A1.10City/Town O
 Ontario A1.11Province O
-L9V2E6 PostalCode S-ADDRESS
+L9V2E6 PostalCode O
 www.melancthontownship.ca A1.13WebSiteAddress O
 
 Merrickville LibraryFullName O
@@ -5577,16 +5577,16 @@ W A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 460 A1.5MailingAddress O
-446 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-St. StreetAddress I-ADDRESS
-W StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-460 StreetAddress E-ADDRESS
+446 StreetAddress O
+Main StreetAddress O
+St. StreetAddress O
+W StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+460 StreetAddress O
 Merrickville A1.10City/Town O
 Ontario A1.11Province O
-K0G1N0 PostalCode S-ADDRESS
+K0G1N0 PostalCode O
 www.merrickvillelibrary.ca A1.13WebSiteAddress O
 
 Michipicoten LibraryFullName O
@@ -5611,19 +5611,19 @@ RR#1 A1.5MailingAddress O
 , A1.5MailingAddress O
 Site A1.5MailingAddress O
 8 A1.5MailingAddress O
-107 StreetAddress B-ADDRESS
-Hiawatha StreetAddress I-ADDRESS
-Drive StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-1 StreetAddress I-ADDRESS
-RR#1 StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-Site StreetAddress I-ADDRESS
-8 StreetAddress E-ADDRESS
+107 StreetAddress O
+Hiawatha StreetAddress O
+Drive StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+1 StreetAddress O
+RR#1 StreetAddress O
+, StreetAddress O
+Site StreetAddress O
+8 StreetAddress O
 Wawa A1.10City/Town O
 Ontario A1.11Province O
-P0S1K0 PostalCode S-ADDRESS
+P0S1K0 PostalCode O
 www.michipicoten.com A1.13WebSiteAddress O
 
 Middlesex LibraryFullName O
@@ -5649,12 +5649,12 @@ Library A1.4TypeofLibraryService(English) O
 Ridout A1.5MailingAddress O
 Street A1.5MailingAddress O
 North A1.5MailingAddress O
-34-B StreetAddress B-ADDRESS
-Frank StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+34-B StreetAddress O
+Frank StreetAddress O
+St. StreetAddress O
 Strathroy A1.10City/Town O
 Ontario A1.11Province O
-N6A2P1 PostalCode S-ADDRESS
+N6A2P1 PostalCode O
 www.library.middlesex.ca A1.13WebSiteAddress O
 
 Midland LibraryFullName O
@@ -5674,7 +5674,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Midland A1.10City/Town O
 Ontario A1.11Province O
-L4R3M6 PostalCode S-ADDRESS
+L4R3M6 PostalCode O
 www.midlandlibrary.com A1.13WebSiteAddress O
 
 Milton LibraryFullName O
@@ -5692,13 +5692,13 @@ Library A1.4TypeofLibraryService(English) O
 Main A1.5MailingAddress O
 Street A1.5MailingAddress O
 East A1.5MailingAddress O
-1010 StreetAddress B-ADDRESS
-Main StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+1010 StreetAddress O
+Main StreetAddress O
+Street StreetAddress O
+East StreetAddress O
 Milton A1.10City/Town O
 Ontario A1.11Province O
-L9T6H7 PostalCode S-ADDRESS
+L9T6H7 PostalCode O
 www.mpl.on.ca A1.13WebSiteAddress O
 
 Mississauga LibraryFullName O
@@ -5719,7 +5719,7 @@ West A1.5MailingAddress O
 None StreetAddress O
 Mississauga A1.10City/Town O
 Ontario A1.11Province O
-L5B3Y3 PostalCode S-ADDRESS
+L5B3Y3 PostalCode O
 www.mississauga.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -5739,14 +5739,14 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 1299 A1.5MailingAddress O
-148 StreetAddress B-ADDRESS
-Village StreetAddress I-ADDRESS
-Rd StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+148 StreetAddress O
+Village StreetAddress O
+Rd StreetAddress O
+. StreetAddress O
 Blind A1.10City/Town O
 River A1.10City/Town O
 Ontario A1.11Province O
-P0R1B0 PostalCode S-ADDRESS
+P0R1B0 PostalCode O
 www.mississaugi.com A1.13WebSiteAddress O
 
 Mississaugas LibraryFullName O
@@ -5766,13 +5766,13 @@ Library A1.4TypeofLibraryService(English) O
 22600 A1.5MailingAddress O
 Island A1.5MailingAddress O
 Road A1.5MailingAddress O
-22600 StreetAddress B-ADDRESS
-Island StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+22600 StreetAddress O
+Island StreetAddress O
+Road StreetAddress O
 Port A1.10City/Town O
 Perry A1.10City/Town O
 Ontario A1.11Province O
-L9L1B6 PostalCode S-ADDRESS
+L9L1B6 PostalCode O
 http://www.scugogfirstnation.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 Page.asp?IdPage=6658&WebAddress A1.13WebSiteAddress O
@@ -5797,12 +5797,12 @@ St. A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 820 A1.5MailingAddress O
-155 StreetAddress B-ADDRESS
-High StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+155 StreetAddress O
+High StreetAddress O
+Street StreetAddress O
 Almonte A1.10City/Town O
 Ontario A1.11Province O
-K0A1A0 PostalCode S-ADDRESS
+K0A1A0 PostalCode O
 http://missmillslibrary.com/ A1.13WebSiteAddress O
 
 Mohawks LibraryFullName O
@@ -5821,17 +5821,17 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 579 A1.5MailingAddress O
-321 StreetAddress B-ADDRESS
-State StreetAddress I-ADDRESS
-Route StreetAddress I-ADDRESS
-37 StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-Akwesasne StreetAddress I-ADDRESS
-N.Y. StreetAddress I-ADDRESS
-13655 StreetAddress E-ADDRESS
+321 StreetAddress O
+State StreetAddress O
+Route StreetAddress O
+37 StreetAddress O
+, StreetAddress O
+Akwesasne StreetAddress O
+N.Y. StreetAddress O
+13655 StreetAddress O
 Cornwall A1.10City/Town O
 Ontario A1.11Province O
-K6H5T3 PostalCode S-ADDRESS
+K6H5T3 PostalCode O
 http://www.akwesasneculturalcenter.org A1.13WebSiteAddress O
 
 Mohawks LibraryFullName O
@@ -5853,14 +5853,14 @@ Library A1.4TypeofLibraryService(English) O
 1658 A1.5MailingAddress O
 York A1.5MailingAddress O
 Road A1.5MailingAddress O
-1658 StreetAddress B-ADDRESS
-York StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+1658 StreetAddress O
+York StreetAddress O
+Road StreetAddress O
 Tyendinaga A1.10City/Town O
 Mohawk A1.10City/Town O
 Territory A1.10City/Town O
 Ontario A1.11Province O
-K0K1X0 PostalCode S-ADDRESS
+K0K1X0 PostalCode O
 http://www.kanhiote.ca A1.13WebSiteAddress O
 
 Mono LibraryFullName O
@@ -5875,13 +5875,13 @@ Municipality A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-347209 StreetAddress B-ADDRESS
-Mono StreetAddress I-ADDRESS
-Centre StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+347209 StreetAddress O
+Mono StreetAddress O
+Centre StreetAddress O
+Road StreetAddress O
 Orangeville A1.10City/Town O
 Ontario A1.11Province O
-L9W2Y8 PostalCode S-ADDRESS
+L9W2Y8 PostalCode O
 http://www.townofmono.com A1.13WebSiteAddress O
 
 Montague LibraryFullName O
@@ -5897,14 +5897,14 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 755 A1.5MailingAddress O
-6547 StreetAddress B-ADDRESS
-Roger StreetAddress I-ADDRESS
-Stevens StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+6547 StreetAddress O
+Roger StreetAddress O
+Stevens StreetAddress O
+Drive StreetAddress O
 Smiths A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-K7A4W6 PostalCode S-ADDRESS
+K7A4W6 PostalCode O
 www.township.montague.on.ca A1.13WebSiteAddress O
 
 Moonbeam LibraryFullName O
@@ -5922,14 +5922,14 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 C.P. A1.5MailingAddress O
 370 A1.5MailingAddress O
-53 StreetAddress B-ADDRESS
-Avenue StreetAddress I-ADDRESS
-St StreetAddress I-ADDRESS
-- StreetAddress I-ADDRESS
-Aubin StreetAddress E-ADDRESS
+53 StreetAddress O
+Avenue StreetAddress O
+St StreetAddress O
+- StreetAddress O
+Aubin StreetAddress O
 Moonbeam A1.10City/Town O
 Ontario A1.11Province O
-P0L1V0 PostalCode S-ADDRESS
+P0L1V0 PostalCode O
 http://www.biblio.moonbeam.ca/ A1.13WebSiteAddress O
 
 Morley LibraryFullName O
@@ -5946,13 +5946,13 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 40 A1.5MailingAddress O
-11331 StreetAddress B-ADDRESS
-Highway StreetAddress I-ADDRESS
-# StreetAddress I-ADDRESS
-11 StreetAddress E-ADDRESS
+11331 StreetAddress O
+Highway StreetAddress O
+# StreetAddress O
+11 StreetAddress O
 Stratton A1.10City/Town O
 Ontario A1.11Province O
-P0W1N0 PostalCode S-ADDRESS
+P0W1N0 PostalCode O
 www.townshipofmorley.ca A1.13WebSiteAddress O
 
 Mulmur LibraryFullName O
@@ -5969,13 +5969,13 @@ Municipality A1.4TypeofLibraryService(English) O
 2nd A1.5MailingAddress O
 Line A1.5MailingAddress O
 East A1.5MailingAddress O
-758070 StreetAddress B-ADDRESS
-2nd StreetAddress I-ADDRESS
-Line StreetAddress I-ADDRESS
-East StreetAddress E-ADDRESS
+758070 StreetAddress O
+2nd StreetAddress O
+Line StreetAddress O
+East StreetAddress O
 Mulmur A1.10City/Town O
 Ontario A1.11Province O
-L9V0G8 PostalCode S-ADDRESS
+L9V0G8 PostalCode O
 www.mulmurtownship.ca A1.13WebSiteAddress O
 
 Muskoka LibraryFullName O
@@ -5994,13 +5994,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 189 A1.5MailingAddress O
-69 StreetAddress B-ADDRESS
-Joseph StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+69 StreetAddress O
+Joseph StreetAddress O
+Street StreetAddress O
 Port A1.10City/Town O
 Carling A1.10City/Town O
 Ontario A1.11Province O
-P0B1J0 PostalCode S-ADDRESS
+P0B1J0 PostalCode O
 www.muskoka.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 library A1.13WebSiteAddress O
@@ -6025,7 +6025,7 @@ None StreetAddress O
 Nairn A1.10City/Town O
 Centre A1.10City/Town O
 Ontario A1.11Province O
-P0M2L0 PostalCode S-ADDRESS
+P0M2L0 PostalCode O
 www.nairncentre.ca A1.13WebSiteAddress O
 
 Naotkamegwanning LibraryFullName O
@@ -6042,13 +6042,13 @@ Nations A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 General A1.5MailingAddress O
 Delivery A1.5MailingAddress O
-Northwest StreetAddress B-ADDRESS
-Angle StreetAddress I-ADDRESS
-Education StreetAddress I-ADDRESS
-Authority StreetAddress E-ADDRESS
+Northwest StreetAddress O
+Angle StreetAddress O
+Education StreetAddress O
+Authority StreetAddress O
 Naotkamegwanning A1.10City/Town O
 Ontario A1.11Province O
-P0X1L0 PostalCode S-ADDRESS
+P0X1L0 PostalCode O
 wbnaea A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 kmts.ca A1.13WebSiteAddress O
@@ -6069,10 +6069,10 @@ Municipality A1.4TypeofLibraryService(English) O
 4766 A1.5MailingAddress O
 Hwy A1.5MailingAddress O
 61 A1.5MailingAddress O
-4766 StreetAddress S-ADDRESS
+4766 StreetAddress O
 Neebing A1.10City/Town O
 Ontario A1.11Province O
-P7L0B5 PostalCode S-ADDRESS
+P7L0B5 PostalCode O
 delma A1.13WebSiteAddress O
 @ A1.13WebSiteAddress O
 neebing.org A1.13WebSiteAddress O
@@ -6092,18 +6092,18 @@ Library A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 6 A1.5MailingAddress O
-Blue StreetAddress B-ADDRESS
-# StreetAddress I-ADDRESS
-2789 StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-1st StreetAddress I-ADDRESS
-line StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-Mississauga StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+Blue StreetAddress O
+# StreetAddress O
+2789 StreetAddress O
+, StreetAddress O
+1st StreetAddress O
+line StreetAddress O
+, StreetAddress O
+Mississauga StreetAddress O
+Road StreetAddress O
 Hagersville A1.10City/Town O
 Ontario A1.11Province O
-N0A1H0 PostalCode S-ADDRESS
+N0A1H0 PostalCode O
 None A1.13WebSiteAddress O
 
 New LibraryFullName O
@@ -6125,16 +6125,16 @@ East A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 399 A1.5MailingAddress O
-17 StreetAddress B-ADDRESS
-Victoria StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-East StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-399 StreetAddress E-ADDRESS
+17 StreetAddress O
+Victoria StreetAddress O
+Street StreetAddress O
+East StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+399 StreetAddress O
 Alliston A1.10City/Town O
 Ontario A1.11Province O
-L9R1V6 PostalCode S-ADDRESS
+L9R1V6 PostalCode O
 www.ntpl.ca A1.13WebSiteAddress O
 
 Newmarket LibraryFullName O
@@ -6154,7 +6154,7 @@ Avenue A1.5MailingAddress O
 None StreetAddress O
 Newmarket A1.10City/Town O
 Ontario A1.11Province O
-L3Y1W1 PostalCode S-ADDRESS
+L3Y1W1 PostalCode O
 www.newmarketpl.ca A1.13WebSiteAddress O
 
 Niagara LibraryFullName O
@@ -6176,7 +6176,7 @@ None StreetAddress O
 Niagara A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-L2E4C5 PostalCode S-ADDRESS
+L2E4C5 PostalCode O
 www.nflibrary.ca A1.13WebSiteAddress O
 
 Niagara LibraryFullName O
@@ -6199,9 +6199,9 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 430 A1.5MailingAddress O
-10 StreetAddress B-ADDRESS
-Anderson StreetAddress I-ADDRESS
-Lane StreetAddress E-ADDRESS
+10 StreetAddress O
+Anderson StreetAddress O
+Lane StreetAddress O
 Niagara A1.10City/Town O
 - A1.10City/Town O
 on A1.10City/Town O
@@ -6210,7 +6210,7 @@ the A1.10City/Town O
 - A1.10City/Town O
 Lake A1.10City/Town O
 Ontario A1.11Province O
-L0S1J0 PostalCode S-ADDRESS
+L0S1J0 PostalCode O
 www.notlpubliclibrary.org A1.13WebSiteAddress O
 
 Nipigon LibraryFullName O
@@ -6228,12 +6228,12 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 Box A1.5MailingAddress O
 728 A1.5MailingAddress O
-52 StreetAddress B-ADDRESS
-Front StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+52 StreetAddress O
+Front StreetAddress O
+Street StreetAddress O
 Nipigon A1.10City/Town O
 Ontario A1.11Province O
-P0T2J0 PostalCode S-ADDRESS
+P0T2J0 PostalCode O
 http://nipigon.net A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 content A1.13WebSiteAddress O
@@ -6255,13 +6255,13 @@ Library A1.4TypeofLibraryService(English) O
 36 A1.5MailingAddress O
 Semo A1.5MailingAddress O
 Road A1.5MailingAddress O
-24 StreetAddress B-ADDRESS
-Semo StreetAddress I-ADDRESS
-Road StreetAddress E-ADDRESS
+24 StreetAddress O
+Semo StreetAddress O
+Road StreetAddress O
 Garden A1.10City/Town O
 Village A1.10City/Town O
 Ontario A1.11Province O
-P2B3K2 PostalCode S-ADDRESS
+P2B3K2 PostalCode O
 www.nfn.ca A1.13WebSiteAddress O
 
 Norfolk LibraryFullName O
@@ -6280,12 +6280,12 @@ Library A1.4TypeofLibraryService(English) O
 Colborne A1.5MailingAddress O
 St. A1.5MailingAddress O
 South A1.5MailingAddress O
-Colborne StreetAddress B-ADDRESS
-St. StreetAddress I-ADDRESS
-S. StreetAddress E-ADDRESS
+Colborne StreetAddress O
+St. StreetAddress O
+S. StreetAddress O
 Simcoe A1.10City/Town O
 Ontario A1.11Province O
-N3Y4H3 PostalCode S-ADDRESS
+N3Y4H3 PostalCode O
 www.ncpl.ca A1.13WebSiteAddress O
 
 North LibraryFullName O
@@ -6309,7 +6309,7 @@ None StreetAddress O
 North A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P1B1H1 PostalCode S-ADDRESS
+P1B1H1 PostalCode O
 www.city.north A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 bay.on.ca A1.13WebSiteAddress O
@@ -6334,12 +6334,12 @@ Water A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 538 A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-Water StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+1 StreetAddress O
+Water StreetAddress O
+Street StreetAddress O
 Kemptville A1.10City/Town O
 Ontario A1.11Province O
-K0G1J0 PostalCode S-ADDRESS
+K0G1J0 PostalCode O
 www.ngpl.ca A1.13WebSiteAddress O
 
 North LibraryFullName O
@@ -6360,12 +6360,12 @@ Burleigh A1.5MailingAddress O
 Street A1.5MailingAddress O
 Box A1.5MailingAddress O
 335 A1.5MailingAddress O
-175 StreetAddress B-ADDRESS
-Burleigh StreetAddress I-ADDRESS
-St. StreetAddress E-ADDRESS
+175 StreetAddress O
+Burleigh StreetAddress O
+St. StreetAddress O
 Apsley A1.10City/Town O
 Ontario A1.11Province O
-K0L1A0 PostalCode S-ADDRESS
+K0L1A0 PostalCode O
 www.northkawarthalibrary.com A1.13WebSiteAddress O
 
 North LibraryFullName O
@@ -6382,11 +6382,11 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 216 A1.5MailingAddress O
 Winstanley A1.5MailingAddress O
-216 StreetAddress B-ADDRESS
-Winstanley StreetAddress E-ADDRESS
+216 StreetAddress O
+Winstanley StreetAddress O
 Monkton A1.10City/Town O
 Ontario A1.11Province O
-N0K1P0 PostalCode S-ADDRESS
+N0K1P0 PostalCode O
 www.northperth.library.on.ca A1.13WebSiteAddress O
 
 North LibraryFullName O
@@ -6404,14 +6404,14 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 108 A1.5MailingAddress O
-1385 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-. StreetAddress I-ADDRESS
-17 StreetAddress E-ADDRESS
+1385 StreetAddress O
+Hwy StreetAddress O
+. StreetAddress O
+17 StreetAddress O
 Algoma A1.10City/Town O
 Mills A1.10City/Town O
 Ontario A1.11Province O
-P0R1A0 PostalCode S-ADDRESS
+P0R1A0 PostalCode O
 www.townshipofthenorthshore.ca A1.13WebSiteAddress O
 
 Northeastern LibraryFullName O
@@ -6433,15 +6433,15 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 790 A1.5MailingAddress O
-50 StreetAddress B-ADDRESS
-Meredith StreetAddress I-ADDRESS
-Street StreetAddress I-ADDRESS
-West StreetAddress E-ADDRESS
+50 StreetAddress O
+Meredith StreetAddress O
+Street StreetAddress O
+West StreetAddress O
 Little A1.10City/Town O
 Current A1.10City/Town O
 On A1.10City/Town O
 Ontario A1.11Province O
-P0P1K0 PostalCode S-ADDRESS
+P0P1K0 PostalCode O
 http://www.nemilib.vianet.ca/ A1.13WebSiteAddress O
 
 O'Connor LibraryFullName O
@@ -6458,13 +6458,13 @@ Municipality A1.4TypeofLibraryService(English) O
 R.R. A1.5MailingAddress O
 # A1.5MailingAddress O
 1 A1.5MailingAddress O
-330 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-595 StreetAddress E-ADDRESS
+330 StreetAddress O
+Hwy StreetAddress O
+595 StreetAddress O
 Kakabeka A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0T1W0 PostalCode S-ADDRESS
+P0T1W0 PostalCode O
 www.oconnortownship.ca A1.13WebSiteAddress O
 
 Oakville LibraryFullName O
@@ -6484,7 +6484,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Oakville A1.10City/Town O
 Ontario A1.11Province O
-L6J2Z4 PostalCode S-ADDRESS
+L6J2Z4 PostalCode O
 www.opl.on.ca A1.13WebSiteAddress O
 
 Ojibways LibraryFullName O
@@ -6504,18 +6504,18 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 509 A1.5MailingAddress O
-Mikinaak StreetAddress B-ADDRESS
-Rd StreetAddress I-ADDRESS
-, StreetAddress I-ADDRESS
-212 StreetAddress I-ADDRESS
-Mikinaak StreetAddress I-ADDRESS
-Onigaming StreetAddress I-ADDRESS
-Sch StreetAddress I-ADDRESS
-. StreetAddress E-ADDRESS
+Mikinaak StreetAddress O
+Rd StreetAddress O
+, StreetAddress O
+212 StreetAddress O
+Mikinaak StreetAddress O
+Onigaming StreetAddress O
+Sch StreetAddress O
+. StreetAddress O
 Nestor A1.10City/Town O
 Falls A1.10City/Town O
 Ontario A1.11Province O
-P0X1K0 PostalCode S-ADDRESS
+P0X1K0 PostalCode O
 www.voyageur.ca/~ojibonig/ A1.13WebSiteAddress O
 
 Ojibways LibraryFullName O
@@ -6538,13 +6538,13 @@ P. A1.5MailingAddress O
 O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 216 A1.5MailingAddress O
-21 StreetAddress B-ADDRESS
-Rabbit StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+21 StreetAddress O
+Rabbit StreetAddress O
+Drive StreetAddress O
 Heron A1.10City/Town O
 Bay A1.10City/Town O
 Ontario A1.11Province O
-P0T1R0 PostalCode S-ADDRESS
+P0T1R0 PostalCode O
 None A1.13WebSiteAddress O
 
 Oliver LibraryFullName O
@@ -6562,12 +6562,12 @@ Union A1.4TypeofLibraryService(English) O
 Library A1.4TypeofLibraryService(English) O
 P.O.Box A1.5MailingAddress O
 26 A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-Baxendale StreetAddress I-ADDRESS
-Drive StreetAddress E-ADDRESS
+1 StreetAddress O
+Baxendale StreetAddress O
+Drive StreetAddress O
 Murillo A1.10City/Town O
 Ontario A1.11Province O
-P0T2G0 PostalCode S-ADDRESS
+P0T2G0 PostalCode O
 www.olsn.ca A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 oplibrary A1.13WebSiteAddress O
@@ -6587,13 +6587,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 100 A1.5MailingAddress O
-6 StreetAddress B-ADDRESS
-St StreetAddress I-ADDRESS
-Antoine StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+6 StreetAddress O
+St StreetAddress O
+Antoine StreetAddress O
+Street StreetAddress O
 Opasatika A1.10City/Town O
 Ontario A1.11Province O
-P0L1Z0 PostalCode S-ADDRESS
+P0L1Z0 PostalCode O
 https://sites.google.com A1.13WebSiteAddress O
 / A1.13WebSiteAddress O
 site A1.13WebSiteAddress O
@@ -6614,12 +6614,12 @@ Library A1.4TypeofLibraryService(English) O
 1 A1.5MailingAddress O
 Mill A1.5MailingAddress O
 Street A1.5MailingAddress O
-1 StreetAddress B-ADDRESS
-Mill StreetAddress I-ADDRESS
-Street StreetAddress E-ADDRESS
+1 StreetAddress O
+Mill StreetAddress O
+Street StreetAddress O
 Orangeville A1.10City/Town O
 Ontario A1.11Province O
-L9W2M2 PostalCode S-ADDRESS
+L9W2M2 PostalCode O
 www.orangeville.library.on.ca A1.13WebSiteAddress O
 
 Orillia LibraryFullName O
@@ -6637,13 +6637,13 @@ Library A1.4TypeofLibraryService(English) O
 Mississaga A1.5MailingAddress O
 St A1.5MailingAddress O
 W A1.5MailingAddress O
-36 StreetAddress B-ADDRESS
-Mississaga StreetAddress I-ADDRESS
-St StreetAddress I-ADDRESS
-W StreetAddress E-ADDRESS
+36 StreetAddress O
+Mississaga StreetAddress O
+St StreetAddress O
+W StreetAddress O
 Orillia A1.10City/Town O
 Ontario A1.11Province O
-L3V3A6 PostalCode S-ADDRESS
+L3V3A6 PostalCode O
 http://www.orilliapubliclibrary.ca A1.13WebSiteAddress O
 
 Oro LibraryFullName O
@@ -6661,13 +6661,13 @@ Municipality A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 100 A1.5MailingAddress O
-148 StreetAddress B-ADDRESS
-Line StreetAddress I-ADDRESS
-7 StreetAddress I-ADDRESS
-south StreetAddress E-ADDRESS
+148 StreetAddress O
+Line StreetAddress O
+7 StreetAddress O
+south StreetAddress O
 Oro A1.10City/Town O
 Ontario A1.11Province O
-L0L2X0 PostalCode S-ADDRESS
+L0L2X0 PostalCode O
 www.oro A1.13WebSiteAddress O
 - A1.13WebSiteAddress O
 medonte.ca A1.13WebSiteAddress O
@@ -6689,7 +6689,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Oshawa A1.10City/Town O
 Ontario A1.11Province O
-L1H1N2 PostalCode S-ADDRESS
+L1H1N2 PostalCode O
 www.oshawalibrary.on.ca A1.13WebSiteAddress O
 
 Otonabee LibraryFullName O
@@ -6710,13 +6710,13 @@ Library A1.4TypeofLibraryService(English) O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 9 A1.5MailingAddress O
-3252 StreetAddress B-ADDRESS
-County StreetAddress I-ADDRESS
-Road StreetAddress I-ADDRESS
-2 StreetAddress E-ADDRESS
+3252 StreetAddress O
+County StreetAddress O
+Road StreetAddress O
+2 StreetAddress O
 Keene A1.10City/Town O
 Ontario A1.11Province O
-K0L2G0 PostalCode S-ADDRESS
+K0L2G0 PostalCode O
 www.otosoumon.library.on.ca A1.13WebSiteAddress O
 
 Ottawa LibraryFullName O
@@ -6736,7 +6736,7 @@ Street A1.5MailingAddress O
 None StreetAddress O
 Ottawa A1.10City/Town O
 Ontario A1.11Province O
-K1P5M2 PostalCode S-ADDRESS
+K1P5M2 PostalCode O
 www A1.13WebSiteAddress O
 . A1.13WebSiteAddress O
 biblioottawalibrary.ca A1.13WebSiteAddress O
@@ -6765,7 +6765,7 @@ None StreetAddress O
 Owen A1.10City/Town O
 Sound A1.10City/Town O
 Ontario A1.11Province O
-N4K4K4 PostalCode S-ADDRESS
+N4K4K4 PostalCode O
 www.owensound.library.on.ca A1.13WebSiteAddress O
 
 Oxford LibraryFullName O
@@ -6792,15 +6792,15 @@ St. A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 1614 A1.5MailingAddress O
-21 StreetAddress B-ADDRESS
-Reeve StreetAddress I-ADDRESS
-St. StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-1614 StreetAddress E-ADDRESS
+21 StreetAddress O
+Reeve StreetAddress O
+St. StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+1614 StreetAddress O
 Woodstock A1.10City/Town O
 Ontario A1.11Province O
-N4S7Y3 PostalCode S-ADDRESS
+N4S7Y3 PostalCode O
 http://www.ocl.net A1.13WebSiteAddress O
 
 Papineau LibraryFullName O
@@ -6822,14 +6822,14 @@ Hwy A1.5MailingAddress O
 P.O. A1.5MailingAddress O
 Box A1.5MailingAddress O
 630 A1.5MailingAddress O
-4861 StreetAddress B-ADDRESS
-Hwy StreetAddress I-ADDRESS
-17 StreetAddress I-ADDRESS
-P.O. StreetAddress I-ADDRESS
-Box StreetAddress I-ADDRESS
-630 StreetAddress E-ADDRESS
+4861 StreetAddress O
+Hwy StreetAddress O
+17 StreetAddress O
+P.O. StreetAddress O
+Box StreetAddress O
+630 StreetAddress O
 Mattawa A1.10City/Town O
 Ontario A1.11Province O
-P0H1V0 PostalCode S-ADDRESS
+P0H1V0 PostalCode O
 papineaucameron.ca A1.13WebSiteAddress O
 
