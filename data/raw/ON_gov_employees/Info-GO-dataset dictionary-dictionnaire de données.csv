@@ -1,0 +1,102 @@
+oms_open_data_employee-sgio_données_ouvertes_employé.csv,,,,,,
+,Name,Nom français,Description,Français description,Data Type,type de données françaises
+,ORG ID,ID DE L'ORGANISATION,Organization Identifier,Identificateur de l'organisation,Number,Chiffre
+,ORG PATH,CHEMIN POUR L'ORGANISATION,Organization Hierarchy Path Name,Nom du chemin hiérarchique vers l’organisation,Character,Lettre
+,POSITION ID,ID DU POSTE,Identifier of the Postion,Identificateur du poste,Number,Chiffre
+,POSITION TITLE,TITRE DE POSTE,Position Title Name,Nom du titre de poste ,Character,Lettre
+,HEAD,RESPONSABLE,Responsible For Organization Indicator,Responsable de l'identificateur de l'organisation,Character,Lettre
+,BILINGUAL,BILINGUE,Bilingual Identifier,Identificateur bilingue,Character,Lettre
+,ACTIVE,ACTIF,Position Active Identifier,Identificateur actif du poste,Character,Lettre
+,ASSIGNMENT TYPE ID,ID DU TYPE D’ASSIGNATION,Identifier of the Assignment Type,Identificateur du type d'assignation ,Number,Chiffre
+,ASSIGNMENT TYPE LABEL,NOM DU TYPE D'ASSIGNATION ,Assignment Type Name,Nom du type d'assignation,Character,Lettre
+,HONORIFIC,TITRE HONORIFIQUE,Honorific Name,Titre honorifique,Number,Chiffre
+,FIRST NAME,PRÉNOM,Given Name,Prénom,Character,Lettre
+,LAST NAME,NOM,Surname,Nom,Character,Lettre
+,MIDDLE NAME,SECOND PRÉNOM,Middle Name,Second prénom,Character,Lettre
+,PRIMARY PHONE,TÉLÉPHONE PRINCIPAL,Employee's Position Primary Phone Number,Numéro de téléphone principal du poste de l'employé,Number,Chiffre
+,PHONE TYPE,TYPE DE TÉLÉPHONE,Employee's Position Phone Type,Type de téléphone du poste de l'employé,Character,Lettre
+,PHONE NUMBER,NUMÉRO DE TÉLÉPHONE,Employee's Position Alternate Phone Number,Autre numéro de téléphone du poste de l'employé,Number,Chiffre
+,PHONE EXTENSION,POSTE TÉLÉPHONIQUE,Position Phone Extension,Poste téléphonique assosié au poste de l'employé,Number,Chiffre
+,PRIMARY EMAIL,COURRIEL PRINCIPAL,Employee Primary Email,Courriel principal de l'employé,Character,Lettre
+,EMAIL,COURRIEL,Employee Alternate Email,Autre courriel de l'employé,Character,Lettre
+,PRIMARY ADDRESS,ADRESSE PRINCIPALE,Employee's Position Main Business Address,Adresse professionnelle principale du poste de l'employé,Character,Lettre
+,MAILING ADDRESS,ADRESSE POSTALE,Position Main Mailing Address,Adresse postale principale du poste de l'employé,Character,Lettre
+,BUILDING,ÉDIFICE,Employee's Position Building Name,Nom de l'édifice où se situe le poste de l'employé,Character,Lettre
+,FLOOR UNIT,ÉTAGE OU UNITÉ,Employee's Position Floor Or Unit Designator,Étage ou unité où se situe le poste de l'employé,Character,Lettre
+,ADDITIONAL UNIT DESC,AUTRE DESCRIPTION DE L'UNITÉ,Additional Unit Description,Autre description de l'unité,Character,Lettre
+,STREET,RUE,Employee's Position Street Name,Nom de la rue où se situe le poste de l'employé,Character,Lettre
+,PO BOX,CASE POSTALE,Employee's Position P.O. Box Information,Information concernant la case postale du poste de l'employé,Character,Lettre
+,RURAL ROUTE,ROUTE RURALE,Employee's Position Rurual Route Designator,Dénomination de la route rurale où se situe le poste de l'employé ,Character,Lettre
+,CITY,VILLE,Employee's Position City,Ville où se situe le poste de l'employé,Character,Lettre
+,PROVINCE,PROVINCE,Employee's Position Province/Us State,Province/état où se situe le poste de l'employé,Character,Lettre
+,POSTAL CODE,CODE POSTAL,Employee's Position Postal Code/Zip Code,Code postal du poste de l'employé,Character,Lettre
+,COUNTRY,PAYS,Employee's Position Country,Pays où se situe le poste de l'employé,Character,Lettre
+,POSITION TITLE FR,TITRE DE POSTE (FR),Position Title French,Titre de poste en français,Character,Lettre
+,HONORIFIC FR,TITRE HONORIFIQUE (FR),Honorific French,Titre honorifique en français,Character,Lettre
+,ASSIGNMENT TYPE LABEL FR,NOM DU TYPE D'ASSIGNATION (FR),Assignment Type Label French,Nom du type d'assignation en français,Character,Lettre
+,PHONE TYPE FR,TYPE DE TÉLÉPHONE (FR),Employee's Position Phone Type French,Nom du type de téléphone du poste de l'employé en français,Number,Chiffre
+,BUILDING FR,ÉDIFICE (FR),Employee's Position Building French,Nom de l'édifice où se situe le poste de l'employé en français,Character,Lettre
+,FLOOR UNIT FR,ÉTAGE OU UNITÉ (FR),Employee's Position Floor Unit French,Numéro de l'étage ou nom de l'unité où se situe le poste de l'employé en français,Character,Lettre
+,ADDITIONAL UNIT DESC FR,AUTRE DESCRIPTION DE L'UNITÉ (FR),Employee's Position Additional Unit Description French,Autre description de l'unité où se situe le poste de l'employé en français,Character,Lettre
+,STREET FR,RUE (FR),Employee's Position Street Name French,Nom de la rue où se situe le poste de l'employé en français,Character,Lettre
+,PO BOX FR,CASE POSTALE (FR),Employee's Position PO Box French,Numéro de la case postale du poste de l'employé en français,Number,Chiffre
+,RURAL ROUTE FR,ROUTE RURALE (FR),Employee's Position Rural Route Designation French,Dénomination de la route rurale où se situe le poste de l'employé en français,Number,Chiffre
+,,,,,,
+oms_open_data_indirect-sgio_données-ouvertes-indirect.csv,,,,,,
+,Name,Nom français,Description,Français description,Data Type,type de données françaises
+,FROM ORG ID,ID DE L'ORGANISATION DE DÉPART,Organization Organization Identifier,Identificateur de l'organisation de départ,Number,Chiffre
+,FROM ORG PATH,CHEMIN POUR L'ORGANISATION DE DÉPART,Organization Hierarchy Path Name,Nom du chemin hiérarchique pour l’organisation de départ,Character,Lettre
+,RELATIONSHIP TYPE ID,ID DU TYPE DE LIEN,Relationship Type Identifier,Identificateur du type de lien,Number,Chiffre
+,RELATIONSHIP TYPE LABEL,NOM DU TYPE DE LIEN (FR),Relationship Type Label,Nom du type de lien ,Character,Lettre
+,TO ORG ID,ID DE L'ORGANISATION DE DESTINATION,Destination Organization Identifier,Identificateur de l'organisation de destination,Number,Chiffre
+,TO ORG PATH,CHEMIN POUR L'ORGANISATION DE DESTINATION,Destination Organization Hierarchy Path Name,Nom du chemin hiérarchique pour l’organisation de destination,Character,Lettre
+,TO POSITION ID,ID DU POSTE DE DESTINATION,Destination Position Identifier,Identificateur du poste de destination,Number,Chiffre
+,TO POSITION TITLE,TITRE DU POSTE DE DESTINATION,Destination Position Name,Nom du poste de destination,Character,Lettre
+,RELATIONSHIP TYPE LABEL FR,NOM DU TYPE DE LIEN (FR),Relationship Type Label French,Nom du type de lien en français,Character,Lettre
+,,,,,,
+oms_open_data_org-sgio_données-ouvertes_org.csv,,,,,,
+,Name,Nom français,Description,Français description,Data Type,type de données françaises
+,ORG ID,ID DE L’ORGANISATION,Organization Identifier,Identificateur de l'organisation,Number,Chiffre
+,ORG PREFIX,PRÉFIXE  DE L’ORGANISATION,Organization Prefix ,Préfixe de l'organisation,Character,Lettre
+,ORG NAME,NOM DE L’ORGANISATION ,Organization Name,Nom de l'organisation ,Character,Lettre
+,ACRONYM,ACRONYME,Organization Acronym,Acronyme de l'organisation,Character,Lettre
+,TYPE ID,ID DU TYPE,Organization Type Identifier,Identificateur du type de l'organisation,Number,Chiffre
+,TYPE LABEL,NOM DU TYPE,Organization Label,Nom de l'organisation,Character,Lettre
+,CATEGORY ID,ID DE LA CATÉGORIE,Category Identifier,Identificateur de la catégorie,Number,Chiffre
+,CATEGORY LABEL,NOM DE LA CATÉGORIE,Category Label,Nom de la catégorie,Character,Lettre
+,ORG PATH,CHEMIN POUR L'ORGANISATION,Organization Path,Chemin pour l'organisation,Character,Lettre
+,DESCRIPTION,DESCRIPTION,Organization Description,Description de l'organisation,Character,Lettre
+,PHONE TYPE,TYPE DE TÉLÉPHONE,Organization Phone Type,Type de téléphone de l'organisation,Character,Lettre
+,PHONE NUMBER,NUMÉRO DE TÉLÉPHONE,Organization Phone Number,Numéro de téléphone de l'organisation ,Number,Chiffre
+,PHONE EXTENSION,POSTE TÉLÉPHONIQUE,Organization Phone Extension,Poste téléphonique de l'organisation ,Number,Chiffre
+,PHONE DESCRIPTION,DESCRIPTION DU TÉLÉPHONE,Organization Phone Description,Description du téléphone de l'organisation,Character,Lettre
+,PRIMARY URL,URL PRINCIPALE,Organization Primary Uniform Resource Locator,Adresse URL principale de l'organisation,Character,Lettre
+,URL,URL,Organization Uniform Resource Locator,Adresse URL de l'organisation,Character,Lettre
+,PRIMARY EMAIL,COURRIEL PRINCIPAL,Organization Primary Email,Courriel principal de l'organisation,Character,Lettre
+,EMAIL,COURRIEL,Organization Email,Courriel de l'organisation,Character,Lettre
+,PRIMARY ADDRESS,ADRESSE PRINCIPALE,Organiziation Primary Building Address,Adresse de l'édifice principal de l'organisation,Character,Lettre
+,MAILING ADDRESS,ADRESSE POSTALE,Organization Mailing Address,Adresse postale de l'organisation,Character,Lettre
+,BUILDING,ÉDIFICE,Organization Building,Édifice de l'organisation,Character,Lettre
+,FLOOR UNIT,ÉTAGE OU UNITÉ,Organization Floor Or Unit Name,Nom de l'unité ou numéro de l'étage de l'organisation,Character,Lettre
+,ADDITIONAL UNIT DESC,AUTRE DESCRIPTION DE L'UNITÉ,Organization Additional Unit Description,Autre description de l'unité de l'organisation,Character,Lettre
+,STREET,RUE,Organization Street,Rue où se situe l'organisation,Character,Lettre
+,PO BOX,CASE POSTALE,Organization POBox,Case postale de l'organisation,Character,Lettre
+,RURAL ROUTE,ROUTE RURALE,Organization Rural Route,Route rurale où se situe l'organisation,Character,Lettre
+,CITY,VILLE,Organization City,Ville où se situe l'organisation,Character,Lettre
+,PROVINCE,PROVINCE,Organization Province,Province où se situe l'organisation,Character,Lettre
+,POSTAL CODE,CODE POSTAL,Organization Postal Code,Code postal de l'organisation,Character,Lettre
+,COUNTRY,PAYS,Organization Country,Pays où se situe l'organisation,Character,Lettre
+,ORG PREFIX FR,PRÉFIXE DE L'ORGANISATION (FR),Organization Prefix French,Préfixe de l'organisation en français,Character,Lettre
+,ORG NAME FR,NOM DE L'ORGANISATION (FR),Organization  Name French,Nom de l'organisation en français,Character,Lettre
+,TYPE LABEL FR,NOM DU TYPE (FR),Type Label French,Nom du type en français,Character,Lettre
+,CATEGORY LABEL FR,NOM DE LA CATÉGORIE (FR),Category Label French,Nom de la catégorie en français,Character,Lettre
+,ORG PATH FR,CHEMIN POUR L'ORGANISATION (FR),Organization  Path French,Chemin pour l'organisation en français,Character,Lettre
+,DESCRIPTION FR,DESCRIPTION (FR),Organization Description French,Description de l'organisation en français,Character,Lettre
+,PHONE TYPE FR,TYPE DE TÉLÉPHONE (FR) ,Organization Phone Type French,Nom du type de téléphone de l'organisation en français,Character,Lettre
+,PHONE DESCRIPTION FR,DESCRIPTION DU TÉLÉPHONE (FR),Organization Phone Description French,Description du téléphone de l'organisation en français,Character,Lettre
+,BUILDING FR,ÉDIFICE (FR) ,Organization Building French,Nom de l'édifice de l'organisation en français,Character,Lettre
+,FLOOR UNIT FR,ÉTAGE OU UNITÉ (FR) ,Organization Floor Unit French,Nom de l'unité ou numéro de l'étage de l'organisation en français,Character,Lettre
+,ADDITIONAL UNIT DESC FR,AUTRE DESCRIPTION DE L'UNITÉ (FR),Organization Additional Unit Desc French,Autre description de l'unité de l'organisation en français,Character,Lettre
+,STREET FR,RUE (FR) ,Organization Street French,Nom de la rue où se situe l'organisation en français,Character,Lettre
+,PO BOX FR,CASE POSTALE (FR) ,Organization POBox French,Case postale de l'organisation en français,Number,Chiffre
+,RURAL ROUTE FR,ROUTE RURALE (FR) ,Organization Rural Route French,Nom de la route rurale où se situe l'organisation en français,Number,Chiffre

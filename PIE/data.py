@@ -45,7 +45,7 @@ class Data(object):
 
         char_vocab = {char: idx for idx, char in
                       enumerate([x for x in list(
-                          ' ' + string.digits + string.ascii_lowercase + string.punctuation)])}  # ' ' is placeholder for index 0
+                          ' ' + string.digits + string.ascii_lowercase + string.punctuation + '\0')])}  # ' ' is placeholder for index 0
 
         with open(self.config.char_vocab_filename, mode="w", encoding='UTF-8') as f:
             for i, char in enumerate(char_vocab):
@@ -128,8 +128,6 @@ class Data(object):
                     line = line.strip()
                     if len(line) == 0 or line.startswith("-DOCSTART-"):
                         if len(words) != 0:
-                            # tranfer BIO to BIEOS
-
                             words_list.append(words)
                             chars_list.append(chars)
                             tags_list.append(tags)
@@ -186,7 +184,7 @@ class Preprocessor(object):
     def word(self, word):
         char_ids = []
         for char in word:
-            char_ids.append(self.char_vocab[char.lower()])
+            char_ids.append(self.char_vocab[char.lower()] if char.lower() in self.char_vocab else self.char_vocab['\0'])
 
             # if self.char_vocab[char.lower()] == 0:
             #     pass

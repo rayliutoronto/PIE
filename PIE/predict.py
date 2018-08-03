@@ -23,7 +23,8 @@ class Prediction(object):
         self.tokenizer = Tokenizer('en')
 
     def predict(self, sentence):
-        words_raw = [token.text for doc in self.tokenizer.split(sentence.strip()) for token in doc]
+        words_raw = [token.text for doc in self.tokenizer.split(sentence.strip()) for token in doc if
+                     not token.is_space]
         word_ids = []
         char_ids = []
         for word_raw in words_raw:
