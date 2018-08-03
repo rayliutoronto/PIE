@@ -66,16 +66,19 @@ def convert_xlsx_and_split(file, split=0.7):
                 f = train_f if idx < split_idx else valid_f
                 row_string = []
                 for i, cell in enumerate(row):
-                    if i < len(header) and header_mask[i]:
+                    if i < len(header):
                         row_string.append(str(cell).strip())
 
-                for i, doc in enumerate(tokenizer.split(row_string)):
-                    word_raw = [token.text for token in doc if not token.is_space]
-                    for j, word in enumerate(word_raw):
-                        f.write('{}\n'.format(
-                            word + ' ' + header[i] + ' ' + (
-                                'O' if cell is None or str(cell).lower() in ['na', 'not applicable'] else get_tag(
-                                    header[i], len(word_raw), j))))
+                docs = list(tokenizer.split(row_string))
+                for i, cell in enumerate(row):
+                    if i < len(header) and header_mask[i]:
+
+                        word_raw = [token.text for token in docs[i] if not token.is_space]
+                        for j, word in enumerate(word_raw):
+                            f.write('{}\n'.format(
+                                word + ' ' + header[i] + ' ' + (
+                                    'O' if cell is None or str(cell).lower() in ['na', 'not applicable'] else get_tag(
+                                        header[i], len(word_raw), j))))
 
                 f.write('\n')
 
@@ -92,8 +95,7 @@ def get_tag(field_name, word_list_length, word_index):
         return get_tag1(word_list_length, word_index) + '-' + 'PHONE'
     elif field_name.lower() in ['emailaddress', 'email', 'e-mail']:
         return get_tag1(word_list_length, word_index) + '-' + 'EMAIL'
-    elif field_name.lower() in ['streetaddress', 'postalcode', 'address', 'street', 'physicaladdress',
-                                'buildingaddress']:
+    elif field_name.lower() in ['streetaddress', 'address', 'street', 'physicaladdress', 'buildingaddress']:
         return get_tag1(word_list_length, word_index) + '-' + 'ADDRESS'
     elif field_name.lower() in ['postalcode']:
         return get_tag1(word_list_length, word_index) + '-' + 'POSTALCODE'

@@ -37,8 +37,8 @@ Not BusinessLocation O
 applicable BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 ailee.ho Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 gmail.com Emailaddress E-EMAIL
@@ -85,8 +85,8 @@ Corporation Businessname O
 Cambridge BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 melissa.gould Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 linamar.com Emailaddress E-EMAIL
@@ -129,8 +129,8 @@ Ecosafe Businessname O
 Toronto BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 michael Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 ecosafecananada.com Emailaddress E-EMAIL
@@ -151,8 +151,8 @@ Incorporated Businessname O
 Hamilton BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 karen Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 carenms.com Emailaddress E-EMAIL
@@ -185,10 +185,10 @@ pgeisberger Emailaddress B-EMAIL
 environcorp.com Emailaddress E-EMAIL
 
 TSRP0264 LicenceNumber O
-Nancy FullName O
-Duquet FullName O
-- FullName O
-Harvey FullName O
+Nancy FullName B-PERSON
+Duquet FullName I-PERSON
+- FullName I-PERSON
+Harvey FullName E-PERSON
 2018 LicenceExpiryDate O
 - LicenceExpiryDate O
 09 LicenceExpiryDate O
@@ -322,8 +322,8 @@ New BusinessLocation O
 Hamburg BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 ld50 Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 execulink.com Emailaddress E-EMAIL
@@ -343,15 +343,15 @@ Limited Businessname O
 Maple BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 kchoi Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 fabricatedplastics.com Emailaddress E-EMAIL
 
 TSRP0272 LicenceNumber O
-Vesna FullName O
-Savkovic FullName O
+Vesna FullName B-PERSON
+Savkovic FullName E-PERSON
 2018 LicenceExpiryDate O
 - LicenceExpiryDate O
 10 LicenceExpiryDate O
@@ -411,8 +411,8 @@ Corporation Businessname O
 Ajax BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 PBriggs Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 dominioncolour.com Emailaddress E-EMAIL
@@ -481,8 +481,8 @@ Not BusinessLocation O
 applicable BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 darrin.colquhoun Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 clariant.com Emailaddress E-EMAIL
@@ -503,8 +503,8 @@ Manufacturing Businessname O
 Alliston BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 Craig_Stewart Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 hcm.honda.com Emailaddress E-EMAIL
@@ -524,8 +524,8 @@ Incorporated Businessname O
 Mississauga BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 Brent Emailaddress B-EMAIL
 . Emailaddress I-EMAIL
 Bryant Emailaddress I-EMAIL
@@ -548,8 +548,8 @@ Limited Businessname O
 Burlington BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 dvachon8 Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 cogeco.ca Emailaddress E-EMAIL
@@ -598,8 +598,8 @@ Limited Businessname O
 Kanata BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 Camille_Taylor Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 golder.com Emailaddress E-EMAIL
@@ -692,8 +692,8 @@ Associates Businessname O
 Mississauga BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 jmcevoy Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 golder.com Emailaddress E-EMAIL
@@ -834,8 +834,8 @@ Incorporated Businessname O
 Toronto BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 Tanuja Emailaddress B-EMAIL
 . Emailaddress I-EMAIL
 Saha Emailaddress I-EMAIL
@@ -948,8 +948,8 @@ jsheppard Emailaddress B-EMAIL
 pioneerconstruction.ca Emailaddress E-EMAIL
 
 TSRP0299 LicenceNumber O
-Thomas FullName O
-Mills FullName O
+Thomas FullName B-PERSON
+Mills FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -968,8 +968,8 @@ Not Emailaddress O
 Applicable Emailaddress O
 
 TSRP0300 LicenceNumber O
-Ryan FullName O
-Bourner FullName O
+Ryan FullName B-PERSON
+Bourner FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1016,8 +1016,8 @@ jacobs Emailaddress I-EMAIL
 thompson.com Emailaddress E-EMAIL
 
 TSRP0302 LicenceNumber O
-Scott FullName O
-Robertson FullName O
+Scott FullName B-PERSON
+Robertson FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1088,8 +1088,8 @@ simon.guan Emailaddress B-EMAIL
 gm.com Emailaddress E-EMAIL
 
 TSRP0305 LicenceNumber O
-Kimberly FullName O
-Tracey FullName O
+Kimberly FullName B-PERSON
+Tracey FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1108,8 +1108,8 @@ Not Emailaddress O
 applicable Emailaddress O
 
 TSRP0307 LicenceNumber O
-Donald FullName O
-Hum FullName O
+Donald FullName B-PERSON
+Hum FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1142,15 +1142,15 @@ Incorporated Businessname O
 Haileybury BusinessLocation O
 Not SecondaryLocation O
 Applicable SecondaryLocation O
-Not TelephoneNumber B-PHONE
-applicable TelephoneNumber E-PHONE
+Not TelephoneNumber O
+applicable TelephoneNumber O
 marie.manchester Emailaddress B-EMAIL
 @ Emailaddress I-EMAIL
 storyenvironmental.com Emailaddress E-EMAIL
 
 TSRP0309 LicenceNumber O
-Shannon FullName O
-Jones FullName O
+Shannon FullName B-PERSON
+Jones FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1169,8 +1169,8 @@ Not Emailaddress O
 applicable Emailaddress O
 
 TSRP0310 LicenceNumber O
-Cecilia FullName O
-Tolley FullName O
+Cecilia FullName B-PERSON
+Tolley FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
@@ -1188,8 +1188,8 @@ Not Emailaddress O
 applicable Emailaddress O
 
 TSRP0311 LicenceNumber O
-Janine FullName O
-Williams FullName O
+Janine FullName B-PERSON
+Williams FullName E-PERSON
 2019 LicenceExpiryDate O
 - LicenceExpiryDate O
 05 LicenceExpiryDate O
