@@ -104,16 +104,17 @@ def get_tag(field_name, word_list_length, word_index):
 
 
 def get_tag1(word_list_length, word_index):
-    if word_list_length == 1:
-        tag1 = 'S'
-    elif word_index == 0:
-        tag1 = 'B'
-    elif word_index < word_list_length - 1:
-        tag1 = 'I'
-    else:
-        tag1 = 'E'
-
-    return tag1
+    # if word_list_length == 1:
+    #     tag1 = 'S'
+    # elif word_index == 0:
+    #     tag1 = 'B'
+    # elif word_index < word_list_length - 1:
+    #     tag1 = 'I'
+    # else:
+    #     tag1 = 'E'
+    #
+    # return tag1
+    return 'B' if word_index == 0 else 'I'
 
 
 def get_disabled_col():
