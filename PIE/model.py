@@ -190,7 +190,7 @@ class Model(object):
     def run(self, _):
         # tf.gfile.DeleteRecursively(self.config.output_dir_root)
 
-        self.run_config = tf.estimator.RunConfig(keep_checkpoint_max=3,log_step_count_steps=0, save_summary_steps=0)
+        self.run_config = tf.estimator.RunConfig(keep_checkpoint_max=3)
 
         self.predictor = tf.estimator.Estimator(
             model_fn=self._model_fn,
