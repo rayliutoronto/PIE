@@ -46,11 +46,11 @@ class Config(object):
 
     num_epoch = 100
     lr = 0.005
-    lr_decay = 0.9
+    lr_decay = 0.98
     dropout = 0.68
     batch_size = 64 if tf.test.is_gpu_available() else 32
     clip = -1  # if negative, no clipping
-    patience = 10  # early stop
+    patience = 6  # early stop
 
     hidden_size_char = 100  # lstm on chars
     hidden_size_lstm = 100  # lstm on word embeddings
