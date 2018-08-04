@@ -9,7 +9,7 @@ import tensorflow as tf
 from config import Config
 from tensorflow.python.training import session_run_hook
 
-from data import Data, DataSet, Postprocessor
+from data import Data, DataSet
 
 
 class Model(object):
@@ -35,7 +35,7 @@ class Model(object):
                   'char_ids': tf.placeholder(dtype=tf.int64, shape=[None, None, None], name="char_ids")}
         return tf.estimator.export.ServingInputReceiver(inputs, inputs)
 
-    def _model_fn(self, features, labels, mode, params, config):
+    def _model_fn(self, features, labels, mode):
         if mode == tf.estimator.ModeKeys.TRAIN:
             self.config.dropout_ph = self.config.dropout
             self.config.lr = self.config.lr_decay * self.config.lr
@@ -46,20 +46,23 @@ class Model(object):
 
         if mode == tf.estimator.ModeKeys.TRAIN:
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              training_chief_hooks=[CPSaverHook(
+                                              training_chief_hooks=[_CPSaverHook(
                                                   checkpoint_dir=self.config.output_dir_root,
                                                   save_steps=sys.maxsize // 2)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
-                self.eval_hook = EvaluationHook(model=self)
+                self.eval_hook = _EvaluationHook(model=self)
 
-            return tf.estimator.EstimatorSpec(mode, loss=self.loss, evaluation_hooks=[self.eval_hook])
+            return tf.estimator.EstimatorSpec(mode, loss=-self.f1[1], eval_metric_ops={
+                'accuracy': self.accuracy,
+                'f1': self.f1
+            }, evaluation_hooks=[self.eval_hook])
 
         if mode == tf.estimator.ModeKeys.PREDICT:
             predictions = {
+                'viterbi_sequence': self.viterbi_sequence,
                 'logits': self.logits,
-                'trans_params': self.trans_params_tensor,
-                'sequence_lengths': self.sequence_lengths
+                "tp": self.trans_params
             }
             export_outputs = {
                 'prediction': tf.estimator.export.PredictOutput(predictions)
@@ -70,38 +73,37 @@ class Model(object):
                 export_outputs=export_outputs)
 
     def _create_model(self, features, labels, mode):
-        if mode == tf.estimator.ModeKeys.PREDICT:
-            labels = tf.zeros_like(features['word_ids'])
-
         self._add_variables(features, labels)
         self._add_embedding_op()
         self._add_logits_op()
-        self._add_loss_op()
-
-        if mode != tf.estimator.ModeKeys.PREDICT:
+        if mode in [tf.estimator.ModeKeys.TRAIN]:
+            self._add_loss_op()
             self._add_train_op()
+        if mode in [tf.estimator.ModeKeys.EVAL, tf.estimator.ModeKeys.PREDICT]:
+            self._add_transition_parameter()
+            self._add_prediction_op()
+        if mode in [tf.estimator.ModeKeys.EVAL]:
+            self._add_accuracy_op()
 
     def _add_variables(self, features, labels):
-        # shape = (batch size, max length of sentence in batch)
-        self.word_ids = features['word_ids']
+        with tf.variable_scope("variable"):
+            # shape = (batch size, max length of sentence in batch)
+            self.word_ids = tf.cast(features['word_ids'], dtype=tf.int32, name='word_ids')
 
-        # shape = (batch size)
-        self.sequence_lengths = tf.count_nonzero(self.word_ids, axis=1, name="sequence_lengths")
+            # shape = (batch size)
+            self.sequence_lengths = tf.count_nonzero(self.word_ids, axis=1, name="sequence_lengths", dtype=tf.int32)
 
-        # shape = (batch size, max length of sentence, max length of word)
-        self.char_ids = features['char_ids']
+            # shape = (batch size, max length of sentence, max length of word)
+            self.char_ids = tf.cast(features['char_ids'], dtype=tf.int32, name='char_ids')
 
-        # shape = (batch_size, max_length of sentence)
-        self.word_lengths = tf.count_nonzero(self.char_ids, axis=2, name="word_lengths")
+            # shape = (batch_size, max_length of sentence)
+            self.word_lengths = tf.count_nonzero(self.char_ids, axis=2, name="word_lengths", dtype=tf.int32)
 
-        # shape = (batch size, max length of sentence in batch)
-        self.labels = labels
+            # shape = (batch size, max length of sentence in batch)
+            self.labels = tf.cast(labels, dtype=tf.int32, name='labels')
 
-        # ??
-        self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
-        tf.summary.scalar('lr', self.lr)
-        # ??
-        self.dropout = tf.Variable(self.config.dropout_ph, dtype=tf.float32, trainable=False, name='dropout')
+            self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
+            self.dropout = tf.Variable(self.config.dropout_ph, dtype=tf.float32, trainable=False, name='dropout')
 
     def _add_embedding_op(self):
         with tf.variable_scope("words"):
@@ -171,14 +173,17 @@ class Model(object):
             self.logits = tf.reshape(pred, [-1, nsteps, len(self.data.tag_vocab)])
 
     def _add_loss_op(self):
-        log_likelihood, trans_params = tf.contrib.crf.crf_log_likelihood(
-            self.logits, self.labels, self.sequence_lengths)
-        self.trans_params = trans_params  # need to evaluate it for decoding
-        self.trans_params_tensor = tf.convert_to_tensor(self.trans_params)
-        self.loss = tf.reduce_mean(-log_likelihood, name='loss')
+        with tf.variable_scope("loss_op"):
+            log_likelihood, self.trans_params = tf.contrib.crf.crf_log_likelihood(
+                self.logits, self.labels, self.sequence_lengths)
+            self.loss = tf.reduce_mean(-log_likelihood, name='loss')
+
+    def _add_transition_parameter(self):
+        with tf.variable_scope("loss_op"):
+            self.trans_params = tf.get_variable('transitions', [len(self.data.tag_vocab), len(self.data.tag_vocab)])
 
     def _add_train_op(self):
-        with tf.variable_scope("train_step"):
+        with tf.variable_scope("train_op"):
             optimizer = tf.train.AdamOptimizer(self.lr)
             if self.config.clip > 0:  # gradient clipping if clip is positive
                 grads, vs = zip(*optimizer.compute_gradients(self.loss))
@@ -187,9 +192,23 @@ class Model(object):
             else:
                 self.train_op = optimizer.minimize(loss=self.loss, global_step=tf.train.get_or_create_global_step())
 
-    def run(self, _):
-        # tf.gfile.DeleteRecursively(self.config.output_dir_root)
+    def _add_prediction_op(self):
+        with tf.variable_scope("prediction_op"):
+            self.viterbi_sequence, self.viterbi_score = tf.contrib.crf.crf_decode(self.logits, self.trans_params,
+                                                                                  self.sequence_lengths)
 
+    def _add_accuracy_op(self):
+        with tf.variable_scope('accuracy_op'):
+            self.accuracy = tf.metrics.accuracy(self.labels, self.viterbi_sequence)
+            self.precision = tf.metrics.precision_at_top_k(tf.cast(self.labels, tf.int64), self.viterbi_sequence,
+                                                           len(self.data.tag_vocab))
+            self.recall = tf.metrics.recall_at_top_k(tf.cast(self.labels, tf.int64), self.viterbi_sequence,
+                                                     len(self.data.tag_vocab))
+
+            self.f1 = (2.0 * self.precision[0] * self.recall[0] / (self.precision[0] + self.recall[0]),
+                       2.0 * self.precision[1] * self.recall[1] / (self.precision[1] + self.recall[1]))
+
+    def run(self, _):
         self.run_config = tf.estimator.RunConfig(keep_checkpoint_max=3)
 
         self.predictor = tf.estimator.Estimator(
@@ -200,14 +219,24 @@ class Model(object):
 
         # if there is checkpoint already, need to evaluate first then train
         # update self.best in EvalHook
-        if self.predictor.latest_checkpoint() is not None:
-            self.predictor.evaluate(input_fn=self._valid_input_fn)
+        # if self.predictor.latest_checkpoint() is not None:
+        #     self.predictor.evaluate(input_fn=self._valid_input_fn)
+
+        tf.gfile.MakeDirs(self.config.output_dir_savedmodel)
+
+        def _f1_bigger(best_eval_result, current_eval_result):
+            return best_eval_result['f1'] < current_eval_result['f1']
 
         try:
             tf.estimator.train_and_evaluate(estimator=self.predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
                                             eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
-                                                                            start_delay_secs=0))
+                                                                            start_delay_secs=0,
+                                                                            exporters=tf.estimator.BestExporter(
+                                                                                name=self.config.exporter_name,
+                                                                                serving_input_receiver_fn=self._create_serving_input_receiver,
+                                                                                exports_to_keep=2,
+                                                                                compare_fn=_f1_bigger)))
         except RuntimeError:
             # workaround to exit training loop when no evaluation performance improvement after long epochs.
             pass
@@ -216,76 +245,37 @@ class Model(object):
         # predictor.evaluate(input_fn=self._valid_input_fn)
 
 
-class EvaluationHook(session_run_hook.SessionRunHook):
+class _EvaluationHook(session_run_hook.SessionRunHook):
     def __init__(self, model):
         self.wait = 0
         self.best = -np.Inf
 
         self.model = model
 
-        self.accs = []
-        self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
+        self.f1 = 0
 
         self.epoch = 0
 
     def begin(self):
-        self.accs = []
-        self.correct_preds, self.total_correct, self.total_preds = 0., 0., 0.
+        self.f1 = 0
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
-        return session_run_hook.SessionRunArgs(
-            [self.model.logits, self.model.trans_params, self.model.sequence_lengths, self.model.labels])
+        return session_run_hook.SessionRunArgs([self.model.f1[1]])
 
     def after_run(self, run_context, run_values):
-        logits, trans_params, sequence_lengths, labels = run_values.results
-
-        labels_pred = []
-        # iterate over the sentences because no batching in vitervi_decode
-        for logit, sequence_length in zip(logits, sequence_lengths):
-            logit = logit[:sequence_length]  # keep only the valid steps
-            viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(logit, trans_params)
-            labels_pred += [viterbi_seq]
-
-        for lab, lab_pred, length in zip(labels, labels_pred, sequence_lengths):
-            lab = lab[:length]
-            lab_pred = lab_pred[:length]
-            self.accs += [a == b for (a, b) in zip(lab, lab_pred)]
-
-            lab_chunks = set(Postprocessor.get_chunks(lab, self.model.data.tag_vocab))
-            lab_pred_chunks = set(Postprocessor.get_chunks(lab_pred, self.model.data.tag_vocab))
-
-            self.correct_preds += len(lab_chunks & lab_pred_chunks)
-            self.total_preds += len(lab_pred_chunks)
-            self.total_correct += len(lab_chunks)
+        self.f1 = run_values.results[0]
 
     def end(self, session):
         self.epoch += 1
 
-        p = self.correct_preds / self.total_preds if self.correct_preds > 0 else 0
-        r = self.correct_preds / self.total_correct if self.correct_preds > 0 else 0
-        f1 = 2 * p * r / (p + r) if self.correct_preds > 0 else 0
-        acc = np.mean(self.accs)
-
-        eval_result = {"acc": 100 * acc, "f1": 100 * f1}
         print('======================Evaluation Result===========================')
-        print(eval_result, 'Epoch: ', self.epoch)
+        print('F1: ', 100 * self.f1, '\tEpoch: ', self.epoch)
 
-        if f1 > self.best:
-            self.best = f1
+        if self.f1 > self.best:
+            self.best = self.f1
             self.wait = 0
-            print('New Best F1 Score: ', 100 * f1)
+            print('New Best F1 Score!')
             print('======================Evaluation Result===========================')
-
-            # export savedmodel
-            if self.model.run_config.is_chief:
-                tf.gfile.MakeDirs(self.model.config.output_dir_savedmodel)
-                dir = self.model.predictor.export_savedmodel(self.model.config.output_dir_savedmodel,
-                                                             self.model._create_serving_input_receiver)
-
-                # clear old savedmodels
-                for dir in set(tf.gfile.ListDirectory(self.model.config.output_dir_savedmodel)) - set(
-                        [dir.decode("utf-8")[-10:]]):
-                    tf.gfile.DeleteRecursively(self.model.config.output_dir_savedmodel + dir)
         else:
             self.wait += 1
             print('# epochs with no improvement: ', self.wait)
@@ -294,7 +284,7 @@ class EvaluationHook(session_run_hook.SessionRunHook):
                 raise RuntimeError('Can not make progress!')
 
 
-class CPSaverHook(tf.train.CheckpointSaverHook):
+class _CPSaverHook(tf.train.CheckpointSaverHook):
     def after_create_session(self, session, coord):
         # override parent class to disable checkpoint file writing
         pass

@@ -61,4 +61,5 @@ class Config(object):
     log_filename = output_dir_root + 'logs/log.txt'
     logger = __get_logger(log_filename)
 
-    output_dir_savedmodel = output_dir_root + 'SavedModels/'
+    exporter_name = 'BestExport'
+    output_dir_savedmodel = output_dir_root + 'export/' + exporter_name

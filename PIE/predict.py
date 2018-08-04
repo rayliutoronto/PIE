@@ -50,15 +50,9 @@ class Prediction(object):
 
         response = self.stub.Predict(request, 10.0)  # 10 seconds timeout
 
+        labels_pred = tf.contrib.util.make_ndarray(response.outputs['viterbi_sequence'])
         logits = tf.contrib.util.make_ndarray(response.outputs['logits'])
-        trans_params = tf.contrib.util.make_ndarray(response.outputs['trans_params'])
-        sequence_lengths = tf.contrib.util.make_ndarray(response.outputs['sequence_lengths'])
-
-        labels_pred = []
-        for logit, sequence_length in zip(logits, sequence_lengths):
-            logit = logit[:sequence_length]  # keep only the valid steps
-            viterbi_seq, viterbi_score = tf.contrib.crf.viterbi_decode(logit, trans_params)
-            labels_pred += [viterbi_seq]
+        tp = tf.contrib.util.make_ndarray(response.outputs['tp'])
 
         return [self.data.idx_tag_vocab[x] for x in labels_pred[0]]
 

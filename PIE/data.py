@@ -336,11 +336,10 @@ class DataSet(object):
             for file in files:
                 if file.endswith(".tfrecords"):
                     train_tfrecord_files.append(os.path.join(root, file))
-
-        return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
-                                        multiprocessing.cpu_count()).cache()
+        # TODO shuffle
+        return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).cache().map(
+            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(self.config.batch_size).map(
+            TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count())
 
     def valid(self):
         valid_tfrecord_files = []
@@ -349,10 +348,9 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     valid_tfrecord_files.append(os.path.join(root, file))
 
-        return tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
-            self.config.batch_size).map(TFRecordManager.map_fn_to_dense,
-                                        multiprocessing.cpu_count()).cache()
+        return tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).cache().map(
+            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(self.config.batch_size).map(
+            TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count())
 
 
 if __name__ == '__main__':
