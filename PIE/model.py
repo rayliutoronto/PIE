@@ -37,10 +37,7 @@ class Model(object):
 
     def _model_fn(self, features, labels, mode):
         if mode == tf.estimator.ModeKeys.TRAIN:
-            self.config.dropout_ph = self.config.dropout
             self.config.lr = self.config.lr_decay * self.config.lr
-        if mode in [tf.estimator.ModeKeys.EVAL, tf.estimator.ModeKeys.PREDICT]:
-            self.config.dropout_ph = 1.0
 
         self._create_model(features, labels, mode)
 
@@ -104,7 +101,11 @@ class Model(object):
                 self.labels = tf.cast(labels, dtype=tf.int32, name='labels')
 
             self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
-            self.dropout = tf.Variable(self.config.dropout_ph, dtype=tf.float32, trainable=False, name='dropout')
+
+            if mode in [tf.estimator.ModeKeys.TRAIN]:
+                self.dropout = tf.Variable(self.config.dropout, dtype=tf.float32, trainable=False, name='dropout')
+            else:
+                self.dropout = tf.Variable(1.0, dtype=tf.float32, trainable=False, name='dropout')
 
     def _add_embedding_op(self):
         with tf.variable_scope("words"):
