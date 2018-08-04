@@ -102,10 +102,10 @@ class Model(object):
 
             self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
 
-            if mode in [tf.estimator.ModeKeys.TRAIN]:
-                self.dropout = tf.Variable(self.config.dropout, dtype=tf.float32, trainable=False, name='dropout')
-            else:
-                self.dropout = tf.Variable(1.0, dtype=tf.float32, trainable=False, name='dropout')
+            # if mode in [tf.estimator.ModeKeys.TRAIN]:
+            #     self.dropout = tf.Variable(self.config.dropout, dtype=tf.float32, trainable=False, name='dropout')
+            # else:
+            self.dropout = tf.Variable(1.0, dtype=tf.float32, trainable=False, name='dropout')
 
     def _add_embedding_op(self):
         with tf.variable_scope("words"):
