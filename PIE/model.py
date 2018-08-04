@@ -73,7 +73,7 @@ class Model(object):
                 export_outputs=export_outputs)
 
     def _create_model(self, features, labels, mode):
-        self._add_variables(features, labels)
+        self._add_variables(features, labels, mode)
         self._add_embedding_op()
         self._add_logits_op()
         if mode in [tf.estimator.ModeKeys.TRAIN]:
@@ -85,7 +85,7 @@ class Model(object):
         if mode in [tf.estimator.ModeKeys.EVAL]:
             self._add_accuracy_op()
 
-    def _add_variables(self, features, labels):
+    def _add_variables(self, features, labels, mode):
         with tf.variable_scope("variable"):
             # shape = (batch size, max length of sentence in batch)
             self.word_ids = tf.cast(features['word_ids'], dtype=tf.int32, name='word_ids')
@@ -100,7 +100,8 @@ class Model(object):
             self.word_lengths = tf.count_nonzero(self.char_ids, axis=2, name="word_lengths", dtype=tf.int32)
 
             # shape = (batch size, max length of sentence in batch)
-            self.labels = tf.cast(labels, dtype=tf.int32, name='labels')
+            if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
+                self.labels = tf.cast(labels, dtype=tf.int32, name='labels')
 
             self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
             self.dropout = tf.Variable(self.config.dropout_ph, dtype=tf.float32, trainable=False, name='dropout')
