@@ -62,7 +62,7 @@ class Model(object):
             predictions = {
                 'viterbi_sequence': self.viterbi_sequence,
                 'logits': self.logits,
-                "tp": self.trans_params
+                "tp": self.trans_params_v
             }
             export_outputs = {
                 'prediction': tf.estimator.export.PredictOutput(predictions)
@@ -178,6 +178,8 @@ class Model(object):
             log_likelihood, self.trans_params = tf.contrib.crf.crf_log_likelihood(
                 self.logits, self.labels, self.sequence_lengths)
             self.loss = tf.reduce_mean(-log_likelihood, name='loss')
+
+            self.trans_params_v = tf.Variable(self.trans_params, dtype=tf.float32, trainable=False, name='trans_params')
 
     def _add_transition_parameter(self):
         with tf.variable_scope("loss_op"):
