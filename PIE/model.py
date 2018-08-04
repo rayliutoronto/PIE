@@ -62,7 +62,7 @@ class Model(object):
             predictions = {
                 'viterbi_sequence': self.viterbi_sequence,
                 'logits': self.logits,
-                "tp": self.trans_params_v
+                'tp': self.trans_params_v
             }
             export_outputs = {
                 'prediction': tf.estimator.export.PredictOutput(predictions)
@@ -179,11 +179,13 @@ class Model(object):
                 self.logits, self.labels, self.sequence_lengths)
             self.loss = tf.reduce_mean(-log_likelihood, name='loss')
 
-            self.trans_params_v = tf.convert_to_tensor(self.trans_params)
+            # self.trans_params_v = tf.convert_to_tensor(self.trans_params)
 
     def _add_transition_parameter(self):
         with tf.variable_scope("loss_op"):
             self.trans_params = tf.get_variable('transitions', [len(self.data.tag_vocab), len(self.data.tag_vocab)])
+
+            self.trans_params_v = tf.convert_to_tensor(self.trans_params)
 
     def _add_train_op(self):
         with tf.variable_scope("train_op"):
