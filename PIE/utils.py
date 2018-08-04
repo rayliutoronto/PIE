@@ -37,7 +37,8 @@ def convert_bio_to_bioes(file, newfile):
                 if tag1 == 'I':
                     tag1 = 'E' if next_tag1 not in ['I', 'E'] else tag1
 
-                new_file_content.append(word + ' ' + tag1 + '-' + tag.split('-')[1])
+                tag2 = tag.split('-')[1]
+                new_file_content.append(word + ' ' + tag1 + '-' + ('PERSON' if tag2 == 'PER' else tag2))
             else:
                 new_file_content.append(word + ' ' + tag)
 
@@ -104,17 +105,17 @@ def get_tag(field_name, word_list_length, word_index):
 
 
 def get_tag1(word_list_length, word_index):
-    # if word_list_length == 1:
-    #     tag1 = 'S'
-    # elif word_index == 0:
-    #     tag1 = 'B'
-    # elif word_index < word_list_length - 1:
-    #     tag1 = 'I'
-    # else:
-    #     tag1 = 'E'
-    #
-    # return tag1
-    return 'B' if word_index == 0 else 'I'
+    if word_list_length == 1:
+        tag1 = 'S'
+    elif word_index == 0:
+        tag1 = 'B'
+    elif word_index < word_list_length - 1:
+        tag1 = 'I'
+    else:
+        tag1 = 'E'
+
+    return tag1
+    # return 'B' if word_index == 0 else 'I'
 
 
 def get_disabled_col():
@@ -183,9 +184,8 @@ def generate_fake_email_phone_sin():
 
 
 if __name__ == '__main__':
-    # convert_bio_to_bioes('../data/raw/conll2003/en/train.txt', '../data/raw/conll2003/en/train_bioes.txt')
-    # convert_bio_to_bioes('../data/raw/conll2003/en/test_bio.txt', '../data/raw/conll2003/en/test_bioes.txt')
-    # convert_bio_to_bioes('../data/raw/conll2003/en/valid.txt', '../data/raw/conll2003/en/valid_bioes.txt')
+    convert_bio_to_bioes('../data/raw/conll2003/en/train_bio.txt', '../data/raw/conll2003/en/train.txt')
+    convert_bio_to_bioes('../data/raw/conll2003/en/valid_bio.txt', '../data/raw/conll2003/en/valid.txt')
 
     convert_xlsx_and_split('../data/raw/City_biz_incubator/BusinessEcosystem.xlsx')
     convert_xlsx_and_split('../data/raw/City_door_open/Doors_Open_2018.xlsx')
