@@ -179,7 +179,7 @@ class Model(object):
                 self.logits, self.labels, self.sequence_lengths)
             self.loss = tf.reduce_mean(-log_likelihood, name='loss')
 
-            self.trans_params_v = tf.Variable(self.trans_params, dtype=tf.float32, trainable=False, name='trans_params')
+            self.trans_params_v = tf.convert_to_tensor(self.trans_params)
 
     def _add_transition_parameter(self):
         with tf.variable_scope("loss_op"):
