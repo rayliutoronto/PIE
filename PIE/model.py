@@ -105,7 +105,7 @@ class Model(object):
             if mode in [tf.estimator.ModeKeys.TRAIN]:
                 self.dropout = tf.constant(self.config.dropout, dtype=tf.float32, name='dropout')
             else:
-                self.dropout = tf.constant(1.0, dtype=tf.float32, trainable=False, name='dropout')
+                self.dropout = tf.constant(1.0, dtype=tf.float32, name='dropout')
 
     def _add_embedding_op(self):
         with tf.variable_scope("words"):
