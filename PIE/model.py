@@ -333,7 +333,7 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
 
             # output prediction
             corrected_pred, total_pred = 0, 0
-            with open(self.model.config.output_dir_root + 'eval_result_' + str(self.epoch) + '.txt', mode='w',
+            with open(self.model.config.output_dir_root + 'eval_result_' + str(self.epoch % 3) + '.txt', mode='w',
                       encoding='UTF-8') as f:
                 for word, label, pred in zip(self.word_ids, self.labels, self.predictions):
                     for w, l, p in zip(word, label, pred):
@@ -342,9 +342,9 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
                                 corrected_pred += 1
                             total_pred += 1
                             f.write(
-                                '{}\t\t\t{}\t{}\n'.format(self.model.data.idx_word_vocab[w],
-                                                          self.model.data.idx_tag_vocab[l],
-                                                          self.model.data.idx_tag_vocab[p]))
+                                '{:20}{:10}{:10}\n'.format(self.model.data.idx_word_vocab[w],
+                                                           self.model.data.idx_tag_vocab[l],
+                                                           self.model.data.idx_tag_vocab[p]))
                     f.write('\n')
                 f.write('\n\nAccuracy: {}\n'.format((100.0 * corrected_pred) / total_pred))
         else:
