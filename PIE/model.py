@@ -192,7 +192,8 @@ class Model(object):
             if self.config.clip > 0:  # gradient clipping if clip is positive
                 grads, vs = zip(*optimizer.compute_gradients(self.loss))
                 grads, gnorm = tf.clip_by_global_norm(grads, self.config.clip)
-                self.train_op = optimizer.apply_gradients(zip(grads, vs))
+                self.train_op = optimizer.apply_gradients(zip(grads, vs),
+                                                          global_step=tf.train.get_or_create_global_step())
             else:
                 self.train_op = optimizer.minimize(loss=self.loss, global_step=tf.train.get_or_create_global_step())
 
