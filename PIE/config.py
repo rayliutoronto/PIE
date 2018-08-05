@@ -49,7 +49,7 @@ class Config(object):
     lr_decay = 0.98
     dropout = 0.3
     batch_size = 64 if tf.test.is_gpu_available() else 32
-    clip = 5  # if negative, no clipping
+    clip = 0.001  # if negative, no clipping
     patience = 6  # early stop
 
     hidden_size_char = 100  # lstm on chars
