@@ -351,8 +351,8 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
                                                            self.model.data.idx_tag_vocab[l],
                                                            self.model.data.idx_tag_vocab[p]))
                     f.write('\n')
-                f.write('\n\nAccuracy: {}\tTotal: {}\tCorrect: {}\n'.format((100 * corrected_pred) / total_pred),
-                        total_pred, corrected_pred)
+                f.write('\n\nAccuracy: {}\tTotal: {}\tCorrect: {}\n'.format((100 * corrected_pred) / total_pred,
+                                                                            total_pred, corrected_pred))
                 f.write('\n\nAccuracy w/o O: {}\tTotal: {}\tCorrect: {}\n'.format(
                     (100 * corrected_pred_wo_o) / total_pred_wo_o, total_pred_wo_o, corrected_pred_wo_o))
         else:
