@@ -22,6 +22,7 @@ class Model(object):
 
         self.dataset = DataSet(self.config)
 
+        self.training_hook = None
         self.eval_hook = None
 
     def _train_input_fn(self):
@@ -39,10 +40,13 @@ class Model(object):
         self._create_model(features, labels, mode)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
+            if self.training_hook is None:
+                self.training_hook = _TrainingHook(model=self)
+
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
                                               training_chief_hooks=[_CPSaverHook(
                                                   checkpoint_dir=self.config.output_dir_root,
-                                                  save_steps=sys.maxsize // 2), _TrainingHook(model=self)])
+                                                  save_steps=sys.maxsize // 2), self.training_hook])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = _EvaluationHook(model=self)
@@ -256,6 +260,7 @@ class _TrainingHook(session_run_hook.SessionRunHook):
         self.model = model
         self.f1 = 0
         self.accuracy = 0
+        self.epoch = 0
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
         return session_run_hook.SessionRunArgs([self.model.accuracy, self.model.f1[1]])
@@ -264,9 +269,12 @@ class _TrainingHook(session_run_hook.SessionRunHook):
         self.accuracy, self.f1 = run_values.results
 
     def end(self, session):
-        self.model.logger.info('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
-        self.model.logger.info('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy[0])
-        self.model.logger.info('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
+        self.epoch += 1
+
+        self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+        self.model.logger.info(
+            'F1: {} \tAccuracy: {} \tEpoch: {}'.format(100 * self.f1, 100 * self.accuracy[0], self.epoch))
+        self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
 
 
 class _EvaluationHook(session_run_hook.SessionRunHook):
@@ -293,7 +301,7 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
         self.epoch += 1
 
         self.model.logger.info('======================Evaluation Result===========================')
-        self.model.logger.info('F1: ', 100 * self.f1, '\tEpoch: ', self.epoch)
+        self.model.logger.info('F1: {} \tEpoch: {}'.format(100 * self.f1, self.epoch))
 
         if self.f1 > self.best:
             self.best = self.f1
@@ -302,7 +310,7 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
             self.model.logger.info('======================Evaluation Result===========================')
         else:
             self.wait += 1
-            self.model.logger.info('# epochs with no improvement: ', self.wait)
+            self.model.logger.info('# epochs with no improvement: {}'.format(self.wait))
             self.model.logger.info('======================Evaluation Result===========================')
             if self.wait >= self.model.config.patience:
                 raise RuntimeError('Can not make progress!')
