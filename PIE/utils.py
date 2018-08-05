@@ -38,7 +38,10 @@ def convert_bio_to_bioes(file, newfile):
                     tag1 = 'E' if next_tag1 not in ['I', 'E'] else tag1
 
                 tag2 = tag.split('-')[1]
-                new_file_content.append(word + ' ' + tag1 + '-' + ('PERSON' if tag2 == 'PER' else tag2))
+                if tag2 == 'PER':
+                    new_file_content.append(word + ' ' + tag1 + '-' + 'PERSON')
+                else:
+                    new_file_content.append(word + ' ' + 'O')
             else:
                 new_file_content.append(word + ' ' + tag)
 
@@ -119,7 +122,7 @@ def get_tag1(word_list_length, word_index):
 
 
 def get_disabled_col():
-    return ['description', 'areasofspecialization', 'professionalassociation']
+    return []  # ['description', 'areasofspecialization', 'professionalassociation']
 
 
 def gen_phone():
@@ -187,19 +190,19 @@ if __name__ == '__main__':
     convert_bio_to_bioes('../data/raw/conll2003/en/train_bio.txt', '../data/raw/conll2003/en/train.txt')
     convert_bio_to_bioes('../data/raw/conll2003/en/valid_bio.txt', '../data/raw/conll2003/en/valid.txt')
 
-    convert_xlsx_and_split('../data/raw/City_biz_incubator/BusinessEcosystem.xlsx')
-    convert_xlsx_and_split('../data/raw/City_door_open/Doors_Open_2018.xlsx')
-    convert_xlsx_and_split('../data/raw/cymh/cymh_mcys_open_data_dataset_may_2016_cyrb_approved.xlsx')
-    convert_xlsx_and_split('../data/raw/Farm_marketing_board/marketingdirectory1.xlsx')
-    convert_xlsx_and_split('../data/raw/ON_farm_advisor/growing_forward_2_farm_advisors.xlsx')
-    convert_xlsx_and_split('../data/raw/ON_labor_sponsored_inv_fund/labour-sponsored-investment-funds_1.xlsx')
-    convert_xlsx_and_split('../data/raw/ON_livestock/lma-listc.xlsx')
-    convert_xlsx_and_split('../data/raw/ON_private_school/private_schools_contact_information_july_2018_en_.xlsx')
-    convert_xlsx_and_split(
-        '../data/raw/ON_public_library/2015_ontario_public_library_statistics_open_data_dec_2017rev.xlsx')
+    # convert_xlsx_and_split('../data/raw/City_biz_incubator/BusinessEcosystem.xlsx')
+    # convert_xlsx_and_split('../data/raw/City_door_open/Doors_Open_2018.xlsx')
+    # convert_xlsx_and_split('../data/raw/cymh/cymh_mcys_open_data_dataset_may_2016_cyrb_approved.xlsx')
+    # convert_xlsx_and_split('../data/raw/Farm_marketing_board/marketingdirectory1.xlsx')
+    # convert_xlsx_and_split('../data/raw/ON_farm_advisor/growing_forward_2_farm_advisors.xlsx')
+    # convert_xlsx_and_split('../data/raw/ON_labor_sponsored_inv_fund/labour-sponsored-investment-funds_1.xlsx')
+    # convert_xlsx_and_split('../data/raw/ON_livestock/lma-listc.xlsx')
+    # convert_xlsx_and_split('../data/raw/ON_private_school/private_schools_contact_information_july_2018_en_.xlsx')
+    # convert_xlsx_and_split(
+    #     '../data/raw/ON_public_library/2015_ontario_public_library_statistics_open_data_dec_2017rev.xlsx')
     convert_xlsx_and_split('../data/raw/ON_public_school/publicly_funded_schools_xlsx_july_2018_en.xlsx')
     convert_xlsx_and_split('../data/raw/ON_school_board/boards_schoolauthorities_july_2018_en.xlsx')
-    convert_xlsx_and_split('../data/raw/Toxics_planner/toxics_planners.xlsx')
-    convert_xlsx_and_split('../data/raw/WoodSupplier/may2018.xlsx')
+    # convert_xlsx_and_split('../data/raw/Toxics_planner/toxics_planners.xlsx')
+    # convert_xlsx_and_split('../data/raw/WoodSupplier/may2018.xlsx')
 
     generate_fake_email_phone_sin()

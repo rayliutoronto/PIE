@@ -44,6 +44,10 @@ class Model(object):
                 self.training_hook = _TrainingHook(model=self)
 
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
+                                              eval_metric_ops={
+                                                  'accuracy': self.accuracy,
+                                                  'f1': self.f1
+                                              },
                                               training_chief_hooks=[_CPSaverHook(
                                                   checkpoint_dir=self.config.output_dir_root,
                                                   save_steps=sys.maxsize // 2), self.training_hook])
@@ -262,6 +266,10 @@ class _TrainingHook(session_run_hook.SessionRunHook):
         self.accuracy = 0
         self.epoch = 0
 
+    def begin(self):
+        self.f1 = 0
+        self.accuracy = 0
+
     def before_run(self, run_context):  # pylint: disable=unused-argument
         return session_run_hook.SessionRunArgs([self.model.accuracy[1], self.model.f1[1]])
 
@@ -271,10 +279,10 @@ class _TrainingHook(session_run_hook.SessionRunHook):
     def end(self, session):
         self.epoch += 1
 
-        self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+        self.model.logger.info('*******************************Training Result******************************')
         self.model.logger.info(
             'F1: {} \tAccuracy: {} \tEpoch: {}'.format(100 * self.f1, 100 * self.accuracy, self.epoch))
-        self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+        self.model.logger.info('*******************************Training Result******************************')
 
 
 class _EvaluationHook(session_run_hook.SessionRunHook):
@@ -285,29 +293,61 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
         self.model = model
 
         self.f1 = 0
+        self.accuracy = 0
 
         self.epoch = 0
 
+        self.word_ids = []
+        self.labels = []
+        self.predictions = []
+
     def begin(self):
         self.f1 = 0
+        self.accuracy = 0
+        self.word_ids = []
+        self.labels = []
+        self.predictions = []
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
-        return session_run_hook.SessionRunArgs(self.model.f1[1])
+        return session_run_hook.SessionRunArgs(
+            [self.model.accuracy[1], self.model.f1[1], self.model.word_ids, self.model.labels,
+             self.model.viterbi_sequence])
 
     def after_run(self, run_context, run_values):
-        self.f1 = run_values.results
+        self.accuracy, self.f1, w, l, p = run_values.results
+        self.word_ids.extend(w)
+        self.labels.extend(l)
+        self.predictions.extend(p)
 
     def end(self, session):
         self.epoch += 1
 
         self.model.logger.info('======================Evaluation Result===========================')
-        self.model.logger.info('F1: {} \tEpoch: {}'.format(100 * self.f1, self.epoch))
+        self.model.logger.info(
+            'F1: {} \tAccuracy: {} \tEpoch: {}'.format(100 * self.f1, 100 * self.accuracy, self.epoch))
 
         if self.f1 > self.best:
             self.best = self.f1
             self.wait = 0
             self.model.logger.info('New Best F1 Score!')
             self.model.logger.info('======================Evaluation Result===========================')
+
+            # output prediction
+            corrected_pred, total_pred = 0, 0
+            with open(self.model.config.output_dir_root + 'eval_result_' + str(self.epoch) + '.txt', mode='w',
+                      encoding='UTF-8') as f:
+                for word, label, pred in zip(self.word_ids, self.labels, self.predictions):
+                    for w, l, p in zip(word, label, pred):
+                        if l != 0 and p != 0:
+                            if l == p:
+                                corrected_pred += 1
+                            total_pred += 1
+                            f.write(
+                                '{}\t{}\t{}\n'.format(self.model.data.idx_word_vocab[w],
+                                                      self.model.data.idx_tag_vocab[l],
+                                                      self.model.data.idx_tag_vocab[p]))
+                    f.write('\n')
+                f.write('\n\nAccuracy: {}'.format((100.0 * corrected_pred) / total_pred))
         else:
             self.wait += 1
             self.model.logger.info('# epochs with no improvement: {}'.format(self.wait))
