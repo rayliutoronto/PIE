@@ -55,8 +55,7 @@ class Model(object):
         if mode == tf.estimator.ModeKeys.PREDICT:
             predictions = {
                 'viterbi_sequence': self.viterbi_sequence,
-                'logits': self.logits,
-                'tp': self.trans_params_v
+                'logits': self.logits
             }
             export_outputs = {
                 'prediction': tf.estimator.export.PredictOutput(predictions)
