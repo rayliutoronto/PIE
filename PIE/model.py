@@ -343,11 +343,11 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
                                 corrected_pred += 1
                             total_pred += 1
                             f.write(
-                                '{}\t{}\t{}\n'.format(self.model.data.idx_word_vocab[w],
-                                                      self.model.data.idx_tag_vocab[l],
-                                                      self.model.data.idx_tag_vocab[p]))
+                                '{}\t\t\t{}\t{}\n'.format(self.model.data.idx_word_vocab[w],
+                                                          self.model.data.idx_tag_vocab[l],
+                                                          self.model.data.idx_tag_vocab[p]))
                     f.write('\n')
-                f.write('\n\nAccuracy: {}'.format((100.0 * corrected_pred) / total_pred))
+                f.write('\n\nAccuracy: {}\n'.format((100.0 * corrected_pred) / total_pred))
         else:
             self.wait += 1
             self.model.logger.info('# epochs with no improvement: {}'.format(self.wait))
