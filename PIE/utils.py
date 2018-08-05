@@ -47,7 +47,7 @@ def convert_bio_to_bioes(file, newfile):
             f.write("{}\n".format(line))
 
 
-def convert_xlsx_and_split(file, split=0.7):
+def convert_xlsx_and_split(file, split=0.8):
     wb = load_workbook(file, guess_types=False)
     split_idx = math.floor(wb.active.max_row * split)
     train_file = os.path.dirname(file) + '/train.txt'

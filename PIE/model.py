@@ -42,12 +42,12 @@ class Model(object):
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
                                               training_chief_hooks=[_CPSaverHook(
                                                   checkpoint_dir=self.config.output_dir_root,
-                                                  save_steps=sys.maxsize // 2)])
+                                                  save_steps=sys.maxsize // 2), _TrainingHook(model=self)])
         if mode == tf.estimator.ModeKeys.EVAL:
             if self.eval_hook is None:
                 self.eval_hook = _EvaluationHook(model=self)
 
-            return tf.estimator.EstimatorSpec(mode, loss=-self.f1[1], eval_metric_ops={
+            return tf.estimator.EstimatorSpec(mode, loss=self.loss, eval_metric_ops={
                 'accuracy': self.accuracy,
                 'f1': self.f1
             }, evaluation_hooks=[self.eval_hook])
@@ -70,13 +70,14 @@ class Model(object):
         self._add_variables(features, labels, mode)
         self._add_embedding_op()
         self._add_logits_op()
-        if mode in [tf.estimator.ModeKeys.TRAIN]:
+        if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
             self._add_loss_op()
+        if mode in [tf.estimator.ModeKeys.TRAIN]:
             self._add_train_op()
         if mode in [tf.estimator.ModeKeys.EVAL, tf.estimator.ModeKeys.PREDICT]:
             self._add_transition_parameter()
             self._add_prediction_op()
-        if mode in [tf.estimator.ModeKeys.EVAL]:
+        if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
             self._add_accuracy_op()
 
     def _add_variables(self, features, labels, mode):
@@ -178,13 +179,9 @@ class Model(object):
                 self.logits, self.labels, self.sequence_lengths)
             self.loss = tf.reduce_mean(-log_likelihood, name='loss')
 
-            # self.trans_params_v = tf.convert_to_tensor(self.trans_params)
-
     def _add_transition_parameter(self):
         with tf.variable_scope("loss_op"):
             self.trans_params = tf.get_variable('transitions', [len(self.data.tag_vocab), len(self.data.tag_vocab)])
-
-            self.trans_params_v = tf.convert_to_tensor(self.trans_params)
 
     def _add_train_op(self):
         with tf.variable_scope("train_op"):
@@ -250,6 +247,26 @@ class Model(object):
         # predictor.evaluate(input_fn=self._valid_input_fn)
 
 
+class _TrainingHook(session_run_hook.SessionRunHook):
+    def __init__(self, model):
+        self.model = model
+        self.f1 = 0
+        self.accuracy = 0
+
+    def before_run(self, run_context):  # pylint: disable=unused-argument
+        return session_run_hook.SessionRunArgs([self.model.accuracy, self.model.f1[1]])
+
+    def after_run(self, run_context, run_values):
+        self.accuracy, self.f1 = run_values.results
+
+    def end(self, session):
+        print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
+        print('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy)
+        print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
+        tf.summary.scalar('f1', self.f1)
+        tf.summary.scalar('accuracy', self.accuracy)
+
+
 class _EvaluationHook(session_run_hook.SessionRunHook):
     def __init__(self, model):
         self.wait = 0
@@ -265,10 +282,10 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
         self.f1 = 0
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
-        return session_run_hook.SessionRunArgs([self.model.f1[1]])
+        return session_run_hook.SessionRunArgs(self.model.f1[1])
 
     def after_run(self, run_context, run_values):
-        self.f1 = run_values.results[0]
+        self.f1 = run_values.results
 
     def end(self, session):
         self.epoch += 1
