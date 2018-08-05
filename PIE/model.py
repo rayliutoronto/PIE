@@ -266,10 +266,10 @@ class _TrainingHook(session_run_hook.SessionRunHook):
 
     def end(self, session):
         print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
-        print('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy)
+        print('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy[0])
         print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
         tf.summary.scalar('f1', self.f1)
-        tf.summary.scalar('accuracy', self.accuracy)
+        tf.summary.scalar('accuracy', self.accuracy[0])
 
 
 class _EvaluationHook(session_run_hook.SessionRunHook):
