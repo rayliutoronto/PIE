@@ -264,9 +264,9 @@ class _TrainingHook(session_run_hook.SessionRunHook):
         self.accuracy, self.f1 = run_values.results
 
     def end(self, session):
-        print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
-        print('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy[0])
-        print('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
+        self.model.logger.info('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
+        self.model.logger.info('F1: ', 100 * self.f1, '\tAccuracy: ', 100 * self.accuracy[0])
+        self.model.logger.info('>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<')
 
 
 class _EvaluationHook(session_run_hook.SessionRunHook):
@@ -292,18 +292,18 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
     def end(self, session):
         self.epoch += 1
 
-        print('======================Evaluation Result===========================')
-        print('F1: ', 100 * self.f1, '\tEpoch: ', self.epoch)
+        self.model.logger.info('======================Evaluation Result===========================')
+        self.model.logger.info('F1: ', 100 * self.f1, '\tEpoch: ', self.epoch)
 
         if self.f1 > self.best:
             self.best = self.f1
             self.wait = 0
-            print('New Best F1 Score!')
-            print('======================Evaluation Result===========================')
+            self.model.logger.info('New Best F1 Score!')
+            self.model.logger.info('======================Evaluation Result===========================')
         else:
             self.wait += 1
-            print('# epochs with no improvement: ', self.wait)
-            print('======================Evaluation Result===========================')
+            self.model.logger.info('# epochs with no improvement: ', self.wait)
+            self.model.logger.info('======================Evaluation Result===========================')
             if self.wait >= self.model.config.patience:
                 raise RuntimeError('Can not make progress!')
 
