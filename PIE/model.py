@@ -263,7 +263,7 @@ class _TrainingHook(session_run_hook.SessionRunHook):
         self.epoch = 0
 
     def before_run(self, run_context):  # pylint: disable=unused-argument
-        return session_run_hook.SessionRunArgs([self.model.accuracy, self.model.f1[1]])
+        return session_run_hook.SessionRunArgs([self.model.accuracy[1], self.model.f1[1]])
 
     def after_run(self, run_context, run_values):
         self.accuracy, self.f1 = run_values.results
@@ -273,7 +273,7 @@ class _TrainingHook(session_run_hook.SessionRunHook):
 
         self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
         self.model.logger.info(
-            'F1: {} \tAccuracy: {} \tEpoch: {}'.format(100 * self.f1, 100 * self.accuracy[0], self.epoch))
+            'F1: {} \tAccuracy: {} \tEpoch: {}'.format(100 * self.f1, 100 * self.accuracy, self.epoch))
         self.model.logger.info('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Training Result<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
 
 
