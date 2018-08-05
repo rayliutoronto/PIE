@@ -70,13 +70,18 @@ class Model(object):
         self._add_variables(features, labels, mode)
         self._add_embedding_op()
         self._add_logits_op()
+
         if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
             self._add_loss_op()
+
         if mode in [tf.estimator.ModeKeys.TRAIN]:
             self._add_train_op()
+
         if mode in [tf.estimator.ModeKeys.EVAL, tf.estimator.ModeKeys.PREDICT]:
             self._add_transition_parameter()
-            self._add_prediction_op()
+
+        self._add_prediction_op()
+
         if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
             self._add_accuracy_op()
 
