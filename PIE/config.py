@@ -47,7 +47,7 @@ class Config(object):
     num_epoch = 100
     lr = 0.005
     lr_decay = 0.98
-    dropout = 0.68
+    dropout = 0.3
     batch_size = 64 if tf.test.is_gpu_available() else 32
     clip = 5  # if negative, no clipping
     patience = 6  # early stop
