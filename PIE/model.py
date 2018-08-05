@@ -185,7 +185,7 @@ class Model(object):
             self.loss = tf.reduce_mean(-log_likelihood, name='loss')
 
     def _add_transition_parameter(self):
-        with tf.variable_scope("loss_op"):
+        with tf.variable_scope("loss_op", reuse=tf.AUTO_REUSE):
             self.trans_params = tf.get_variable('transitions', [len(self.data.tag_vocab), len(self.data.tag_vocab)])
 
     def _add_train_op(self):
