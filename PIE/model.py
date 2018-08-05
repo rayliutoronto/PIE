@@ -332,7 +332,7 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
             self.model.logger.info('======================Evaluation Result===========================')
 
             # output prediction
-            corrected_pred, total_pred = 0, 0
+            corrected_pred, total_pred, corrected_pred_wo_o, total_pred_wo_o = 0, 0, 0, 0
             with open(self.model.config.output_dir_root + 'eval_result_' + str(self.epoch % 3) + '.txt', mode='w',
                       encoding='UTF-8') as f:
                 for word, label, pred in zip(self.word_ids, self.labels, self.predictions):
@@ -340,13 +340,21 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
                         if l != 0 and p != 0:
                             if l == p:
                                 corrected_pred += 1
+                                if self.model.data.idx_tag_vocab[l] != 'O':
+                                    corrected_pred_wo_o += 1
                             total_pred += 1
+                            if self.model.data.idx_tag_vocab[l] != 'O':
+                                total_pred_wo_o += 1
+
                             f.write(
                                 '{:20}{:10}{:10}\n'.format(self.model.data.idx_word_vocab[w],
                                                            self.model.data.idx_tag_vocab[l],
                                                            self.model.data.idx_tag_vocab[p]))
                     f.write('\n')
-                f.write('\n\nAccuracy: {}\n'.format((100.0 * corrected_pred) / total_pred))
+                f.write('\n\nAccuracy: {}\tTotal: {}\tCorrect: {}\n'.format((100 * corrected_pred) / total_pred),
+                        total_pred, corrected_pred)
+                f.write('\n\nAccuracy w/o O: {}\tTotal: {}\tCorrect: {}\n'.format(
+                    (100 * corrected_pred_wo_o) / total_pred_wo_o, total_pred_wo_o, corrected_pred_wo_o))
         else:
             self.wait += 1
             self.model.logger.info('# epochs with no improvement: {}'.format(self.wait))
