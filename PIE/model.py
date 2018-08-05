@@ -44,10 +44,6 @@ class Model(object):
                 self.training_hook = _TrainingHook(model=self)
 
             return tf.estimator.EstimatorSpec(mode, loss=self.loss, train_op=self.train_op,
-                                              eval_metric_ops={
-                                                  'accuracy': self.accuracy,
-                                                  'f1': self.f1
-                                              },
                                               training_chief_hooks=[_CPSaverHook(
                                                   checkpoint_dir=self.config.output_dir_root,
                                                   save_steps=sys.maxsize // 2), self.training_hook])
@@ -221,6 +217,9 @@ class Model(object):
 
             self.f1 = (2.0 * self.precision[0] * self.recall[0] / (self.precision[0] + self.recall[0]),
                        2.0 * self.precision[1] * self.recall[1] / (self.precision[1] + self.recall[1]))
+
+            tf.summary.scalar('accuracy', self.accuracy[1])
+            tf.summary.scalar('f1', self.f1[1])
 
     def run(self, _):
         self.run_config = tf.estimator.RunConfig(keep_checkpoint_max=3)
