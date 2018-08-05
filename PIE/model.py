@@ -36,9 +36,6 @@ class Model(object):
         return tf.estimator.export.ServingInputReceiver(inputs, inputs)
 
     def _model_fn(self, features, labels, mode):
-        if mode == tf.estimator.ModeKeys.TRAIN:
-            self.config.lr = self.config.lr_decay * self.config.lr
-
         self._create_model(features, labels, mode)
 
         if mode == tf.estimator.ModeKeys.TRAIN:
@@ -100,7 +97,8 @@ class Model(object):
             if mode in [tf.estimator.ModeKeys.TRAIN, tf.estimator.ModeKeys.EVAL]:
                 self.labels = tf.cast(labels, dtype=tf.int32, name='labels')
 
-            self.lr = tf.Variable(self.config.lr, dtype=tf.float32, trainable=False, name='learning_rate')
+            self.lr = tf.train.exponential_decay(self.config.lr, tf.train.get_or_create_global_step(), 100000,
+                                                 self.config.lr_decay, staircase=True, name='learning_rate')
 
             if mode in [tf.estimator.ModeKeys.TRAIN]:
                 self.dropout = tf.constant(self.config.dropout, dtype=tf.float32, name='dropout')
