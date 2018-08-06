@@ -83,6 +83,8 @@ def convert_xlsx_and_split(file, split=0.8):
                                 word + ' ' + header[i] + ' ' + (
                                     'O' if cell is None or str(cell).lower() in ['na', 'not applicable'] else get_tag(
                                         header[i], len(word_raw), j))))
+                        # separated by column
+                        f.write('\n')
 
                 f.write('\n')
 
