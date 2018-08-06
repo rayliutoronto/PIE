@@ -44,11 +44,10 @@ class Config(object):
     char_vocab_filename = dataset_dir_vocab + 'char.txt'
     tag_vocab_filename = dataset_dir_vocab + 'tag.txt'
 
-    num_epoch = 100
     lr = 0.005
-    lr_decay = 0.98
-    dropout = 0.3
-    batch_size = 64 if tf.test.is_gpu_available() else 32
+    lr_decay = 0.9
+    dropout = 0.68
+    batch_size = 128 if tf.test.is_gpu_available() else 64
     clip = 5  # if negative, no clipping
     patience = 6  # early stop
 
