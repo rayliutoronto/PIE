@@ -243,7 +243,7 @@ class Model(object):
         try:
             tf.estimator.train_and_evaluate(estimator=self.predictor,
                                             train_spec=tf.estimator.TrainSpec(input_fn=self._train_input_fn),
-                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn,
+                                            eval_spec=tf.estimator.EvalSpec(input_fn=self._valid_input_fn, steps=None,
                                                                             start_delay_secs=0,
                                                                             exporters=tf.estimator.BestExporter(
                                                                                 name=self.config.exporter_name,

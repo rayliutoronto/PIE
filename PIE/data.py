@@ -199,7 +199,7 @@ class Preprocessor(object):
         if word in self.word_vocab:
             word = self.word_vocab[word]
 
-            # if word == 0:
+            # if word == 24177:
             #     pass
         else:
             word = self.word_vocab[Config.UNKNOWN]
