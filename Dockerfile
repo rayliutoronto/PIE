@@ -14,4 +14,4 @@ ENV PYTHONPATH=/src
 
 RUN chmod +x StartServing.sh
 EXPOSE 19000
-ENTRYPOINT ["StartServing.sh"]
+ENTRYPOINT ["/PIE/StartServing.sh"]
