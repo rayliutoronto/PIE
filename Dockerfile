@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y curl && \
     curl https://storage.googleapis.com/tensorflow-serving-apt/tensorflow-serving.release.pub.gpg | apt-key add - && \
     apt-get update && apt-get install -y python3 python3-pip tensorflow-model-server && \
     pip3 install -r requirements.txt && \
-    python -m spacy download en_core_web_lg && python -m spacy link en_core_web_lg en && \
+    python3 -m spacy download en_core_web_lg && python3 -m spacy link en_core_web_lg en && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONPATH=/PIE
