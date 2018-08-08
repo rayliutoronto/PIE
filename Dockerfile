@@ -16,4 +16,4 @@ ENV PYTHONPATH=/PIE
 
 RUN chmod +x StartServing.sh
 EXPOSE 19999
-#CMD ["/PIE/StartServing.sh"]
+CMD ["/PIE/StartServing.sh"]
