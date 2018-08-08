@@ -10,7 +10,7 @@ RUN echo "deb [arch=amd64] http://storage.googleapis.com/tensorflow-serving-apt 
     python -m spacy download en_core_web_lg && python -m spacy link en_core_web_lg en && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-ENV PYTHONPATH=/src
+ENV PYTHONPATH=/PIE
 
 RUN chmod +x StartServing.sh
 EXPOSE 19000
