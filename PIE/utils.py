@@ -6,7 +6,7 @@ import random
 
 import exrex
 from openpyxl import load_workbook
-from tokenizer import Tokenizer
+from PIE.tokenizer import Tokenizer
 
 tokenizer = Tokenizer('en')
 

@@ -6,10 +6,10 @@ import sys
 
 import numpy as np
 import tensorflow as tf
-from config import Config
+from PIE.config import Config
 from tensorflow.python.training import session_run_hook
 
-from data import Data, DataSet
+from PIE.data import Data, DataSet
 
 
 class Model(object):
