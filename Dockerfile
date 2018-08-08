@@ -19,6 +19,6 @@ RUN mkdir data/word_vectors && \
 
 ENV PYTHONPATH=/src
 
-RUN cd PIE && python3 data.py && python3 model.py
-RUN tensorflow_model_server --port=9000 --model_name=pie --model_base_path=/PIE/output/SavedModels &
-EXPOSE 9000
+RUN cd PIE && python3 utils.py && python3 data.py && python3 model.py
+EXPOSE 19000
+ENTRY_POINT ["tensorflow_model_server --port=9000 --model_name=pie --model_base_path=/PIE/output/export/BestExport & && gunicorn api:app -b localhost:19000 &"]

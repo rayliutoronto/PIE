@@ -8,7 +8,7 @@ class Tokenizer(object):
             self._nlp.tokenizer = self._create_custom_tokenizer()
 
         def split(self, text):
-            if type(text) == str:
+            if isinstance(text, str):
                 text = [text]
 
             return self._nlp.pipe(text)

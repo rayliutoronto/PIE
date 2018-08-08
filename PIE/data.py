@@ -9,7 +9,7 @@ import string
 
 import numpy as np
 import tensorflow as tf
-from config import Config
+from PIE.config import Config
 
 
 class Data(object):
@@ -340,9 +340,10 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     train_tfrecord_files.append(os.path.join(root, file))
         # TODO shuffle
-        return tf.data.TFRecordDataset(train_tfrecord_files).prefetch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
+        return tf.data.TFRecordDataset(train_tfrecord_files, buffer_size=64000,
+                                       num_parallel_reads=multiprocessing.cpu_count()).prefetch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
 
     def valid(self):
         valid_tfrecord_files = []
@@ -351,9 +352,10 @@ class DataSet(object):
                 if file.endswith(".tfrecords"):
                     valid_tfrecord_files.append(os.path.join(root, file))
 
-        return tf.data.TFRecordDataset(valid_tfrecord_files).prefetch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(self.config.batch_size).map(
-            TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
+        return tf.data.TFRecordDataset(valid_tfrecord_files, buffer_size=64000,
+                                       num_parallel_reads=multiprocessing.cpu_count()).prefetch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_sparse, multiprocessing.cpu_count()).batch(
+            self.config.batch_size).map(TFRecordManager.map_fn_to_dense, multiprocessing.cpu_count()).cache()
 
 
 if __name__ == '__main__':
