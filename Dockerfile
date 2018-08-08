@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-#FROM tensorflow/tensorflow:1.9.0-py3
+#FROM ubuntu:16.04
+FROM tensorflow/tensorflow:1.9.0-py3
 
 ADD . /PIE
 WORKDIR /PIE
@@ -16,4 +16,4 @@ ENV PYTHONPATH=/PIE
 
 RUN chmod +x StartServing.sh
 
-ENTRYPOINT ["/PIE/StartServing.sh"]
+#ENTRYPOINT ["/PIE/StartServing.sh"]
