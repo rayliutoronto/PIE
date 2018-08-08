@@ -13,5 +13,5 @@ RUN echo "deb [arch=amd64] http://storage.googleapis.com/tensorflow-serving-apt 
 ENV PYTHONPATH=/PIE
 
 RUN chmod +x StartServing.sh
-EXPOSE 19000
+
 ENTRYPOINT ["/PIE/StartServing.sh"]
