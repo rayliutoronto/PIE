@@ -1,6 +1,8 @@
 #FROM ubuntu:16.04
 FROM tensorflow/tensorflow:1.9.0-py3
 
+LABEL maintainer="Ray Liu <ray.liu@toronto.ca>"
+
 ADD . /PIE
 WORKDIR /PIE
 
