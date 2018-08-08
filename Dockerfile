@@ -15,5 +15,5 @@ RUN apt-get update && apt-get install -y curl && \
 ENV PYTHONPATH=/PIE
 
 RUN chmod +x StartServing.sh
-EXPOSE 19000
+EXPOSE 19999
 #CMD ["/PIE/StartServing.sh"]
