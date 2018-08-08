@@ -1,5 +1,8 @@
 #!/bin/bash
 
 cd /PIE/PIE
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 tensorflow_model_server  --port=9000 --model_name=pie --model_base_path=/PIE/output/export/BestExport/ &> ../output/serving.log &
-gunicorn --workers=9 api:app -b 0.0.0.0:19999 &> ../output/web_server.log &
+flask run --host=0.0.0.0 --port=19999 &> ../output/web_server.log &
+#gunicorn --workers=9 app:app -b 0.0.0.0:19999 &> ../output/web_server.log &
