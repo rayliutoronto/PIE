@@ -6,6 +6,7 @@ import random
 
 import exrex
 from openpyxl import load_workbook
+
 from PIE.tokenizer import Tokenizer
 
 tokenizer = Tokenizer('en')
@@ -128,13 +129,12 @@ def get_disabled_col():
 
 
 def gen_phone():
-    format1 = '{} -X- -X- B-PHONE\n- -X- -X- I-PHONE\n{} -X- -X- I-PHONE\n- -X- -X- I-PHONE\n{} -X- -X- E-PHONE\n'  # 123-456-7890
-    format4 = '{} -X- -X- B-PHONE\n{} -X- -X- I-PHONE\n{} -X- -X- E-PHONE\n'  # 123 456 7890
-    format2 = '( -X- -X- B-PHONE\n{} -X- -X- I-PHONE\n) -X- -X- I-PHONE\n{} -X- -X- I-PHONE\n- -X- -X- I-PHONE\n{} -X- -X- E-PHONE\n'  # (123) 456-7890
-    format3 = '( -X- -X- B-PHONE\n{}){} -X- -X- I-PHONE\n- -X- -X- I-PHONE\n{} -X- -X- E-PHONE\n'  # (123)456-7890
-    format5 = '{} -X- -X- B-PHONE\n. -X- -X- I-PHONE\n{} -X- -X- I-PHONE\n. -X- -X- I-PHONE\n{} -X- -X- E-PHONE\n'  # 123.456.7890
+    format1 = '{} B-PHONE\n- I-PHONE\n{} I-PHONE\n- I-PHONE\n{} E-PHONE\n'  # 123-456-7890
+    format2 = '{} B-PHONE\n{} I-PHONE\n{} E-PHONE\n'  # 123 456 7890
+    format3 = '( B-PHONE\n{} I-PHONE\n) I-PHONE\n{} I-PHONE\n- I-PHONE\n{} E-PHONE\n'  # (123) 456-7890
+    format4 = '{} B-PHONE\n. I-PHONE\n{} I-PHONE\n. I-PHONE\n{} E-PHONE\n'  # 123.456.7890
 
-    formatDict = {1: format1, 2: format2, 3: format3, 4: format4, 5: format5}
+    formatDict = {1: format1, 2: format2, 3: format3, 4: format4}
 
     first = str(random.randint(100, 999))
     second = str(random.randint(1, 999)).zfill(3)
@@ -144,7 +144,7 @@ def gen_phone():
 
 
 def gen_sin():
-    format_string = '{} -X- -X- B-SIN\n{} -X- -X- I-SIN\n{} -X- -X- E-SIN\n'  # 123 456 789
+    format_string = '{} B-SIN\n{} I-SIN\n{} E-SIN\n'  # 123 456 789
 
     first = str(random.randint(1, 999)).zfill(3)
     second = str(random.randint(1, 999)).zfill(3)
@@ -154,14 +154,19 @@ def gen_sin():
 
 
 def gen_email():
-    format_string = '{} -X- -X- B-EMAIL\n@ -X- -X- I-EMAIL\n{} -X- -X- E-EMAIL'
+    format_string = '{} B-EMAIL\n@ I-EMAIL\n{} E-EMAIL'
     return format_string.format(exrex.getone(r'([a-zA-Z0-9_.-]+)'), exrex.getone(r'([a-z0-9-.]+\.[a-z]{1,5})'))
 
 
-def generate_fake_email_phone_sin():
+def gen_twitter_handle():
+    format_string = '@ B-TWITTERHANDLE\n{} E-TWITTERHANDLE'
+    return format_string.format(exrex.getone(r'([a-zA-Z0-9_]{1,15})'))
+
+
+def generate_fake_email_phone_sin_th():
     list = []
     for i in range(300):
-        list.append("\n-DOCSTART- -X- -X- O\n\n")
+        list.append("\n-DOCSTART- O\n\n")
 
         for j in range(random.randint(0, 5)):
             list.append("{}\n".format(gen_phone()))
@@ -169,20 +174,24 @@ def generate_fake_email_phone_sin():
             list.append("{}\n".format(gen_sin()))
         for j in range(random.randint(0, 5)):
             list.append("{}\n".format(gen_email()))
+        for j in range(random.randint(0, 5)):
+            list.append("{}\n".format(gen_twitter_handle()))
 
     with open('../data/raw/gen/train.txt', 'w') as f:
         f.writelines(list)
 
     list.clear()
     for i in range(300):
-        list.append("\n-DOCSTART- -X- -X- O\n\n")
+        list.append("\n-DOCSTART- O\n\n")
 
+        for j in range(random.randint(0, 5)):
+            list.append("{}\n".format(gen_twitter_handle()))
         for j in range(random.randint(0, 5)):
             list.append("{}\n".format(gen_phone()))
         for j in range(random.randint(0, 5)):
-            list.append("{}\n".format(gen_sin()))
-        for j in range(random.randint(0, 5)):
             list.append("{}\n".format(gen_email()))
+        for j in range(random.randint(0, 5)):
+            list.append("{}\n".format(gen_sin()))
 
     with open('../data/raw/gen/valid.txt', 'w') as f:
         f.writelines(list)
@@ -207,4 +216,4 @@ if __name__ == '__main__':
     # convert_xlsx_and_split('../data/raw/Toxics_planner/toxics_planners.xlsx')
     # convert_xlsx_and_split('../data/raw/WoodSupplier/may2018.xlsx')
 
-    generate_fake_email_phone_sin()
+    generate_fake_email_phone_sin_th()

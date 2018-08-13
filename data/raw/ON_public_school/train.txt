@@ -17833,7 +17833,9 @@ csviamonde.ca Email E-EMAIL
 645413 SchoolNumber O
 
 É SchoolName O
-L'Équilibre(élémentaire SchoolName O
+L'Équilibre SchoolName O
+( SchoolName O
+élémentaire SchoolName O
 ) SchoolName O
 
 Elementary SchoolLevel O
@@ -115907,7 +115909,9 @@ Kinark SchoolName O
 Child SchoolName O
 & SchoolName O
 Family SchoolName O
-Services-(Strive SchoolName O
+Services- SchoolName O
+( SchoolName O
+Strive SchoolName O
 ) SchoolName O
 
 Secondary SchoolLevel O
@@ -133826,7 +133830,9 @@ nearnorthschools.ca Email E-EMAIL
 646471 SchoolName O
 School SchoolName O
 of SchoolName O
-Success(CAS SchoolName O
+Success SchoolName O
+( SchoolName O
+CAS SchoolName O
 ) SchoolName O
 
 Elem SchoolLevel O

@@ -9,6 +9,7 @@ import string
 
 import numpy as np
 import tensorflow as tf
+
 from PIE.config import Config
 
 
@@ -23,7 +24,7 @@ class Data(object):
             os.makedirs(os.path.dirname(self.config.word_vocab_filename), exist_ok=True)
 
         word_vocab = [' ']  # ' ' is placeholder for index 0
-        print("abs path::::", os.path.abspath(self.config.glove_filename))
+        print("abs path: ", os.path.abspath(self.config.glove_filename))
         with open(self.config.glove_filename, mode='r', encoding='UTF-8') as f:
             for line in f:
                 word = line.strip().split(' ')[0]
@@ -45,7 +46,7 @@ class Data(object):
 
         char_vocab = {char: idx for idx, char in
                       enumerate([x for x in list(
-                          ' ' + string.digits + string.ascii_lowercase + string.punctuation + '\0')])}  # ' ' is placeholder for index 0
+                          ' ' + string.digits + string.ascii_lowercase + string.punctuation + '\0')])}  # ' ' is placeholder for index 0, \0 is for unknown char
 
         with open(self.config.char_vocab_filename, mode="w", encoding='UTF-8') as f:
             for i, char in enumerate(char_vocab):
@@ -88,14 +89,13 @@ class Data(object):
                 embedding = [float(x) for x in line[1:]]
                 word_embeddings[self.word_vocab[line[0]]] = np.asarray(embedding)
 
-                # if self.word_vocab[line[0]] == 0:
-                #     pass
-
                 if line[0] in self.char_vocab:
                     char_embeddings[self.char_vocab[line[0]]] = np.asarray(embedding)
 
-                    # if self.char_vocab[line[0]] == 0:
-                    #     pass
+        # set random embedding for UNKNOWN and NUM, \0
+        word_embeddings[len(self.word_vocab) - 2] = np.random.randn(1, self.config.dim_word)[0]  # $UNKNOWN$
+        word_embeddings[len(self.word_vocab) - 1] = np.random.randn(1, self.config.dim_word)[0]  # $NUM$
+        char_embeddings[len(self.char_vocab) - 1] = np.random.randn(1, self.config.dim_char)[0]  # \0
 
         np.savez_compressed(self.config.embedding_filename, word_embeddings=word_embeddings,
                             char_embeddings=char_embeddings)
@@ -187,7 +187,7 @@ class Preprocessor(object):
     def word(self, word):
         char_ids = []
         for char in word:
-            char_ids.append(self.char_vocab[char.lower()] if char.lower() in self.char_vocab else self.char_vocab['\0'])
+            char_ids.append(self.char_vocab['0' if char.lower().isdigit() else char.lower()] if char.lower() in self.char_vocab else self.char_vocab['\0'])
 
             # if self.char_vocab[char.lower()] == 0:
             #     pass

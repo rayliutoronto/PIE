@@ -125,7 +125,7 @@ class Model(object):
             word_embeddings = tf.nn.embedding_lookup(_word_embeddings, self.word_ids, name="word_embeddings")
 
         with tf.variable_scope("chars"):
-            _char_embeddings = tf.Variable(  # ?? get_variable
+            _char_embeddings = tf.Variable(
                 self.data.char_embeddings,
                 name="_char_embeddings",
                 dtype=tf.float32,

@@ -18,7 +18,7 @@ class Tokenizer(object):
 
             all_prefixes_re = spacy.util.compile_prefix_regex(tuple(list(self._nlp.Defaults.prefixes) + my_prefix))
 
-            custom_infixes = ['@', '</', '<', '>']
+            custom_infixes = ['@', '</', '<', '>', '\(', '\)']
             infix_re = spacy.util.compile_infix_regex(tuple(list(self._nlp.Defaults.infixes) + custom_infixes))
 
             suffix_re = spacy.util.compile_suffix_regex(self._nlp.Defaults.suffixes)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     tokens = [token.text for doc in t.split(
         ['abc@toronto.ca', '<email>general.info@toronto.ca</email><email>general.info@toronto.ca</email>',
-         'x@y.z, 532 234 098, 416-123-0001', '[{"email": \'don\'t@json.ai\'}, {"phone": "(437) 000-1234"}]']) for token
+         'x@y.z, 532 234 098, 416-123-0001', '[{"email": \'don\'t@json.ai\'}, {"phone": "(437) 000-1234"}]', '(416)123-9999']) for token
               in doc]
     for token in tokens:
         print(token, end='  ')
