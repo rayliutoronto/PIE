@@ -347,7 +347,7 @@ class _EvaluationHook(session_run_hook.SessionRunHook):
                                 total_pred_wo_o += 1
 
                             f.write(
-                                '{:20}{:15}{:15}\n'.format(self.model.data.idx_word_vocab[w],
+                                '{:20}{:20}{:20}\n'.format(self.model.data.idx_word_vocab[w],
                                                            self.model.data.idx_tag_vocab[l],
                                                            self.model.data.idx_tag_vocab[p]))
                     f.write('\n')

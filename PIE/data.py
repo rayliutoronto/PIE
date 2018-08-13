@@ -187,7 +187,7 @@ class Preprocessor(object):
     def word(self, word):
         char_ids = []
         for char in word:
-            char_ids.append(self.char_vocab['0' if char.lower().isdigit() else char.lower()] if char.lower() in self.char_vocab else self.char_vocab['\0'])
+            char_ids.append(self.char_vocab[char.lower()] if char.lower() in self.char_vocab else self.char_vocab['\0'])
 
             # if self.char_vocab[char.lower()] == 0:
             #     pass

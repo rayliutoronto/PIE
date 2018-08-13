@@ -126,7 +126,7 @@ class Prediction(object):
 
 
 if __name__ == '__main__':
-    prediction = Prediction(Config(), '192.168.99.100', 9000)
+    prediction = Prediction(Config(), '192.168.99.101', 9000)
 
     while True:
         sentence = input("input> ")
