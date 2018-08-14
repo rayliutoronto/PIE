@@ -1,0 +1,196 @@
+Ontario Organization O
+Sheep Organization O
+Marketing Organization O
+Agency Organization O
+
+130 Address B-ADDRESS
+Malcolm Address I-ADDRESS
+Rd Address I-ADDRESS
+. Address I-ADDRESS
+, Address I-ADDRESS
+Guelph Address I-ADDRESS
+, Address I-ADDRESS
+Ontario Address I-ADDRESS
+, Address I-ADDRESS
+N1 Address I-ADDRESS
+K Address I-ADDRESS
+1B1 Address E-ADDRESS
+
+( Telephone B-PHONE
+519 Telephone I-PHONE
+) Telephone I-PHONE
+836 Telephone I-PHONE
+- Telephone I-PHONE
+0043 Telephone E-PHONE
+
+admin E-mail B-EMAIL
+@ E-mail I-EMAIL
+ontariosheep E-mail I-EMAIL
+. E-mail I-EMAIL
+org E-mail E-EMAIL
+
+www Website O
+. Website O
+ontariosheep Website O
+. Website O
+org Website O
+
+
+Ontario Organization O
+Tender Organization O
+Fruit Organization O
+Growers Organization O
+
+P Address B-ADDRESS
+. Address I-ADDRESS
+O Address I-ADDRESS
+. Address I-ADDRESS
+Box Address I-ADDRESS
+100 Address I-ADDRESS
+, Address I-ADDRESS
+Vineland Address I-ADDRESS
+Station Address I-ADDRESS
+, Address I-ADDRESS
+Ontario Address I-ADDRESS
+, Address I-ADDRESS
+L0R Address I-ADDRESS
+2E0 Address E-ADDRESS
+
+( Telephone B-PHONE
+905 Telephone I-PHONE
+) Telephone I-PHONE
+688 Telephone I-PHONE
+- Telephone I-PHONE
+0990 Telephone E-PHONE
+
+info E-mail B-EMAIL
+@ E-mail I-EMAIL
+ontariotenderfruit E-mail I-EMAIL
+. E-mail I-EMAIL
+ca E-mail E-EMAIL
+
+www Website O
+. Website O
+ontariotenderfruit Website O
+. Website O
+ca Website O
+
+
+Ontario Organization O
+Tomato Organization O
+Seedling Organization O
+Growers Organization O
+' Organization O
+Marketing Organization O
+Board Organization O
+
+16 Address B-ADDRESS
+Talbot Address I-ADDRESS
+Street Address I-ADDRESS
+West Address I-ADDRESS
+, Address I-ADDRESS
+Leamington Address I-ADDRESS
+, Address I-ADDRESS
+Ontario Address I-ADDRESS
+, Address I-ADDRESS
+N8H Address I-ADDRESS
+3W2 Address E-ADDRESS
+
+( Telephone B-PHONE
+519 Telephone I-PHONE
+) Telephone I-PHONE
+796 Telephone I-PHONE
+- Telephone I-PHONE
+2549 Telephone E-PHONE
+
+otsgmb E-mail B-EMAIL
+@ E-mail I-EMAIL
+gmail E-mail I-EMAIL
+. E-mail I-EMAIL
+com E-mail E-EMAIL
+
+None Website O
+
+
+Turkey Organization O
+Farmers Organization O
+of Organization O
+Ontario Organization O
+
+100 Address B-ADDRESS
+Conestoga Address I-ADDRESS
+College Address I-ADDRESS
+Blvd Address I-ADDRESS
+, Address I-ADDRESS
+Suite Address I-ADDRESS
+1120 Address I-ADDRESS
+, Address I-ADDRESS
+Kitchener Address I-ADDRESS
+, Address I-ADDRESS
+Ontario Address I-ADDRESS
+, Address I-ADDRESS
+N2P Address I-ADDRESS
+2N6 Address E-ADDRESS
+
+( Telephone B-PHONE
+519 Telephone I-PHONE
+) Telephone I-PHONE
+748 Telephone I-PHONE
+- Telephone I-PHONE
+9636 Telephone E-PHONE
+
+info E-mail B-EMAIL
+@ E-mail I-EMAIL
+turkeyfarmers E-mail I-EMAIL
+. E-mail I-EMAIL
+on E-mail I-EMAIL
+. E-mail I-EMAIL
+ca E-mail E-EMAIL
+
+www Website O
+. Website O
+turkeyfarmers Website O
+. Website O
+on Website O
+. Website O
+ca Website O
+
+
+Veal Organization O
+Farmers Organization O
+of Organization O
+Ontario Organization O
+
+449 Address B-ADDRESS
+Laird Address I-ADDRESS
+Road Address I-ADDRESS
+, Address I-ADDRESS
+Guelph Address I-ADDRESS
+, Address I-ADDRESS
+Ontario Address I-ADDRESS
+, Address I-ADDRESS
+N1 Address I-ADDRESS
+G Address I-ADDRESS
+4W1 Address E-ADDRESS
+
+( Telephone B-PHONE
+519 Telephone I-PHONE
+) Telephone I-PHONE
+824 Telephone I-PHONE
+- Telephone I-PHONE
+2942 Telephone E-PHONE
+
+info E-mail B-EMAIL
+@ E-mail I-EMAIL
+livestockalliance E-mail I-EMAIL
+. E-mail I-EMAIL
+ca E-mail E-EMAIL
+
+www Website O
+. Website O
+ontarioveal Website O
+. Website O
+on Website O
+. Website O
+ca Website O
+

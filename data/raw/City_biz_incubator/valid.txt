@@ -1,0 +1,598 @@
+Toronto Organization O
+Fashion Organization O
+Incubator Organization O
+( Organization O
+TFI Organization O
+) Organization O
+
+Fashion TargetIndustry O
+
+Not Governance O
+- Governance O
+for Governance O
+- Governance O
+profit Governance O
+
+Incubator BusinessSupportType O
+
+http://www Website O
+. Website O
+fashionincubator Website O
+. Website O
+com Website O
+
+285 StreetAddress B-ADDRESS
+Manitoba StreetAddress I-ADDRESS
+Drive StreetAddress I-ADDRESS
+Exhibition StreetAddress I-ADDRESS
+Place StreetAddress E-ADDRESS
+
+None Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M6 PostalCode O
+K PostalCode O
+3C3 PostalCode O
+
+Office Title O
+Manager Title O
+
+416 Telephone B-PHONE
+- Telephone I-PHONE
+971 Telephone I-PHONE
+- Telephone I-PHONE
+7117 Telephone E-PHONE
+
+nina Email B-EMAIL
+@ Email I-EMAIL
+fashionincubator Email I-EMAIL
+. Email I-EMAIL
+com Email E-EMAIL
+
+
+Toronto Organization O
+Food Organization O
+Business Organization O
+Incubator Organization O
+( Organization O
+TFBI Organization O
+) Organization O
+Food TargetIndustry O
+and TargetIndustry O
+Beverage TargetIndustry O
+
+Not Governance O
+- Governance O
+for Governance O
+- Governance O
+profit Governance O
+
+Incubator BusinessSupportType O
+
+http://www Website O
+. Website O
+tfbi Website O
+. Website O
+ca Website O
+
+1 StreetAddress B-ADDRESS
+Yonge StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+
+Suite Unit O
+960 Unit O
+
+Toronto City O
+
+Ontario Province O
+M5E PostalCode O
+1E5 PostalCode O
+
+None Title O
+
+None Telephone O
+
+mdonahue Email B-EMAIL
+@ Email I-EMAIL
+tbdc Email I-EMAIL
+. Email I-EMAIL
+com Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+Impact Organization O
+Centre Organization O
+
+Mixed TargetIndustry O
+
+Academia Governance O
+
+Accelerator BusinessSupportType O
+
+http://www Website O
+. Website O
+impactcentre Website O
+. Website O
+utoronto Website O
+. Website O
+ca Website O
+
+112 StreetAddress B-ADDRESS
+College StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+None Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M5 PostalCode O
+G PostalCode O
+1L6 PostalCode O
+
+Director Title O
+
+None Telephone O
+
+cgoh Email B-EMAIL
+@ Email I-EMAIL
+chem Email I-EMAIL
+. Email I-EMAIL
+utoronto Email I-EMAIL
+. Email I-EMAIL
+ca Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+Techno Organization O
+
+Information TargetIndustry O
+, TargetIndustry O
+Communications TargetIndustry O
+and TargetIndustry O
+Technology TargetIndustry O
+
+Academia Governance O
+Accelerator BusinessSupportType O
+
+http://www Website O
+. Website O
+impactcentre Website O
+. Website O
+utoronto Website O
+. Website O
+ca Website O
+/ Website O
+techno Website O
+
+112 StreetAddress B-ADDRESS
+College StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+
+Rm Unit O
+411 Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M5 PostalCode O
+G PostalCode O
+1L6 PostalCode O
+
+None Title O
+
+416 Telephone B-PHONE
+978 Telephone I-PHONE
+3875 Telephone E-PHONE
+
+info Email B-EMAIL
+@ Email I-EMAIL
+imc Email I-EMAIL
+. Email I-EMAIL
+utoronto Email I-EMAIL
+. Email I-EMAIL
+ca Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+The Organization O
+Creative Organization O
+Destruction Organization O
+Lab Organization O
+at Organization O
+The Organization O
+Rotman Organization O
+School Organization O
+of Organization O
+Management Organization O
+Mixed TargetIndustry O
+
+Academia Governance O
+
+Accelerator BusinessSupportType O
+
+http://www Website O
+. Website O
+creativedestructionlab Website O
+. Website O
+com Website O
+
+105 StreetAddress B-ADDRESS
+St StreetAddress I-ADDRESS
+. StreetAddress I-ADDRESS
+George StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+
+None Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M5S PostalCode O
+3E6 PostalCode O
+
+Associate Title O
+Director Title O
+
+416 Telephone B-PHONE
+946 Telephone I-PHONE
+8374 Telephone E-PHONE
+
+Tom Email B-EMAIL
+@ Email I-EMAIL
+creativedestructionlab Email I-EMAIL
+. Email I-EMAIL
+com Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+The Organization O
+Hatchery Organization O
+
+Mixed TargetIndustry O
+
+Academia Governance O
+
+Accelerator BusinessSupportType O
+
+http://www Website O
+. Website O
+uoft Website O
+. Website O
+me Website O
+/ Website O
+thehatchery Website O
+
+35 StreetAddress B-ADDRESS
+St. StreetAddress I-ADDRESS
+George StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+Faculty Unit O
+of Unit O
+Applied Unit O
+Science Unit O
+& Unit O
+Engineering Unit O
+Toronto City O
+
+Ontario Province O
+M5S PostalCode O
+1A4 PostalCode O
+
+Director Title O
+Engineering Title O
+Entrepreneurship Title O
+Hatchery Title O
+at Title O
+University Title O
+of Title O
+Toronto Title O
+- Title O
+Faculty Title O
+of Title O
+Engineering Title O
+
+None Telephone O
+
+hatchery Email B-EMAIL
+@ Email I-EMAIL
+ecf Email I-EMAIL
+. Email I-EMAIL
+utoronto Email I-EMAIL
+. Email I-EMAIL
+ca Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+The Organization O
+Hub Organization O
+Ideation Organization O
+and Organization O
+Experimental Organization O
+Learning Organization O
+Centre Organization O
+
+Information TargetIndustry O
+, TargetIndustry O
+Communications TargetIndustry O
+and TargetIndustry O
+Technology TargetIndustry O
+
+Academia Governance O
+
+Incubator BusinessSupportType O
+http://www Website O
+. Website O
+utsc Website O
+. Website O
+utoronto Website O
+. Website O
+ca Website O
+/ Website O
+thehub Website O
+
+1265 StreetAddress B-ADDRESS
+Militray StreetAddress I-ADDRESS
+Trail StreetAddress E-ADDRESS
+Scarborough Unit O
+Campus Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M1C PostalCode O
+1A4 PostalCode O
+
+None Title O
+
+None Telephone O
+
+ggraffam Email B-EMAIL
+@ Email I-EMAIL
+utsc Email I-EMAIL
+. Email I-EMAIL
+utoronto Email I-EMAIL
+. Email I-EMAIL
+ca Email E-EMAIL
+
+
+University Organization O
+of Organization O
+Toronto Organization O
+- Organization O
+UTEST Organization O
+
+Information TargetIndustry O
+, TargetIndustry O
+Communications TargetIndustry O
+and TargetIndustry O
+Technology TargetIndustry O
+
+Academia Governance O
+
+Accelerator BusinessSupportType O
+
+http://www Website O
+. Website O
+research Website O
+. Website O
+utoronto Website O
+. Website O
+ca Website O
+/ Website O
+industry Website O
+- Website O
+and Website O
+- Website O
+partners Website O
+/ Website O
+entrepreneurs Website O
+- Website O
+and Website O
+- Website O
+start Website O
+- Website O
+ups Website O
+/ Website O
+utest/ Website O
+
+101 StreetAddress B-ADDRESS
+College StreetAddress I-ADDRESS
+Street StreetAddress E-ADDRESS
+
+Suite Unit O
+402 Unit O
+
+Toronto City O
+Ontario Province O
+
+M5 PostalCode O
+G PostalCode O
+1L7 PostalCode O
+
+None Title O
+
+None Telephone O
+
+derek Email B-EMAIL
+. Email I-EMAIL
+newton Email I-EMAIL
+@ Email I-EMAIL
+utoronto Email I-EMAIL
+. Email I-EMAIL
+ca Email E-EMAIL
+
+
+Women Organization O
+in Organization O
+Film Organization O
+and Organization O
+Television Organization O
+( Organization O
+WiFT Organization O
+) Organization O
+
+Creative TargetIndustry O
+
+Not Governance O
+- Governance O
+for Governance O
+- Governance O
+profit Governance O
+
+Incubator BusinessSupportType O
+
+http://www Website O
+. Website O
+wift Website O
+. Website O
+com Website O
+
+110 StreetAddress B-ADDRESS
+Eglinton StreetAddress I-ADDRESS
+Avenue StreetAddress I-ADDRESS
+East StreetAddress E-ADDRESS
+
+Suite Unit O
+601 Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M4P PostalCode O
+2Y1 PostalCode O
+
+Programming Title O
+& Title O
+Business Title O
+Affairs Title O
+Manager Title O
+
+None Telephone O
+
+rrobinson Email B-EMAIL
+@ Email I-EMAIL
+wift Email I-EMAIL
+. Email I-EMAIL
+com Email E-EMAIL
+
+
+York Organization O
+Entrepreneurship Organization O
+Development Organization O
+Institute Organization O
+Accelerator Organization O
+
+Mixed TargetIndustry O
+
+Academia Governance O
+Incubator BusinessSupportType O
+http://www Website O
+. Website O
+yedinstitute Website O
+. Website O
+org Website O
+
+4700 StreetAddress B-ADDRESS
+Keele StreetAddress I-ADDRESS
+St. StreetAddress E-ADDRESS
+
+None Unit O
+
+Toronto City O
+
+Ontario Province O
+
+M3J PostalCode O
+1P3 PostalCode O
+
+Program Title O
+Director Title O
+
+647 Telephone B-PHONE
+- Telephone I-PHONE
+919 Telephone I-PHONE
+- Telephone I-PHONE
+9334 Telephone E-PHONE
+
+mkonikov Email B-EMAIL
+@ Email I-EMAIL
+yedinstitute Email I-EMAIL
+. Email I-EMAIL
+org Email E-EMAIL
+
+
+Youth Organization O
+Social Organization O
+Innovation Organization O
+Capital Organization O
+Fund Organization O
+
+Social TargetIndustry O
+Innovation TargetIndustry O
+
+Not Governance O
+- Governance O
+for Governance O
+- Governance O
+profit Governance O
+
+Incubator BusinessSupportType O
+
+http://www Website O
+. Website O
+youthsocialinnovation Website O
+. Website O
+org/ Website O
+
+585 StreetAddress B-ADDRESS
+Dundas StreetAddress I-ADDRESS
+St. StreetAddress I-ADDRESS
+East StreetAddress E-ADDRESS
+
+None Unit O
+
+Toronto City O
+
+Ontario Province O
+
+None PostalCode O
+
+Managing Title O
+Director Title O
+
+416 Telephone B-PHONE
+- Telephone I-PHONE
+828 Telephone I-PHONE
+- Telephone I-PHONE
+4644 Telephone E-PHONE
+
+jory Email B-EMAIL
+@ Email I-EMAIL
+youthsocialinnovation Email I-EMAIL
+. Email I-EMAIL
+org Email E-EMAIL
+
+

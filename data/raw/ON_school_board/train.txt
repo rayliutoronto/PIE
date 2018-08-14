@@ -4,7 +4,6 @@ North Region O
 Bay Region O
 Regional Region O
 Office Region O
-
 B28010 BoardNumber O
 
 Algoma BoardName O
@@ -37,7 +36,7 @@ Marie City O
 
 Ontario Province O
 
-P6A2K7 PostalCode S-POSTALCODE
+P6A2K7 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -45,13 +44,13 @@ P6A2K7 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 7111 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-942 Fax I-PHONE
-- Fax I-PHONE
-2540 Fax E-PHONE
-
-http://www.adsb.on.ca Website O
+http://www Website O
+. Website O
+adsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -59,7 +58,6 @@ Regional Region O
 Office Region O
 
 B67202 BoardNumber O
-
 Algonquin BoardName O
 and BoardName O
 Lakeshore BoardName O
@@ -88,8 +86,7 @@ Ave Street E-ADDRESS
 Napanee City O
 
 Ontario Province O
-
-K7R4B2 PostalCode S-POSTALCODE
+K7R4B2 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -97,19 +94,18 @@ K7R4B2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2255 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-354 Fax I-PHONE
-- Fax I-PHONE
-0351 Fax E-PHONE
-
-http://www.alcdsb.on.ca Website O
+http://www Website O
+. Website O
+alcdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
 Regional Region O
 Office Region O
-
 B66010 BoardNumber O
 
 Avon BoardName O
@@ -131,7 +127,6 @@ F BoardType O
 None Suite O
 
 None POBox O
-
 62 Street B-ADDRESS
 Chalk Street I-ADDRESS
 St Street I-ADDRESS
@@ -141,7 +136,7 @@ Seaforth City O
 
 Ontario Province O
 
-N0K1W0 PostalCode S-POSTALCODE
+N0K1W0 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -149,13 +144,11 @@ N0K1W0 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 0111 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-527 Fax I-PHONE
-- Fax I-PHONE
-0222 Fax E-PHONE
-
-http://blog.amdsb.ca/ Website O
+http://blog Website O
+. Website O
+amdsb Website O
+. Website O
+ca/ Website O
 
 
 Toronto Region O
@@ -170,7 +163,6 @@ Bloorview BoardName O
 SA BoardName O
 
 English BoardLanguage O
-
 Provincial BoardType O
 / BoardType O
 Hospital BoardType O
@@ -186,8 +178,7 @@ Road Street E-ADDRESS
 Toronto City O
 
 Ontario Province O
-
-M4G1R8 PostalCode S-POSTALCODE
+M4G1R8 PostalCode O
 
 416 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -195,19 +186,16 @@ M4G1R8 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3831 PhoneNumber E-PHONE
 
-416 Fax B-PHONE
-- Fax I-PHONE
-425 Fax I-PHONE
-- Fax I-PHONE
-2981 Fax E-PHONE
-
-www.bloorview.ca Website O
+www Website O
+. Website O
+bloorview Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
 Regional Region O
 Office Region O
-
 B66001 BoardNumber O
 
 Bluewater BoardName O
@@ -238,22 +226,20 @@ N Street E-ADDRESS
 Chesley City O
 
 Ontario Province O
-
-N0G1L0 PostalCode S-POSTALCODE
+N0G1L0 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 363 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 2014 PhoneNumber E-PHONE
-
-519 Fax B-PHONE
-- Fax I-PHONE
-370 Fax I-PHONE
-- Fax I-PHONE
-2909 Fax E-PHONE
-
-http://www.bwdsb.on.ca Website O
+http://www Website O
+. Website O
+bwdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -261,7 +247,6 @@ Regional Region O
 Office Region O
 
 B67164 BoardNumber O
-
 Brant BoardName O
 Haldimand BoardName O
 Norfolk BoardName O
@@ -278,7 +263,6 @@ E BoardType O
 / BoardType O
 F BoardType O
 ) BoardType O
-
 None Suite O
 
 Box POBox O
@@ -292,7 +276,7 @@ Brantford City O
 
 Ontario Province O
 
-N3T5M8 PostalCode S-POSTALCODE
+N3T5M8 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -300,19 +284,15 @@ N3T5M8 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 6505 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-756 Fax I-PHONE
-- Fax I-PHONE
-9913 Fax E-PHONE
-
-http://www.bhncdsb.ca Website O
-
+http://www Website O
+. Website O
+bhncdsb Website O
+. Website O
+ca Website O
 
 Barrie Region O
 Regional Region O
 Office Region O
-
 B67008 BoardNumber O
 
 Bruce BoardName O
@@ -321,7 +301,6 @@ Grey BoardName O
 CDSB BoardName O
 
 English BoardLanguage O
-
 Cath BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -335,7 +314,6 @@ F BoardType O
 None Suite O
 
 None POBox O
-
 799 Street B-ADDRESS
 16th Street I-ADDRESS
 Ave Street E-ADDRESS
@@ -344,7 +322,7 @@ Hanover City O
 
 Ontario Province O
 
-N4N3A1 PostalCode S-POSTALCODE
+N4N3A1 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -352,19 +330,16 @@ N4N3A1 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 5820 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-364 Fax I-PHONE
-- Fax I-PHONE
-5882 Fax E-PHONE
-
-http://www.bgcdsb.org Website O
+http://www Website O
+. Website O
+bgcdsb Website O
+. Website O
+org Website O
 
 
 Ottawa Region O
 Regional Region O
 Office Region O
-
 B67172 BoardNumber O
 
 CDSB BoardName O
@@ -397,7 +372,7 @@ Kemptville City O
 
 Ontario Province O
 
-K0G1J0 PostalCode S-POSTALCODE
+K0G1J0 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -405,13 +380,13 @@ K0G1J0 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 7757 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-258 Fax I-PHONE
-- Fax I-PHONE
-5067 Fax E-PHONE
-
-http://www.cdsbeo.on.ca Website O
+http://www Website O
+. Website O
+cdsbeo Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -444,13 +419,12 @@ None POBox O
 116 Street B-ADDRESS
 Cornelius Street I-ADDRESS
 Pkwy Street E-ADDRESS
-
 North City O
 York City O
 
 Ontario Province O
 
-M6L2K5 PostalCode S-POSTALCODE
+M6L2K5 PostalCode O
 
 416 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -458,13 +432,11 @@ M6L2K5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 0844 PhoneNumber E-PHONE
 
-416 Fax B-PHONE
-- Fax I-PHONE
-397 Fax I-PHONE
-- Fax I-PHONE
-2012 Fax E-PHONE
-
-http://www.csviamonde.ca Website O
+http://www Website O
+. Website O
+csviamonde Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -503,21 +475,22 @@ Toronto City O
 
 Ontario Province O
 
-M2M1C8 PostalCode S-POSTALCODE
+M2M1C8 PostalCode O
 
 416 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 397 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 6564 PhoneNumber E-PHONE
-
-416 Fax B-PHONE
-- Fax I-PHONE
-397 Fax I-PHONE
-- Fax I-PHONE
-6576 Fax E-PHONE
-
-http://www.csdccs.edu.on.ca Website O
+http://www Website O
+. Website O
+csdccs Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -548,7 +521,6 @@ E BoardType O
 / BoardType O
 F BoardType O
 ) BoardType O
-
 None Suite O
 
 None POBox O
@@ -562,7 +534,7 @@ Sudbury City O
 
 Ontario Province O
 
-P3B1H9 PostalCode S-POSTALCODE
+P3B1H9 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -570,13 +542,11 @@ P3B1H9 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1533 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-671 Fax I-PHONE
-- Fax I-PHONE
-1720 Fax E-PHONE
-
-http://www.cspgno.ca Website O
+http://www Website O
+. Website O
+cspgno Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -609,7 +579,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 CP POBox O
 3600 POBox O
 
@@ -622,7 +591,7 @@ Bay City O
 
 Ontario Province O
 
-P1B9T5 PostalCode S-POSTALCODE
+P1B9T5 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -630,13 +599,15 @@ P1B9T5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3443 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-472 Fax I-PHONE
-- Fax I-PHONE
-5757 Fax E-PHONE
-
-www.csdne.edu.on.ca Website O
+www Website O
+. Website O
+csdne Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -645,7 +616,6 @@ North Region O
 Bay Region O
 Regional Region O
 Office Region O
-
 B29114 BoardNumber O
 
 CSDC BoardName O
@@ -668,7 +638,6 @@ F BoardType O
 None Suite O
 
 None POBox O
-
 681-C Street B-ADDRESS
 rue Street I-ADDRESS
 Chippewa Street I-ADDRESS
@@ -679,23 +648,23 @@ Bay City O
 
 Ontario Province O
 
-P1B6G8 PostalCode S-POSTALCODE
-
+P1B6G8 PostalCode O
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 472 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 1702 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-472 Fax I-PHONE
-- Fax I-PHONE
-9398 Fax E-PHONE
-
-http://www.franco Website O
+http://www Website O
+. Website O
+franco Website O
 - Website O
-nord.edu.on.ca Website O
+nord Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -724,7 +693,6 @@ F BoardType O
 None Suite O
 
 None POBox O
-
 875 Street B-ADDRESS
 de Street I-ADDRESS
 comté Street I-ADDRESS
@@ -735,21 +703,17 @@ L'Orignal City O
 
 Ontario Province O
 
-K0B1K0 PostalCode S-POSTALCODE
-
+K0B1K0 PostalCode O
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 675 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 4691 PhoneNumber E-PHONE
-
-613 Fax B-PHONE
-- Fax I-PHONE
-675 Fax I-PHONE
-- Fax I-PHONE
-2921 Fax E-PHONE
-
-http://www.csdceo.ca Website O
+http://www Website O
+. Website O
+csdceo Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -779,7 +743,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 None POBox O
 
 175 Street B-ADDRESS
@@ -792,7 +755,7 @@ BAY City O
 
 Ontario Province O
 
-P7A8C7 PostalCode S-POSTALCODE
+P7A8C7 PostalCode O
 
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -800,13 +763,13 @@ P7A8C7 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2266 PhoneNumber E-PHONE
 
-807 Fax B-PHONE
-- Fax I-PHONE
-344 Fax I-PHONE
-- Fax I-PHONE
-3734 Fax E-PHONE
-
-www.csdcab.on.ca Website O
+www Website O
+. Website O
+csdcab Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -815,7 +778,6 @@ North Region O
 Bay Region O
 Regional Region O
 Office Region O
-
 B29106 BoardNumber O
 
 CSDC BoardName O
@@ -842,12 +804,11 @@ None POBox O
 896 Street B-ADDRESS
 Riverside Street I-ADDRESS
 promenade Street E-ADDRESS
-
 Timmins City O
 
 Ontario Province O
 
-P4N3W2 PostalCode S-POSTALCODE
+P4N3W2 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -855,13 +816,13 @@ P4N3W2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1421 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-267 Fax I-PHONE
-- Fax I-PHONE
-7247 Fax E-PHONE
-
-http://www.cscdgr.on.ca Website O
+http://www Website O
+. Website O
+cscdgr Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -879,7 +840,6 @@ de BoardName O
 l'Ontario BoardName O
 
 French BoardLanguage O
-
 Cath BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -902,7 +862,7 @@ Ottawa City O
 
 Ontario Province O
 
-K1J1A1 PostalCode S-POSTALCODE
+K1J1A1 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -910,13 +870,11 @@ K1J1A1 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2555 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-746 Fax I-PHONE
-- Fax I-PHONE
-3081 Fax E-PHONE
-
-http://www.ecolecatholique.ca Website O
+http://www Website O
+. Website O
+ecolecatholique Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -925,7 +883,6 @@ North Region O
 Bay Region O
 Regional Region O
 Office Region O
-
 B29122 BoardNumber O
 
 CSDC BoardName O
@@ -957,8 +914,7 @@ rue Street E-ADDRESS
 Sudbury City O
 
 Ontario Province O
-
-P3C5L7 PostalCode S-POSTALCODE
+P3C5L7 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -966,13 +922,11 @@ P3C5L7 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 5626 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-669 Fax I-PHONE
-- Fax I-PHONE
-1270 Fax E-PHONE
-
-www.nouvelon.ca Website O
+www Website O
+. Website O
+nouvelon Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
@@ -1005,19 +959,13 @@ Oshawa City O
 
 Ontario Province O
 
-L1H7K6 PostalCode S-POSTALCODE
+L1H7K6 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 576 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 8403 PhoneNumber E-PHONE
-
-905 Fax B-PHONE
-- Fax I-PHONE
-576 Fax I-PHONE
-- Fax I-PHONE
-4414 Fax E-PHONE
 
 None Website O
 
@@ -1029,7 +977,6 @@ Regional Region O
 Office Region O
 
 B67300 BoardNumber O
-
 Conseil BoardName O
 scolaire BoardName O
 catholique BoardName O
@@ -1060,7 +1007,7 @@ Windsor City O
 
 Ontario Province O
 
-N8T3P5 PostalCode S-POSTALCODE
+N8T3P5 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1068,13 +1015,11 @@ N8T3P5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 9227 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-948 Fax I-PHONE
-- Fax I-PHONE
-1091 Fax E-PHONE
-
-www.cscProvidence.ca Website O
+www Website O
+. Website O
+cscProvidence Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -1088,9 +1033,7 @@ de BoardName O
 l'Est BoardName O
 de BoardName O
 l'Ontario BoardName O
-
 French BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -1102,7 +1045,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 None POBox O
 
 2445 Street B-ADDRESS
@@ -1115,21 +1057,20 @@ Ottawa City O
 
 Ontario Province O
 
-K1G6C3 PostalCode S-POSTALCODE
-
+K1G6C3 PostalCode O
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 742 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 8960 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-747 Fax I-PHONE
-- Fax I-PHONE
-3810 Fax E-PHONE
-
-http://www.cepeo.on.ca Website O
+http://www Website O
+. Website O
+cepeo Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -1166,7 +1107,7 @@ Catharines City O
 
 Ontario Province O
 
-L2R7P4 PostalCode S-POSTALCODE
+L2R7P4 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1174,13 +1115,11 @@ L2R7P4 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1550 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-685 Fax I-PHONE
-- Fax I-PHONE
-8511 Fax E-PHONE
-
-http://www.dsbn.org Website O
+http://www Website O
+. Website O
+dsbn Website O
+. Website O
+org Website O
 
 
 Sudbury Region O
@@ -1215,26 +1154,21 @@ Box POBox O
 1020 POBox O
 
 None Street O
-
 Timmins City O
-
 Ontario Province O
 
-P4N7H7 PostalCode S-POSTALCODE
+P4N7H7 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 360 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 1151 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-268 Fax I-PHONE
-- Fax I-PHONE
-7100 Fax E-PHONE
-
-http://www.dsb1.ca Website O
+http://www Website O
+. Website O
+dsb1 Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -1275,7 +1209,7 @@ Mississauga City O
 
 Ontario Province O
 
-L5R1C5 PostalCode S-POSTALCODE
+L5R1C5 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1283,13 +1217,11 @@ L5R1C5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1221 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-890 Fax I-PHONE
-- Fax I-PHONE
-7610 Fax E-PHONE
-
-http://www.dpcdsb.org Website O
+http://www Website O
+. Website O
+dpcdsb Website O
+. Website O
+org Website O
 
 
 Barrie Region O
@@ -1312,9 +1244,7 @@ E BoardType O
 / BoardType O
 F BoardType O
 ) BoardType O
-
 None Suite O
-
 None POBox O
 
 650 Street B-ADDRESS
@@ -1326,7 +1256,7 @@ Oshawa City O
 
 Ontario Province O
 
-L1J7C4 PostalCode S-POSTALCODE
+L1J7C4 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1334,13 +1264,11 @@ L1J7C4 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 6150 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-576 Fax I-PHONE
-- Fax I-PHONE
-0953 Fax E-PHONE
-
-http://www.dcdsb.ca Website O
+http://www Website O
+. Website O
+dcdsb Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
@@ -1377,7 +1305,7 @@ Whitby City O
 
 Ontario Province O
 
-L1R2K6 PostalCode S-POSTALCODE
+L1R2K6 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1385,13 +1313,11 @@ L1R2K6 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 5500 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-666 Fax I-PHONE
-- Fax I-PHONE
-6474 Fax E-PHONE
-
-www.ddsb.ca Website O
+www Website O
+. Website O
+ddsb Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -1405,7 +1331,6 @@ Erie BoardName O
 DSB BoardName O
 
 English BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -1428,21 +1353,18 @@ Brantford City O
 
 Ontario Province O
 
-N3T5V3 PostalCode S-POSTALCODE
-
+N3T5V3 PostalCode O
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 756 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 6301 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-756 Fax I-PHONE
-- Fax I-PHONE
-9181 Fax E-PHONE
-
-www.granderie.ca Website O
+www Website O
+. Website O
+granderie Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -1457,7 +1379,6 @@ County BoardName O
 DSB BoardName O
 
 English BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -1482,7 +1403,7 @@ Windsor City O
 
 Ontario Province O
 
-N9A6K1 PostalCode S-POSTALCODE
+N9A6K1 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1490,13 +1411,11 @@ N9A6K1 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3200 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-255 Fax I-PHONE
-- Fax I-PHONE
-7053 Fax E-PHONE
-
-http://www.publicboard.ca Website O
+http://www Website O
+. Website O
+publicboard Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -1521,7 +1440,6 @@ E BoardType O
 / BoardType O
 F BoardType O
 ) BoardType O
-
 None Suite O
 
 Box POBox O
@@ -1535,19 +1453,13 @@ Burlington City O
 
 Ontario Province O
 
-L7R4L3 PostalCode S-POSTALCODE
+L7R4L3 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 632 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 6300 PhoneNumber E-PHONE
-
-905 Fax B-PHONE
-- Fax I-PHONE
-333 Fax I-PHONE
-- Fax I-PHONE
-4661 Fax E-PHONE
 
 None Website O
 
@@ -1564,7 +1476,6 @@ Halton BoardName O
 DSB BoardName O
 
 English BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -1588,7 +1499,7 @@ Burlington City O
 
 Ontario Province O
 
-L7R3Z2 PostalCode S-POSTALCODE
+L7R3Z2 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1596,13 +1507,11 @@ L7R3Z2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3663 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-335 Fax I-PHONE
-- Fax I-PHONE
-9802 Fax E-PHONE
-
-http://www.hdsb.ca/ Website O
+http://www Website O
+. Website O
+hdsb Website O
+. Website O
+ca/ Website O
 
 
 London Region O
@@ -1615,7 +1524,6 @@ Hamilton BoardName O
 - BoardName O
 Wentworth BoardName O
 CDSB BoardName O
-
 English BoardLanguage O
 
 Cath BoardType O
@@ -1641,7 +1549,7 @@ Hamilton City O
 
 Ontario Province O
 
-L8N3R9 PostalCode S-POSTALCODE
+L8N3R9 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1649,19 +1557,16 @@ L8N3R9 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2930 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-525 Fax I-PHONE
-- Fax I-PHONE
-1724 Fax E-PHONE
-
-http://www.hwcdsb.ca/ Website O
+http://www Website O
+. Website O
+hwcdsb Website O
+. Website O
+ca/ Website O
 
 
 London Region O
 Regional Region O
 Office Region O
-
 B66141 BoardNumber O
 
 Hamilton BoardName O
@@ -1693,22 +1598,19 @@ Court Street E-ADDRESS
 Hamilton City O
 
 Ontario Province O
-
-L9A0B9 PostalCode S-POSTALCODE
-
+L9A0B9 PostalCode O
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 527 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 5092 PhoneNumber E-PHONE
-
-905 Fax B-PHONE
-- Fax I-PHONE
-521 Fax I-PHONE
-- Fax I-PHONE
-2539 Fax E-PHONE
-
-http://www.hwdsb.on.ca Website O
+http://www Website O
+. Website O
+hwdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -1747,7 +1649,7 @@ Belleville City O
 
 Ontario Province O
 
-K8N3L3 PostalCode S-POSTALCODE
+K8N3L3 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1755,19 +1657,18 @@ K8N3L3 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1170 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-966 Fax I-PHONE
-- Fax I-PHONE
-6023 Fax E-PHONE
-
-http://www.hpedsb.on.ca Website O
+http://www Website O
+. Website O
+hpedsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
 Regional Region O
 Office Region O
-
 B67016 BoardNumber O
 
 Huron BoardName O
@@ -1787,7 +1688,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 Box POBox O
 70 POBox O
 
@@ -1799,7 +1699,7 @@ Dublin City O
 
 Ontario Province O
 
-N0K1E0 PostalCode S-POSTALCODE
+N0K1E0 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1807,13 +1707,15 @@ N0K1E0 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2440 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-345 Fax I-PHONE
-- Fax I-PHONE
-2449 Fax E-PHONE
-
-http://www.hpcdsb.edu.on.ca Website O
+http://www Website O
+. Website O
+hpcdsb Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -1831,7 +1733,6 @@ Superior BoardName O
 CDSB BoardName O
 
 English BoardLanguage O
-
 Cath BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -1843,7 +1744,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 None POBox O
 
 90 Street B-ADDRESS
@@ -1856,7 +1756,7 @@ Marie City O
 
 Ontario Province O
 
-P6B6G7 PostalCode S-POSTALCODE
+P6B6G7 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1864,14 +1764,13 @@ P6B6G7 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 5400 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-945 Fax I-PHONE
-- Fax I-PHONE
-5575 Fax E-PHONE
-
-http://www.hscdsb.on.ca Website O
-
+http://www Website O
+. Website O
+hscdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 Sudbury Region O
 - Region O
@@ -1910,7 +1809,7 @@ Moosonee City O
 
 Ontario Province O
 
-P0L1Y0 PostalCode S-POSTALCODE
+P0L1Y0 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1918,19 +1817,12 @@ P0L1Y0 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2903 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-336 Fax I-PHONE
-- Fax I-PHONE
-0234 Fax E-PHONE
-
 None Website O
 
 
 London Region O
 Regional Region O
 Office Region O
-
 B80047 BoardNumber O
 
 John BoardName O
@@ -1945,7 +1837,6 @@ English BoardLanguage O
 Provincial BoardType O
 / BoardType O
 Hospital BoardType O
-
 None Suite O
 
 None POBox O
@@ -1958,7 +1849,7 @@ Windsor City O
 
 Ontario Province O
 
-N9C4C2 PostalCode S-POSTALCODE
+N9C4C2 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -1966,19 +1857,16 @@ N9C4C2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2200 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-977 Fax I-PHONE
-- Fax I-PHONE
-2201 Fax E-PHONE
-
-http://www.jmccentre.ca Website O
+http://www Website O
+. Website O
+jmccentre Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
 Regional Region O
 Office Region O
-
 B66079 BoardNumber O
 
 Kawartha BoardName O
@@ -2007,10 +1895,9 @@ Fisher Street I-ADDRESS
 Dr Street E-ADDRESS
 
 Peterborough City O
-
 Ontario Province O
 
-K9J6X6 PostalCode S-POSTALCODE
+K9J6X6 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2018,13 +1905,11 @@ K9J6X6 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 9773 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-742 Fax I-PHONE
-- Fax I-PHONE
-7801 Fax E-PHONE
-
-http://www.kprschools.ca Website O
+http://www Website O
+. Website O
+kprschools Website O
+. Website O
+ca Website O
 
 
 Thunder Region O
@@ -2038,7 +1923,6 @@ Keewatin BoardName O
 - BoardName O
 Patricia BoardName O
 DSB BoardName O
-
 English BoardLanguage O
 
 Pub BoardType O
@@ -2064,21 +1948,20 @@ Kenora City O
 
 Ontario Province O
 
-P9N3Y5 PostalCode S-POSTALCODE
-
+P9N3Y5 PostalCode O
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 468 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 5571 PhoneNumber E-PHONE
 
-807 Fax B-PHONE
-- Fax I-PHONE
-468 Fax I-PHONE
-- Fax I-PHONE
-3857 Fax E-PHONE
-
-http://www.kpdsb.on.ca Website O
+http://www Website O
+. Website O
+kpdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Thunder Region O
@@ -2087,7 +1970,6 @@ Regional Region O
 Office Region O
 
 B29050 BoardNumber O
-
 Kenora BoardName O
 CDSB BoardName O
 
@@ -2112,24 +1994,22 @@ Heenan Street I-ADDRESS
 Place Street E-ADDRESS
 
 Kenora City O
-
 Ontario Province O
 
-P9N2Y8 PostalCode S-POSTALCODE
-
+P9N2Y8 PostalCode O
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 468 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 9851 PhoneNumber E-PHONE
 
-807 Fax B-PHONE
-- Fax I-PHONE
-468 Fax I-PHONE
-- Fax I-PHONE
-8094 Fax E-PHONE
-
-http://www.kcdsb.on.ca Website O
+http://www Website O
+. Website O
+kcdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -2160,7 +2040,7 @@ Waterloo City O
 
 Ontario Province O
 
-N2K3P5 PostalCode S-POSTALCODE
+N2K3P5 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2168,13 +2048,11 @@ N2K3P5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 8886 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-885 Fax I-PHONE
-- Fax I-PHONE
-6222 Fax E-PHONE
-
-www.kidsability.ca Website O
+www Website O
+. Website O
+kidsability Website O
+. Website O
+ca Website O
 
 
 Thunder Region O
@@ -2215,7 +2093,7 @@ Bay City O
 
 Ontario Province O
 
-P7E5T2 PostalCode S-POSTALCODE
+P7E5T2 PostalCode O
 
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2223,13 +2101,11 @@ P7E5T2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 5100 PhoneNumber E-PHONE
 
-807 Fax B-PHONE
-- Fax I-PHONE
-622 Fax I-PHONE
-- Fax I-PHONE
-0961 Fax E-PHONE
-
-http://www.lakeheadschools.ca Website O
+http://www Website O
+. Website O
+lakeheadschools Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -2255,7 +2131,6 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 Box POBox O
 2091 POBox O
 
@@ -2267,7 +2142,7 @@ Sarnia City O
 
 Ontario Province O
 
-N7T7L2 PostalCode S-POSTALCODE
+N7T7L2 PostalCode O
 
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2275,13 +2150,11 @@ N7T7L2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1500 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-336 Fax I-PHONE
-- Fax I-PHONE
-0992 Fax E-PHONE
-
-http://www.lkdsb.net Website O
+http://www Website O
+. Website O
+lkdsb Website O
+. Website O
+net Website O
 
 
 Ottawa Region O
@@ -2319,7 +2192,7 @@ Kingston City O
 
 Ontario Province O
 
-K7L4X4 PostalCode S-POSTALCODE
+K7L4X4 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2327,13 +2200,13 @@ K7L4X4 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 6920 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-544 Fax I-PHONE
-- Fax I-PHONE
-6804 Fax E-PHONE
-
-http://www.limestone.on.ca Website O
+http://www Website O
+. Website O
+limestone Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -2347,7 +2220,6 @@ District BoardName O
 Catholic BoardName O
 School BoardName O
 Board BoardName O
-
 English BoardLanguage O
 
 Cath BoardType O
@@ -2364,28 +2236,24 @@ London Suite O
 DCSB Suite O
 
 5474 POBox O
-
 None Street O
 
 London City O
 
 Ontario Province O
 
-N6A4X5 PostalCode S-POSTALCODE
-
+N6A4X5 PostalCode O
 519 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 663 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 2088 PhoneNumber E-PHONE
 
-519 Fax B-PHONE
-- Fax I-PHONE
-663 Fax I-PHONE
-- Fax I-PHONE
-9250 Fax E-PHONE
-
-http://ldcsb.on.ca Website O
+http://ldcsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -2417,22 +2285,15 @@ None Street O
 
 Moose City O
 Factory City O
-
 Ontario Province O
 
-P0L1W0 PostalCode S-POSTALCODE
+P0L1W0 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 658 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 4571 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-658 Fax I-PHONE
-- Fax I-PHONE
-4768 Fax E-PHONE
 
 None Website O
 
@@ -2466,20 +2327,13 @@ Moosonee City O
 
 Ontario Province O
 
-P0L1Y0 PostalCode S-POSTALCODE
+P0L1Y0 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 336 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 2300 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-336 Fax I-PHONE
-- Fax I-PHONE
-0334 Fax E-PHONE
-
 None Website O
 
 
@@ -2497,7 +2351,6 @@ North BoardName O
 DSB BoardName O
 
 English BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -2521,8 +2374,7 @@ North City O
 Bay City O
 
 Ontario Province O
-
-P1B8H1 PostalCode S-POSTALCODE
+P1B8H1 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2530,13 +2382,11 @@ P1B8H1 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 8170 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-472 Fax I-PHONE
-- Fax I-PHONE
-9927 Fax E-PHONE
-
-http://www.nearnorthschools.ca Website O
+http://www Website O
+. Website O
+nearnorthschools Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -2572,7 +2422,7 @@ Welland City O
 
 Ontario Province O
 
-L3C7C1 PostalCode S-POSTALCODE
+L3C7C1 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2580,13 +2430,11 @@ L3C7C1 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 0240 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-734 Fax I-PHONE
-- Fax I-PHONE
-8828 Fax E-PHONE
-
-http://www.niagaracatholic.ca Website O
+http://www Website O
+. Website O
+niagaracatholic Website O
+. Website O
+ca Website O
 
 
 London Region O
@@ -2607,7 +2455,6 @@ English BoardLanguage O
 Provincial BoardType O
 / BoardType O
 Hospital BoardType O
-
 None Suite O
 
 None POBox O
@@ -2621,22 +2468,20 @@ Catharines City O
 
 Ontario Province O
 
-L2T4C2 PostalCode S-POSTALCODE
-
+L2T4C2 PostalCode O
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 688 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 3550 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-688 Fax I-PHONE
-- Fax I-PHONE
-1055 Fax E-PHONE
-
-www.npcc.on.ca Website O
-
+www Website O
+. Website O
+npcc Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 Sudbury Region O
 - Region O
@@ -2652,7 +2497,6 @@ Nipissing BoardName O
 Parry BoardName O
 Sound BoardName O
 CDSB BoardName O
-
 English BoardLanguage O
 
 Cath BoardType O
@@ -2678,7 +2522,7 @@ Bay City O
 
 Ontario Province O
 
-P1B6S6 PostalCode S-POSTALCODE
+P1B6S6 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2686,13 +2530,11 @@ P1B6S6 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1201 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-472 Fax I-PHONE
-- Fax I-PHONE
-0507 Fax E-PHONE
-
-www.npsc.ca Website O
+www Website O
+. Website O
+npsc Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -2727,24 +2569,17 @@ None POBox O
 Birch Street I-ADDRESS
 St Street I-ADDRESS
 N Street E-ADDRESS
-
 Timmins City O
 
 Ontario Province O
 
-P4N6E8 PostalCode S-POSTALCODE
+P4N6E8 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 268 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 7443 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-267 Fax I-PHONE
-- Fax I-PHONE
-3590 Fax E-PHONE
 
 None Website O
 
@@ -2774,7 +2609,6 @@ F BoardType O
 None Suite O
 
 None POBox O
-
 555 Street B-ADDRESS
 Flinders Street I-ADDRESS
 Ave Street E-ADDRESS
@@ -2784,7 +2618,7 @@ Frances City O
 
 Ontario Province O
 
-P9A3L2 PostalCode S-POSTALCODE
+P9A3L2 PostalCode O
 
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2792,13 +2626,13 @@ P9A3L2 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2931 PhoneNumber E-PHONE
 
-807 Fax B-PHONE
-- Fax I-PHONE
-274 Fax I-PHONE
-- Fax I-PHONE
-8792 Fax E-PHONE
-
-http://www.tncdsb.on.ca Website O
+http://www Website O
+. Website O
+tncdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -2836,7 +2670,7 @@ Nepean City O
 
 Ontario Province O
 
-K2G3R4 PostalCode S-POSTALCODE
+K2G3R4 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2844,13 +2678,11 @@ K2G3R4 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2222 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-224 Fax I-PHONE
-- Fax I-PHONE
-5063 Fax E-PHONE
-
-http://www.ottawacatholicschools.ca Website O
+http://www Website O
+. Website O
+ottawacatholicschools Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -2884,19 +2716,13 @@ Ottawa City O
 
 Ontario Province O
 
-K2H8L2 PostalCode S-POSTALCODE
+K2H8L2 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 737 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 0871 PhoneNumber E-PHONE
-
-613 Fax B-PHONE
-- Fax I-PHONE
-523 Fax I-PHONE
-- Fax I-PHONE
-5167 Fax E-PHONE
 
 None Website O
 
@@ -2936,7 +2762,7 @@ Nepean City O
 
 Ontario Province O
 
-K2H6L3 PostalCode S-POSTALCODE
+K2H6L3 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2944,13 +2770,11 @@ K2H6L3 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1820 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-820 Fax I-PHONE
-- Fax I-PHONE
-6968 Fax E-PHONE
-
-http://www.ocdsb.ca Website O
+http://www Website O
+. Website O
+ocdsb Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -2963,7 +2787,6 @@ B66125 BoardNumber O
 
 Peel BoardName O
 DSB BoardName O
-
 English BoardLanguage O
 
 Pub BoardType O
@@ -2988,7 +2811,7 @@ Mississauga City O
 
 Ontario Province O
 
-L5R1C6 PostalCode S-POSTALCODE
+L5R1C6 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -2996,13 +2819,11 @@ L5R1C6 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 1099 PhoneNumber E-PHONE
 
-905 Fax B-PHONE
-- Fax I-PHONE
-890 Fax I-PHONE
-- Fax I-PHONE
-6747 Fax E-PHONE
-
-http://www.peelschools.org Website O
+http://www Website O
+. Website O
+peelschools Website O
+. Website O
+org Website O
 
 
 Barrie Region O
@@ -3027,7 +2848,6 @@ Auth BoardType O
 
 Unit Suite O
 49 Suite O
-
 Box POBox O
 107 POBox O
 
@@ -3039,20 +2859,13 @@ St Street I-ADDRESS
 Penetanguishene City O
 
 Ontario Province O
-
-L9M1M2 PostalCode S-POSTALCODE
+L9M1M2 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 549 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 6422 PhoneNumber E-PHONE
-
-705 Fax B-PHONE
-- Fax I-PHONE
-549 Fax I-PHONE
-- Fax I-PHONE
-2768 Fax E-PHONE
 
 None Website O
 
@@ -3089,12 +2902,11 @@ None POBox O
 Lansdowne Street I-ADDRESS
 St Street I-ADDRESS
 W Street E-ADDRESS
-
 Peterborough City O
 
 Ontario Province O
 
-K9J7M3 PostalCode S-POSTALCODE
+K9J7M3 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3102,13 +2914,13 @@ K9J7M3 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 4861 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-748 Fax I-PHONE
-- Fax I-PHONE
-9734 Fax E-PHONE
-
-http://www.pvnccdsb.on.ca Website O
+http://www Website O
+. Website O
+pvnccdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Toronto Region O
@@ -3116,7 +2928,6 @@ and Region O
 Area Region O
 Regional Region O
 Office Region O
-
 B76686 BoardNumber O
 
 Provincial BoardName O
@@ -3127,7 +2938,6 @@ English BoardLanguage O
 Provincial BoardType O
 / BoardType O
 Hospital BoardType O
-
 Ministry Suite O
 of Suite O
 Education Suite O
@@ -3143,7 +2953,7 @@ Milton City O
 
 Ontario Province O
 
-L9T2M5 PostalCode S-POSTALCODE
+L9T2M5 PostalCode O
 
 905 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3151,9 +2961,11 @@ L9T2M5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 2851 PhoneNumber E-PHONE
 
-None Fax O
-
-www.psbnet.ca Website O
+www Website O
+. Website O
+psbnet Website O
+. Website O
+ca Website O
 
 
 Sudbury Region O
@@ -3192,7 +3004,7 @@ Sudbury City O
 
 Ontario Province O
 
-P3E3G5 PostalCode S-POSTALCODE
+P3E3G5 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3200,13 +3012,11 @@ P3E3G5 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3171 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-674 Fax I-PHONE
-- Fax I-PHONE
-9112 Fax E-PHONE
-
-http://www.rainbowschools.ca Website O
+http://www Website O
+. Website O
+rainbowschools Website O
+. Website O
+ca Website O
 
 
 Thunder Region O
@@ -3246,27 +3056,23 @@ Frances City O
 
 Ontario Province O
 
-P9A1N4 PostalCode S-POSTALCODE
+P9A1N4 PostalCode O
 
 807 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 274 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 9855 PhoneNumber E-PHONE
-
-807 Fax B-PHONE
-- Fax I-PHONE
-274 Fax I-PHONE
-- Fax I-PHONE
-5078 Fax E-PHONE
-
-http://www.rrdsb.com Website O
+http://www Website O
+. Website O
+rrdsb Website O
+. Website O
+com Website O
 
 
 Ottawa Region O
 Regional Region O
 Office Region O
-
 B67199 BoardNumber O
 
 Renfrew BoardName O
@@ -3286,9 +3092,7 @@ F BoardType O
 ) BoardType O
 
 None Suite O
-
 None POBox O
-
 499 Street B-ADDRESS
 Pembroke Street I-ADDRESS
 St Street I-ADDRESS
@@ -3298,21 +3102,22 @@ Pembroke City O
 
 Ontario Province O
 
-K8A5P1 PostalCode S-POSTALCODE
+K8A5P1 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
 735 PhoneNumber I-PHONE
 - PhoneNumber I-PHONE
 1031 PhoneNumber E-PHONE
-
-613 Fax B-PHONE
-- Fax I-PHONE
-735 Fax I-PHONE
-- Fax I-PHONE
-2649 Fax E-PHONE
-
-http://www.rccdsb.edu.on.ca Website O
+http://www Website O
+. Website O
+rccdsb Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Ottawa Region O
@@ -3326,7 +3131,6 @@ County BoardName O
 DSB BoardName O
 
 English BoardLanguage O
-
 Pub BoardType O
 Dist BoardType O
 Sch BoardType O
@@ -3350,7 +3154,7 @@ Pembroke City O
 
 Ontario Province O
 
-K8A4G4 PostalCode S-POSTALCODE
+K8A4G4 PostalCode O
 
 613 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3358,13 +3162,15 @@ K8A4G4 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 0151 PhoneNumber E-PHONE
 
-613 Fax B-PHONE
-- Fax I-PHONE
-735 Fax I-PHONE
-- Fax I-PHONE
-6315 Fax E-PHONE
-
-http://www.renfrew.edu.on.ca Website O
+http://www Website O
+. Website O
+renfrew Website O
+. Website O
+edu Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
@@ -3388,7 +3194,6 @@ E BoardType O
 / BoardType O
 F BoardType O
 ) BoardType O
-
 None Suite O
 
 None POBox O
@@ -3401,7 +3206,7 @@ Midhurst City O
 
 Ontario Province O
 
-L0L1X0 PostalCode S-POSTALCODE
+L0L1X0 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3409,13 +3214,13 @@ L0L1X0 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 7570 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-728 Fax I-PHONE
-- Fax I-PHONE
-2265 Fax E-PHONE
-
-http://www.scdsb.on.ca Website O
+http://www Website O
+. Website O
+scdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 
 
 Barrie Region O
@@ -3449,10 +3254,9 @@ Alliance Street I-ADDRESS
 Blvd Street E-ADDRESS
 
 Barrie City O
-
 Ontario Province O
 
-L4M5K3 PostalCode S-POSTALCODE
+L4M5K3 PostalCode O
 
 705 PhoneNumber B-PHONE
 - PhoneNumber I-PHONE
@@ -3460,12 +3264,11 @@ L4M5K3 PostalCode S-POSTALCODE
 - PhoneNumber I-PHONE
 3555 PhoneNumber E-PHONE
 
-705 Fax B-PHONE
-- Fax I-PHONE
-722 Fax I-PHONE
-- Fax I-PHONE
-6534 Fax E-PHONE
-
-http://www.smcdsb.on.ca Website O
-
+http://www Website O
+. Website O
+smcdsb Website O
+. Website O
+on Website O
+. Website O
+ca Website O
 

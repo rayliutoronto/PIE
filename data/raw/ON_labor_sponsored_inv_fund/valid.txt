@@ -1,0 +1,404 @@
+10144 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+01 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+Yes FederalRegistration(Enregistrementfédéral) O
+
+B Company O
+. Company O
+E Company O
+. Company O
+S Company O
+. Company O
+T Company O
+. Company O
+Total Company O
+Return Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+400 Street B-ADDRESS
+- Street I-ADDRESS
+15 Street I-ADDRESS
+Toronto Street I-ADDRESS
+Street Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5C PostalCode O
+2E3 PostalCode O
+
+John FundContact O
+Richardson FundContact O
+
+
+10145 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+08 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+None FederalRegistration(Enregistrementfédéral) O
+
+Altruista Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+315 Street B-ADDRESS
+- Street I-ADDRESS
+600 Street I-ADDRESS
+Alden Street I-ADDRESS
+Road Street E-ADDRESS
+
+Markham City(Ville) O
+
+ON Province O
+L3R PostalCode O
+0E7 PostalCode O
+
+Raymond FundContact O
+Pennings FundContact O
+
+
+10146 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+No FederalRegistration(Enregistrementfédéral) O
+
+Covington Company O
+Strategic Company O
+Capital Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+400 Street B-ADDRESS
+- Street I-ADDRESS
+87 Street I-ADDRESS
+Front Street I-ADDRESS
+Street Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5E PostalCode O
+1B8 PostalCode O
+Phil FundContact O
+Reddon FundContact O
+
+10147 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+15 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+Financial Company O
+Industry Company O
+Opportunities Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+3003 Street B-ADDRESS
+- Street I-ADDRESS
+200 Street I-ADDRESS
+Front Street I-ADDRESS
+Street Street I-ADDRESS
+West Street I-ADDRESS
+, Street I-ADDRESS
+PO Street I-ADDRESS
+Box Street I-ADDRESS
+10 Street E-ADDRESS
+Toronto City(Ville) O
+ON Province O
+
+M5V PostalCode O
+3K2 PostalCode O
+
+Phil FundContact O
+Reddon FundContact O
+
+
+10148 RegistrationNumber(Numérod'enregistrement) O
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+17 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+Terra Company O
+Firma Company O
+Income Company O
+Fund Company O
+2004 Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+400 Street B-ADDRESS
+- Street I-ADDRESS
+87 Street I-ADDRESS
+Front Street I-ADDRESS
+Street Street I-ADDRESS
+East Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5E PostalCode O
+1B8 PostalCode O
+Frank FundContact O
+Portugais FundContact O
+
+
+10149 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+17 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+Terra Company O
+Firma Company O
+Equity Company O
+Fund Company O
+2004 Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+400 Street B-ADDRESS
+- Street I-ADDRESS
+87 Street I-ADDRESS
+Front Street I-ADDRESS
+Street Street I-ADDRESS
+East Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5E PostalCode O
+1B8 PostalCode O
+
+Frank FundContact O
+Portugais FundContact O
+
+
+10150 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+17 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+Front Company O
+Street Company O
+Alternative Company O
+Asset Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+600 Street B-ADDRESS
+- Street I-ADDRESS
+33 Street I-ADDRESS
+Yonge Street I-ADDRESS
+Street Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5E PostalCode O
+1G4 PostalCode O
+
+Frank FundContact O
+Portugais FundContact O
+
+
+10151 RegistrationNumber(Numérod'enregistrement) O
+
+2003 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+12 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+17 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+None FederalRegistration(Enregistrementfédéral) O
+
+Capital Company O
+First Company O
+Venture Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+1400 Street B-ADDRESS
+- Street I-ADDRESS
+70 Street I-ADDRESS
+York Street I-ADDRESS
+Street Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5J PostalCode O
+1S9 PostalCode O
+
+Phil FundContact O
+Reddon FundContact O
+
+
+10152 RegistrationNumber(Numérod'enregistrement) O
+
+2004 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+01 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+21 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+Quorum Company O
+Expansion Company O
+Capital Company O
+Fund Company O
+
+None Website(Siteweb) O
+
+229 Street B-ADDRESS
+Niagara Street I-ADDRESS
+Street Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M6J PostalCode O
+2L5 PostalCode O
+
+John FundContact O
+Burns FundContact O
+
+
+10153 RegistrationNumber(Numérod'enregistrement) O
+
+2004 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+05 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+14 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+The Company O
+VenGrowth Company O
+III Company O
+Investment Company O
+Fund Company O
+Inc. Company O
+
+None Website(Siteweb) O
+
+1000 Street B-ADDRESS
+- Street I-ADDRESS
+105 Street I-ADDRESS
+Adelaide Street I-ADDRESS
+Street Street I-ADDRESS
+West Street E-ADDRESS
+
+Toronto City(Ville) O
+
+ON Province O
+
+M5H PostalCode O
+1P9 PostalCode O
+
+Steve FundContact O
+Ruiter FundContact O
+
+
+10154 RegistrationNumber(Numérod'enregistrement) O
+
+2004 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+05 RegistrationDate(Dated'enregistrement) O
+- RegistrationDate(Dated'enregistrement) O
+18 RegistrationDate(Dated'enregistrement) O
+00:00:00 RegistrationDate(Dated'enregistrement) O
+
+Yes FederalRegistration(Enregistrementfédéral) O
+
+GrowthWorks Company O
+Commercialization Company O
+Fund Company O
+Ltd. Company O
+
+None Website(Siteweb) O
+
+2600 Street B-ADDRESS
+- Street I-ADDRESS
+1055 Street I-ADDRESS
+West Street I-ADDRESS
+Georgia Street I-ADDRESS
+Street Street I-ADDRESS
+, Street I-ADDRESS
+PO Street I-ADDRESS
+Box Street I-ADDRESS
+11170 Street E-ADDRESS
+
+Vancouver City(Ville) O
+
+BC Province O
+
+V6E PostalCode O
+3R5 PostalCode O
+David FundContact O
+Levi FundContact O
+
